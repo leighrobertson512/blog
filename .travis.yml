@@ -1,0 +1,7 @@
+language: python
+install:
+  - pip install markdown
+  - pip install pelican
+  - pip install ghp-import
+script:
+  - make html
