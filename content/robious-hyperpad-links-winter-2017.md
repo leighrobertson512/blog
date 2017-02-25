@@ -16,7 +16,7 @@ These links are only available for seven days, starting today. So, be sure to ch
 | ------------- |:-------------:|
 | Harrison      | [http://bit.ly/2li6utw](http://bit.ly/2li6utw) |
 | Caleb      | [http://bit.ly/2lieJFP](http://bit.ly/2lieJFP) |
-| Sydney | http://bit.ly/2li8yBX & http://bit.ly/2liaIl4      |   
+| Sydney | [http://bit.ly/2li8yBX](http://bit.ly/2li8yBX) & [http://bit.ly/2liaIl4](http://bit.ly/2liaIl4)      |   
 | Hank      | http://bit.ly/2lifj6t |
 | Charlie      | http://bit.ly/2linr7b & http://bit.ly/2liddUk      |
 | Nathaniel | http://bit.ly/2lijorC      |
