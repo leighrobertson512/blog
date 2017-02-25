@@ -7,7 +7,7 @@ script:
 - make github
 - git remote remove origin
 - git remote add origin https://$GH_TOKEN@github.com/techemstudios/blog
-- git push origin gh-pages
+- git push -f origin gh-pages
 env:
   global:
     secure: GXxjGYV7SyY/Snw4ZchLgwmYGCRfnbcN8ZOKAvk/VKBOmbU6jEYbNx+zflNgyQlDj1+YwoFQXNEarqO3FWUfddaBvI2KA+GpD0cOnyEIEPDk2ma8qIUUiMNZEfULzQjvbtUpowzc7Hohp7oyikbjjL49KYlYrRx/u5CsudQ7hSrVQ1b43P/y+rJDMzigNNLQotIBc0TOLtp6ScwaOa2r7j0AyQn6fckdT69geEZWt+UfwkQa7ixQAc8qX1nuAHbDvDpauFZkFzRQmqKez9A4sajujddXjJydgosGuBgaJjc/XQaAJzcaVvyFix9VD/XBROQIGouZGzMM1jahahGViWRe66W+EF0UBWBMQhVaF1hLmYhj9ymDBayEy69UXQ+pems9UxgSypixWbC2FFNn31K5nQB/U8HlegXHWtsHxV2QBDKHtVRgzGPGGEzVwOdy5c9rB54TZBdRI/TLB9Ty3LTdBEq0r6rj4UGT/+SzmyxzeNfB0H4vmJPIGKbz7zmNUMWujjYtVUJIbI/Ld5qQQNx2YsUAokm4vW2B0xQEyc4RkgIw5sp/vsbAFnm2WlceVjrYiji3B4cJkSIIlocTh433R+ziFxaTcf6KoW5oODqY/FknJo1ejdaS1ooK09iidwcLUoSOLD3xCKu1tgeDucGpBHgB+uKBFJJa35vKmu0=
