@@ -1,0 +1,139 @@
+Title: Code Em Winter 2017      
+Author: Josef Seiler      
+Date: 2017-02-22    
+category: Classes  
+Tags: raspberry pi, coding, github, slack, computer science  
+
+### Week One  
+
+`01/10/2017`  
+
+#### How to Solve a Problem  
+###### How to approach, visualize and make a plan to solve a problem  
+We reviewed our general approach to solving a large problem with our example of cleaning a whole house. The thought of cleaning each room in the entire house is overwhelming **-not for long!**. First, *ask questions*: what is the problem? are there any special cases? Next, *look for familiar things*: if you have solved a similar problem, see if that solution can apply to the new problem. Next, *divide and conquer*: to make it seem more manageable, we strategized on how to break up the large task into smaller, more manageable ones. Finally, *make a plan (or algorithm)*: make a plan to tackle the new subsets of problems that make up the larger one; start at a subtask, finish it, then move on to the next; until the whole task is completed.  
+
+#### Binary Search Tree  
+##### How computers efficiently search through a sorted list    
+
+I'm thinking of a number... Choose a number between 1 and 20. If your first guess was in the middle, that was a great start! Then I could say if your guess was lower or higher than the number I'm thinking of. If you continue with using that method (start in the middle of the range of numbers), then you will guess correctly, *much* faster than simply guessing : is it one? is it two? is it three? and so on, or guessing numbers randomly. Take a look at the search tree below. The tree has a range of 15.
+![interactive quiz](images/binary_search_tree_image.jpg)  
+Every node in the tree has a value. Do you see a pattern? The subtree to the right of its node is greater than (*>*) its parent nodes value. The subtree to the left of its node is less than (*<*) its parent nodes value.  
+
+From here, we worked to create a random number guessing game in Python. The computer randomly chooses from a range of values, and the user tries to guess it. The bigger the range of values, the more you see how effective using the binary search method is. So, you can start to see how computers can handle large amounts of data with some simple tricks. Handling data will be a major theme in the coming weeks. Below is the gist:  
+
+We'll come back to this concept later... We will actually build a binary search program!  
+<script src="https://gist.github.com/jo3t3ch3m/78ed5dbb6baaa57b3a18a7e9e242b674.js"></script>  
+
+**Assignment One**: Try making this program continuous by adding a while loop.  
+
+***  
+
+### Week Two  
+
+`01/17/2017`  
+
+#### Python Dictionaries  
+
+A Python dictionary (or MAP) is a collection of key-value pairs. In other words, think of Python dictionaries as glossaries or dictionaries in the real world. In a glossary or dictionary, you have words that each have their own meaning. To relate it to a Python dictionary, the dictionary word is the *key* and the meaning of the word is the *value*. We started with a class exercise to gather our data (or information). We gathered basic information about one another. The keys were categories like "last_name", "favorite_food", "lucky_number", etc. The answers to each question is the value.  
+
+Here's an example: <script src="https://gist.github.com/jo3t3ch3m/f697f828f0c1b68e57f085708a12358e.js"></script>  
+
+To relate the accessibility of Python dictionaries, consider an example in the real-world: You are searching for one word in a very large dictionary, glossary, or encyclopedia. You COULD search each word starting from the beginning (this would take quite a while). OR you could use different search methods: Look up the starting letter of the word (or key); this narrows your search down a bit. Now, you can just search for the word (key) in that selection to get its VALUE.  
+
+**Assignment Two**: Make an interactive program where a user can input their information from prompts by the computer. After the user types in their responses, those values are automatically added to a dictionary.  
+
+***  
+
+### Week Three  
+
+`01/24/2017`  
+
+#### Nesting  
+###### More abstraction!
+You can 'store' a set of dictionaries in a list or a list of items as a value in a dictionary. Remember lists?! "Yes!"... Good! We stored our freshly made dictionaries for each classmate from last week into a Python list. This method is called nesting. Another neat trick, spreading a program you made across several different programs. You performed something like this when you made the random number game program a couple weeks ago and when we built programs using the turtle module. You simply import your program:  
+
+`from dictionary import *`  
+Remember, once you type this in a new program, you can utilize everything you wrote in the program you imported; eliminating having to write the same things over again. I say "more abstraction", because with nesting you can hide certain details of the data inside of each dictionary; moreover, when you import a program, you can use data and functions from that program without having to 'muck up the waters' with code in this new file.  
+
+<script src="https://gist.github.com/jo3t3ch3m/b145ad5423686b0cf2e4645e1f64b18f.js"></script>  
+
+**Assignment Three**: try making a loop to add all your dictionaries into the list. Next week, we'll compare tuples and look into defining our own functions and loops to make things way easier.  
+
+***  
+
+### Week Four   
+
+`01/31/2017`  
+
+#### Python Tuples  
+
+Remember our grocery list program? Python lists are great for storing sets of items that can change throughout a program's life. But, what if you wanted to create a list of items that cannot change (Python calls items that cannot change, IMMUTABLE)? This is what tuples are for! Using tuples is more efficient than using lists when you want to store a set of values that you don't want to be changed. A tuple looks just like a list, except you use a set of parentheses () instead of square brackets []. Just like with a list, once you define a tuple, you can get to each item by referencing its index position. Let's take a look at an example of tuple:  
+
+#### Rectangle Dimensions  
+
+If we have a rectangle that should always be a certain size, we can make sure that its size doesn’t change by putting the dimensions into a tuple. Let's say x (the width) is 200, and y (height) is 50. In other words, `dimensions = (200, 50)`  
+
+We can access each element of the tuple just like we do with lists: `print(dimensions[0])` would return our x value. Seem familiar?  
+
+However, if we try to change one of the values in the same we do with lists... `dimensions[0] = 370` We get an error. Why? Because values in a tuple are immutable, they can't change! What we can do is "write over" the tuple we want to change. We did this by redefining the tuple. We also learned to loop through our tuple, to have all the items in the tuple return.  
+
+#### Tally Sticks  
+##### Data  
+
+Here's an excerpt from Wray's [lesson](https://gist.github.com/wray/35e11797609c4adb58dfba37f340ecc1): Data is at the heart of most computation. Remember, the earliest computers helped people "store" their counts - tally sticks. Today's computer systems are excellent data storage systems. So, it makes sense to learn some about how computer programs store and retrieve data.  
+
+We started by storing mock contact records, using a tuple to define the things we want to collect:  
+
+`contact = (‘first_name’, ‘last_name’, ‘mobile_phone’, ‘home_phone’, ‘zip_code’)`  
+
+Well, if we had a lot of contacts to store, writing this over and over again could take a while. Instead, of writing a tuple for each contact, we defined a function to help us create contacts. Recall, **DRY** stands for Don't Repeat Yourself. We then realized we wanted to do a lot more with the items. For example, we'll want to store many contacts, add more records, delete some, and so on. So, a list would work better!  
+
+**Assignment Four**: start trying to get these items into a list. Start with an empty list, then add to it using list functions we've learned.  
+
+### Week Five   
+
+`02/07/2017`  
+
+#### Lists Over Tuples  
+
+Lists over tuples, at least in this case. So, we realized we can do a lot more with a list than we can with a tuple. Remember, we can change items in a tuple, but we can with a list. Here's are starting list:  
+
+`contacts = []` now, we just add to the list.  
+`contacts.append(create_contact("John","Doe","804-555-1235","804-555-1236"))` and so on.  
+
+**Assignment Five**: Create a loop to ask for contact data from a user. You may recognize a similar tactic we used when we made our grocery list program. There, we had our program accept input from a user and had the program add to our list, whatever the user typed in.
+
+Next week, we'll go back to nesting, then come back to Wray's lecture on data!  
+
+***  
+
+### Week Six  
+
+`02/14/2017`  
+
+#### Make the Data 'Reachable'   
+
+So, we have our stored data in a list. Now we'll try to use this data, or search it. A list (or dictionary **HINT**) can contain millions of items. Python has a way we can search large amounts of information. We've already tried our hand at loops and conditionals, so let's create a simple search by first name. Take a look at the Gist on GitHub, starting at line 46.  
+<script src="https://gist.github.com/jo3t3ch3m/77be4c0f06b00f62653cfe36c40cfa9b.js"></script>  
+
+***  
+
+### Week Seven
+
+`02/21/2017`  
+
+#### Nest a List in a Dictionary  
+Recall from Week two and three: we have already made a few dictionaries and are familiar with how to access information from them. Anytime you want more than one value associated with a key, go ahead and nest a list inside that dictionary. We completed a good example of how to do this. Consider describing a pizza someone wants to order. Sure if you used a list, you could store a list of the pizza toppings; however, you can use a dictionary to effectively describe absolutely everything on the pizza. For our example, tow kinds of information are being stored for each pizza; type of crust and a list of toppings.  
+
+Here's the gist:  
+
+<script src="https://gist.github.com/jo3t3ch3m/97d423651ed2080c8c3941f2f084df92.js"></script>  
+
+Included in the gist is our example of the favorite programming languages poll; now, with nested lists.  
+
+Below, the slides from this class if you want a little review with some nice visuals.  
+<iframe src="https://docs.google.com/presentation/d/1dBi-DF9wLJTLOB1OhBlwrP7Ppg8iTO35VROwwCc5j8w/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+
+**Assignment Six**: Make your pizza program interactive. We had nice practice with this last year in our grocery list program. Have your program request user input to build a pizza using while loops. Ideally, you can pass your program to someone to build their own pizza and see the type of pizza they built looped back to them. Next week we'll finish up nesting and become masters at user input and while loops!  
+
+***  
