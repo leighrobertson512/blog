@@ -16,10 +16,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=www.wrayesian.com
+SSH_HOST=nowhere
 SSH_PORT=22
-SSH_USER=deploy
-SSH_TARGET_DIR=/var/www/apps/http-techemstudios/blog
+SSH_USER=nobody
+SSH_TARGET_DIR=/noplace
 
 S3_BUCKET=my_s3_bucket
 
