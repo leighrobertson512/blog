@@ -14,19 +14,19 @@ These links are only available for seven days, starting today. So, be sure to ch
 
 | Student Name        | Link to Hyperpad Game    |
 | ------------- |:-------------:|
-| Harrison      | [http://bit.ly/2li6utw](http://bit.ly/2li6utw) |
-| Caleb      | [http://bit.ly/2lieJFP](http://bit.ly/2lieJFP) |
-| Sydney | [http://bit.ly/2li8yBX](http://bit.ly/2li8yBX) & [http://bit.ly/2liaIl4](http://bit.ly/2liaIl4)      |   
-| Hank      | http://bit.ly/2lifj6t |
-| Charlie      | http://bit.ly/2linr7b & http://bit.ly/2liddUk      |
-| Nathaniel | http://bit.ly/2lijorC      |
-| Brett | http://bit.ly/2lineke      |
-| Daniel | http://bit.ly/2li1kOo      |
-| Guthrie | http://bit.ly/2libChr      |
-| Auggie | http://bit.ly/2libE94      |
-| Joshua | http://bit.ly/2lijLlL      |
-| Brady | http://bit.ly/2kUU7rq      |
-| Emory | http://bit.ly/2kV0kDy      |    
+| Harrison      | [Game](http://bit.ly/2li6utw) |
+| Caleb      | [Game](http://bit.ly/2lieJFP)      |
+| Sydney | [Game1](http://bit.ly/2li8yBX) & [Game2](http://bit.ly/2liaIl4)      |   
+| Hank      | [Game](http://bit.ly/2lifj6t) |
+| Charlie      | [Game1](http://bit.ly/2linr7b) & [[Game2](http://bit.ly/2liddUk)      |
+| Nathaniel | [Game](http://bit.ly/2lijorC)      |
+| Brett | [Game](http://bit.ly/2lineke)      |
+| Daniel | [Game](http://bit.ly/2li1kOo)      |
+| Guthrie | [Game](http://bit.ly/2libChr)      |
+| Auggie | [Game](http://bit.ly/2libE94)      |
+| Joshua | [Game](http://bit.ly/2lijLlL)      |
+| Brady | [Game](http://bit.ly/2kUU7rq)      |
+| Emory | [Game](http://bit.ly/2kV0kDy)      |    
 
 #### Instructions for Accessing Your Game  
 
