@@ -30,7 +30,7 @@ These links are only available for seven days, starting today. So, be sure to ch
 
 #### Instructions for Accessing Your Game  
 
-Download the free Hyperpad app. Open the link for your game on an iPad. The game will open in the app. Now, you can play the game and edit the game, so that you will always have it!  
+Download the free [Hyperpad](https://itunes.apple.com/app/apple-store/id886106438?mt=8) app. Open the link for your game on an iPad. The game will open in the app. Now, you can play the game and edit the game, so that you will always have it!  
 
 ***  
 
