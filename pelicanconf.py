@@ -43,6 +43,6 @@ MAIL = u'info@techemstudios.com'
 TWITTER_USER = u'TechEmRVA'
 FACEBOOK_USER = u'techemstudios'
 COPYRIGHT = u'techemstudios'
-ABOUT_IMAGE = u'images/Tech-Em-Logo_Tag.png'
+ABOUT_IMAGE = u'images/icon.png'
 ABOUT_LINK = u'http://techemstudios.com/about-us.html'
 SHOW_COPYRIGHT = True
