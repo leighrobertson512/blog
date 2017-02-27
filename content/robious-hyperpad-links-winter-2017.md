@@ -1,6 +1,6 @@
 Title: Robious Elementary Game Design Winter 2017       
 Author: Josef Seiler  
-Date: 2017-02-24      
+Date: 2017-02-24
 category: Classes  
 Tags: computer science, design thinking, game design, Hyperpad    
 
