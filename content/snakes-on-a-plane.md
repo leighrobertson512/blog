@@ -5,7 +5,7 @@ Tags: python, aws
 Author: Wray Mills
 Summary: Check out our latest on medium
 
-![Python on AWS](images/lambda_python.jpeg)
+![Python on AWS](images/python_lambda.jpeg)
 
 We are experimenting with medium to better share and publish our
 experiences running Tech Em and the great technologies we get to
