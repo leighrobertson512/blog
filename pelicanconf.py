@@ -6,7 +6,7 @@ AUTHOR = u'Wray Mills'
 SITENAME = u'The Art of Technology... Training'
 SITEURL = 'http://blog.techemstudios.com'
 
-THEME = "themes/notmyidea"
+THEME = "themes/html5-dopetrope"
 
 TIMEZONE = u'US/Eastern'
 
