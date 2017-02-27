@@ -17,6 +17,9 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
+MENUITEMS = (('Tech Em', 'http://techemstudios.com'),
+             ('About', 'http://techemstudios.com/about-us'))
+
 # Blogroll
 LINKS =  (('Tech Em Studios', 'http://techemstudios.com'),
           ('Python.org', 'http://python.org/'),
