@@ -3,7 +3,6 @@ Date: 2017-02-26
 Category: Startup
 Tags: python, aws
 Author: Wray Mills
-Summary: Check out our latest on medium
 
 ***
 
