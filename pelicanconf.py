@@ -12,7 +12,7 @@ TIMEZONE = u'US/Eastern'
 
 DEFAULT_LANG = u'en'
 
-DEFAULT_DATE_FORMAT = u'%Y-%m%d'
+DEFAULT_DATE_FORMAT = u'%Y-%m-%d'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
