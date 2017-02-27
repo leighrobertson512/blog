@@ -30,3 +30,11 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+ADDRESS = u'1123 Gaskins, Rd., Suite 600B'
+MAIL = u'info@techemstudios.com'
+TWITTER_USER = u'TechEmRVA'
+FACEBOOK_USER = u'techemstudios'
+COPYRIGHT = u'techemstudios'
+ABOUT_IMAGE = u'Loading.gif'
+ABOUT_LINK = u'http://techemstudios.com/about-us.html'
