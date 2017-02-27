@@ -7,8 +7,8 @@ Summary: Check out our latest on medium
 
 ***
 
-# We are publishing on medium too
-
+### We are publishing on medium too
+And accepting submissions from all students and parents.
 ![Python on AWS](images/python_lambda.jpeg)
 
 We are experimenting with medium to better share and publish our
