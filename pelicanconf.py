@@ -31,7 +31,7 @@ LINKS =  (('Tech Em Studios', 'http://techemstudios.com'),
 SOCIAL = (('@TechEmRVA', 'http://twitter.com/techemrva'),
           ('TechEm Studios on FB', 'http://facebook.com/techemstudios'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 9
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
