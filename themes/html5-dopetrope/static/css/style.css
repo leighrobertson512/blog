@@ -25,7 +25,7 @@
 		background-image: url('images/bg02.png');
 		color: #5d5d5d;
 	}
-
+	
 	strong, b
 	{
 		color: #252122;
@@ -762,4 +762,9 @@ article .post-infos .tags li {
 article em {
   font-style: italic;
   font-weight: bold;
+}
+
+section p img {
+    width: 100%;
+    height: auto;
 }
