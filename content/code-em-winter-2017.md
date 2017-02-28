@@ -10,7 +10,7 @@ Tags: raspberry pi, coding, github, slack, computer science
 
 #### How to Solve a Problem  
 ###### How to approach, visualize and make a plan to solve a problem  
-We reviewed our general approach to solving a large problem with our example of cleaning a whole house. The thought of cleaning each room in the entire house is overwhelming **-not for long!**. First, *ask questions*: what is the problem? are there any special cases? Next, *look for familiar things*: if you have solved a similar problem, see if that solution can apply to the new problem. Next, *divide and conquer*: to make it seem more manageable, we strategized on how to break up the large task into smaller, more manageable ones. Finally, *make a plan (or algorithm)*: make a plan to tackle the new subsets of problems that make up the larger one; start at a subtask, finish it, then move on to the next; until the whole task is completed.  
+We reviewed our general approach to solving a large problem with our example of cleaning a whole house. The thought of cleaning each room in the entire house is overwhelming **-not for long!**. Let's make it more manageable. First, *ask questions*: what is the problem? are there any special cases? Next, *look for familiar things*: if you have solved a similar problem, see if that solution can apply to the new problem. Next, *divide and conquer*: to make it seem more manageable, we strategized on how to break up the large task into smaller, more manageable ones. Finally, *make a plan (or algorithm)*: make a plan to tackle the new subsets of problems that make up the larger one; start at a subtask, finish it, then move on to the next; until the whole task is completed.  
 
 #### Binary Search Tree  
 ##### How computers efficiently search through a sorted list    
@@ -123,7 +123,7 @@ So, we have our stored data in a list. Now we'll try to use this data, or search
 `02/21/2017`  
 
 #### Nest a List in a Dictionary  
-Recall from Week two and three: we have already made a few dictionaries and are familiar with how to access information from them. Anytime you want more than one value associated with a key, go ahead and nest a list inside that dictionary. We completed a good example of how to do this. Consider describing a pizza someone wants to order. Sure if you used a list, you could store a list of the pizza toppings; however, you can use a dictionary to effectively describe absolutely everything on the pizza. For our example, tow kinds of information are being stored for each pizza; type of crust and a list of toppings.  
+Recall from Week two and three: we have already made a few dictionaries and are familiar with how to access information from them. Anytime you want more than one value associated with a key, go ahead and nest a list inside that dictionary. We completed a good example of how to do this. Consider describing a pizza someone wants to order. Sure if you used a list, you could store a list of the pizza toppings; however, you can use a dictionary to effectively describe absolutely everything on the pizza. For our example, two kinds of information are being stored for each pizza; type of crust and a list of toppings.  
 
 Here's the gist:  
 
