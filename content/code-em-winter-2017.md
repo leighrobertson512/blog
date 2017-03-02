@@ -1,6 +1,6 @@
 Title: Code Em Winter 2017      
 Author: Josef Seiler      
-Date: 2017-02-22    
+Date: 2017-03-02    
 category: Classes  
 Tags: raspberry pi, coding, github, slack, computer science  
 
@@ -137,3 +137,19 @@ Below, the slides from this class if you want a little review with some nice vis
 **Assignment Six**: Make your pizza program interactive. We had nice practice with this last year in our grocery list program. Have your program request user input to build a pizza using while loops. Ideally, you can pass your program to someone to build their own pizza and see the type of pizza they built looped back to them. Next week we'll finish up nesting and become masters at user input and while loops!  
 
 ***  
+
+### Week Eight    
+
+`02/28/2017`  
+
+#### User Input  
+
+Most programs are created to solve a problem. This is why we started this session with displaying techniques for solving problems by breaking them down into smaller, more manageable ones. We continue this theme throughout our session together. To understand the problem, we usually look to who has the problem and what their problem is. I'd bring up use-case (just did!), but we'll work up to that. Instead, just think; in order to solve a user's issue, we usually need to get information provided by the user. I personally think it is more fun and engaging to write programs which ask the user for input and you do something with that input. We have already had a little experience writing programs that take user input when we wrote our grocery list and text adventure programs. We started our look towards user input by running through several programs:  
+
+<script src="https://gist.github.com/joetechem/00ca9dbae6a381de13120e5b9def3ff8.js"></script>  
+
+ **Assignment Seven**: Now that you have a good grasp on how to get input from a user. Revisit your pizza program once again and add the techniques we learned in class. If you are over pizza, check out the other challenge in the slides from last week's blogpost. Write an interactive program that prompts the user for input on their favorite cities and fill in a dictionary with that input. This is done in a similar style as the pizza program (nesting a list in a dictionary). **BONUS**: taking input is great, but sometimes it ends before you want it to. Try your hand at adding a while loop to keep the program running as long as the user wants it to. Check out the [gist](https://gist.github.com/joetechem/99d51badbd674b0e3d60aefa7170694a) on GitHub to help you get started on while loops.  
+
+#### [New Summer Camp Schedule](http://register.techemstudios.com/)    
+
+ ***  
