@@ -170,4 +170,6 @@ To familiarize ourselves with more concepts in programming, we made a simple pro
 
 **Assignment Eight**: See if you can add to the code we worked on in class to have the program ask for each user's name. A bonus would be to have each user's input stored in separate lists.  
 
+Remember, to download Python at home to practice outside of class, vist https://www.python.org/   
+
 ***  
