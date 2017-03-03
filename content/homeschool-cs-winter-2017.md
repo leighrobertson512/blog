@@ -159,3 +159,15 @@ To familiarize ourselves with more concepts in programming, we made a simple pro
 **Assignment Seven**: Now that we know all about user input, revisit the pizza.py program. Make it a goal to pass your program to a friend and have them build their own pizza by typing in what they want. Once they finish, your program should loop through the new nested dictionary to show them the pizza they just built! **BONUS** Make sure you have a GitHub account that you can log in to. Extra bonus: upload your interactive pizza program to your own repository on GitHub. If you need help, check out the blog, http://blog.techemstudios.com/github-part-one.html or ask a question on Slack.    
 
 ***  
+
+### Week Seven    
+
+`03/02/2017`  
+
+#### Fill a List With User Input  
+
+<script src="https://gist.github.com/joetechem/f120b5ea06c7d43a38506f6f7717682f.js"></script>  
+
+**Assignment Eight**: See if you can add to the code we worked on in class to have the program ask for each user's name. A bonus would be to have each user's input stored in separate lists.  
+
+***  
