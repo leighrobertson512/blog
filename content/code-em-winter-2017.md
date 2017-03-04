@@ -2,7 +2,8 @@ Title: Code Em Winter 2017
 Author: Josef Seiler      
 Date: 2017-03-02    
 category: Classes  
-Tags: raspberry pi, coding, github, slack, computer science  
+Tags: raspberry pi, coding, github, slack, computer science
+Illustration: laptop-dark.jpg
 
 ### Week One  
 

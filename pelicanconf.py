@@ -6,7 +6,7 @@ AUTHOR = u'Wray Mills'
 SITENAME = u'The Art of Technology... Training'
 SITEURL = 'http://blog.techemstudios.com'
 
-THEME = "themes/html5-dopetrope"
+THEME = "themes/nest"
 
 TIMEZONE = u'US/Eastern'
 
@@ -38,6 +38,7 @@ DEFAULT_PAGINATION = 9
 
 GITHUB_URL = u'https://github.com/techemstudios'
 
+# Dopetrope
 ADDRESS = u'1123 Gaskins, Rd., Suite 600B'
 MAIL = u'info@techemstudios.com'
 TWITTER_USER = u'TechEmRVA'
@@ -46,3 +47,11 @@ COPYRIGHT = u'techemstudios'
 ABOUT_IMAGE = u'images/icon.png'
 ABOUT_LINK = u'http://techemstudios.com/about-us.html'
 SHOW_COPYRIGHT = True
+
+# Nest
+NEST_HEADER_IMAGES = 'raspberry-pi-stock.jpg'
+NEST_HEADER_LOGO = '/images/small-icon.png'
+NEST_INDEX_HEAD_TITLE = u'Tech Em Blog'
+NEST_INDEX_HEADER_TITLE = u'Tech Em Blog'
+NEST_INDEX_HEADER_SUBTITLE = u'Be more than a user of technology'
+NEST_INDEX_CONTENT_TITLE = u'Last Posts'
