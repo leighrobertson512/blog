@@ -1,8 +1,9 @@
 Title: Homeschool Computer Science and Programming Winter 2017       
 Author: Josef Seiler  
-Date: 2017-02-21      
+Date: 2017-03-07      
 category: Classes  
 Tags: computer science, python, code, github, slack   
+
 
 ### Week One    
 
