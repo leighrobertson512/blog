@@ -153,4 +153,20 @@ Most programs are created to solve a problem. This is why we started this sessio
 
 #### [New Summer Camp Schedule](http://register.techemstudios.com/)    
 
- ***  
+***  
+
+### Week Nine  
+
+`03/07/2017`  
+
+#### While Loops  
+
+In most programs, `while` loops are used to keep a program running, as long as certain conditions are true. We started out with a simple counting program that starts counting from a number (adds to the number). Python will keep adding to the number until it is less than or equal to a certain number. Then we added to the program, a `while` loop and `continue`. Once, Python runs through the code in the loop once. When it comes to the `continue` statement, Python again starts from the beginning of the loop. This process is repeated until the number we specify is finally reached. Some of you noticed that this program could be useful to mock as a timer in a game!  
+
+Check out the slides from tonight's class:  
+
+<iframe src="https://docs.google.com/presentation/d/1l1C7IXf4p9GenKdDELQLLSrPkZULozX1HsvWfYVGwWU/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+
+ **Assignment Eight**: Write a program using a while loop that asks for user input to fill in a dictionary. In class, we did this to fill a list. The dictionary can be anything you want it to be! Look earlier in this post to get some review on dictionaries if you need to. Remember to use Slack if you have any questions!      
+
+ ***   
