@@ -76,7 +76,7 @@ If we have a rectangle that should always be a certain size, we can make sure th
 
 We can access each element of the tuple just like we do with lists: `print(dimensions[0])` would return our x value. Seem familiar?  
 
-However, if we try to change one of the values in the same we do with lists... `dimensions[0] = 370` We get an error. Why? Because values in a tuple are immutable, they can't change! What we can do is "write over" the tuple we want to change. We did this by redefining the tuple. We also learned to loop through our tuple, to have all the items in the tuple return.  
+However, if we try to change one of the values in the same we do with lists... `dimensions[0] = 370` We get an error. Why? Because values in a tuple are immutable, they can't change! What we can do is "replace" the tuple we want to change. We did this by redefining the tuple. We also learned to loop through our tuple, to have all the items in the tuple return.  
 
 #### Tally Sticks  
 ##### Data  
