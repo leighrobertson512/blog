@@ -3,7 +3,7 @@ Author: Josef Seiler
 Date: 2017-03-08      
 category: Classes  
 Tags: raspberry pi, coding, github, slack, computer science
-Illustration: rope_loops.jpg
+Illustration: gears.jpg
 
 ### Week One  
 
@@ -178,4 +178,26 @@ Check out the slides from tonight's class:
 
  **Assignment Eight**: Write a program using a while loop that asks for user input to fill in a dictionary. In class, we did this to fill a list. The dictionary can be anything you want it to be! Look earlier in this post to get some review on dictionaries if you need to. Remember to use Slack if you have any questions!      
 
- ***   
+***  
+
+### Week 10  
+
+`03/14/2017`  
+
+#### Object-Oriented Programming (OOP)  
+
+Or object-oriented development(OOD) has the main idea of viewing a complex system as being a collection of simpler objects that communicate with each other. This is one of the most effective practices in writing software and is great for modeling occurences in the real-world. We quickly went through some vocabulary we'll find in OOP: Classes, Objects, Attributes, Methods, Instantiation, etc. Instead of getting bogged down in definitions, we took a look at a few examples.  
+
+When you think of the term, "vehicle" you might think of it as something that you can use to take you somewhere, i.e. a car, boat, or bicycle. Well, all these have attributes that are little different, but they are similar in that they are considered a vehicle. When we compare the car and the bicycle to the boat, we can say the car and bicycle are different from the boat, because they are "wheeled" vehicles. We can compare the car to the bicycle and see that one requires gas and the other doesn't. We can go further and compare cars to one another; some are SUVs, others are sedans and so on. Each type of car has their own unique properties and things it can do, but their similarities can be traced back to being a general car, wheeled vehicle (like a bike) and a vehicle (like a boat). So, you can see how we can model almost any real-world thing using this approach. That can be a lot to follow, so here's the same example displayed as picture:  
+
+![oop vehicles](images/oop.jpg)  
+
+We took a look at another example, where we compared a dog to a sidewalk. How can they be similar?! Well, both are things or nouns. In Python, we call them objects. We categorized this example further using a similar approach as before. We started with the category (or class) "Things" and created sub-classes. When we define a class, we tell Python what general behavior all the sub-classes and objects will have. Objects have their own properties and functions. A dog is living so it is part of the class Animate. A sidewalk or a dog's chew toy are non-living, so it is part of the class Inanimate. We put this example to the test by creating and defining a class for a dog (in general) in Python.   
+
+![class hierachry](images/Class-hierarchy.jpg)  
+
+<script src="https://gist.github.com/joetechem/bcb7a0e6ccd33af82410962064298a6b.js"></script>  
+
+ **Assignment Nine**: Try categorizing something you collect or interests you by defining it in a class and use an example to test some of the methods and attributes you made that make up that class. You can model it from the gist example we worked on in class.    
+
+***  
