@@ -200,4 +200,7 @@ We took a look at another example, where we compared a dog to a sidewalk. How ca
 
  **Assignment Nine**: Try categorizing something you collect or interests you by defining it in a class and use an example to test some of the methods and attributes you made that make up that class. You can model it from the gist example we worked on in class.    
 
+ <iframe src="https://docs.google.com/presentation/d/1XD2AJ2XU35jTxbl1gUfe9NS-VbvsQv6hlv35PGBM0jg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+
+
 ***  
