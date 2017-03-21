@@ -163,12 +163,15 @@ Most programs are created to solve a problem. This is why we started this sessio
 
 In most programs, `while` loops are used to keep a program running, as long as certain conditions are true. We started out with a simple counting program that starts counting from a number (adds to the number). Python will keep adding to the number until it is less than or equal to a certain number. Then we added to the program, a `while` loop and `continue`. Once, Python runs through the code in the loop once. When it comes to the `continue` statement, Python again starts from the beginning of the loop. This process is repeated until the number we specify is finally reached. Some of you noticed that this program could be useful to mock as a timer in a game!  
 
-`current_number = 0`       
-`while current_number <= 10:`     
-`    current_number += 1`    
-`	if current_number % 2 == 0:`    
-`		continue`    
-`	print(current_number)`    
+```
+current_number = 0         
+while current_number <= 10:       
+    current_number += 1      
+	if current_number % 2 == 0:      
+		continue      
+	print(current_number)  
+
+  ```    
 
 In the counting program, we went over a new operator in Python, modulo. This operation performs division of two numbers, but returns the remainder.  
 
