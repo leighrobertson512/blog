@@ -1,9 +1,9 @@
 Title: Code Em Winter 2017      
 Author: Josef Seiler      
-Date: 2017-03-08      
+Date: 2017-03-22        
 category: Classes  
 Tags: raspberry pi, coding, github, slack, computer science
-Illustration: gears.jpg
+Illustration: gears.jpg  
 
 ### Week One  
 
@@ -164,12 +164,12 @@ Most programs are created to solve a problem. This is why we started this sessio
 In most programs, `while` loops are used to keep a program running, as long as certain conditions are true. We started out with a simple counting program that starts counting from a number (adds to the number). Python will keep adding to the number until it is less than or equal to a certain number. Then we added to the program, a `while` loop and `continue`. Once, Python runs through the code in the loop once. When it comes to the `continue` statement, Python again starts from the beginning of the loop. This process is repeated until the number we specify is finally reached. Some of you noticed that this program could be useful to mock as a timer in a game!  
 
 ```
-current_number = 0        
-while current_number <= 10:      
-    current_number += 1    
-	if current_number % 2 == 0:     
-		continue
-	print(current_number)
+current_number = 0          
+while current_number <= 10:        
+    current_number += 1      
+	if current_number % 2 == 0:       
+		continue  
+	print(current_number)  
   ```   
 
 In the counting program, we went over a new operator in Python, modulo. This operation performs division of two numbers, but returns the remainder.  
@@ -206,3 +206,15 @@ We took a look at another example, where we compared a dog to a sidewalk. How ca
 
 
 ***  
+
+### Week 11    
+
+`03/21/2017`  
+
+#### Store Functions in Modules  
+
+We created a function in one Python file, saved it, then used it by making its function call in a separate file. This practices becomes very useful when working on a large project, such as a website application or a game. Having a large list of functions in one file, keeps you from 'mucking' up other files you are working in. All you have to do is import that filename in the one you're working in; keeping your code neat and organized. We call the import file (or files), **modules**.   
+
+#### Pygame  
+
+Pygame is a collection of Python modules that deal with graphics, animation, and sound. Essentially, these are already written functions, classes and objects we don't need to worry ourselves with creating them from scratch.

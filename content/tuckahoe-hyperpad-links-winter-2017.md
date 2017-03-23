@@ -13,9 +13,11 @@ Illustration: cube_dice.jpg
 Everyone did a great job designing their games! Below is a list of links for each student from the Game Design class at Tuckahoe Elementary School from this Winter's session. A total of 16 designed games! As of now, Hyperpad is only available on an iPad and is free.  
 
 These links are only available for seven days, starting today. So, be sure to check out the game links as soon as you can! Feel free to email joe@techemstudios.com if the link has expired.  
+
+**Note**:Links to the games open properly only when opened from an iPad.  
+
 | ------------- |:-------------:|  
 | Student Name        | Link to Hyperpad Game    |  
-| ------------- |:-------------:|  
 | Aiden      | [Yoshi's Revenge](http://bit.ly/2mZrjei) |  
 | Elisa      | [Care Bear Run](http://bit.ly/2mZkNEl)      |    
 | Everett | [Slime Escape!](http://bit.ly/2mZCYJX)      |  
