@@ -217,4 +217,10 @@ We created a function in one Python file, saved it, then used it by making its f
 
 #### Pygame  
 
-Pygame is a collection of Python modules that deal with graphics, animation, and sound. Essentially, these are already written functions, classes and objects we don't need to worry ourselves with creating them from scratch.
+Pygame is a collection of Python modules that basically contain already written functions, classes and objects, so we don't need to worry ourselves with creating them from scratch. What we worry about is calling those functions and dealing with the logic in our game, which helps to create games fairly quickly! We started our look at pygame by working on making a basic snake game (or slither.io). This exercise involved adding missing code and using debugging techniques led by a [pdf handout](https://github.com/chk18/snake_pygame/blob/master/snake_handout.pdf) made by Chris. You can check out the code we worked on from the [GitHub repository](https://github.com/chk18/snake_pygame). For the most part, all *pygames* (and games in general) contain the same "skeleton" i.e., color variables, window sizes, game logic, a main game loop, controls, etc. After feeling comfortable with completing one game, you can essentially reuse much of this "skeleton".  
+
+#### Preparing for Web Apps  
+
+The whole notion of storing functions in variables and working with a sort of "framework" in pygame will prepare us for using the Django web framework to create our own basic website in Python!  
+
+***  
