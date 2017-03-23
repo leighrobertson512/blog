@@ -16,7 +16,7 @@ These links are only available for seven days, starting today. So, be sure to ch
 
 **Note**:Links to the games open properly only when opened from an iPad.  
 
-| ------------- |:-------------:|  
+
 | Student Name        | Link to Hyperpad Game    |  
 | Aiden      | [Yoshi's Revenge](http://bit.ly/2mZrjei) |  
 | Elisa      | [Care Bear Run](http://bit.ly/2mZkNEl)      |    
