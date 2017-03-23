@@ -1,6 +1,6 @@
 Title: Homeschool Computer Science and Programming Winter 2017       
 Author: Josef Seiler  
-Date: 2017-03-07      
+Date: 2017-03-20        
 category: Classes  
 Tags: computer science, python, code, github, slack   
 
@@ -111,7 +111,7 @@ Included in the gist is our example of the favorite programming languages poll; 
 Below, the slides from this class if you want a little review with some nice visuals.  
 <iframe src="https://docs.google.com/presentation/d/1dBi-DF9wLJTLOB1OhBlwrP7Ppg8iTO35VROwwCc5j8w/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
 
-**Assignment Six**: Make your pizza program interactive. We had nice practice with this last year in our grocery list program. Have your program request user input to build a pizza using while loops. Ideally, you can pass your program to someone to build their own pizza and see the type of pizza they built looped back to them. Next week we'll finish up nesting and become masters at user input and while loops!   
+**Assignment Four**: Make your pizza program interactive. We had nice practice with this last year in our grocery list program. Have your program request user input to build a pizza using while loops. Ideally, you can pass your program to someone to build their own pizza and see the type of pizza they built looped back to them. Next week we'll finish up nesting and become masters at user input and while loops!   
 
 #### Hardware Advancements  
 ##### Group Two:  
@@ -157,7 +157,7 @@ To familiarize ourselves with more concepts in programming, we made a simple pro
 
 <script src="https://gist.github.com/joetechem/8eba619a6ee4d949d5fb13a72661f628.js"></script>  
 
-**Assignment Seven**: Now that we know all about user input, revisit the pizza.py program. Make it a goal to pass your program to a friend and have them build their own pizza by typing in what they want. Once they finish, your program should loop through the new nested dictionary to show them the pizza they just built! **BONUS** Make sure you have a GitHub account that you can log in to. Extra bonus: upload your interactive pizza program to your own repository on GitHub. If you need help, check out the blog, http://blog.techemstudios.com/github-part-one.html or ask a question on Slack.    
+**Assignment Five**: Now that we know all about user input, revisit the pizza.py program. Make it a goal to pass your program to a friend and have them build their own pizza by typing in what they want. Once they finish, your program should loop through the new nested dictionary to show them the pizza they just built! **BONUS** Make sure you have a GitHub account that you can log in to. Extra bonus: upload your interactive pizza program to your own repository on GitHub. If you need help, check out the blog, http://blog.techemstudios.com/github-part-one.html or ask a question on Slack.    
 
 ***  
 
@@ -169,8 +169,76 @@ To familiarize ourselves with more concepts in programming, we made a simple pro
 
 <script src="https://gist.github.com/joetechem/f120b5ea06c7d43a38506f6f7717682f.js"></script>  
 
-**Assignment Eight**: See if you can add to the code we worked on in class to have the program ask for each user's name. A bonus would be to have each user's input stored in separate lists.  
+**Assignment Six**: See if you can add to the code we worked on in class to have the program ask for each user's name. A bonus would be to have each user's input stored in separate lists.  
 
 Remember, to download Python at home to practice outside of class, visit https://www.python.org/   
 
 ***  
+
+### Week Eight    
+
+`03/09/2017`  
+
+#### While Loops  
+
+In most programs, `while` loops are used to keep a program running, as long as certain conditions are true. We started out with a simple counting program that starts counting from a number (adds to the number). Python will keep adding to the number until it is less than or equal to a certain number. Then we added to the program, a `while` loop and `continue`. Once, Python runs through the code in the loop once. When it comes to the `continue` statement, Python again starts from the beginning of the loop. This process is repeated until the number we specify is finally reached. Some of you noticed that this program could be useful to mock as a timer in a game!  
+
+```
+current_number = 0          
+while current_number <= 10:        
+    current_number += 1      
+	if current_number % 2 == 0:       
+		continue  
+	print(current_number)  
+```   
+
+In the counting program, we went over a new operator in Python, modulo. This operation performs division of two numbers, but returns the remainder.  
+
+Check out the slides from today's class:  
+
+<iframe src="https://docs.google.com/presentation/d/1l1C7IXf4p9GenKdDELQLLSrPkZULozX1HsvWfYVGwWU/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+
+ **Assignment Seven**: Write a program using a while loop that asks for user input to fill in a dictionary. In class, we did this to fill a list. The dictionary can be anything you want it to be! Look earlier in this post to get some review on dictionaries if you need to. Remember to use Slack if you have any questions!      
+
+***  
+
+
+### Week Nine    
+
+`03/16/2017`  
+
+#### Object-Oriented Programming (OOP)  
+
+Or object-oriented development(OOD) has the main idea of viewing a complex system as being a collection of simpler objects that communicate with each other. This is one of the most effective practices in writing software and is great for modeling occurences in the real-world. We quickly went through some vocabulary we'll find in OOP: Classes, Objects, Attributes, Methods, Instantiation, etc. Instead of getting bogged down in definitions, we took a look at a few examples.  
+
+When you think of the term, "vehicle" you might think of it as something that you can use to take you somewhere, i.e. a car, boat, or bicycle. Well, all these have attributes that are little different, but they are similar in that they are considered a vehicle. When we compare the car and the bicycle to the boat, we can say the car and bicycle are different from the boat, because they are "wheeled" vehicles. We can compare the car to the bicycle and see that one requires gas and the other doesn't. We can go further and compare cars to one another; some are SUVs, others are sedans and so on. Each type of car has their own unique properties and things it can do, but their similarities can be traced back to being a general car, wheeled vehicle (like a bike) and a vehicle (like a boat). So, you can see how we can model almost any real-world thing using this approach. That can be a lot to follow, so here's the same example displayed as picture:  
+
+![oop vehicles](images/oop.jpg)  
+
+We took a look at another example, where we compared a dog to a sidewalk. How can they be similar?! Well, both are things or nouns. In Python, we call them objects. We categorized this example further using a similar approach as before. We started with the category (or class) "Things" and created sub-classes. When we define a class, we tell Python what general behavior all the sub-classes and objects will have. Objects have their own properties and functions. A dog is living so it is part of the class Animate. A sidewalk or a dog's chew toy are non-living, so it is part of the class Inanimate. We put this example to the test by creating and defining a class for a dog (in general) in Python.   
+
+![class hierachry](images/Class-hierarchy.jpg)  
+
+<script src="https://gist.github.com/joetechem/bcb7a0e6ccd33af82410962064298a6b.js"></script>  
+
+ **Assignment Eight**: Try categorizing something you collect or interests you by defining it in a class and use an example to test some of the methods and attributes you made that make up that class. You can model it from the gist example we worked on in class. Some of you started this by creating classes that involved your favorite games such as, HalfLife and Overwatch.      
+
+ <iframe src="https://docs.google.com/presentation/d/1XD2AJ2XU35jTxbl1gUfe9NS-VbvsQv6hlv35PGBM0jg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+
+ ***  
+
+### Week Ten      
+
+`03/23/2017`  
+
+#### Store Functions in Modules  
+
+We created a function in one Python file, saved it, then used it by making its function call in a separate file. This practices becomes very useful when working on a large project, such as a website application or a game. Having a large list of functions in one file, keeps you from 'mucking' up other files you are working in. All you have to do is import that filename in the one you're working in; keeping your code neat and organized. We call the import file (or files), **modules**.   
+
+#### Decision Tree  
+
+We are comfortable with making our own functions, using our own modules, condition blocks, for and while loops (and how to stop while loops). So, let's create text adventure games utilizing these techniques! Students got started with sketching out ideas and making decision trees on paper. Scenarios included HalfLife game adventures and escaping from dangerous houses! We created directories and subdirectories, where we'll store function we'll use to later import and to organize or code as a whole.  
+
+ **Assignment Nine**: Brainstorm ways on how your decision flow of your text adventure will pan out by sketching them on a sheet of paper and think about how you'll organize your code using the module techniques we learned today.  
+
+ ***   
