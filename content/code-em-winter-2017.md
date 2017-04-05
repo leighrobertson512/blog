@@ -1,6 +1,6 @@
 Title: Code Em Winter 2017      
 Author: Josef Seiler      
-Date: 2017-03-22        
+Date: 2017-04-05        
 category: Classes  
 Tags: raspberry pi, coding, github, slack, computer science
 Illustration: gears.jpg  
@@ -182,7 +182,7 @@ Check out the slides from tonight's class:
 
 ***  
 
-### Week 10  
+### Week Ten    
 
 `03/14/2017`  
 
@@ -207,7 +207,7 @@ We took a look at another example, where we compared a dog to a sidewalk. How ca
 
 ***  
 
-### Week 11    
+### Week Eleven      
 
 `03/21/2017`  
 
@@ -224,3 +224,23 @@ Pygame is a collection of Python modules that basically contain already written 
 The whole notion of storing functions in variables and working with a sort of "framework" in pygame will prepare us for using the Django web framework to create our own basic website in Python!  
 
 ***  
+
+### Week 12      
+
+`04/04/2017`  
+
+#### Python Projects  
+
+Parents, you can find your child's Python Projects they have been working on this session on the repository called, ["TechEmStudentsProjects" on GitHub](https://github.com/joetechem/TechEmStudentsProjects). Here, there is also the projects from last year in case you missed them. You can view them right on the site, or you can download the files compressed (or zipped) and extract them on your computer to edit and run them.   
+
+#### Practice... Practice!  
+
+Python is free. If you have not already downloaded Python at home, you can find it at [Python.org](https://www.python.org/). Just follow the steps to download (we used Python version 2.7) on the site and create Python programs the same way we have been doing in class on the chromebooks.  
+
+If you have any questions about Python, GitHub, or anything feel free to email us at info@techemstudios.com or reach out to us on [Slack](https://slack.com/?cvosrc=ppc.google.slack&cvo_campaign=&cvo_crid=189426831117&Matchtype=p&utm_source=google&utm_medium=ppc&utm_campaign=generalbrand&c3api=5542,189426831117,slack&gclid=COPV7-qKjtMCFUiHswodKx4OKg). Be sure to look at back at the blogs for handy programming content.    
+
+### Summer Camps  
+
+We have returning summer camps and brand new ones. Here is the [New Summer Camp Schedule](http://register.techemstudios.com/). We hope to see you there!  
+
+Thank you for another great Code Em Session!  
