@@ -97,7 +97,7 @@ Well, if we had a lot of contacts to store, writing this over and over again cou
 
 #### Lists Over Tuples  
 
-Lists over tuples, at least in this case. So, we realized we can do a lot more with a list than we can with a tuple. Remember, we can change items in a tuple, but we can with a list. Here's are starting list:  
+Lists over tuples, at least in this case. So, we realized we can do a lot more with a list than we can with a tuple. Remember, we can't change items in a tuple, but we can with a list. Here's are starting list:  
 
 `contacts = []` now, we just add to the list.  
 `contacts.append(create_contact("John","Doe","804-555-1235","804-555-1236"))` and so on.  
