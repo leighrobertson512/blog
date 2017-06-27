@@ -10,7 +10,7 @@ Tags: computer science, raspberry pi, hardware
 
 The PiTop comes in the box with the chassis to house the custom PCB, Raspberry Pi, Keyboard and Trackpad, as well as all of the cables. Once you've unboxed your PiTop, you just need to obtain a 2nd or 3rd generation Raspberry Pi, and you're all good to go.
 
-![PiTop unboxing](files/images/IMG_3300.JPG)
+![PiTop unboxing](images/IMG_3300.JPG)
 
 The base of the PiTop comes out of the box seperated from the keyboard and screen.The needed cables and screws are stored in seperate bags and the PiTop includes one extra of each screw, should you lose one.
 
