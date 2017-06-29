@@ -1,4 +1,4 @@
-Title: PiTop Building
+Title: Make a Raspberry Pi Powered Alexa
 Author: Alex Noll
 Date: 2017-06-29
 category: Notes
