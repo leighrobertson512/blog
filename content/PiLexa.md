@@ -29,4 +29,10 @@ This is the last step, in which we will start the wake word engine so that your 
 
 ![Finished](images/IMG_3078.JPG)
 
-Congratulations your PiLexa should be up and running, should you want to improve your diy echo's ability to understand you, you may want to type in ```alsamixer``` , use f6 to select the audio device, and then adjust volume settings. To save your adjustments hit ESC, and then in a terminal type ```sudo alsactl store``` and press Enter.
+Congratulations your PiLexa should be up and running, should you want to improve your diy echo's ability to understand you, you may want to type in ```alsamixer``` , use f6 to select the audio device, and then adjust volume settings. To save your adjustments hit ESC, and then in a terminal type ```sudo alsactl store``` and press Enter.  
+
+***  
+
+### Stay Tuned for the Chromebook-Unbuntu Powered Alexa!  
+
+![teaser](images/IMG_0225.JPG)  
