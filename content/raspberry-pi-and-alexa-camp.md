@@ -6,15 +6,13 @@ Tags: alexa, raspberry pi, minecraft, modding, computer science, techcamp
 
 # Raspberry Pi Camp  
 
-The camp started with students taking their new Raspberry Pi out of the box! To configure their Pi, students executed commands in the terminal. For more information on the terminal commands, check out this [blog](http://blog.techemstudios.com/notes-on-setting-up-pis-for-io-lessons.html).    
-
-
-![setup](images/summer_camps/raspberry-pi/device-terminal.jpg)  
+The camp started with students taking their new Raspberry Pi out of the box! To configure their Pi, students executed commands in the terminal. For more information on the terminal commands, check out this [blog](http://blog.techemstudios.com/notes-on-setting-up-pis-for-io-lessons.html).      
 
 After configuring the initial setup, campers explored the operating system by checking out the Python gaming module, Pygame. They conducted modding challenges for a few games written in Python, as well as modifying code for [Minecraft (Pi version)](http://blog.techemstudios.com/notes-on-setting-up-pis-to-use-minecraft-api.html).  
 
+![setup](images/summer_camps/raspberry-pi/device-terminal.jpg)  
 
-We learned how to connect external devices to the Raspberry Pi, using a ribbon cable connected to a breadboard ("plugboard"). From here, campers connected LEDs, temperature humidity sensors, clicking devices (buttons), and more. But, making the connections of these devices and learning to make complete circuits is one thing... We learned quick, hardware does nothing until you program it to do so. Enter, programming with Python!
+Campers learned how to connect external devices to the Raspberry Pi, using a ribbon cable connected to a breadboard ("plugboard"). From here, campers connected LEDs, temperature humidity sensors, clicking devices (buttons), and more. But, making the connections of these devices and learning to make complete circuits is one thing... We learned quick, hardware does nothing until you program it to do so. Enter, programming with Python!
 
 ![python](images/summer_camps/raspberry-pi/IMG_0219.jpg)   
 
@@ -25,7 +23,7 @@ Students wrote several programs to display [messages in Morse code through with 
 Please let us know if you and your child have any questions on repeating the process we completed in camp or other cool projects you can do with the Raspberry Pi.  
 
 ## Raspberry Pi Camp Slide Show  
-#### https://www.facebook.com/techemstudios/
+#### (https://www.facebook.com/techemstudios/)  
 
 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ftechemstudios%2Fvideos%2F2027288504170339%2F&show_text=0&width=560" width="560" height="417" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>  
 
@@ -44,7 +42,7 @@ Students got their foot in the door of Cloud programming by learning how to buil
 Students went on to designing and coding fact skills to educate the public on the Orioles baseball team, rabbits, soccer and more! Alexa Dots were sent home to show friends and family their amazing skills.    
 
 # Alexa Camp Slide Show  
-#### https://www.facebook.com/techemstudios/  
+#### (https://www.facebook.com/techemstudios/)   
 
 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ftechemstudios%2Fvideos%2F2027279167504606%2F&show_text=0&width=560" width="560" height="372" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>  
 
