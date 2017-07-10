@@ -31,8 +31,10 @@ This is the last step, in which we will start the wake word engine so that your 
 
 Congratulations your PiLexa should be up and running, should you want to improve your diy echo's ability to understand you, you may want to type in ```alsamixer``` , use f6 to select the audio device, and then adjust volume settings. To save your adjustments hit ESC, and then in a terminal type ```sudo alsactl store``` and press Enter.  
 
+For even more information on the subject, definitely check out this article on LifeHacker, it provides visual demonstrations and a bit of trouble-shooting as well :http://lifehacker.com/how-to-build-your-own-amazon-echo-with-a-raspberry-pi-1787726931
+
 ***  
 
-### Stay Tuned for the Chromebook-Unbuntu Powered Alexa!  
+### Stay Tuned for the Chromebook-Ubuntu Powered Alexa!  
 
 ![teaser](images/IMG_0225.JPG)  
