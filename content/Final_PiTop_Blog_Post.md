@@ -41,3 +41,8 @@ After wiring the Pi with the PCB, you should prep the keyboard for installation 
 Upon connecting all of the wires, slide in your acrylic PiTop base, and boot it up. Congratulations, you've finished a PiTop!
 
 ![Completion](images/IMG_3293.JPG)
+
+For more information, such as where to get your own PiTop or additional parts check out the following links below :
+<https://www.adafruit.com/product/3065>
+and
+<https://pi-top.com/>
