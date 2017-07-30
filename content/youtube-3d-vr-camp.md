@@ -18,9 +18,9 @@ An ever-present process taught and implemented in a range of classes at Tech Em.
 
 ![ideas](images/youtube_design.jpg)  
 
-Students were tasked with creating three ideas they had for what videos to share with the world and at least four details on those ideas.  
+Students were tasked with creating three ideas for videos they would share with the world and at least four details on those ideas.  
 
-Group and individual teams formed, followed by channel creations and film making. Some students used the green screen and cameras on tripods, while others used game capture software and animation apps. In all cases, campers learned videography techniques like, proper lighting, sound, and video editing; using iMovie and Windows Live Movie Maker.  
+Group and individual teams formed, followed by channel creations and film making. Some students used the green screen and cameras on tripods, while others used game capture software ([Open Broadcaster Software](https://obsproject.com/)) and animation apps. In all cases, campers learned videography techniques --proper lighting, sound, and video editing; using iMovie and Windows Live Movie Maker.  
 
 ![green](images/youtube_greenscreen.jpg)
 
@@ -47,7 +47,7 @@ After ensuring that your video is ready to be seen, you'll have to go to your ma
 
 After going to the upload page, you' be prompted to select the content you want to upload, once selected you have to wait through an uploading process and processing process for your video to actually make its way onto YouTube.  
 
-![Loading Screen](images/upload.jpg)  
+![Loading Screen](images/Upload.jpg)  
 
 Next, you'll need to decide on a Title, Description, some Tags for your video, as well as the Video Thumbnail. Make sure your Tags are related to your video and that you include enough so that if a viewer searches a relevant term, they can find your video. You'll also want to keep your title short and relevant, while making your description more descript with the information that's excluded from the title.  
 
