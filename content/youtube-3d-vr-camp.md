@@ -8,7 +8,7 @@ Recap of the YouTube camp and 3D Gaming/Virtual Reality camp.
 
 # Summer 2017 YouTube Camp  
 
-Ideas on how to become a star on YouTube were shared among campers before the camp even started! We got underway with learning general guidelines on how to create a bolster a YouTube channel. First, by creating a catchy name, thumbnail, avatar, and onto making an impressive banner. We learned that details count. For instance, when it comes to the banner for a channel, it is a good idea to have the image reflect the channel's content and display any social media to further follower traction.  
+Ideas on how to become a star on YouTube were shared among campers before the camp even started! We got underway with learning general guidelines on how to create a bolster a YouTube channel. First, by creating a catchy name, thumbnail, avatar, and onto making an impressive banner. Students learned details count. For instance, when it comes to the banner for a channel, it is a good idea to have the image reflect the channel's content and display any social media to further follower traction.  
 
 ![init](images/youtube_lect.jpg)  
 
