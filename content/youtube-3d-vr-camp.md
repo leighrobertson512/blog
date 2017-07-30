@@ -14,7 +14,7 @@ Ideas on how to become a star on YouTube were shared among campers before the ca
 
 ## Design Thinking & Brainstorming  
 
-An ever-present process taught and implemented in a range of classes at Tech Em. This is a user-centered approach to design and is used in a variety of settings. Students began this process by gathering ideas on what makes a good YouTube video and channel by exploring (with guidance) YouTube. Notes were taken on three different videos with a couple general questions: What things would you use in your videos/channels, and what would you leave out. This feedback was shared among campers.  
+An ever-present process taught and implemented in a range of classes at Tech Em. This is a user-centered approach to design and is used in a variety of settings. Students began this process by gathering ideas on what makes a good YouTube video and channel by exploring (with guidance) YouTube. Notes were taken on three different videos with a couple general questions: What things would you use in your videos/channels, and what would you leave out. This feedback was shared among campers. The process continued with gathering direct feedback from peers on videos/animations created during the week.  
 
 ![ideas](images/youtube_design.jpg)  
 
