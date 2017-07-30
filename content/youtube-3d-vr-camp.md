@@ -32,7 +32,10 @@ Impressive YouTube channels and videos emerged each day of the camp!
 
 YouTube is a wonderful avenue for learning, sharing videos and ideas; however, it is well worth it to be cautious and do your homework before diving in. Technology instructor, Chris shared his useful tips to campers on how to do just that. The computer safety presentation can be found [here](https://docs.google.com/presentation/d/1lJvTJYlD7aN2kW3RDKmoKvHd8Q-TOKdG8H45cWhkQUE/edit#slide=id.p).  
 
+***  
+
 ## How to Produce YouTube Content  
+#### By: Alex Noll  
 
 ### Lights, Camera, Action!  
 
