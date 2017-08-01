@@ -94,6 +94,8 @@ Campers got started with Unity by creating a 2D Pong game, and on to advanced co
 
 ***  
 
+![group](images/youtube_group.jpg)
+
 Don't hesitate to contact us for any questions!  
 
 Happy video-making and gaming.  
