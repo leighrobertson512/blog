@@ -1,4 +1,4 @@
-Title: How to install a hardware monitor and create a soundboard for a Raspberry Pi!
+Title: Install Hardware Monitor and Make a Soundboard for Raspberry Pi
 Author: Alex Noll
 Date: 2017-08-10
 category: Notes
