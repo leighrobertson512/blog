@@ -31,8 +31,8 @@ For this tutorial, you'll need a Raspberry Pi, Breadboard, bunches of cables and
 
 as for the many lines of code...
 
-```bash
- import pygame.mixer
+```bash  
+import pygame.mixer
 from time import sleep
 import RPi.GPIO as GPIO
 from sys import exit
@@ -65,7 +65,7 @@ while True:
       sleep(.01)
    except KeyboardInterrupt:
       exit()
-      ```
+```
 
 After putting the code into a text editor, you'll need to get some .wav files to have play each time you hit a button, one place for some funny .wav files is: [http://cdn.makezine.com/make/33/pd_sound_effects.zip](http://cdn.makezine.com/make/33/pd_sound_effects.zip). After downloading, or creating you own .wav files, just put their file names on lines 13, 14, & 15. After completing these steps, you have some wiring to do.
 
