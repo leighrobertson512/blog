@@ -1,4 +1,4 @@
-Title: How to install a hardware monitor on the Raspberry Pi
+Title: How to Install a Hardware Monitor on the Raspberry Pi
 Author: Alex Noll
 Date: 2017-08-10
 category: Notes
