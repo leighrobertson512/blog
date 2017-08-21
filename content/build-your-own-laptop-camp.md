@@ -58,7 +58,7 @@ Students used resistors (essentially, controls the flow of electricity in a circ
 
 More on the project can be found here, [__How to Make a Raspberry Pi Sounboard__](http://blog.techemstudios.com/how-to-make-a-raspberry-pi-soundboard.html).  
 
-![pi top building](images/summer_camps/pi-top/IMG_0232.jpg)  
+![pi top building](images/summer_camps/pi-top/IMG_0232.JPG)  
 
 ***  
 
