@@ -61,7 +61,7 @@ The Lua programming language can be summed up into being versatile, embeddable, 
 
 Last, but not least, students compared how they've written code so far (using Swift and Lua) to the Python programming language (a personal favorite amongst Tech Em staff). Campers worked together to create the logic behind a simple calculator program using the app, [Pythonista](http://omz-software.com/pythonista/). We modified Python code to change the look (user interface) of the calculator program.  
 
-![1](images/mobile_apps/e.jpg)
+![1](images/mobile_apps/e.jpg)  
 
 ***  
 
