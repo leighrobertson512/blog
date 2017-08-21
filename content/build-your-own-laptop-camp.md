@@ -11,7 +11,7 @@ Illustration: pi-top-unboxing.jpg
 
 ![pi top building](images/summer_camps/pi-top/build.jpg)
 
-The steps we completed to build the Pi-Tops can be found on the Tech Em Studios blog, [PiTop Build](http://blog.techemstudios.com/pitop-building.html).  
+The steps we completed to build the Pi-Tops can be found on the Tech Em Studios blog, [__PiTop Build__](http://blog.techemstudios.com/pitop-building.html).  
 
 ### Raspberry Pi Projects  
 
@@ -26,7 +26,7 @@ Below, a list of some of the projects we completed during camp.
 
 After setting up our Pis, we wired up LEDs and jumper cables on the breadboards. We learned that without software (programs, or instructions written by humans), hardware will not perform any action on its own. To control our LEDs, we created a few programs in Python to turn the LEDs on, and off. The challenge was to figure what code to add so the user control all LEDs at once, and another challenge to create an LED light show. It was neat to see all students come up with different paths to the same solution! Students learned how Morse code works and implemented it in Python to relay messages coded in Morse through LED output.  
 
-Check out [__Notes on Setting Up Pis for IO Lessons__](http://blog.techemstudios.com/notes-on-setting-up-pis-for-io-lessons.html) for information on Raspberry Pi setup and Breadboard/LED setup and [RPI Temperature and Humidity Sensing](http://blog.techemstudios.com/rpi-temp-and-humidity-sensing.html).  
+Check out [__Notes on Setting Up Pis for IO Lessons__](http://blog.techemstudios.com/notes-on-setting-up-pis-for-io-lessons.html) for information on Raspberry Pi setup and Breadboard/LED setup and [__RPI Temperature and Humidity Sensing__](http://blog.techemstudios.com/rpi-temp-and-humidity-sensing.html).  
 
 ![pi top building](images/summer_camps/pi-top/unnamed.jpg)  
 
