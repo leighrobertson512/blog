@@ -25,7 +25,7 @@ The campers moved on to Codea to make their own game. On top of this, campers le
 
 ## Mobile App Design Process  
 
-The process we learned during camp this week was a mixture of a few guides, one written by [Forbes contributor](https://www.forbes.com/sites/allbusiness/2013/10/30/how-to-build-your-first-mobile-app-in-12-steps-part-1/#1915d6383377), Melanie Haselmayr. This offers a versatile and conventional approach to building a mobile app across different operating systems. Another, published by Tim Ferriss on [Mashable](http://mashable.com/2013/07/13/top-selling-app/#dGuCHzh.xZqV). This article was a key one to share, for it had a design thinking approach. In other words, the design process started with asking, the potential audience for your app and what makes the already successful apps, successful. So, focus first on what people already like or don't like; build your initial design off this information.  
+The process we learned during camp this week was a mixture of a few guides on first steps to design a mobile application, one written by [Forbes contributor](https://www.forbes.com/sites/allbusiness/2013/10/30/how-to-build-your-first-mobile-app-in-12-steps-part-1/#1915d6383377), Melanie Haselmayr. This offers a versatile and conventional approach to building a mobile app across different operating systems. Another referenced guide was published by Tim Ferriss on [Mashable](http://mashable.com/2013/07/13/top-selling-app/#dGuCHzh.xZqV). This article was important to pull information from, for it has a design thinking approach to app design. In other words, the design process started with asking who the potential audience is for the app, as well as what makes the already successful apps, successful. Focus first on what people already like or don't like and start your design from that information.  
 
 ![1](images/mobile_apps/g.jpg)  
 
@@ -33,13 +33,13 @@ The process we learned during camp this week was a mixture of a few guides, one 
 
 <iframe src="https://docs.google.com/presentation/d/1I9n3wTS86vCd4Gzfb5I_rBkXhCjuKPwpF8pHvC2IF4k/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
 
-Following the guidelines above, students divided themselves up into teams of two, to create at least two ideas for a mobile app. Clever schemes for apps surfaced! Without disclosing too much information, students came up with art sharing, Ebay & Etsy combination, Lego building, and virtual reality apps. At the end of camp, these ideas and more were pitched to their peers and instructors in presentation form, which held descriptions of their potential applications, user interface models, and justification.  
+Following the guidelines above, students divided themselves up into teams of two, to create at least three ideas for a mobile app. Clever schemes for apps surfaced! Without disclosing too much information, students came up with app ideas on art sharing, an Ebay & Etsy combination, Lego building, and virtual reality apps. At the end of camp, these ideas and more were pitched to their peers in presentation form, holding descriptions of the potential apps, what the user interface model looks like, and justification for the app.  
 
 ![1](images/mobile_apps/a.jpg)
 
 ## Programming Languages we Learned  
 
-Most of the campers initially had few or no experience programming. After camp, every student had learned core programming principles using the Playgrounds apps to learn the Swift language, Codea to learn the Lua language, and Pythonista to learn the Python language. Phew! There are plenty more languages out there, we learned about these three.  
+Most of the campers initially had few or no experience programming. After camp, every student had learned core programming principles using the Playgrounds apps to learn the Swift language, Codea to learn the Lua language, and Pythonista to learn the Python language. Phew! There are plenty more languages out there, we learned about these three during camp:    
 
 ![1](images/mobile_apps/j.jpg)
 
@@ -65,7 +65,7 @@ Last, but not least, students compared how they've written code so far (using Sw
 
 ***  
 
-Please let us know if your child has any questions on how to continue further with learning how to develop mobile applications.  
+Please let us know if you or your child have questions on how to continue with learning how to develop a mobile app.  
 
 Enjoy the rest of the summer!  
 
