@@ -1,5 +1,5 @@
 Title: Build Your Own Laptop 2017  
-Author: Joe Seiler  
+Author: Josef Seiler  
 Date: 2017-08-21  
 Category: General  
 Tags: computer science, raspberry pi, hardware, pi-top  
