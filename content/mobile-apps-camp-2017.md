@@ -1,5 +1,5 @@
 Title: Mobile Apps Summer Camp     
-Author: Alex Noll, Josef Seiler     
+Author: Josef Seiler     
 Date: 2017-08-04  
 category: Classes   
 Tags: techcamp, coding, computer science, mobile, apps, python, lua, swift  
@@ -7,9 +7,11 @@ Illustration: mobile-phone.jpg
 
 # Mobile Apps  
 
+## By Josef Seiler and Alex Noll  
+
 ### There's an app for that  
 
-At the start of the camp, each camper had to think about what they'd want their app's UI to look like, while most campers designed individually, others worked together to make their User Interfaces.  
+At the start of the camp, each camper designed the User Interface of their app. While most campers designed individually, others worked together to make the first drafts of the User Interface.  
 
 ![1](images/mobile_apps/b.jpg)   
 

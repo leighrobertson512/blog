@@ -1,11 +1,13 @@
 Title: Digital Arts Summer Camp   
-Author: Forest Kim, Josef Seiler   
+Author: Josef Seiler   
 Date: 2017-08-04  
 category: Classes   
 Tags: techcamp, art, 3d printing, digital design, iMovie, YouTube  
 Illustration: digital-art.jpg  
 
 # Digital Arts  
+
+## By Josef Seiler and Forest Kim  
 
 ## Future Entrepreneurs  
 

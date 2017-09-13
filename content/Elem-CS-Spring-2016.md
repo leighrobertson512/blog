@@ -1,4 +1,4 @@
-Title: ECS1
+Title: Elementary Computer Science  
 Author: Josef Seiler
 Date: 2016-5-03
 Category: Classes

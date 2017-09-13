@@ -1,5 +1,5 @@
 Title: YouTube & 3D Gaming/VR Camp  
-Author: Alex Noll & Josef Seiler  
+Author: Josef Seiler  
 Date: 2017-07-29  
 category: Classes  
 Tags: youtube, video, content production, 3dprinting, vr, hyperpad, unity, techcamp  
@@ -7,6 +7,8 @@ Tags: youtube, video, content production, 3dprinting, vr, hyperpad, unity, techc
 Recap of the YouTube camp and 3D Gaming/Virtual Reality camp.  
 
 # Summer 2017 YouTube Camp  
+
+## By Josef Seiler and Alex Noll  
 
 Ideas on how to become a star on YouTube were shared among campers before the camp even started! We got underway with learning general guidelines on how to create a bolster a YouTube channel. First, by creating a catchy name, thumbnail, avatar, and onto making an impressive banner. Students learned details count. For instance, when it comes to the banner for a channel, it is a good idea to have the image reflect the channel's content and display any social media to further follower traction.  
 

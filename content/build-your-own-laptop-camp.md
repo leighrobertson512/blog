@@ -15,7 +15,7 @@ The steps we completed to build the Pi-Tops can be found on the Tech Em Studios 
 
 ### Raspberry Pi Projects  
 
-Before we dove into assembling our laptops, we conducted a series of hardware and software projects on the Raspberry Pi. Students used the breadboard to create multiple projects involving LEDs, switch devices (buttons), jumper cables, and resistors.  
+Before we dove into assembling our laptops, we conducted a series of hardware and software projects on the Raspberry Pi. Students used breadboards to create multiple projects involving LEDs, switch devices (buttons), jumper cables, and resistors.  
 
 Several projects we completed during camp:      
 ![pi top building](images/summer_camps/pi-top/8.jpg)  
