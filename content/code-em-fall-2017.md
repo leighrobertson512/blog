@@ -19,7 +19,7 @@ We will be using GitHub during each class. This is a site used by software devel
 
 *more detailed instructions can be found on the [Tech Em blog] page(http://blog.techemstudios.com/github-part-one.html)*  
 
-Slack is a messaging app for teams of large companies, i.e. Google; and small startups, i.e. Tech Em Studios. Slack will be used in this class for questions about the material we are learning in class, questions on projects, and communicating with your peers. You will not only have the current instructors as your resource, you have the whole [Tech Em Team](http://techemstudios.com/about-us.html)! You will receive an email from Slack, which holds an invitation to join the Tech Em Students Slack team.  
+[Slack](https://slack.com/) is a messaging app for teams of large companies, i.e. Google; and small startups, i.e. Tech Em Studios. Slack will be used in this class for questions about the material we are learning in class, questions on projects, and communicating with your peers. You will not only have the current instructors as your resource, you have the whole [Tech Em Team](http://techemstudios.com/about-us.html)! You will receive an email from Slack, which holds an invitation to join the Tech Em Students Slack team.  
 
 *more details on joining Slack can be found on the [Tech Em blog] page(http://blog.techemstudios.com/slack.html)*.  
 
