@@ -1,15 +1,15 @@
-Title: Code Em Winter 2017
-Author: Josef Seiler
-Date: 2017-09-21
-category: Classes
-Tags: coding, github, slack, computer science, raspberry pi
-Illustration: gears.jpg
+Title: Code Em Fall 2017  
+Author: Josef Seiler  
+Date: 2017-09-21  
+category: Classes  
+Tags: coding, github, slack, computer science, raspberry pi  
+Illustration: gears.jpg  
 
-### Day One
+### Day One  
 
-`01/10/2017`
+`01/10/2017`  
 
-### Code Em Kick Off
+### Code Em Kick Off  
 
 We started with the usual introductions to break the ice. There are newcomers as wells veterans, so we'll work together to get everyone on the same page with our computer science adventures. During this fall, we will learn effective ways to think (best approaches for solving problems), get comfortable with coding using the Python programming language and learn tools used in the real world by software engineers.  
 
