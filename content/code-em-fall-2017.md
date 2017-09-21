@@ -17,11 +17,11 @@ We started with the usual introductions to break the ice. Code Em has newcomers 
 
 We will be harnessing GitHub during each class. This is a site used by software developers to collaborate on the build and upkeep of projects. For Code Em, you will *push* all files/projects you are working on to your own repository (folder). Your repository will continuously be updated as we move forward in the class. When you use GitHub, you essentially have a portfolio of your work you can access outside of class. This will be a great start to feel comfortable on how to use GitHub. Especially when we begin working on the same projects together, we'll get a feel for how real software engineers develop applications. Visit [GitHub.com](https://github.com/), sign up with your email account, create a GitHub username/password (write it down somewhere, so you remember it!), and click **Sign Up for GitHub**. GitHub will send you a verification email to the email you signed up with. Click the link to verify and you will be ready to git!  
 
-*more detailed instructions can be found on the [Tech Em blog] page(http://blog.techemstudios.com/github-part-one.html)*  
+*More detailed instructions can be found on the [Tech Em blog page](http://blog.techemstudios.com/github-part-one.html)*  
 
 [Slack](https://slack.com/) is a messaging app for teams of large companies, i.e. Google; and small startups, i.e. Tech Em Studios. Slack will be used in class for questions about material we are learning in class, questions on projects, and communicating with your peers. You will not only have the current instructors as your resource, you will have the whole [Tech Em Team](http://techemstudios.com/about-us.html)! You will receive an email from Slack, which holds an invitation to join the Tech Em Students Slack team.  
 
-*more details on joining Slack can be found on the [Tech Em blog] page(http://blog.techemstudios.com/slack.html)*.  
+*More details on joining Slack can be found on the [Tech Em blog page](http://blog.techemstudios.com/slack.html)*.  
 
 ### What we Learned  
 
