@@ -47,6 +47,10 @@ To practice at home, you can download Python for free from [python.org](https://
 
 `09/26/2017`  
 
+### Git  
+
+We made our first repository on GitHub! This will be the place where we can upload all of our projects, so we can get to it beyond the class.  
+
 ### Fetch, Decode, Execute  
 
 What happens when you fire up your favorite program? Consider a CD with your favorite game on it. This CD has tons of instructions already written on it, waiting to be read by your computer. When you insert the game, the CPU follows this process: **Fetch** the first instruction; **Decode** the instruction, translated into binary for the computer to understand; and finally, **Execute** The computer carries out the instruction. Since there is more than one instruction, this process repeats to get the rest. The process repeats, from the moment you turn on your computer and does so with lightning-fast speed!  
