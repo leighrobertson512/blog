@@ -9,13 +9,17 @@ Tags: computer science, python, code, github, slack
 ### Day One  
 
 `9/13/2016`    
+
 Code Em started with icebreaker introductions. Tell the class three truths and a false statement about yourself, including the instructors! Everyone was asked to share their experience with computer science and programming.   
 
-####Objectives  
-To assess varying levels in computer science, we started a discussion on what everyone's goals might be for the class. Since this class will take a project-based approach, the students will learn to merge all of these goals into one project, or projects -from all of the class-shared objectives and set Code Em curriculum objectives, students will learn how to create an "objective tree" by using several objectives. Think of each objective, or goal as a separate piece that relates to the rest, to fit together making a large puzzle. Some of the student's objectives included, learning how to code in Python and HTML, learning to code better, be able to create a series in Scratch, code to draw a character, make different electronics and design games. By using an objective tree, as a class we can break each goal down into smaller definable characteristics. We will start to interconnect each objective (goal) from these characteristics. This objective tree method is a great method to learn; throughout the Code Em classes we will be using other methods like it to break down complex things into simpler, more understandable parts -really getting into talking about Abstraction.
+#### Objectives  
+
+To assess varying levels in computer science, we started a discussion on what everyone's goals might be for the class. Since this class will take a project-based approach, the students will learn to merge all of these goals into one project, or projects -from all of the class-shared objectives and set Code Em curriculum objectives, students will learn how to create an "objective tree" by using several objectives. Think of each objective, or goal as a separate piece that relates to the rest, to fit together making a large puzzle. Some of the student's objectives included, learning how to code in Python and HTML, learning to code better, be able to create a series in Scratch, code to draw a character, make different electronics and design games. By using an objective tree, as a class we can break each goal down into smaller definable characteristics. We will start to interconnect each objective (goal) from these characteristics. This objective tree method is a great method to learn; throughout the Code Em classes we will be using other methods like it to break down complex things into simpler, more understandable parts -really getting into talking about Abstraction.  
+
 ***  
 
-####Interactive Quiz!  
+#### Interactive Quiz!  
+
 Name that hardware!  
 
 ![interactive quiz](images/pi.jpg)  
@@ -46,7 +50,8 @@ The class was able to see a snippet of computer hardware progression in-person a
 ![slack](images/slack-logo.jpg)  
 [^1]  
 
-####Communication Resources  
+#### Communication Resources  
+
 We will be using a messaging app called [Slack](https://slack.com/). Tech Em has been using this for some time. We have created a separate Slack 'team', to have all the students from each of the classes join. This provides the opportunity for students to reach out after the class with questions on any of the concepts we learned, discussing projects, or troubleshooting code while at home. While students are using Slack, they will have the opportunity to access feedback from the rest of the Tech Em Studios team!   
 
 ***  
@@ -54,13 +59,13 @@ We will be using a messaging app called [Slack](https://slack.com/). Tech Em has
 ![github](images/github.jpg)  
 [^2]  
 
-####Tracking our Projects  
+#### Tracking our Projects  
 We briefly went over this in class. We are going to be using [GitHub](https://github.com/) as a way to compile and organize everyone's coding projects they have been working on. This site can 'host' their repositories, so it will all be in one place. Once we start typing up code, we will teach them how to upload their projects onto a private repository. Having all of their projects in one place will help with putting together a portfolio from the class if you and your child choose to do so. Students can upload other software projects they work on outside of class (and after this class) onto this site. There are millions of open source projects on GitHub that your child has access to once they create an account!     
 
 ***  
 
 
-###Assignment One  
+### Assignment One  
 For those students that have an email address, please accept the Slack invitation if you have not already done so. For those that do not have an email, parents, you have the option of either creating an email with your child through Gmail or another domain, or we can send an invitation to your email. After accepting the invitation, your child can create their own credentials for the Slack sign-in.  
 
 
@@ -68,14 +73,14 @@ During the time in between next class, students can create a [GitHub](https://gi
 
 ***  
 
-####Certificates  
+#### Certificates  
 We are planning on having every student earn an official Tech Em Studios certificate by the end of the session! We will most likely have an 'assessment' towards  the end to make sure each student has understood the fundamental concepts of what we'll teach throughout this Fall towards the end of the session.  
 
 ***  
 
-###Outline for Code Em  
+### Outline for Code Em  
 
-######*(tentative)*  
+###### *(tentative)*  
 * Move Forward as a Team
     + Let's all get on the same page  
 
@@ -122,25 +127,25 @@ We observed the advancements of early computers through the centuries with the A
 
 ***  
 
-####1st Generation  
+#### 1st Generation  
 
 We jumped to learning about the importance of the main components of computer hardware, starting with the vacuum tube. We categorized the advancements engineers had made in computer hardware into 'generations'. This Vacuum tube signaled the 1st Generation. About 17,000 of these 'switching devices' were the main component of the first commercial computers like the ENIAC, in the 1940s. However, these required a great deal of electricity and would burn out easily. Not to mention, the ENIAC's size demanded a very large room.  
 
 ***  
 
-####2nd Generation  
+#### 2nd Generation  
 
 The replacement for the vacuum tube was the transistor, considered to be the building blocks of computers. The advent of the transistor rang in the 2nd Generation, electric computers. These devices were a great deal more efficient than its predecessor. When you combine transistors, logic gates are formed, to make integrated circuits. When I say 'switch', I mean there are only to possible input values and output values, ON and OFF (or 0 and 1). This "internal switching logic" is how computer hardware carries out instructions provided in the software. Inside all modern devices are lots of switches. These switching devices are very much like the billions of neurons in our brains.  
 
 ***  
 
-####3rd Generation  
+#### 3rd Generation  
 
 These integrated circuits were miniaturized to form microchips. Microchips comprised the main component of hardware, that brought in the 3rd Generation, microcomputers. These allowed for more 0's and 1's, thus allowing more data to be computed and stored (computers store data using 0's and 1's).  
 
 ***  
 
-####Logic Gates  
+#### Logic Gates  
 
 We explored a few different types of logic gates, the AND gate, OR gate, and the NOT gate. Each gate accepts one or more input values and produces a single output value. Remember, these values are either zero or one (can't be both!). We learned how each of these gates operate and how you can represent these logic gates, their logic diagram symbol and associated truth tables. We learned that we can combine these logic gates, to have more inputs and outputs of 0's and 1's.  
 
@@ -170,6 +175,7 @@ The third class was kicked off with a review of logic gates and a little more on
 ***  
 
 #### Simulate a Computer Activity  
+
 To get every student involved, we acted out input and output devices of a typical modern computer (I/O devices). First we simulated the process of a user interacting with the mouse to perform tasks.   
 
 Then we added more devices to portray the workings that take place when a simple program is run on the computer. In this case, we acted out a calculator program. Along with the mouse and user, we added these devices:  
@@ -204,11 +210,13 @@ The great way to think of the CPU, is to think of it as the "brain" of the compu
 ***  
 
 #### Main Memory & Permanent Memory  
+
 We took a look at how the computer stores memory by discussing RAM, or Random Access Memory. A computer's memory stores programs and data. The CPU can only directly access information (or data) that is stored on main memory (also called RAM). The main memory is fast, but when the power to a computer is turned off, the information contained in the memory is lost! So, there must be another type of memory storage, permanent memory. This permanent memory is something magnetic, like a hardrive (or CD-ROM, DVD, USB sticks, etc.).  
 
 ***  
 
 #### Fetch, Decode, Execute  
+
 What happens when you fire up your favorite program? When you insert a CD containing information (like your favorite game) or when you open up a program that was downloaded on your computer's hardrive (like a game or word processor), first, the program's instructions are copied from the permanent (secondary) memory into the main memory of the computer. Then, after the instructions are loaded, the CPU starts to perform those instructions that were just copied, and ta-da, you are now playing a game like Tetris.  
 
 This process is known as Fetch, Decode, Execute (also called Fetch-Execute Cycle). So, when you start your program, the CPU follows this process:  
@@ -224,6 +232,7 @@ There cannot be only one instruction, of course, so this process repeats. In fac
 ***  
 
 #### Intro to Python -Interactive Mode/Interpreter    
+
 After acting out how a computer works, learning the functions of some hardware basics, and learning the fetch, decode, execute cycle a computer performs when you turn it on and fire up a program, we are ready to explore writing our own programs!  
 
 What is the process of creating software? Programming. Also called coding. When we create software, we are creating instructions for the computer to carry out. Programming allows you to create something from nothing. The more you program, the more you will realize (and build) your skills in **reasoning**, **creativity**, and ability to **solve problems** -not just while programming, but beyond it.  
@@ -257,8 +266,9 @@ We left off last class with writing statements (a line of code or a complete tho
 
 ***  
 
-####Turtle Module  
-#####Python  
+#### Turtle Module  
+
+##### Python  
 
 For these next several classes, we are using Python version 3.   
 
@@ -275,7 +285,8 @@ Other commands we used:
 `t.up()`  
 `t.down()`  
 
-####Script Mode  
+#### Script Mode  
+
 We first used the turtle module in Python's interpreter. In order to write and save our program, we created a new file and saved that file. We are now in *script mode*. This is where we will actually write our programs.  
 
 Just like in the interpreter (interactive mode) we had to first type `import turtle` for our first line of code. Again, by importing the module, this allows us to use those functions already written. If you did not type this, you would find that the commands you write would sling back errors and your code will not run. To run your program after you've written lines of code in script mode, select Run at the top of the window, then Run Module. You must save your program before you can run it (it will ask you to save if you have not already). Same as in the interpreter, you have to create your variable, "t" (or any other letter or name), by typing: `t = turtle.Pen()` this attributes the class, *Pen* to our variable "t".  
@@ -308,11 +319,13 @@ Think of exercise we did with the turtle module like breaking down instructions 
 `10/11/2016`  
 
 #### Jump Back into Python  
+
 It was a long weekend, some of us were program-rusty, so we reviewed some basics of Python programming. Script mode is where we write our programs. Interactive mode (interpreter) is where we the programs we write. We can keep an interactive mode window open to quickly test out small ideas. When we type `t = turtle.Pen()` we are creating a variable. A variable is a placeholder for information -we can assign values to a variable. By looking at our 'turtle' example, our Python program now recognizes `t` as `turtle.Pen()`.  
 
 ***  
 
 #### Functions  
+
 Functions are essentially a place for us to house reusable code. By creating and using functions, we can significantly ease use of code and data. We are using abstraction to leave only the information we need to complete our goal. We talk more on abstraction later, it is fundamental in programming and is all around us. We first introduced ourselves with function by using a loop function to ease our coding.  
 
 For example, when making a square we may have initially wrote:  
@@ -345,7 +358,6 @@ For those that have mastered the syntax involved with our simple turtle programs
  It can also be thought of as having characteristics of some thing hidden to easily see the necessary details.  
  Don't worry if those definitions seem "abstract", we will become masters at using abstraction in our programs.  
 
-
 ***  
 
 ### Day Six    
@@ -353,6 +365,7 @@ For those that have mastered the syntax involved with our simple turtle programs
 `10/18/2016`  
 
 #### Apps We Used  
+
 In order to streamline coding and saving our code, we jumped from coding in Python on the laptops to coding in Python on the iPads, using [Pythonista](http://omz-software.com/pythonista/).  
 
 #### Lists in Python
@@ -375,7 +388,6 @@ Below is another Gist from GitHub where I had made an example of a rudimentary g
 
 ***  
 
-
 ### Assignment Five  
 Try adding to your grocery list at home on Python or Pythonista.
 Also, see if you can create a list for something other than a grocery list.   
@@ -384,9 +396,7 @@ i.e. removing items, adding items, deleting items, replacing items.
 When you do this, you will notice your lines of code increases pretty fast!  
 Next week, we will learn how use conditions (if statements) and in general, how creating our own functions (reusable code) greatly helps in making us 'code-efficient'  
 
-
 ***  
-
 
 ### Day Seven    
 
@@ -397,7 +407,6 @@ Next week, we will learn how use conditions (if statements) and in general, how 
 A block of code is a grouped set of programming statements. We first saw this when we used the 'for' loop in our turtle program:  
 
 <script src="https://gist.github.com/jo3t3ch3m/44b3262a7c6058fb8f59003a0fdadc08.js"></script>  
-
 
 "**If** you eat your vegetables, **then** you can have dessert" -a condition statement.  
 
@@ -475,6 +484,7 @@ If you are not on Slack, check out Chris's blog about Slack [here](http://blog.t
 `11/15/2016`  
 
 #### Creating Commands & Responses for Sirexa  
+
 ##### Slackbot  
 
 Last week, within the local environment of each of our Python programs we wrote a 'looping' command-response program to mimic a bot. This helped prepare us for writing commands in Python for a Slackbot (named "Sirexa") running on a Raspberry Pi at the studio. We did this by contributing our code to a repository found on GitHub, called [code_em](https://github.com/wray/code_em). Think of a repository as a folder on the web containing directories(files). This directory has sub directories where each student can write Python commands inside of their own folder. For more on GitHub look to the Homeschool Computer Science Programming blog [here](http://blog.techemstudios.com/homeschool-computer-science-and-programming-fall-2016.html), just scroll down to "Day Eight".  

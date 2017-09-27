@@ -1,6 +1,6 @@
 Title: Code Em Fall 2017  
 Author: Josef Seiler  
-Date: 2017-09-21  
+Date: 2017-09-27  
 category: Classes  
 Tags: coding, github, slack, computer science, raspberry pi  
 Illustration: gears.jpg  
@@ -40,5 +40,65 @@ Python is a programming language that is easy to write, understand and used for 
 ##### Download Python
 
 To practice at home, you can download Python for free from [python.org](https://www.python.org/downloads/). On the chromebooks/[crouton](https://github.com/dnschneid/crouton) we are using thi session, we will focus on **Python 2.7**. If you download the latest Python (3.6), there are a few changes we can easily handle for what we are performing in class. So, it is up to you, which version you would like.  
+
+***  
+
+### Day Two    
+
+`09/26/2017`  
+
+### Fetch, Decode, Execute  
+
+What happens when you fire up your favorite program? Consider a CD with your favorite game on it. This CD has tons of instructions already written on it, waiting to be read by your computer. When you insert the game, the CPU follows this process: **Fetch** the first instruction; **Decode** the instruction, translated into binary for the computer to understand; and finally, **Execute** The computer carries out the instruction. Since there is more than one instruction, this process repeats to get the rest. The process repeats, from the moment you turn on your computer and does so with lightning-fast speed!  
+
+```python  
+# In Python, a line that begins with a pound sign (#)  
+# is known as a comment.  
+# Comments are ignored by the program and are  
+# considered "notes" to the programmer(s).
+```  
+
+
+### Expressions & Statements  
+
+We already saw this last week, but we'll put *names to faces*. `print("Hello World!")` is an example of a statement, a complete thought. A statement is a unit of code that does something, like creating a variable or returning the value of the variable. An expression is a combination of values, variables, and operators.  
+
+```python  
+# example of a statement  
+>>> n = 17  
+>>> print(n)  
+17
+
+# examples of Expressions  
+>>> 24
+24
+>>> 5 + 22
+27
+>>> "lamb"
+'lamb'
+```  
+
+### Variable and String Concatenation  
+
+```python  
+# Set two variables, first_name and last_name each equal to a string:  
+first_name = "ada"  
+last_name = "lovelace"  
+# Now combine the values using string CONCATENATION
+full_name = first_name + " " + last_name  
+# Next, we'll make a new variable that has a custom message for its value.  
+message = "Hello, " + full_name.title() + "!")
+print(message)
+```  
+ The final output:
+
+```python  
+'Hello Ada Lovelace!'
+# title() is a built-in function we used to capitalize the first letters of the strings in the full_name variable
+```
+
+### Assignment One  
+
+Make an account on GitHub, and verify it from the email you received from GitHub. Create another Python program that concatenates variables and strings (similar to what we did above).  
 
 ***  
