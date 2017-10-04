@@ -106,3 +106,52 @@ print(message)
 Make an account on GitHub, and verify it from the email you received from GitHub. Create another Python program that concatenates variables and strings (similar to what we did above).  
 
 ***  
+
+### Day Three      
+
+`10/04/2017`  
+
+We did a quick review of what we've learned so far by typing *snippets* of code into the Python interpreter, to get quick results. At the end of class we went though a brain teaser activity together to summarize everything.  
+
+### User Input  
+
+We can easily take input from the user in a program. This can add a bit of fun while coding and running your program. We have all at one point used an app or game that handles input from the user, i.e. a website requesting your username/email and password, etc. In Python, there is a built-in function to handle user input:  
+
+```python  
+# Python 2.7
+raw_input()
+
+# Python 3+
+input()
+```  
+This command pauses your program and waits for the user to enter some text. After the user hits enter, we can have Python conveniently store it in a variable to make it easy to work with. Here's the example from class:  
+
+```python  
+name = raw_input("What is your name?")
+height = raw_input("How tall are you?")
+animal = raw_input("What is your favorite animal?")
+```
+Our challenge was to handle all the information the user types in by returning a set a statements that makes sense of it all using concatenation (what we learned last week).  
+
+```python  
+print("So, you are named " + name + ", you are " + height + " tall")
+print("and your favorite animal is a " + animal + ".")
+```  
+When we use the function `input()` or `raw_input()`, Python automatically thinks the information entered by the user is a string. For instance, what if we wanted to add two numbers typed in by the user:  
+
+```python  
+number1 = raw_input("Give me a number")
+number2 = raw_input("Give me another number")
+print(number1 + number2)
+```
+Let's say the user typed in the number `5` and the number `10`. This returns...
+```python  
+510
+```  
+Not quite the answer we were looking for! Instead of adding the numbers, Python *squished* them together. Why? Python thinks the numbers are strings. We can easily fix this by using another built-in function, `int()`, short for integer. Maybe you remember INT from the first day. INT, or integer is one of four data types found in just about every programming language; it is a whole number, so it does not have a decimal point.  
+
+### Assignment Two    
+
+See if you can create a simple program that takes two numbers from the user and adds them together. Use the `int()` function to do this. We'll go over the answer in class next week.  
+
+***  
