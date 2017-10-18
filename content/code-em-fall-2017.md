@@ -311,7 +311,7 @@ square(ally)
 turtle.mainloop()
 ```  
 
-Above, we used **encapsulation** by wrapping up a piece of code (or for loop *code block*), then placed it inside a function. Why encapsulate? To stay **DRY**, reuse code. "t" can now be any turtle. We call the same function; except, we pass the new turtle's name as an argument inside the parentheses of the new function.  
+Above, we used **encapsulation** by wrapping up a piece of code (or for loop *code block*), then placed it inside a function. Why encapsulate? To stay **DRY**, reuse code. "t" can now be any turtle. We call the same function; except, we pass the new turtle's name as an argument inside the parentheses of the new function. When we get to having more than one turtle use the function we created, we don't need to concern ourselves at this point with the code that makes the function do what it does; we're just happy it works. We only need to concern ourselves with creating multiple turtles which use the same function, and pass the arguments we want. We are communicating just the information that needs to be exchanged. In other words, we *encapsulate* the details *inside* the function. This is a useful tool to keep in mind as we get into larger programs. This idea of **hiding the unnecessary details to focus on the goal at hand** is familiar to us, because it is the idea of abstraction.  
 
 ### Generalization  
 
@@ -330,7 +330,7 @@ def square(t, length):
   for i in range(4):
     t.fd(length)   # changed 100 to the generic term, length
     t.lt(90)
-    
+
 # call the function like last time, now with two arguments:
 # turtle name, length of the line
 square(frank, 400)
