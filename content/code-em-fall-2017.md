@@ -107,9 +107,9 @@ Make an account on GitHub, and verify it from the email you received from GitHub
 
 ***  
 
-### Day Three      
+### Day Three    
 
-`10/04/2017`  
+`10/03/2017`  
 
 We did a quick review of what we've learned so far by typing *snippets* of code into the Python interpreter, to get quick results. At the end of class we went though a brain teaser activity together to summarize everything.  
 
@@ -155,3 +155,199 @@ Not quite the answer we were looking for! Instead of adding the numbers, Python 
 See if you can create a simple program that takes two numbers from the user and adds them together. Use the `int()` function to do this. We'll go over the answer in class next week.  
 
 ***  
+
+### Day Four        
+
+`10/12/2017`  
+
+Happy Ada Lovelace Day!!!  
+
+### Computational Thinking  
+
+Essentially, a useful way to approach and solve any problem. We will learn how to take real-world problems and make them "computable", or put them in program form in order to solve it. We started with an example on cleaning a whole house. Let's say your house is a complete mess! You are tasked with cleaning your whole house by a certain time. At first, this may seem overwhelming. However, if we take a computational thinking approach, we can *systematically* begin to tackle this problem. Below are the general steps we took to how we could complete the task of cleaning the whole house.  
+
+* Computational Thinking  
+
+  * Decomposition  
+    - Decompose: break down: divide & conquer  
+    - Break down a problem into smaller problems  
+  * Generalize   
+    - Be able to see the big picture  
+    - See how the smaller tasks make up the larger task  
+  * Recognize Patterns  
+    - Look for familiar things  
+    - Be able to see parts that repeat  
+    - Don't Repeat Yourself --> **DRY**  
+  * Algorithm Design  
+    - Make a plan to tackle the problem  
+    - Carry out the plan  
+
+### Computer System Layers  
+
+When we are working in one layer, we do not need to concern ourselves with the information in the surrounding layers. This way, we can just focus on what needs to be done in the moment. Think of abstraction as a mental model; a way to think about something. Have the unnecessary details hidden, so we can leave only the information we need to complete our goal.  
+
+Abstraction Examples:  
+
+* A Person Driving a Car  
+  - The only thing they need to focus on is the road ahead.  
+  - It is unnecessary to worry about details of how the engine or electronics of the car work.  
+
+* Fast Food Restaurant  
+  - At many restaurants, the names of meals have corresponding numbers.  
+  - The food prep has been trained to recognize the meal number, not worry about the full name.  
+
+### Functions     
+
+We've already seen functions in action. For example, one of Python's built-in functions (already made and ready to be used), the `print()` function, which we know returns the information we put inside of the parentheses:
+
+* `print("Hello World")` --> returns, `Hello World`  
+
+* `print(123)` --> returns, `123`  
+
+A function is like a mini program that goes off and performs a specific task. The task of the `print()` function is to display a value, or sequence of values. We can **call** a function by using the function's name, followed by a set of parentheses.  
+
+For another example, when we create a variable that holds a value, we can display that value using the print() function.  
+
+```python  
+message = "Greetings!"
+print(message)
+```  
+
+Same goes for the `raw_input()` function; which we know from Day Three, pauses the program and waits for the user to type in some information. The values we give (or **pass**) to a function inside the parentheses, are called **arguments**.  
+
+### Turtle Graphics  
+
+#### Interface Design  
+
+Python's turtle program (or **module**), is a program that holds a slew of functions waiting to be used. All we have to do is put `import turtle` towards the top of any python file we create and now, we can write instructions that display images using turtle graphics! Rather than explain the turtle module from scratch, take a look at the official python documentation on Turtle Graphics:  
+
+*"Imagine a robotic turtle starting at (0, 0) in the x-y plane. After an import turtle, give it the command turtle.forward(15), and it moves (on-screen!) 15 pixels in the direction it is facing, drawing a line as it moves. Give it the command turtle.right(25), and it rotates in-place 25 degrees clockwise."* -[Python 3.3.7 Doc](https://docs.python.org/3.3/library/turtle.html?highlight=turtle)  
+
+Here's the first program we wrote together using turtle graphics:  
+
+```python  
+import turtle
+
+# name your turtle
+frank = turtle.Turtle()
+
+# tell your turtle where to go
+frank.fd(100)
+frank.lt(90)
+frank.fd(100)
+
+# so the window doesn't disappear right away, add:
+turtle.mainloop()
+# or turtle.exitonclick()
+```  
+*Think of the "turtle" as a pen, marker, etc. We are giving this writing tool instructions to draw lines on a separate window (or piece of paper) --similar to our brain giving instructions to our hand to write or draw*  
+
+Above, we called **methods** to tell our turtle where to go. Methods are like functions, but use different syntax. Calling a method is like making a request (*or command*). You are telling frank (or whatever you named your turtle) to move forward, x-amount and turn, x-amount, and so on.  
+
+### Assignment Four  
+The example above creates a right angle. Create a python program that uses turtle graphics to make a complete square. You may at first, find your are repeating a set of instructions. Remember to stay **DRY**, don't repeat yourself. You can use a loop function holding the instructions that repeat; making the amount you type, less.  
+
+***  
+
+### Day Five          
+
+`10/17/2017`  
+
+Solution to assignment four:  
+
+```python  
+import turtle
+frank = turtle.Turtle()
+
+### With a "for" loop ###
+for i in range(4):
+  """repeats the indented instructions underneath, 4 times."""
+  frank.fd(100)
+  frank.lt(90)
+turtle.mainloop()
+
+### Get the same solution with a "while" loop ###
+
+while True:
+  frank.fd(100)
+  frank.lt(90)
+
+# However, this while loop repeats forever
+# a while loop runs, as long as...
+# we'll learn later a few techniques to stop while loops
+```  
+
+### Loops  
+
+#### For  
+
+A `for` statement is a loop, because the flow of execution runs through the body (anything indented below it), then loops back to the top. In the case above, the loop repeats four times.  
+
+#### While  
+
+A `while` loop runs as long as, or *while*, a certain condition is *True*.  
+
+### Encapsulation  
+
+This is where we'll practice recognizing patterns. What if we wanted to reuse our code that draws a square, more than once? Our challenge is to put our square code into a reusable function. So, we'll define our own function rather than using a built-in one i.e. one of the "powers" of programming, we can create anything we want! First, we'll start by giving our function a name, "square".  
+
+```python  
+import turtle
+frank = turtle.Turtle()
+
+# name the function, with a generic parameter so we can use the function for more than one turtle
+def square(t):
+  """Reusable function to draw a square."""
+  for i in range(4):
+    t.fd(100)
+    t.lt(90)
+
+# call the function, with the name of the turtle as the argument
+square(frank)
+# create a new turtle to see how we can use the same function
+ally = turtle.Turtle()
+square(ally)
+
+turtle.mainloop()
+```  
+
+Above, we used **encapsulation** by wrapping up a piece of code (or for loop *code block*), then placed it inside a function. Why encapsulate? To stay **DRY**, reuse code. "t" can now be any turtle. We call the same function; except, we pass the new turtle's name as an argument inside the parentheses of the new function.  
+
+### Generalization  
+
+We added a new parameter, "length" to the `square()` function. Instead of specifying a set length, `100` in the loop, we leave the value open to change. In other words, we'll make the function more "general" and less specific.  
+
+```python  
+import turtle
+
+# tell python the names of your turtles
+frank = turtle.Turtle()
+ally = turtle.Turtle()
+albert = turtle.Turtle()
+
+def square(t, length):
+  """Reusable function to draw a square."""
+  for i in range(4):
+    t.fd(length)   # changed 100 to the generic term, length
+    t.lt(90)
+    
+# call the function like last time, now with two arguments:
+# turtle name, length of the line
+square(frank, 400)
+square(ally, 250)
+square(albert, 600)
+
+turtle.mainloop()
+```  
+
+Adding a parameter to a function is called generalization. This way, we can use it across more situations. Before, the square was always the same size. Now, we can make it any size we want; moreover, have several different "turtles" to draw several different squares of varying sizes.  
+
+### Assignment Five  
+Use turtle graphics to *draw* the answer in a simple calculator program. Here's what the program needs (the "specs"):  
+
+* take the user's input for two different numbers  
+* take the user's input on what to do with the two numbers i.e. which operator?
+* handle the user's input above with condition statements
+* display the answer to the user with turtle graphics  
+
+***   
