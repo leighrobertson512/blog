@@ -279,11 +279,7 @@ while True:
 
 ### Loops  
 
-#### For  
-
 A `for` statement is a loop, because the flow of execution runs through the body (anything indented below it), then loops back to the top. In the case above, the loop repeats four times.  
-
-#### While  
 
 A `while` loop runs as long as, or *while*, a certain condition is *True*.  
 
@@ -351,3 +347,23 @@ Use turtle graphics to *draw* the answer in a simple calculator program. Here's 
 * display the answer to the user with turtle graphics  
 
 ***   
+
+### Day Six  
+
+`10/24/2017`  
+
+We assured our programming skills so far by walking though steps to fire up a Python program, display text to screen, creating variables and handling them, and defining our own function.  
+
+### Slackbot  
+
+We briefly saw a demo of the Slackbot, *Sirexa*. We can sum up Sirexa to be a simple command-response program housed in a few python files. We can type commands to the bot via Slack (the messaging app we are using to collaborate) and it will return the response we programmed it to! We will fully dive into this project next week during class.  
+
+Example code for the calculator program using turtle graphics:  
+
+<script src="https://gist.github.com/joetechem/8dab08f959052ea0d13f6285e5bdb1d4.js"></script>  
+
+***  
+
+
+
+
