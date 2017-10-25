@@ -164,8 +164,6 @@ Draw a logic diagram symbol for each gate we learned about (AND, OR, NOT). Show 
 
 ***  
 
-***  
-
 ### Day Three    
 
 `9/27/2016`  
@@ -248,16 +246,17 @@ During class we tested out the built-in calculator on the interpreter. For the f
 `10/04/2016`  
 
 We reviewed hardware basics:  
+
 * CPU  
-    + Central Processing Unit  
-    + Where all the basic operations of the computer are executed  
+    - Central Processing Unit  
+    - Where all the basic operations of the computer are executed  
 
 * RAM  
-    + Random Access Memory -also called main memory  
-    + Random access means that each byte of memory can be accessed directly, this way the computer does not have to start at the beginning -making for a faster retrieval of data, or information  
+    - Random Access Memory -also called main memory  
+    - Random access means that each byte of memory can be accessed directly, this way the computer does not have to start at the beginning -making for a faster retrieval of data, or information  
 
 * Fetch, Decode, Execute  
-    + This is what happens when you fire up your favorite program and what happens inside the computer from the moment you turn it on to when it is turned off  
+    - This is what happens when you fire up your favorite program and what happens inside the computer from the moment you turn it on to when it is turned off  
       - Fetch: the first instruction is called from memory  
       - Decode: That instruction is interpreted to figure out what it means  
       - Execute: The computer carries out the instruction  
@@ -330,20 +329,25 @@ Functions are essentially a place for us to house reusable code. By creating and
 
 For example, when making a square we may have initially wrote:  
 
-`t.forward(100)`  
-`t.left(90)`  
-`t.forward(100)`  
-`t.left(90)`  
-`t.forward(100)`  
-`t.left(90)`  
-`t.forward(100)`  
-`t.left(90)`   
+```python  
+t.forward(100)  
+t.left(90)  
+t.forward(100)  
+t.left(90)  
+t.forward(100)  
+t.left(90)  
+t.forward(100)  
+t.left(90)   
+
+```  
 
 we can decrease the amount of lines of code by using a loop function. Here is an example:  
 
+```python  
 for i in range(4):  
-++++`t.forward(100)`  
-++++`t.left(90)`  
+    t.forward(100)  
+    t.left(90)
+```  
 
 The "+" signs are there to indicate indentation in Python.  
 
@@ -445,9 +449,12 @@ You probably have noticed, working with maps is similar to working with lists an
 
 To recap, Python uses strings to store text. Lists and tuples are used to handle multiple items. Items in lists can be changed, and you can join one list to another list, but values in a tuple cannot be changed. We can use maps to store values with keys that identify them. If you were asked what things the company, BIC manufactures, you could search or scan the list to find out. What if the list contained hundreds or even thousands of different items? That could take up a lot of time! By putting items in map (that has the company name as the key and what they make as the value); instead of a list, we can use the key ('BIC') to find that value.  
 
-* `print(things_brands_make['BIC'])`  
-  + will return its value...  
-    - writing tools  
+`print(things_brands_make['BIC'])`  
+
+returns...  
+
+`writing tools`  
+  
 
 ### Assignment Six  
 Create a map in Python that categorizes something you collect. For instance, if you have a collection of music, like CDs (this example could be too old!), you categorize starting with the key as the artist name. Then, the value could be the albums or genre of music. Or vice versa. Essentially creating a dictionary.  
