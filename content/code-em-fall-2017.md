@@ -364,6 +364,11 @@ Example code for the calculator program using turtle graphics:
 
 ***  
 
+### Day Seven  
+
+`11/07/2017`
+
+
 
 
 
