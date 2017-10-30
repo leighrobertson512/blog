@@ -352,7 +352,7 @@ Use turtle graphics to *draw* the answer in a simple calculator program. Here's 
 
 `10/24/2017`  
 
-We assured our programming skills so far by walking though steps to fire up a Python program, display text to screen, creating variables and handling them, and defining our own function.  
+We ensured our programming talents so far by walking through steps to fire up a Python program, display text to screen, create/handle variables, and define our own function.    
 
 ### Slackbot  
 
