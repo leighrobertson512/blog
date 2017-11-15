@@ -366,7 +366,56 @@ Example code for the calculator program using turtle graphics:
 
 ### Day Seven  
 
-`11/07/2017`
+`11/07/2017`  
+
+## Command-Response  
+
+We have all used, heard, or have seen (commercials) devices that are invoked by a user through voice, i.e. Alexa, Siri, Cortana, OK Google, etc. We used what we've learned so far, to create a simple Python program that waits for our own custom commands and responds to those commands.  
+
+```python  
+"""
+A simple command response program.
+"""
+
+# Put your commands here
+# Keep the values lowercase
+COMMAND1 = "what?"
+
+# Your handling code goes in this function
+def handle_command(command):
+    """
+        Determine if the command is valid. If so, take action and return
+        a response, if necessary.
+    """
+    response = ""
+    if COMMAND1 in command:
+        response = "Huh?"
+        
+    else:
+        response = "Why thank you, I don't know what else to say."
+        
+    return response
+
+print ("Hi, I am sirexa, your own personal bot. Awaiting your command.")
+while True:
+    command = raw_input('\nsirexa -> ')
+    response = handle_command(command)
+    print response
+```  
+
+We can easily have our "bot", respond to more commands by setting new variables, `COMMAND1`, `COMMAND2`, etc. and create new condtion statements in the same way `COMMAND1` is handled.  
+
+So this runs great on our chormebooks! What if we wanted to interact with the bot from anywhere and have our friends try it out too? Enter, "Sirexa", a *Slackbot* we can interact with using the Slack app. Oh, and it runs on a Raspberry Pi! This command-response program is part of our larger project, programming our own Slackbot. The pi is hooked up to a breadboard, which has LEDs that we can tell Sirexa to turn on and off. There is a temperature-humidity sensor hooked up as well, so we can ask the slackbot to return those current values. On top of that, you can ask/tell Sirexa a command created by your classmate and they can ask it yours! We can do this by collaborating on the same repository on GitHub. You just edit your own python file located in your folder of the repo, and send the updated file. [More details on our Slackbot Project](http://blog.techemstudios.com/github-part-two.html).  
+
+We got started by *cloning* the [code_em repository](http://github.com/wray/code_em) onto our chromebooks. You can think of cloning as "downloading"; however, when we clone the repository, we can make edits locally (on our computer) and submit those edits back to the original repository (located on GitHub). This way, we are not limited to editing and sending our changes while we are in class, you can do so outside of class as well. This can be a lot to take in, so we will practice the process during the remainder of the weeks.  
+
+***  
+
+### Day Eight    
+
+`11/14/2017`  
+
+
 
 
 
