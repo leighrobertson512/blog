@@ -415,7 +415,32 @@ We got started by *cloning* the [code_em repository](http://github.com/wray/code
 
 `11/14/2017`  
 
+## Temperature Converter Program  
 
+We made a program that converts a celsius temperature to fahrenheit. 
+
+```python  
+# Pause the program and wait for user to enter celsius temp
+celsius = int(raw_input("Enter the celsius temperature: "))
+
+# convert celsius --> fahrenheit
+fahrenheit = 9/5 * celsius + 32  
+
+# return the fahrenheit
+print "The fahrenheit temperature is " + str(fahrenheit)
+```  
+
+The challenge was to add conditional statements that return temperature warnings based on the value of `fahrenheit`.  
+
+## Update Your Commands to Sirexa  
+
+We talked about in class; we can think of a GitHub repository(repo) simply as a folder. Last week, you *cloned* the repo for our Slackbot project, **code_em** onto the computer you use in class. The picture below can hopefully help visualize what is going on when you clone a repo, make local changes to it, then submit your changes to be updated on the GitHub repo.  
+
+![pull-push](images/github-repos-flow.jpg)  
+
+After you finish making the changes you want, you'll need to *push* (or send them) to the repository on GitHub. Because we are all working on the same repository, we will need to *pull*, or get the changes others have made.  
+
+***  
 
 
 
