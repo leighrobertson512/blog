@@ -469,7 +469,7 @@ Try modeling another real-world example of your choice in a Python program.
 
 ***  
 
-### Day Nine     
+### Day Ten       
 
 `11/28/2017`  
 
@@ -493,9 +493,9 @@ circ.draw(win)
 
 When we run the program above, this is what we get:  
 
-![circle](images/circle.jpg)  
+<img src="images/circle.jpg" alt="circle" style="width: 240px;"/>  
 
-### Assignment Seven  
+### Assignment Eight    
 
 Draw other shapes to the screen. Just make sure the graphics.py is in the same directory as your program.  
 
