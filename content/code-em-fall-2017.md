@@ -461,7 +461,7 @@ Each **object** is contained in a larger **class**. You are an object and you ar
 
 Object-oriented can take a minute to get a handle on, so we learned by doing. This was Thanksgiving week, so we practiced by modeling a turkeys. Check out the slides below.  
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQmuimfkwZ0Ikv0GHMZHMtSmUGdM1HnzDRqHd64PiO0BAe7HhFmOWFvBOsv5z0sQe-n6VecqNUIr8qJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="962" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQmuimfkwZ0Ikv0GHMZHMtSmUGdM1HnzDRqHd64PiO0BAe7HhFmOWFvBOsv5z0sQe-n6VecqNUIr8qJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="496" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
 
 ### Assignment Seven  
 
