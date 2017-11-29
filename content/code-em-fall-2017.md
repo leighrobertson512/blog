@@ -397,6 +397,7 @@ def handle_command(command):
     return response
 
 print ("Hi, I am sirexa, your own personal bot. Awaiting your command.")
+
 while True:
     command = raw_input('\nsirexa -> ')
     response = handle_command(command)
@@ -440,7 +441,71 @@ We talked about in class; we can think of a GitHub repository(repo) simply as a 
 
 After you finish making the changes you want, you'll need to *push* (or send them) to the repository on GitHub. Because we are all working on the same repository, we will need to *pull*, or get the changes others have made.  
 
+### Assignment Six  
+
+From your homebase, create new commands for Sirexa by editing **your** slacklib.py file (either directly on GitHub or by cloning the repo), update your changes, and test out your changes via Slack.  
+
 ***  
+
+### Day Nine     
+
+`11/21/2017`  
+
+## Objects  
+
+We learned a little about Object-oriented programming (OOP). The basic idea of OOP is to see a complex system as the interaction of **objects**. Simply, objects *know stuff* and they can *do stuff* (Zelle, 2010). OOP is perfect for modeling the world around us.  
+
+"Do we see any objects in the room?" --Yes! Every**thing** is an object, the world is full of them! You are an object. In other words, you know stuff and you can do stuff, like breath, speak, formulate thoughts, etc. In short, we can model the real-world by telling Python what things are and what they can do.  
+
+Each **object** is contained in a larger **class**. You are an object and you are part of the class, human. Think of a heirarchy: The human class is part of a higher class, Mammals. Mammals is part of a another class, Animate (or Living) and Animate is part of the class, Things.  
+
+Object-oriented can take a minute to get a handle on, so we learned by doing. This was Thanksgiving week, so we practiced by modeling a turkeys. Check out the slides below.  
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQmuimfkwZ0Ikv0GHMZHMtSmUGdM1HnzDRqHd64PiO0BAe7HhFmOWFvBOsv5z0sQe-n6VecqNUIr8qJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="962" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+
+### Assignment Seven  
+
+Try modeling another real-world example of your choice in a Python program.  
+
+***  
+
+### Day Nine     
+
+`11/28/2017`  
+
+## Coding Graphics  
+
+We dove more into object-oriented by programming simple graphics to appear on the screen. In short, we learned how we can line up a few commands to draw shapes and fill those shapes with colors once we execute those commands. We started by drawing a circle to the screen. Luckily, we used our concept of abstraction! We did not have to create any new classes or objects from scratch. All we had to do was pull from a python file, [graphics.py](http://mcsp.wartburg.edu/zelle/python/) that already has everything we need (programmers are lazy, in a good way!).  
+
+```python  
+from graphics import *
+
+# Creates a place on the screen where our graphics will appear
+win = GraphWin('Shapes')
+
+### Draw a red circle centered at point (300, 300)
+### with radius 45
+center = Point(300, 300)
+circ = Circle(center, 90)
+circ.setFill('red')
+circ.draw(win)
+```  
+
+When we run the program above, this is what we get:  
+
+![circle](images/circle.jpg)  
+
+### Assignment Seven  
+
+Draw other shapes to the screen. Just make sure the graphics.py is in the same directory as your program.  
+
+Remember, if you have any questions outside of class on these assignments or the stuff we're learning class, send them in Slack!  
+
+***   
+
+**Sources**  
+
+Zelle, John M. *Python Programming: an Introduction to Computer Science.* Franklin, Beedle & Associates, 2010
 
 
 
