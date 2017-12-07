@@ -200,13 +200,19 @@ Abstraction Examples:
 
 We've already seen functions in action. For example, one of Python's built-in functions (already made and ready to be used), the `print()` function, which we know returns the information we put inside of the parentheses:
 
-* `print("Hello World")` --> returns, `Hello World`  
-
-* `print(123)` --> returns, `123`  
+```python  
+print("Hello World")
+```  
+ --> `'Hello World'`
+  
+```python  
+print(123)
+```  
+ --> `123`  
 
 A function is like a mini program that goes off and performs a specific task. The task of the `print()` function is to display a value, or sequence of values. We can **call** a function by using the function's name, followed by a set of parentheses.  
 
-For another example, when we create a variable that holds a value, we can display that value using the print() function.  
+For another example, we can create a variable that holds a value,  and we can display that value using the print() function.  
 
 ```python  
 message = "Greetings!"
@@ -502,6 +508,68 @@ Draw other shapes to the screen. Just make sure the graphics.py is in the same d
 Remember, if you have any questions outside of class on these assignments or the stuff we're learning class, send them in Slack!  
 
 ***   
+
+### Day Eleven  
+
+`12/05/2017`  
+
+## Getting Graphics to Respond (i.e. getting mouse clicks)  
+
+We used the same graphics.py to create a program that handles input from the user, in the form of mouse clicks.  
+
+```python  
+from graphics import *
+
+def main():
+    win = GraphWin("Click Me!")
+    for i in range(10):
+        p = win.getMouse()
+        print("You clicked at: ", p.getX(), p.getY())
+
+main()
+```  
+
+Once the program is run, we can click anywhere on the window and the python shell returns the coordinates where we clicked. This can be useful for if you were creating an interface with buttons and wanted the buttons to appear at specific points on the screen. We can see at the `for` loop, the program waits for 10 mouse clicks from the user, then stops.    
+
+We went a little further with mouse clicks and created a program that asks for three points for the user to click. Once the third point is clicked, the program fills space inbetween the points to make a triangle.  
+
+```python  
+def main():
+    win = GraphWin("Draw a Triangle")
+    win.setCoords(0.0, 0.0, 10.0, 10.0)
+    message = Text(Point(5, 0.5), "Click on three points")
+    message.draw(win)
+
+    """Draw the three vertices of the triangle."""
+    # Set the variables for the three points
+    # Have the Python listen for the mouse click event by the user
+    p1 = win.getMouse()
+    p1.draw(win)
+    p2 = win.getMouse()
+    p2.draw(win)
+    p3 = win.getMouse()
+    p3.draw(win)
+
+    # Use Polygon object to draw the triangle
+    triangle = Polygon(p1, p2, p3)
+    triangle.setFill("peachpuff")
+    triangle.setOutline("cyan")
+    triangle.draw(win)
+
+    # Wait for another click to exit
+    message.setText("Click anywhere to quit.")
+    win.getMouse()
+
+main()
+```  
+
+<img src="images/triangle.jpg" alt="circle" style="width: 300px;"/>
+
+### Assignment Nine  
+
+Change up the triangle code so that you can draw a shape with more than three sides!  
+
+***  
 
 **Sources**  
 
