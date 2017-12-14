@@ -579,13 +579,19 @@ Change up the triangle code to draw a shape with more than three sides!
 
 We have already learned about Charles Babbage (created the babbage machine; marked the transition from calculation to computation), Ada Lovelace (first computer programmer). Today, we talked about a couple more important figures in computer science. Alan Turing, invented an abstract mathematical model, called the [Turing Machine](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html). Ever heard of the [Turing Test](http://csunplugged.org/the-turing-test/)? The most prestigious award given in the CS field is named after Alan Turing.   
 
-<img src="images/turing-test.jpg" alt="circle" style="width: 300px;"/>  [csunplugged](http://csunplugged.org/the-turing-test/)  
+<img src="images/turing-test.jpg" alt="circle" style="width: 300px;"/>  
 
-
+<p align="center">
+  <a href="http://csunplugged.org/the-turing-test/">CSunplugged</a>  
+</p>  
 
 Another important figure, Grace Hopper. She was a Computer Scientist, US Navy Admiral, and developed programming languages that simplified technology, which made it easier for more people to check out computing. Her work helped [NASA communicate with Apollo astronauts](https://www.space.com/34885-grace-hopper-biography.html), and still aids scientists is keeping track of launched spacecraft.  
 
-<img src="images/grace-hopper.jpg" alt="circle" style="width: 300px;"/>  [engineering & technology](https://eandt.theiet.org/content/articles/2013/12/google-doodle-for-cobol-programming-language-inventor/)  
+<img src="images/grace-hopper.jpg" alt="circle" style="width: 300px;"/>  
+
+<p align="center">
+  <a href="https://eandt.theiet.org/content/articles/2013/12/google-doodle-for-cobol-programming-language-inventor/">Engineering & Technology</a>  
+</p>  
 
 ## Requesting Data from the Internet    
 
