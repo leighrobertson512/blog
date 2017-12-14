@@ -567,13 +567,81 @@ main()
 
 ### Assignment Nine  
 
-Change up the triangle code so that you can draw a shape with more than three sides!  
+Change up the triangle code to draw a shape with more than three sides!  
 
 ***  
 
+### Day Twelve    
+
+`12/12/2017`  
+
+## Computer Science Pioneers  
+
+We have already learned about Charles Babbage (created the babbage machine; marked the transition from calculation to computation), Ada Lovelace (first computer programmer). Today, we talked about a couple more important figures in computer science. Alan Turing, invented an abstract mathematical model, called the [Turing Machine](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html). Ever heard of the [Turing Test](http://csunplugged.org/the-turing-test/)? The most prestigious award given in the CS field is named after Alan Turing.   
+
+<img src="images/turing-test.jpg" alt="circle" style="width: 300px;"/>  [csunplugged](http://csunplugged.org/the-turing-test/)  
+
+
+
+Another important figure, Grace Hopper. She was a Computer Scientist, US Navy Admiral, and developed programming languages that simplified technology, which made it easier for more people to check out computing. Her work helped [NASA communicate with Apollo astronauts](https://www.space.com/34885-grace-hopper-biography.html), and still aids scientists is keeping track of launched spacecraft.  
+
+<img src="images/grace-hopper.jpg" alt="circle" style="width: 300px;"/>  [engineering & technology](https://eandt.theiet.org/content/articles/2013/12/google-doodle-for-cobol-programming-language-inventor/)  
+
+## Requesting Data from the Internet    
+
+We ended this session with learning how to grab information from the internet and how to handle that information; all with just a few lines of Python code. To perform this, we used the [requests](https://pypi.python.org/pypi/requests) module.  
+We know there are quite a few numbers in the number, [Pi](https://en.wikipedia.org/wiki/Pi). Perhaps, an infinite amount. Let's say we wanted to figure out if our birthday, or a friend's birthday in the form of *mmddyy* (month/day/year), is contained in the first million digits of pi. We could copy the million digits from a source, paste it into a Python program, then search the list of numbers; however, that would take up a lot of space. Instead, we can grab the information we need directly from the source. Here's what our code looked like:  
+
+### Direct Request to Web Source  
+```python
+import requests
+
+r = requests.get('https://https://raw.githubusercontent.com/ehmatthes/pcc/master/chapter_10/pi_million_digits.txt')
+print("Status code:", r.status_code)
+pi_string = r.text
+
+for rs in r:
+    pi_string += rs.strip()
+
+while True:
+    birthday = raw_input("\nEnter your birthday, in the form mmddyy: ")
+    if birthday in pi_string:
+        print("Your birthday appears in the first million digits of pi!")
+    else:
+        print("Your birthday does not appear in the first million digits of pi.")
+```  
+
+What's happening:  
+
+`r.status_code` returns a code whether or not our request to website was successful.  
+
+`pi_string = r.text` and `rs.strip()` converts the data into plain text form.  
+
+The `while True` loop block, checks if what the user types in, is found within the text.  
+
+This simple program, **greatly** reduces the time it would take if you were to scan the million digits to find your birth date (*at least*, saves a few minutes!). This is yet another way we can see how programming can make our lives easier. We see this everyday; for example, when you surf the internet or use an app, there are millions of these types of *requests* for data, to display exactly what you are looking for.  
+
+Please feel free to ask us questions on [Slack](https://slack.com/) or email class-info@techemstudios.com. Stay tuned for our [winter/spring class schedule](http://techemstudios.com/).  
+
+Enjoy the Holidays!!!  
+
+***  
+
+
 **Sources**  
 
-Zelle, John M. *Python Programming: an Introduction to Computer Science.* Franklin, Beedle & Associates, 2010
+```
+Dale, Nell & John Lewis. Computer Science: Illuminated. 4th ed., Jones and Bartlett Publishers, LLC, 2011.  
+
+Dawson, Michael. Python Programming for the Absolute Beginner. Third ed., Course Technology, 2010.  
+
+Downey, Allen B. Think Python: How to Think Like a Computer Scientist. O'Reilly Media, 2015.  
+
+Matthes, Eric. Python Crash Course: A Hands-On, Project-Based Introduction to Programming. 4th ed., William Pollock, 2016.  
+
+Zelle, John M. *Python Programming: an Introduction to Computer Science.* Franklin, Beedle & Associates, 2010.  
+```  
+
 
 
 
