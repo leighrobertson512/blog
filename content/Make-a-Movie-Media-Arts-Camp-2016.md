@@ -6,7 +6,7 @@ Author: Josef Seiler
 Summary: Follow up Make a Movie and Media Arts Camp  
 
 
-####Media Arts Camp  
+#### Media Arts Camp  
 
 *The response from the Tech Em Team to what the campers created during this camp: "Wow!"*   
 
