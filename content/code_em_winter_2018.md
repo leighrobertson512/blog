@@ -91,7 +91,7 @@ Don't worry if this all seems foreign to you (or you feel rusty)! Together, we'l
 
 
 ***  
-[^1]: http://register.techemstudios.com/item/code-em   
+[^1]: [Register.TechEmStudios.com](http://register.techemstudios.com/item/code-em)     
 ***  
 
 
