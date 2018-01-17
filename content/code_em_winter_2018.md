@@ -89,8 +89,48 @@ The next three *blocks of code* are **conditional statements**. These check whet
 
 Don't worry if this all seems foreign to you (or you feel rusty)! Together, we'll learn by doing and practice, until it becomes second-nature.  
 
-[^1]: http://register.techemstudios.com/item/code-em   
 
+***  
+[^1]: http://register.techemstudios.com/item/code-em   
 ***  
 
 
+## Day Two    
+
+`Week of January 15th, 2018`  
+
+[MLK Day](https://www.google.com/doodles/martin-luther-king-jr-day-2018)  
+
+## Start Projects  
+
+This week, we started work on a few different goals. As is the case for almost every Tech Em class, there are varying levels of experience. We broke off into groups based on experience level and interest:  
+
+New students (new to Code Em) started work on a *starter* project to create a calculator program in Python with the end goal of using [Turtle graphics](https://docs.python.org/2/library/turtle.html) to *draw* out the result. Students started work on their foundation in computer science and coding with an introduction to coding using the [Python](https://www.python.org/) programming language.  
+
+[Here is a link to the complete program on GitHub](https://gist.github.com/joetechem/c72df34a62fd416e1a0dc122bffa3335)  
+
+We will be working with Python quite a bit throughout class. It is free and available at https://www.python.org/. You can continue to work on this project and/or practice more with Python at home by downloading Python from the link.  
+
+Returning Code Em students grouped up to either work on building a minecraft server on a Raspberry Pi, or started plans for a hands-on hardware project involving the [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/).  
+
+Other students started work on a visual-based coding app, [Scratch](https://scratch.mit.edu/).  
+
+***  
+
+## General Objective Outlines  
+
+Every project needs a plan. To ge the most out of each project, each day we will work on following an objective list. Another end-goal for each project is to create an easy-to-follow tutorial on whatever project you are working on. After each project is finished, we will publish these tutorials to the [Tech Em blog page](http://blog.techemstudios.com/) so others can replicate the steps you took!  
+
+Documenting your projects as you work on them will do a few useful things; help you understand what your are doing, keep track of where you are in the process, and help validate your project. The key is to log your work, so that other interested folks can learn what you did by following steps you took to get the same result. Similar to science experiments! --which you may have learned about already.  
+
+***  
+
+## Assignment 2  
+
+Make sure you have a GitHub and Slack account you can log into, and that you have been added to our class Slack Team. If you need help getting on the team, send an email to class-info@techemstudios.com.  
+
+Once on the Slack team, post your first message to break the ice! Post a relevant tech fact or personal experience in the `# code_em` channel (e.g. I have been learning HTML on my own, or I prefer to use an iPad over a laptop, or my basketball team won a game recently, etc.)  
+
+Next week, we'll get started on creating our own GitHub repositories for each group to contribute to.  
+
+Enjoy the snow!!!  
