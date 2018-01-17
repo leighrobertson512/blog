@@ -5,7 +5,7 @@ category: Classes
 Tags: computer science, coding, github, slack, raspberry pi, technology  
 Illustration: raspberry-pi.jpg  
 
-## Day One  
+# Day One  
 
 `Week of January 8th, 2018`  
 
@@ -95,7 +95,7 @@ Don't worry if this all seems foreign to you (or you feel rusty)! Together, we'l
 ***  
 
 
-## Day Two    
+# Day Two    
 
 `Week of January 15th, 2018`  
 
