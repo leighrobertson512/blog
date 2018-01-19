@@ -111,7 +111,7 @@ New students (new to Code Em) started work on a *starter* project to create a ca
 
 [Here is a link to the calculator program on GitHub](https://gist.github.com/joetechem/c72df34a62fd416e1a0dc122bffa3335)  
 
-We will be working with Python quite a bit throughout class. It is free and available at (https://www.python.org/). You can continue to work on this project and/or practice more with Python at home by downloading Python from the link.  
+We will be working with Python quite a bit throughout class. It is free and available at [python.org](https://www.python.org/). You can continue to work on this project and/or practice more with Python at home by downloading Python from the link.  
 
 Returning Code Em students grouped up to either work on building a minecraft server on a Raspberry Pi, or started plans for a hands-on hardware project involving the [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/).  
 
