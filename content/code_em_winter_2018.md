@@ -13,6 +13,8 @@ This blog will be used for both the Tuesday and Thursday night class. I will try
 
 ## Happy New Year!  
 
+![welcomeoctocat](images/welcometocat.png)  
+
 During this winter session of Code Em we will learn by doing! We will learn new concepts and solidify concepts we have come across before by taking a project-based approach during the twelve weeks. To name a few, project topics can include (not limited to): device building and programming with the [Raspberry Pi](https://www.raspberrypi.org/), robot creations, 3D printing, [Pi Soundboard](http://blog.techemstudios.com/how-to-make-a-raspberry-pi-soundboard.html), Python game design with [Pygame](http://pygame.org/news), web applications, ethical hacking with Pi Zero or [Kali Linux](https://www.kali.org/), Minecraft Modding with Java, Alexa skills, [PiLexa](http://blog.techemstudios.com/make-a-raspberry-pi-powered-alexa.html) and visual-based programming projects like [Scratch](https://scratch.mit.edu/) and [Hopsctoch](https://www.gethopscotch.com/).  
 
 The goal is to have one or several awesome projects by the end of our twelve weeks together. After completing projects, we will make sure we are comfortable enough with the stuff we learn to continue beyond the class.  
@@ -58,7 +60,7 @@ while GameRunning:
         print("Your guess was too low!")
 ```  
 
-When you begin to write a program, it can seem overwhelming at first. We will get used to breaking up problems into small parts, and tackle them individually. We'll do a deep dive into all the syntax, methods, data types etc. involved with programming languages throughout the session. For now, I'll try to lay out each part of the program in a plain way:  
+When you begin to write a program, it can seem overwhelming at first. We will learn some techniques in a general software development process and learn how to break up large problems into small parts to tackle them individually. We'll do a deep dive into all the syntax, methods, data types and more, involved with programming languages throughout the session. For now, I'll try to lay out each part of this program in a plain way:  
 
 Looking at the program above...  
 `number = random.randint(1, 100)` tells the program to choose a random integer between the range of 1 and 100 and put it into a variable, `number`.  
@@ -119,7 +121,7 @@ Other students started work on a visual-based coding app, [Scratch](https://scra
 
 ***  
 
-## General Objective Outlines  
+## General Objective Outline    
 
 Every project needs a plan. To ge the most out of each project, each day we will work on following an objective list. Another end-goal for each project is to create an easy-to-follow tutorial on whatever project you are working on. After each project is finished, we will publish these tutorials to the [Tech Em blog page](http://blog.techemstudios.com/) so others can replicate the steps you took!  
 
@@ -136,3 +138,37 @@ Once on the Slack team, post your first message to break the ice! Post a relevan
 Next week, we'll get started on creating our own GitHub repositories for each group to contribute to.  
 
 Enjoy the snow!!!  
+
+***  
+
+# Day Three  
+
+`week of 01/22/2018`  
+
+## Practice!  
+
+If you do not have access to Python at home, you can download it free from [python.org](https://www.python.org/), or in an internet browser via [PythonAnywhere.com](https://www.pythonanywhere.com/). For either options, you can follow instructions for helping you set up your environment at (http://www.allendowney.com/wp/books/think-python-2e/).  
+
+### Project Updates  
+
+* Scratch Project  
+    - We continued building our Scratch program portfolio by coding mini interactive games.  
+
+* Python Turtle Calculator    
+    - The link to the [GitHub gist](https://gist.github.com/joetechem/e5a213b8d44e8c6ca71fd8224ac64df3). This gist outlines all the steps for the groups working on the Python Turtle Calculator project, completed during class. There are some challenges found here, where the groups from Tuesday and Thursday night can check out for more practice as well. We also took our first steps in learning Version Control via GitHub.  
+
+* Robot Project  
+    - We laid out a list of all the materials we need for the project: Pi Zero, pimoroni pHAT, DC motors, wheels, etc. Students create their own sketches of unique design builds. We'll incorporate 3D design and printing for this project  
+
+* Minecraft Pi Server  
+    - This group fired up a Raspberry Pi and tested their script setup for a running server. We also tested connecting to the server from other devices; outcome: success! 
+
+All groups continued their documentation of steps taken to help prepare for creation of the project's [README](https://open-source-guide.18f.gov/making-readmes-readable/) and brainstormed their next project endeavour, e.g. website app, minecraft modding, music and sound projects etc.  
+
+***  
+
+
+
+
+
+
