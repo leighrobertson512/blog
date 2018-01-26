@@ -15,6 +15,8 @@ This blog will be used for both the Tuesday and Thursday night class. I will try
 
 ![welcomeoctocat](images/welcometocat.png)  
 
+## What We'll Do  
+
 During this winter session of Code Em we will learn by doing! We will learn new concepts and solidify concepts we have come across before by taking a project-based approach during the twelve weeks. To name a few, project topics can include (not limited to): device building and programming with the [Raspberry Pi](https://www.raspberrypi.org/), robot creations, 3D printing, [Pi Soundboard](http://blog.techemstudios.com/how-to-make-a-raspberry-pi-soundboard.html), Python game design with [Pygame](http://pygame.org/news), web applications, ethical hacking with Pi Zero or [Kali Linux](https://www.kali.org/), Minecraft Modding with Java, Alexa skills, [PiLexa](http://blog.techemstudios.com/make-a-raspberry-pi-powered-alexa.html) and visual-based programming projects like [Scratch](https://scratch.mit.edu/) and [Hopsctoch](https://www.gethopscotch.com/).  
 
 The goal is to have one or several awesome projects by the end of our twelve weeks together. After completing projects, we will make sure we are comfortable enough with the stuff we learn to continue beyond the class.  
@@ -26,9 +28,15 @@ Whether we work in groups or individually during the weeks, we will always work 
 ## Assignment 1  
 Create a new account for [Slack](https://slack.com/) and [GitHub](https://github.com/join?source=header-home) --you will need to verify the email address you sign up with for both. Don't forget your usernames and passwords! Once you have your own Slack and GitHub account, email your usernames to class-info@techemstudios.com or joe@techemstudios.com, so we can add you to the class' Slack team. For those that already have both accounts, just make sure you can log into them! For more direction on joing the team on Slack, check out the intro to slack blog [here](http://blog.techemstudios.com/slack.html).  
 
+<center>  
+
+![slackin](images/slack-logo.jpg)![githubin](images/github.jpg)
+
+</center>  
+
 Next week, we will narrow down project ideas and get our hands dirty.  
 
-### Random Number Game  
+### The Random Number Game  
 #### What is Code?  
 
 On Thursday night, we took the random number game we have all played before and put it into a Python program using the chromebooks. Think of *code* or *coding* as a way to represent something, just in a different way. Here, we simply took a real-world game and used Python to represent it. Code is a way for conveying information between people; in this class, between people and machines. Code helps us communicate. You use code everyday without thinking about it, i.e. when you talk with someone, or when you write or read something --speech and text are considered code. So, you have been coding almost all of your life! Throughout class, we'll learn different ways to *code*.  
