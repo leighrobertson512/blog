@@ -28,11 +28,7 @@ Whether we work in groups or individually during the weeks, we will always work 
 ## Assignment 1  
 Create a new account for [Slack](https://slack.com/) and [GitHub](https://github.com/join?source=header-home) --you will need to verify the email address you sign up with for both. Don't forget your usernames and passwords! Once you have your own Slack and GitHub account, email your usernames to class-info@techemstudios.com or joe@techemstudios.com, so we can add you to the class' Slack team. For those that already have both accounts, just make sure you can log into them! For more direction on joing the team on Slack, check out the intro to slack blog [here](http://blog.techemstudios.com/slack.html).  
 
-<center>  
-
-![slackin](images/slack-logo.jpg)![githubin](images/github.jpg)
-
-</center>  
+<img src="images/slack-logo.jpg" alt="slackin" style="width: 200px;"/> <img src="images/github.jpg" alt="githubin" style="width: 200px;"/>  
 
 Next week, we will narrow down project ideas and get our hands dirty.  
 
