@@ -151,7 +151,7 @@ Enjoy the snow!!!
 
 ## Practice!  
 
-If you do not have access to Python at home, you can download it free from [python.org](https://www.python.org/), or in an internet browser via [PythonAnywhere.com](https://www.pythonanywhere.com/). For either options, you can follow instructions for helping you set up your environment [here](http://www.allendowney.com/wp/books/think-python-2e/).  
+If you do not have access to Python at home, you can download it free from [python.org](https://www.python.org/), or in an internet browser via [PythonAnywhere.com](https://www.pythonanywhere.com/). For either options, you can follow instructions on help setting up your environment to practice at home [here](http://www.allendowney.com/wp/books/think-python-2e/).  
 
 ### Project Updates  
 
