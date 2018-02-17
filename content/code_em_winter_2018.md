@@ -171,6 +171,56 @@ All groups continued their documentation of steps taken to help prepare for crea
 
 ***  
 
+<center>  
+
+*to be continued: day five & six*  
+
+</center>  
+
+***  
+
+# Day Six  
+
+`week of 02/12/2018`  
+
+## Quick Review & Look of Python  
+
+Thursday night we did a quick a review and quickly went over some core concepts in Python. Though we only scratched the surface of some, we will get to those in more detail in the following projects. First, we dove into the Python Interpreter, a place where you can quickly try out and test ideas without having to create, save, and run a program. We also introduced some useful built-in functions, like `type()`.  
+
+By the end of our last project, we practiced many of these concepts already. The point of the *quick* review and intro was to ensure we are ready to move on to bigger things, confidently!  
+
+#### Concept Highlights  
+
+* Data Types (found in every language):  
+    - Integers (INT)  
+    - FLOATs  
+    - STRINGs (STR)  
+    - Boolean (BOOL)  
+
+* Data Structures:  
+    - Lists  
+    - Dictionaries  
+    - Tuples  
+
+Below, the content we went over during the first part of class:  
+
+<center>  
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQOz_zbnRaEQZRCRuZ5f3feEzvudkCIxoRUHkUfhRzgoJloihVmNqVG6kVyfK-p0YV7SI4S06dbE7Uj/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="496" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+
+</center>  
+
+## Program Planning  
+
+We talked about pseudocode as a way to plainly write out what is happening, line-by-line in a program. We will get to a point where this is second-nature. We also sketched a quick *program flow* of part of our next mini-project, a temperature converter program complete with temperature warnings, where we will add a user interface to interact with.  
+
+<center>  
+
+<img src="images/flow.jpg" alt="flow" style="width: 400px;"/>
+
+</center>  
+
+***  
 
 
 
