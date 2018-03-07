@@ -173,7 +173,7 @@ All groups continued their documentation of steps taken to help prepare for crea
 
 <center>  
 
-*to be continued: day five & six*  
+*to be continued: day four & five*  
 
 </center>  
 
@@ -220,7 +220,111 @@ We talked about pseudocode as a way to plainly write out what is happening, line
 
 </center>  
 
+## Assignment 6  
+
+We started drawing out our program's flow towards the end of class, so finish flow drawing outside of class. See if you can make a program flow for another program you've already created or a new one.  
+
 ***  
+
+# Day Seven  
+
+`week of 02/19/2018`  
+
+We picked up where we left off last week, understanding a program's *flow*. The simple temperature program takes input, handles the input, and outputs the result. Instead of laying out formal steps, we checked out how this program would look with *pseudocode*. Pseudocode is simply writing (in English) a desrciption of what a program does.  
+
+```  
+Receive user input, a temperature in Celsius.
+Convert the celsius temperature into fahrenheit.
+Output the fahrenheit temperature.
+```  
+
+Looking at a program in plain english can help you begin to write it in a computer programming language, like Python:  
+
+```python  
+# A function that takes celsius temp input,
+# converts the input into fahrenheit,
+# then outputs the fahrenheit temperature.
+
+def main():
+    celsius = int(raw_input("What is the Celsius temperature? "))
+    
+    fahrenheit = 9/5 * celsius + 32
+ 
+    print("The temperature is "+ str(fahrenheit)+ " degrees fahrenheit.")
+
+main()
+```  
+
+## Assignment  7  
+Add conditionals to the temperature converter program by adding temperature warnings, based on whether the fahrenheit temperature output is hot or cold. Check out the program flow diagram from earlier.  
+
+Part of the pseudocode might look something like: "if fahrenheit is more than 90, then return temperature warning."  
+
+***  
+
+# Day Eight    
+
+`week of 02/25/2018`  
+
+## Mad Libs  
+
+You can create fun, interactive programs! The class got started with an executable program asking input for a series of nouns, verbs, and adjectives. The program then inserts those answers into a story. Students received some funny results! We then changed up the program to make it our own.  
+
+The mad libs program:  
+
+```python  
+
+food =raw_input('Enter a food: ') + ','
+adj1 = raw_input('Enter a adjective:') + " "
+adj2 = raw_input('Enter another adjective: ') + " "
+noun = raw_input('Enter a noun: ') + ','
+verb = raw_input('Enter a verb present ending in ing: ') + ','
+noun2 = raw_input('Enter a noun plural: ') + ','
+noun3 = raw_input('Enter another noun plural: ') + ','
+
+print("\n")
+
+print("With a new beginning and a fresh piece of " + food)
+print("Full of inspiration and " + adj1 + " thoughts, ")
+print("lets begin this year with a " + adj2 + noun)
+print("Gone are the days of regret and " + verb)
+print("These rooms full of " + noun2)
+print("It's time to move with courage, ")
+print("Full of confidence and " + noun3)
+print("Let's begin this year with a " + adj2 + noun)
+```  
+
+By setting expressions as a value in a variable, we can see how that is useful for when we manipulate them later.  
+
+## Assignment 8  
+
+Create your own version of a Mad Libs in Python. Bonus: save this program in your own GitHub repository.  
+
+***  
+
+# Day Nine    
+
+`week of 03/05/2018`  
+
+## User Interface  
+
+So far our programs' output has been text-based. There are several tools to use in Python to have your programs output be *aesthetically* pleasing. One of which is a [simple graphics library](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/assignments/graphics.py) written by John Zelle. Students from the fall session of Code Em probably remember checking this out. This program uses a fundamental concept in programming, **Object-oriented** programming/design (OO). We first dove in by writing a program that registers mouse clicks. Look to [last session's blog](http://blog.techemstudios.com/code-em-fall-2017.html), starting at Day Nine.  
+
+## Adding a GUI to our Temperature Converter  
+
+After reviewing some basics of OOP, we started to set up some graphical user interface (GUI) for our simple temperature converter program; complete with text input and clickable buttons.  
+
+We will finish this next week, and move onto final projects.  
+
+## Assignment 9  
+
+Explore drawing graphics using [graphics.py](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/assignments/graphics.py). Make a program or two, which use objects from this file to output any graphic. You can copy and paste the code into a file called, graphics.py. Be sure your program knows where to grab graphics.py (you can save it in the same directory/folder).  
+
+For those that have not created a GitHub account and are not on the Tech Em Students Slack team, please do so! This will be important for saving and keeping up to date with projects, as we are approaching the end. See earlier on this page for details.  
+
+***  
+
+
 
 
 
