@@ -5,7 +5,7 @@ category: Classes
 Tags: computer science, coding, github, slack, raspberry pi, technology  
 Illustration: raspberry-pi.jpg  
 
-# Day One  
+### Day One  
 
 `Week of January 8th, 2018`  
 
@@ -103,7 +103,7 @@ Don't worry if this all seems foreign to you (or you feel rusty)! Together, we'l
 ***  
 
 
-# Day Two    
+### Day Two    
 
 `Week of January 15th, 2018`  
 
@@ -145,7 +145,7 @@ Enjoy the snow!!!
 
 ***  
 
-# Day Three  
+### Day Three  
 
 `week of 01/22/2018`  
 
@@ -179,7 +179,7 @@ All groups continued their documentation of steps taken to help prepare for crea
 
 ***  
 
-# Day Six  
+### Day Six  
 
 `week of 02/12/2018`  
 
@@ -226,7 +226,7 @@ We started drawing out our program's flow towards the end of class, so finish fl
 
 ***  
 
-# Day Seven  
+### Day Seven  
 
 `week of 02/19/2018`  
 
@@ -262,7 +262,7 @@ Part of the pseudocode might look something like: "if fahrenheit is more than 90
 
 ***  
 
-# Day Eight    
+### Day Eight    
 
 `week of 02/25/2018`  
 
@@ -302,7 +302,7 @@ Create your own version of a Mad Libs in Python. Bonus: save this program in you
 
 ***  
 
-# Day Nine    
+### Day Nine    
 
 `week of 03/05/2018`  
 
@@ -312,13 +312,29 @@ So far our programs' output has been text-based. There are several tools to use 
 
 ## Adding a GUI to our Temperature Converter  
 
-After reviewing some basics of OOP, we started to set up some graphical user interface (GUI) for our simple temperature converter program; complete with text input and clickable buttons.  
+After reviewing some basics of OO, we started to set up some graphical user interface (GUI) for our simple temperature converter program; complete with text input from a user and clickable buttons.  
 
 We will finish this next week, and move onto final projects.  
 
+### The temp converter gui code  
+<script src="https://gist.github.com/joetechem/cecf74583b2ff859ec2a7012a20aaa5f.js"></script>  
+
+## The <span style="color:red">R</span><span style="color:orange">O</span><span style="color:yellow">Y</span><span style="color:green">G</span><span style="color:blue">B</span><span style="color:purple">I</span><span style="color:violet">V</span> Guessing Game  
+
+A fun program where we learned a little more about what we can do with lists, functions, loops, random, and importing modules. Below are the steps in the terminal we took during class to get started. Check out the repo [here](https://github.com/joetechem/roygbiv).  
+
+#### Terminal commands to get started with roygbiv  
+```bash  
+git clone https://github.com/joetechem/roygbiv  
+cd roygbiv
+geany v2_roygbiv.py
+```  
+
+When we run **v2_roygbiv.py**, we got an idea of how the game works. Then, we added new features to the game with a few lines of code to change the user experience. Inside the **src** folder, you can see each feature added in steps.  
+
 ## Assignment 9  
 
-Explore drawing graphics using [graphics.py](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/assignments/graphics.py). Make a program or two, which use objects from this file to output any graphic. You can copy and paste the code into a file called, graphics.py. Be sure your program knows where to grab graphics.py (you can save it in the same directory/folder).  
+Explore drawing graphics using [graphics.py](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/assignments/graphics.py). Make a program or two, which use objects from this file to output any graphic. You can copy and paste the code into a file called, graphics.py. Be sure your program knows where to grab graphics.py (you can save it in the same directory/folder). *AND/OR* If you didn't take the handout with the temp converter gui code home, use the GitHub gist above to get it running at home. Try tweaking the code to add colors, or other features.  
 
 For those that have not created a GitHub account and are not on the Tech Em Students Slack team, please do so! This will be important for saving and keeping up to date with projects, as we are approaching the end. See earlier on this page for details.  
 

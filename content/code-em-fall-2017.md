@@ -633,7 +633,6 @@ Enjoy the Holidays!!!
 
 ***  
 
-
 **Sources**  
 
 ```
@@ -645,11 +644,5 @@ Downey, Allen B. Think Python: How to Think Like a Computer Scientist. O'Reilly 
 
 Matthes, Eric. Python Crash Course: A Hands-On, Project-Based Introduction to Programming. 4th ed., William Pollock, 2016.  
 
-Zelle, John M. *Python Programming: an Introduction to Computer Science.* Franklin, Beedle & Associates, 2010.  
+Zelle, John M. Python Programming: an Introduction to Computer Science. Franklin, Beedle & Associates, 2010.  
 ```  
-
-
-
-
-
-
