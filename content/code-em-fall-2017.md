@@ -1,7 +1,7 @@
 Title: Code Em Fall 2017  
 Author: Josef Seiler  
 Date: 2017-09-27  
-category: Classes  
+Category: Classes  
 Tags: coding, github, slack, computer science, raspberry pi  
 Illustration: gears.jpg  
 
