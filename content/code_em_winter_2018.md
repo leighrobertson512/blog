@@ -1,9 +1,10 @@
 Title: Code Em Winter 2018    
-Author: Josef Seiler  
 Date: 2018-01-09  
-category: Classes  
+Category: Classes  
 Tags: computer science, coding, github, slack, raspberry pi, technology  
 Illustration: raspberry-pi.jpg  
+Author: Josef Seiler  
+Summary: Concepts and Homework  
 
 ### Day One  
 
@@ -334,15 +335,113 @@ When we run **v2_roygbiv.py**, we got an idea of how the game works. Then, we ad
 
 ## Assignment 9  
 
-Explore drawing graphics using [graphics.py](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/assignments/graphics.py). Make a program or two, which use objects from this file to output any graphic. You can copy and paste the code into a file called, graphics.py. Be sure your program knows where to grab graphics.py (you can save it in the same directory/folder). *AND/OR* If you didn't take the handout with the temp converter gui code home, use the GitHub gist above to get it running at home. Try tweaking the code to add colors, or other features.  
+Explore drawing graphics using [graphics.py](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/assignments/graphics.py). Make a program or two, which use objects from this file to output any graphic. You can copy and paste the code into a file called, graphics.py. Be sure your program knows where to grab graphics.py (you can save it in the same directory/folder). *AND/OR* If you were not able to take the temp converter gui handout home with you, click the GitHub gist above to get it running at home. You will see it has a basic look to it; tweak the code to add colors, or other features, and upload your file to your own GitHub repo.  
 
-For those that have not created a GitHub account and are not on the Tech Em Students Slack team, please do so! This will be important for saving and keeping up to date with projects, as we are approaching the end. See earlier on this page for details.  
+For those that have not created a GitHub account and are not on the Tech Em Students Slack team, please do so! This will be important for saving and keeping up to date with projects, as we are approaching the end. See earlier on this page for more details. In short, once you have created a GitHub account, email your username class-info@techemstudios.com, and you will be added as a collaborator to our class project and added to the class Slack team.  
 
 ***  
 
+### Day Ten      
 
+`week 03/12/2018`  
 
+## Python SlackBot  
 
+### Class Project's Starting Steps  
 
+As we continue to merge our project endeavours, we started class this week with a discussion on **voice-controlled personal assistants**. In other words, [Amazon Alexa](https://developer.amazon.com/alexa), [Apple Siri](https://www.apple.com/ios/siri/), [Windows Cortana](https://www.microsoft.com/en-us/windows/cortana), etc. These and others like it, have been developed (and continuing to be developed) to help users (humans) interact with technology a little more naturally, with voice.  
 
+One of our final projects we'll be working on together will follow closely in-line to the above. Instead of voice-controlled, yours will be a *text-controlled* personal assistant, which runs on a Raspberry Pi!! To achieve this, we will learn how to use tools used by **real** software developers!  
+
+*We'll get to know these tools well, during the coming weeks.*    
+
+## Command-Response Program  
+### Create your own Local ChatBot  
+
+Our first step in developing our DIY personal assistant, involved us writing a program that receives input (we'll call these *commands*), processes them, then returns a response. In short, you will conduct a program to return a response based on user input.  
+
+--just like the widely used personal assistants (Alexa, Cortana, and Siri) mentioned before.  
+
+#### The starting code for the python command response program  
+```python  
+# Put your commands here
+# Keep the values lowercase
+COMMAND1 = "what?"
+
+# Your handling code goes in this function
+def handle_command(command):
+    """
+        Determine if the command is valid. If so, take action and return
+        a response, if necessary.
+    """
+    response = ""
+    if COMMAND1 in command:
+        response = "Huh?"
+
+    else:
+        response = "Why thank you, I don't know what else to say."
+    return response
+
+print ("Hi, I am sirexa, your own personal bot. Awaiting your command.")
+
+while True:
+    command = raw_input('\nsirexa -> ')
+    response = handle_command(command)
+    print response
+```  
+
+This starter template knows how to respond to only one command, `COMMAND1`. So, when we ran this code, typed in `what?`, and hit the enter key, it would respond with `huh?`. For anything `else` you enter, the program responds with a generic "I don't know" response, because you have not coded it to handle more than one command!  
+
+Just as when a real *user-controlled* personal assistant is powered on, it continously waits for user input to respond to. So, in our program, we have a Python `while` loop which also continously waits for user input/more commands. 
+
+We spent the rest of class making our chatbots *smarter*, by adding more commands and **handlers** to respond to those commands.  
+
+#### Here is an example of how we added more commands and handlers  
+
+```python  
+
+COMMAND1 = "what?"
+COMMAND2 = "what are you waiting for?"
+
+def handle_command(command):
+
+    response = ""
+    if COMMAND1 in command:
+        response = "Huh?"
+    if COMMAND2 in command:
+        response = "I am waiting for students to add more commands!"
+
+    else:
+        response = "Why thank you, I don't know what else to say."
+    return response
+```  
+
+## Assignment 10  
+
+Voice-controlled assistants are able to stop waiting for user input once they are told to (i.e. *"Alexa, stop"*). Code your command-response program to stop running, by adding a "quit" command that makes the program stop running. Add this code to your own GitHub repository.  
+
+***  
+
+### Day Eleven & Twelve  
+
+`weeks March 19th & 26th`  
+
+## Python SlackBot Project  
+
+### Team Collaboration   
+
+As we discussed during the previous weeks, *we'll be working on together will follow closely in-line to the above. Instead of voice-controlled, yours will be a *text-controlled* personal assistant, which runs on a Raspberry Pi!! To achieve this, we will learn how to use tools used by **real** software developers!*  
+
+Our first steps were to edit code in your individual command-response program *(see the python code from last week)*. The next steps are to aggregate everyone's code onto one single GitHub repository. This will allow us to actively co-operate on our class project while in class, as well as anywhere!  
+
+I will update the details and flow of this project next week, as well as the DIY Rapsberry Pi robot project (either as a continuation on this blog or a separate article).  
+
+***  
+
+<center>  
+
+Thank you for your patience!  
+Stay Tuned!  
+
+</center>  
 
