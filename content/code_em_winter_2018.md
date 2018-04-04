@@ -429,7 +429,7 @@ Voice-controlled assistants are able to stop waiting for user input once they ar
 # The Power of Python!!!  
 ## Class SlackBot Project  
 
-### Team Collaboration   
+#### Team Collaboration   
 
 As we discussed during the previous weeks, *we'll be working on together will follow closely in-line to the above. Instead of voice-controlled, yours will be a *text-controlled* personal assistant, which runs on a Raspberry Pi!! To achieve this, we will learn how to use tools used by **real** software developers!*  
 
@@ -444,4 +444,28 @@ Our first steps were to edit code in your individual command-response program *(
 
 </center>  
 
+Before moving on, I strongly recommend checking out the slides above. This outlines some of the flow of the project, helps to remind you of what we did during class, and should help you to continue working on the project even beyond class; from anywhere in the world!  
 
+We talked about in class; we can think of a GitHub repository (repo) simply as a folder. We *cloned* (copied) the repo for our Slackbot project, **code_em** onto the computer you use in class. The picture below can hopefully help visualize what is going on when you clone a repo, make local changes to it, then submit your changes to be updated on the GitHub repo.  
+
+<center>  
+
+![pull-push](images/github-repos-flow.jpg)  
+
+</center>  
+
+On the left, represents the folder where our class project resides on GitHub. The folder on the right represents your cloned version of the class project, which resides on your computer. These folder communicate with one another when you tell it to by using the git commands (these can be found in the slides above), *git pull* (updates **your** folder with changes your classmates made) and *git push* (sends your changes to the GitHub folder).  
+
+#### Then, a sequence of events is kicked off:  
+
+<center>  
+
+<img src="images/IMG-3004.jpg" alt="circle" style="width: 700px;"/> 
+
+*substitute "Actor" for student*  
+
+</center>  
+
+This project helped you to further understand how we can use GitHub to work in teams, learn other tools real software developers use, Internet of Things (IoT), sheds a light on how voice-enabled personal assistants (Alexa, Siri, etc.) operate, and further shows how Python can be used to perform all sorts of things!  
+
+***  
