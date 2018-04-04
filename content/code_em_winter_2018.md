@@ -426,7 +426,8 @@ Voice-controlled assistants are able to stop waiting for user input once they ar
 
 `weeks March 19th & 26th`  
 
-## Python SlackBot Project  
+# The Power of Python!!!  
+## Class SlackBot Project  
 
 ### Team Collaboration   
 
@@ -434,14 +435,13 @@ As we discussed during the previous weeks, *we'll be working on together will fo
 
 Our first steps were to edit code in your individual command-response program *(see the python code from last week)*. The next steps are to aggregate everyone's code onto one single GitHub repository. This will allow us to actively co-operate on our class project while in class, as well as anywhere!  
 
-I will update the details and flow of this project next week, as well as the DIY Rapsberry Pi robot project (either as a continuation on this blog or a separate article).  
-
-***  
-
 <center>  
 
-Thank you for your patience!  
-Stay Tuned!  
+# SlackBot Project Overview  
+
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTjviS2srWmauwn5X6CdoctInRbmr7LY6f2cvzVaMMBVbShVW4GoLTcktoUtzVqFi038tNQOMXaF0_q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="496" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
 
 </center>  
+
 
