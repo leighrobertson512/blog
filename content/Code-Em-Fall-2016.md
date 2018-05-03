@@ -47,7 +47,7 @@ The class was able to see a snippet of computer hardware progression in-person a
 
 ***  
 
-![slack](images/slack-logo.jpg)  
+<img src="images/slack-logo.jpg" alt="slackin" style="width: 300px;"/>  
 [^1]  
 
 #### Communication Resources  
@@ -56,7 +56,7 @@ We will be using a messaging app called [Slack](https://slack.com/). Tech Em has
 
 ***  
 
-![github](images/github.jpg)  
+<img src="images/github.jpg" alt="githubin" style="width: 300px;"/>   
 [^2]  
 
 #### Tracking our Projects  
@@ -198,7 +198,11 @@ Or Central Processing Unit. To understand some basics of computer hardware, we e
 
 Before learning about the Central Processing Unit (CPU), we first watched and discussed a video on how a computer works, specifically memory.  
 
+<center>  
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p3q5zWCw8J4" frameborder="0" allowfullscreen></iframe>  
+
+</center>  
 
 The great way to think of the CPU, is to think of it as the "brain" of the computer. This is where all the basic operations of a computer are executed.  
 
@@ -505,6 +509,7 @@ For example, a student could type `@Sirexa: blue led on` and sirexa would respon
 Check out Wray's [deck](http://techemstudios.com/decks/slackpi-to-alexa/#/) offering more info. on the project and some of the process.  
 
 ### Assignment Eight  
+
 If you have your GitHub account, try creating commands and responses in your own directory at home. You can do this by cloning the repository to your computer and making the changes using Python or your favorite test editor and committing, then pushing those changes to the repository. Or, if you have not yet received/accepted an invitation to collaborate, you can "fork" the code_em project and do a pull request. Look to the [blog on Slack](http://blog.techemstudios.com/slack.html) and/or ask a question in the Slack team.  
 
 ***  
@@ -523,7 +528,9 @@ Students got started on making a diagram on paper to show the flow of their game
 The following is an excerpt taken from a [blog post](http://blog.techemstudios.com/hardcore-programming-camp-summer-2016.html) earlier this summer:  
 
 ### Choose Your Own Adventure  
+
 #### Essentially Making a Decision Tree  
+
 A "Decision Tree" is one of many ways to display an algorithm, a step-by-step process for reaching a result or solution to a problem. The first decision "branches" into two possibilities, each of which is another decision. By looking at the whole, it forms a tree, a decision tree! The procedural flow of traveling down the tree from the very first decision is nicely implemented with the Choose Your Adventure challenge camper completed using Python/Pythonista. You can compare this to a series of game books, Choose Your Own Adventure by [Edward Packard](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure) and the text adventure, [Zork](https://en.wikipedia.org/wiki/Zork) or tons of other written books where the reader commandeers the actions of the protagonist; leading to distinct endings.  
 
 Students started their program by sketching on paper their ideas for their game's procedure flow to ultimately implement in their program. This challenge applies advanced branching logic and allows students to design their algorithm by literally drawing their program flow. The nodes in the tree are decision points -rooted in the very first decision. A first decision point could be, you land on Mars and you spot something in the distance. From here, you may have a few choices (or nodes) to choose from: Leave Mars, Go to Object, or Scan the Object. You can choose Go to Object, and you arrive at another decision point or node in the tree and the flow continues. Take a look at this example displayed on paper and translated into an interactive Python program. Try contrasting the decision tree on paper to the written program on python.  
@@ -539,12 +546,14 @@ Decision trees are used in the real world all the time. Call Center Reps use the
 Another system that models a decision tree, identifying bugs. Really?? Yes. A dichotomous key, a tool used to identify something in the natural world is a great example to model decisions. Take a look at how a dichotomous key can be used by an Entomologist (someone who studies bugs; let's call him Steve) to identify something they collected from a stream.   
 
 To use this key, Steve starts at the first decision point: is it something that has a shell or does not have a shell? This question knocks either With Shell or No Shell out of contention to be the thing's identity. If the condition is false, it is not a snail or clam, so Steve would then arrive at the next node: Does it Have a Backbone or No Backbone. If that condition is true, then he would arrive at another subnode, and his search continues for the bug's identity by following the outcome of each node until he arrives at its most likely identity and, ta-da, Steve knows the identity of the bug. If Steve was so inclined, he could look to another key to determine what Phylum, Class, Order, Family, Genus and finally species that bug belongs to. But, we'll save that story for later! Snapshot of a dichotomous key:  
+
 ![descision tree](images/decision-tree.jpg)  
 [^2]  
 
 ***  
 
 ### Assignment Nine  
+
 Until next week, add more to your choose your own adventure python program. If you find that you are typing in some of the same code more than once, try defining a function and calling that function. If you were not able to upload your program to your GitHub account during class, you can get to your code [here](https://github.com/jo3t3ch3m/TechEmStudents). You can copy and paste your code to your computer, save as a python file (file_name.py).  
 
 **BONUS** Add your choose your own adventure program to a repository on your GitHub and make changes to it from there (make changes locally for an extra bonus!). For help, look to the [post on uploading projects to GitHub](http://blog.techemstudios.com/upload-projects-to-github.html). Here, there are steps to creating your own GitHub repository, adding files to it, and setting up a working directory to work on that repository (locally).  
@@ -562,7 +571,9 @@ Until next week, add more to your choose your own adventure python program. If y
 `12/06/2016`  
 
 #### Last Day  
+
 ##### Hour of Code  
+
 This week is the third annual Hour of Code week! To participate, students built an iPhone game by writing in the [Swift](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/) programming language. The looks and functionality of Swift are similar to the programming language, [C](https://www.tutorialspoint.com/cprogramming/c_overview.htm). Swift is also quite intuitive and its structure is easy to read, like Python. This session, since we have learned some fundamentals of Python, this hour of code activity served as a nice introduction to the Swift programming language. Students completed this activity was done directly on a Chromebook web browser on [MakeSchool.com](https://www.makeschool.com/build-an-iphone-game-in-your-browser), so you can open it up at home.  
 
 #### Functions  
