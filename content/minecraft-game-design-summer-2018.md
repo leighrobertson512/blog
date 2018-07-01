@@ -10,7 +10,7 @@ Tags: minecraft, modding, coding, hyperpad, design thinking, game design, comput
 
 This week was a great start to the Summer Camp season! The Minecraft camp entailed Minecraft Modding and circuit building with redstone, while campers in Game Design put together mobile games and PC games. In both camps, students learned core fundamentals of Computer Science, friends were made, and everyone had a blast!  
 
-<img src="images/summer_camps/2018/6_25_18_afternoon2.jpg" alt="unity" style="width: 400px;"/>  
+<img src="images/summer_camps/2018/6_25_18_afternoon2.jpg" alt="unity" style="width: 640px;"/>  
 
 # Minecraft Camp  
 
@@ -34,7 +34,7 @@ Enchanted bridges, LEDs that respond to your game, exploding minecarts... These 
 
 <center>  
 
-<img src="images/summer_camps/2018/6_25_18_morning2.jpg" alt="unity" style="width: 400px;"/>  
+<img src="images/summer_camps/2018/6_25_18_morning2.jpg" alt="unity" style="width: 520px;"/>  
 
 </center>  
 
@@ -49,11 +49,6 @@ Below are steps to mirror the environment (using Python or Java) your child work
 Get started with Python Modding on a computer or a Raspberry Pi (after installing the OS). 
 <iframe src="https://docs.google.com/presentation/d/1-7Fdm66mEfuiEAsiZjE_lRD8oTRGe0oDRMhDMjUbSWk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
 
-</center>  
-
-## Minecraft Mods - Java & Forge  
-
-<center>  
 
 ### Java Modding    
 Most mods written in Java are executed through Eclipse IDE. Check out the slides below to get started.  
@@ -68,7 +63,7 @@ The campers learned how to build simple binary logic gates using the famous, red
 
 <center>  
 
-<img src="images/summer_camps/2018/6_25_18_morning.jpg" alt="unity" style="width: 380px;"/>  
+<img src="images/summer_camps/2018/6_25_18_morning.jpg" alt="unity" style="width: 620px;"/>  
 
 </center>  
 
@@ -103,7 +98,7 @@ Unity has a little more advanced game development environment. In this group a 2
 
 <center>  
 
-<img src="images/summer_camps/2018/6_25_18_afternoon.jpg" alt="unity" style="width: 400px;"/>  
+<img src="images/summer_camps/2018/6_25_18_afternoon.jpg" alt="unity" style="width: 640px;"/>  
 
 </center>  
 
