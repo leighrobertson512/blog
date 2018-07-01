@@ -10,11 +10,19 @@ Campers learned the ways of Minecraft Modding by learning core principles of pro
 
 Enchanted bridges, exploding minecarts and anvils, coordinate trackers and working Minecraft clocks... These were just a few of the mods written and controlled by campers!  
 
-![first](images/summer_camps/modding/modding-python.jpg)  
+<center>  
+
+<img src="images/summer_camps/modding/modding-python.jpg" alt="name" style="width: 340px;"/>  
+
+</center>  
 
 The campers worked together to complete build challenges incorporating Minecraft mods. The mods worked on during camp produced some great problem solving sessions and exciting results in Minecraft!  
 
-![second](images/summer_camps/modding/modding.jpg)  
+<center>  
+
+<img src="images/summer_camps/modding/modding.jpg" alt="name" style="width: 340px;"/>  
+
+</center>  
 
 Below are the steps to mirror the environment (using Python and/or Java) your child worked on during Minecraft Modding. Feel free to ask the Tech Em team any questions on the process.  
 
@@ -36,12 +44,16 @@ Essentially all mods written in Java, are edited and deployed through the Eclips
 
 The campers learned a user-centered design approach throughout the camp, to create amazing games! Campers learned what it takes to make a well balanced game. Starting out with figuring what makes a game fun (or not fun!) for the player of the game, then onto using programming concepts, problem solving tools, and testing each other's game to give/receive feedback.  
 
-![third](images/summer_camps/mobile-gaming/gaming-letter.jpg)   
+<center>  
 
-Campers published games on the Hyperpad Hub. Hyperpad is the app we used to design games.  
+<img src="images/summer_camps/mobile-gaming/gaming-letter.jpg" alt="name" style="width: 340px;"/>  
+
+</center>  
+
+Campers published their games on the Hyperpad Hub. Hyperpad was the primary app we used to design games.  
 
 Thanks for a great first week of Summer camps!  
 
--The Tech Em Team  
+The Tech Em Team  
 
 ![third](images/summer_camps/mobile-gaming/gaming-table.jpg)  

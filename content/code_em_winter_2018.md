@@ -466,6 +466,6 @@ On the left, represents the folder where our class project resides on GitHub. Th
 
 </center>  
 
-This project helped you to further understand how we can use GitHub to work in teams, learn other tools real software developers use, Internet of Things (IoT), sheds a light on how voice-enabled personal assistants (Alexa, Siri, etc.) operate, and further shows how Python can be used to perform all sorts of things!  
+This project helped you to further understand how we can use GitHub to work in teams, learn more tools real software developers use, the Internet of Things (IoT), shed a light on how voice-enabled personal assistants (Alexa, Siri, etc.) can be modified by developers like **you**, and further shows how Python can be used to perform all sorts of things!  
 
 ***  
