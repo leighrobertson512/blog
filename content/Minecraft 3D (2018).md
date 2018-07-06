@@ -38,4 +38,6 @@ From the final camp email: You can get a sample of the projects we did from our 
 
 ![LED Pendant](images/IMG_9283.JPG)
 
-We hope our campers enjoy their 3D builds and devices and have a great rest of the summer!
+We hope our campers enjoy their 3D builds and devices.
+
+Have a great rest of the summer!
