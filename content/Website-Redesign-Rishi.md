@@ -6,7 +6,7 @@ Author: Rishi Patel
 
 ## Introduction  
 
-Our interns worked hard over the past couple of weeks to update and redesign Tech Em Studios’ website. To kickoff this redesign, it was all pens and paper; the interns worked to design what they wanted each page to look like on paper. With the plans for the redesign established, they went to work on the code (HTML, CSS, and JS). As a team, they worked using a forked github repo from our old website to make changes without affecting the live site. There were many bugs to fix as modifications were made, and the interns worked as a team to divide and conquer the tasks of the various pages. They worked using Slack to communicate and share resources. Below, our intern Maggie describes her experiences working on this project. We are excited to present our new and improved website!
+Our interns worked hard over the past couple of weeks to update and redesign Tech Em Studios’ website. To kickoff this redesign, it was all pens and paper; the interns worked to design what they wanted each page to look like on paper. With the plans for the redesign established, they went to work on the code (HTML, CSS, and JS). As a team, they worked using a forked github repo from our old website to make changes without affecting the live site. There were many bugs to fix as modifications were made, and the interns worked as a team to divide and conquer the tasks of the various pages. They worked using Slack to communicate and share resources. Below, our intern Rishi describes his experiences working on this project. We are excited to present our new and improved website!
 
 ## Homepage 
 
