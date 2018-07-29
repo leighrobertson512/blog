@@ -1,4 +1,4 @@
-Title: Device Camp  
+Title: Device Camp 2018  
 Author: Alex Noll  
 Date: 2018-7-27  
 category: Classes  
