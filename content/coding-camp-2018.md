@@ -1,9 +1,9 @@
-Title: Programming (Spring 2016)
-Date: 2016-05-09
+Title: Intro to Coding 2018
+Date: 2018-08-05
 Category: Classes
-Tags: python, pythonista
+Tags: python, hopscotch
 Author: Wray Mills
-Summary: Concepts and Homework
+Summary: Activities for the week
 
 ### Intro to Coding 2018
 
