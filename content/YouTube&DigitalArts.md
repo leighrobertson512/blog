@@ -11,19 +11,19 @@ It was awesome to see the campers unleash their creativity through their videos!
 
 Campers learned the basics of Video Making and Cinematography, as well as the social science of YouTube and how to be successful on the ever-changing platform:  
 
-![Green Screen](images/IMG_0023.JPG)
+![Green Screen](images/IMG_0023.jpg)
 
 ***  
 * **The Production Process**  
     + To start, campers had to brainstorm what they wanted in their videos and then how to implement their ideas in their videos    
 
-    ![Brain Blast](images/IMG_9972.JPG)
+    ![Brain Blast](images/IMG_9972.jpg)
 
     + Next, the campers had to either film or screen record their videos. This year, the most common video topics were usually Fortnite or PUBG so often times, campers were using Apple's built-in screen recording tools  
 
     + After campers got their raw footage, they had to edit them to make them YouTube ready! For this, we used a wide array of tools, however iMovie was a camper favorite.
 
-![YouTube](images/IMG_0026.JPG)
+![YouTube](images/IMG_0026.jpg)
 * **Getting Publishing with YouTube**
 
 Once you have your channel, you'll want to upload your video, uploading is a pretty complex process with many different variables to consider. To start, make sure you've prepared the video you want to upload by editing it and making sure it is the product you want the world to see.  
@@ -47,14 +47,14 @@ After deciding on your Thumbnail, you're ready to upload. Just hit publish, and 
  **Digital Arts**
   + For digital arts, we focused less on camera-oriented art and more on digitally created artwork such as animation or logos
 
-![Looking at iPad](images/IMG_9986.JPG)
+![Looking at iPad](images/IMG_9986.jpg)
 
   + We started off with logo and label design on Assembly as well as LogoMaker.com, the campers were extremely quick to learn how to use the tools to implement their designs
 
-![Collaboration](images/IMG_9984.JPG)
+![Collaboration](images/IMG_9984.jpg)
 
   + Finally, we moved on to Animation where campers designed their own 3D Models on the computers.
 
-![3D Model](images/IMG_9975.JPG)
+![3D Model](images/IMG_9975.jpg)
 
 We hope our campers enjoy their Digital Artwork and Videos, have a great rest of the summer and good start to the school year!
