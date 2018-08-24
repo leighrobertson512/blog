@@ -1,4 +1,4 @@
-Title: Becoming a YouTube Star!  
+Title: Becoming a YouTube Star and Digital Artist!  
 Author: Alex Noll  
 Date: 2018-8-24  
 Category: Classes  
