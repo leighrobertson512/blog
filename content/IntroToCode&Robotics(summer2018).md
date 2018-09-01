@@ -30,6 +30,6 @@ The camp began with students designing and assembling their robots. This year we
 
 After configuring their robots for using SSH and VNC, they finally had a method of wireless communication and remote control for their robots!
 
-Using their VNCs from their iPads, campers were able to load programs onto their robots and modifiy them as they saw fit!
+Using their VNCs from their iPads, campers were able to load programs onto their robots and modify them as they saw fit!
 
 ![Robot Test](images/IMG_8010.jpg)
