@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Wray Mills'
 SITENAME = u'The Art of Technology... Training'
-SITEURL = 'http://blog.techemstudios.com'
+SITEURL = u'http://blog.techemstudios.com'
 
 THEME = "themes/nest"
 
@@ -19,17 +19,17 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-MENUITEMS = (('Tech Em', 'http://techemstudios.com'),
-             ('About', 'http://techemstudios.com/about-us'))
+MENUITEMS = ((u'Tech Em', u'http://techemstudios.com'),
+             (u'About', u'http://techemstudios.com/about-us'))
 
 # Blogroll
-LINKS =  (('Tech Em Studios', 'http://techemstudios.com'),
-          ('Python.org', 'http://python.org/'),
-          ('Pelican', 'http://getpelican.com'),)
+LINKS =  ((u'Tech Em Studios', u'http://techemstudios.com'),
+          (u'Python.org', u'http://python.org/'),
+          (u'Pelican', u'http://getpelican.com'),)
 
 # Social widget
-SOCIAL = (('@TechEmRVA', 'http://twitter.com/techemrva'),
-          ('TechEm Studios on FB', 'http://facebook.com/techemstudios'),)
+SOCIAL = ((u'@TechEmRVA', u'http://twitter.com/techemrva'),
+          (u'TechEm Studios on FB', u'http://facebook.com/techemstudios'),)
 
 DEFAULT_PAGINATION = 9
 
@@ -49,8 +49,8 @@ ABOUT_LINK = u'http://techemstudios.com/about-us.html'
 SHOW_COPYRIGHT = True
 
 # Nest
-NEST_HEADER_IMAGES = 'raspberry-pi-stock.jpg'
-NEST_HEADER_LOGO = '/images/small-icon.png'
+NEST_HEADER_IMAGES = u'raspberry-pi-stock.jpg'
+NEST_HEADER_LOGO = u'/images/small-icon.png'
 NEST_INDEX_HEAD_TITLE = u'Tech Em Blog'
 NEST_INDEX_HEADER_TITLE = u'Tech Em Blog'
 NEST_INDEX_HEADER_SUBTITLE = u'Be more than a user of technology'
