@@ -17,7 +17,7 @@ jobs:
         - make github
         - git remote remove origin
         - git remote add origin https://$GH_TOKEN@github.com/techemstudios/blog-review
-        - echo blog-review.techemstudios.com > /home/travis/build/techemstudios/blog/output/CNAME
+        - echo blog-review.techemstudios.com > /home/travis/build/techemstudios/CNAME
         - git push -f origin gh-pages
     - stage: deploy_prod
       script:
