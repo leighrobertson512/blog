@@ -1,21 +1,24 @@
+language: python
+install:
+  - pip install markdown
+  - pip install pelican
+  - pip install ghp-import
+script:
+  - make github
+  - git remote remove origin
+
 jobs:
   include:
-    - stage: build
-      language: python
-      install:
-        - pip install markdown
-        - pip install pelican
-        - pip install ghp-import
+    - stage: deploy_review
       script:
-        - make github
-    - stage: deploy
+        - git remote add origin https://$GH_TOKEN@github.com/techemstudios/blog-review
+        - git push -f origin gh-pages
+    - stage: deploy_prod
       script:
-        - git remote remove origin
         - git remote add origin https://$GH_TOKEN@github.com/techemstudios/blog
         - git push -f origin gh-pages
 stages:
-  - build
-  - name: deploy
+  - name: deploy_prod
     if: branch = master
 env:
   global:
