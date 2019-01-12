@@ -22,6 +22,8 @@ jobs:
         - git remote add origin https://$GH_TOKEN@github.com/techemstudios/blog
         - git push -f origin gh-pages
 stages:
+  - test
+  - name: deploy_review
   - name: deploy_prod
     if: branch = master
 env:
