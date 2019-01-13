@@ -1,4 +1,4 @@
-Title: Robious Elementary Game Design Winter 2017       
+Title: Robious Elementary Game Design Winter 2017 Links
 Author: Josef Seiler
 Byline: Something
 Date: 2017-02-24 21:25
