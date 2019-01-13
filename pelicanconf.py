@@ -24,17 +24,20 @@ MENUITEMS = ((u'Tech Em', u'http://techemstudios.com'),
 
 # Blogroll
 LINKS =  ((u'Tech Em Studios', u'http://techemstudios.com'),
+          (u,'Register!',u'http://register.techemstudios.com'),
+          (u,'Enrollment',u'https://secure.techemstudios.com'),
           (u'Python.org', u'http://python.org/'),
           (u'Pelican', u'http://getpelican.com'),)
 
 # Social widget
 SOCIAL = ((u'@TechEmRVA', u'http://twitter.com/techemrva'),
-          (u'TechEm Studios on FB', u'http://facebook.com/techemstudios'),)
+          (u'TechEm on GitHub',u'https://github.com/techemstudios'),
+          (u'TechEm on FB', u'http://facebook.com/techemstudios'),)
 
 DEFAULT_PAGINATION = 9
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 GITHUB_URL = u'https://github.com/techemstudios'
 
