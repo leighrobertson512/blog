@@ -24,8 +24,8 @@ MENUITEMS = ((u'Tech Em', u'http://techemstudios.com'),
 
 # Blogroll
 LINKS =  ((u'Tech Em Studios', u'http://techemstudios.com'),
-          (u,'Register!',u'http://register.techemstudios.com'),
-          (u,'Enrollment',u'https://secure.techemstudios.com'),
+          (u'Register!',u'http://register.techemstudios.com'),
+          (u'Enrollment',u'https://secure.techemstudios.com'),
           (u'Python.org', u'http://python.org/'),
           (u'Pelican', u'http://getpelican.com'),)
 
