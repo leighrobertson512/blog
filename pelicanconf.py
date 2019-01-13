@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Wray Mills'
 SITENAME = u'The Art of Technology... Training'
-SITEURL = u'http://blog.techemstudios.com'
+#SITEURL = u'http://blog.techemstudios.com'
 
 THEME = "themes/nest"
 
@@ -37,7 +37,7 @@ SOCIAL = ((u'@TechEmRVA', u'http://twitter.com/techemrva'),
 DEFAULT_PAGINATION = 9
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
 
 GITHUB_URL = u'https://github.com/techemstudios'
 
