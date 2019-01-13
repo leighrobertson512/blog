@@ -15,7 +15,7 @@ We explored the apps, Floors, Hopscotch, and Hyperpad.
 
 Floors is built around the "run-and-jump" platformer genre -think of mario.   
 
-Hyperpad is a very detailed game design app; however, being very detailed, this means there can be a lot of work involved (but, well worth it!). After learning some basic techniques, campers were able to desin their games with a little more ease. This app and Hopscotch, allowed the campers to really dive into computer science concepts, in terms of how programs function.If your child decides to continue with exploring Hyperpad, the 'Manual' that is included in the app under 'Learn' is extremely useful.  
+Hyperpad is a very detailed game design app; however, being very detailed, this means there can be a lot of work involved (but, well worth it!). After learning some basic techniques, campers were able to design their games with a little more ease. This app and Hopscotch, allowed the campers to really dive into computer science concepts, in terms of how programs function.If your child decides to continue with exploring Hyperpad, the 'Manual' that is included in the app under 'Learn' is extremely useful.  
 
 ![design solder](images/design-game-solder.jpg)
 

@@ -1,7 +1,8 @@
-Title: Robious Elementary Game Design Winter 2017       
-Author: Josef Seiler  
-Date: 2017-02-24      
-category: Classes  
+Title: Robious Elementary Game Design Winter 2017 Links
+Author: Josef Seiler
+Byline: Something
+Date: 2017-02-24 21:25
+Category: Classes  
 Tags: computer science, design thinking, game design, Hyperpad    
 
 ***  
@@ -17,8 +18,8 @@ These links are only available for seven days, starting today. So, be sure to ch
 | Harrison      | [Game](http://bit.ly/2li6utw) |
 | Caleb      | [Game](http://bit.ly/2lieJFP)      |
 | Sydney | [Game1](http://bit.ly/2li8yBX) & [Game2](http://bit.ly/2liaIl4)      |   
-| Hank      | [Game](http://bit.ly/2lifj6t) |
-| Charlie      | [Game1](http://bit.ly/2linr7b) & [[Game2](http://bit.ly/2liddUk)      |
+| Hank      | [Tee Tee](http://bit.ly/2lifj6t) |
+| Charlie      | [Death Ball](http://bit.ly/2linr7b) & [Charlie Mac](http://bit.ly/2liddUk)      |
 | Nathaniel | [Game](http://bit.ly/2lijorC)      |
 | Brett | [Game](http://bit.ly/2lineke)      |
 | Daniel | [Game](http://bit.ly/2li1kOo)      |
@@ -26,7 +27,7 @@ These links are only available for seven days, starting today. So, be sure to ch
 | Auggie | [Game](http://bit.ly/2libE94)      |
 | Joshua | [Game](http://bit.ly/2lijLlL)      |
 | Brady | [Game](http://bit.ly/2kUU7rq)      |
-| Emory | [Game](http://bit.ly/2kV0kDy)      |    
+| Emory | [Diaper](http://bit.ly/2kV0kDy)      |    
 
 #### Instructions for Accessing Your Game  
 
