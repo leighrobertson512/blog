@@ -19,6 +19,18 @@ Tuesdays, February 5 - April 30, 6:30-7:30pm
 
 Students will gain or expand their coding knowledge through a variety of programming languages and projects based on experience level, building from visual-based languages to Python. They will apply practical computer science skills such as source code control, software design, reverse engineering, bug resolution, and coding environments.
 
+## Instructors
+
+### Lead Instructor
+
+### Youngling's Instructor
+
+### Padawan's Instructor
+
+### Additional Interns/Instructors
+
+## Pre-Requisites
+
 ## Learning Objectives
 
  * All students have a GitHub account and understand basic GitHub concepts of clone, pull, commit and push.
@@ -32,21 +44,28 @@ Students will gain or expand their coding knowledge through a variety of program
  * Repeat students will complete an appropriate level assignment.
  * Repeat students are introduced to Jupyter and/or Cloud9.
 
-## Resources
+## Materials
 
-### Presentations
+## Class
+
+## On the line Resources
+
+### On the line Presentations
 
 ### Repos
 
 ### Related Blog Notes
 
-### Assignments
+### (GitHub) Assignments
 
 ### External References
 
-## Day N
+## Day N or Lesson N
 
 Put the information for each day here
+
+### Setup
+Detail an class/classroom prep needed for this day or lesson. For example, chromebooks with crouton or Cloud9 provisioned/AWS IAM created.
 
 ### Plan
 
