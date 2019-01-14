@@ -1,7 +1,7 @@
 branches:
   only:
     - master
-    - /*(?i:review).*$/
+    - /^(?i:review).*$/
 language: python
 install:
   - pip install markdown
