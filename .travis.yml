@@ -9,9 +9,6 @@ install:
 
 jobs:
   include:
-    - stage: test
-      script:
-        - make github
     - stage: deploy_review
       script:
         - make github DOMAIN=blog-review.techemstudios.com
