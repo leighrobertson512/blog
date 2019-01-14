@@ -1,6 +1,7 @@
 branches:
-  except:
-    - gh-pages
+  only:
+    - master
+    - /^(?i:review).*$/
 language: python
 install:
   - pip install markdown
@@ -9,9 +10,6 @@ install:
 
 jobs:
   include:
-    - stage: test
-      script:
-        - make github
     - stage: deploy_review
       script:
         - make github DOMAIN=blog-review.techemstudios.com
@@ -25,10 +23,9 @@ jobs:
         - git remote add origin https://$GH_TOKEN@github.com/techemstudios/blog
         - git push -f origin gh-pages
 stages:
-  - test
   - name: deploy_review
   - name: deploy_prod
-    if: branch = master
+    if: branch = master AND type != pull_request
 env:
   global:
   - secure: d82/WeDwiHBT8DQrWEu7/gOShH0IzBkRdzHJ9MipAYA7bgea0M7FP56iheWGriQUqpPfOGeVQcriadg05QDMbLqfJR6uLLSKbXwmPv9AqFQqaEX9WS2v3IVj8qvmHbcysrcRhkfjVgdwuo/Ltksdg1YjOj3qXVNz1FDxJHXFM2hagbQjElgZSG0vgOXCLX6yZsVNwg5gxd7SYpkEKwW4V0QU0DBP0N98Btqu/xeNNJgLeTja5Rk3zbXxV2vDJkZydPbtLVI07FNeM+nU9xNPx/9jLk/7XEvQ/vXadipW0ZuAnwBNIm2D31KSiWGHxLWTLdB6oUx6S6AwS3GhtLRS+QJB/vgzE7K+azrgQ7xrBQ/2BAz6n2Mru07DkdVYheak3vBkYaazkWqRtVw+4eErpCARRt+eVlik45iv3CbOjxZEgcPPyyFrU3Y6ggd7QmRUOcrnf93ez8zz1xqPcRLhobuoqucCt/I/Ep0pDRG4xU10krtNptGbEXWKaDMg/mvmeTSMhav6icdVDoS3nltAvqhY8IChe9SSr3RWBq6y0qlopyHqq5ZMgmPka4+SfoznFy9zvxI4JVD/nbh6uqg/VIFZo1z6FKlXR/vjtcnit0k+d3vBmMw2vyPHvMLJ3MTT3/ge+HZEw1GyDbkNrXMc3le+jL+LGWDFpyw8y/wmKMw=
