@@ -1,6 +1,7 @@
 branches:
-  except:
-    - gh-pages
+  only:
+    - master
+    - /*(?i:review).*$/
 language: python
 install:
   - pip install markdown
