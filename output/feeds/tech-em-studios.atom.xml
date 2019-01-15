@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Art of Technology... Training</title><link href="http://blog.techemstudios.com/" rel="alternate"></link><link href="http://blog.techemstudios.com/feeds/tech-em-studios.atom.xml" rel="self"></link><id>http://blog.techemstudios.com/</id><updated>2016-07-05T00:00:00-04:00</updated><entry><title>Offsite Summer Camps</title><link href="http://blog.techemstudios.com/offsite-summer-camps.html" rel="alternate"></link><published>2016-07-05T00:00:00-04:00</published><author><name>Tech Em Studios</name></author><id>tag:blog.techemstudios.com,2016-07-05:offsite-summer-camps.html</id><summary type="html">&lt;h2&gt;Weinstein JCC Minecraft in 3D Camp&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;3D Printed Minecraft Objects, Roller Coaster Tree Houses, Binary Logic Gates, Python Programming... These are just a few of the JCC campers' favorite things!&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;It was another great week of technology fun, the Minecraft in 3D camp at the Weinstein Jewish Community Center, was met with enthusiastic minds. Who wouldn't be enthused about 3D printing, computer science and Python code, all covered using Minecraft!  &lt;/p&gt;
+&lt;p&gt;We started the week by hitting the ground running, with competitive build challenges for team-built tree houses and haunted houses.&lt;/p&gt;
+&lt;p&gt;Throughout the week, campers tried their creative skills by designing objects in Minecraft to be printed out as a 3D object they could take home. From village houses and minecraft bows and arrows, to 'walking' creeper feet, the creativity from the campers was apparent.  &lt;/p&gt;
+&lt;p&gt;The campers switched gears by learning how to build simple binary logic gates using the famous, redstone in minecraft. Campers built a few binary logic gates (AND, OR, NOT gates) with redstone, redstone torch, redstone lamp, repeaters, and a lever in their inventory. Learning binary logic gates greatly helps in understanding how the hardware in all computers operate.The levers portrayed the input while the redstone lamp acted as the output. They were then challenged to incorporate what they learned from the lesson by participating in collaborative team builds!  &lt;/p&gt;
+&lt;p&gt;Other output types could be used: Doors and gates that swung open or shut close by using the binary switching logic learned earlier, proved very useful in the team-built zoo challenge!  &lt;/p&gt;
+&lt;p&gt;Campers learned the basics of designing for 3D printing. Below are the steps we completed to perform this:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The 3D Print process&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;Campers created a design on Minecraft.    &lt;/li&gt;
+&lt;li&gt;The program, Mineways was used to turn the object into a file, recognizable by the 3D printers.  &lt;/li&gt;
+&lt;li&gt;The file was sent to the 3D Printer and printed into a unique 3D object that they could take home.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="3D Printed Creeper" src="images/minecraft-3d.jpg" /&gt;
+&lt;img alt="Tech Em 3D Printer Hard at Work" src="images/3d-printer.jpg" /&gt;
+&lt;img alt="Haunted House Challenge Screenshot" src="images/3d-camp-screenshot.jpg" /&gt;  &lt;/p&gt;
+&lt;p&gt;To end the last two days of camp, the campers learned how typing up a few lines of Python code can have a cool impact on gameplay. They used Python 2.7 to write instructions to have objects built in minecraft, without actually placing a single block! Python is an intuitive computer programming language.  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Luther Memorial School Technology Camp&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Campers at Luther Memorial learned what technology in their world is all about!&lt;/strong&gt;    &lt;/p&gt;
+&lt;p&gt;Pulling concepts from our Tiny Tech lesson plans, instructors and campers discussed the nitty-gritty. Opening the floor with what technology means to us, to more advanced thought, like how we can discover step-by-step instructions, or computer programming to be found right under our noses in everyday processes that are not even technology related.  &lt;/p&gt;
+&lt;p&gt;-Who knew that the steps we follow in pouring ourselves a bowl of cereal in the morning are like the steps a computer follows to run a program?!  &lt;/p&gt;
+&lt;p&gt;Some of the apps explored were Lightbot Jr., The Foos and Kodable. All of these apps center around the concepts involved with computer programming, such as understanding sequences and conditions ("If this happens... Then this will happen."). Learning how to critically think was a major part of completing these engaging activities.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="A View of Lightbot app" src="images/lightbot-resize.jpg" /&gt;  &lt;/p&gt;
+&lt;p&gt;We learned the basics of how technology works and how it can help us understand the world around us.  &lt;/p&gt;
+&lt;p&gt;We hope our campers from JCC and Luther Memorial have a great rest of the summer!  &lt;/p&gt;</summary><category term="3D printing"></category><category term="techcamp"></category><category term="minecraft"></category><category term="computer science"></category><category term="technology"></category><category term="python"></category><category term="coding"></category></entry></feed>
