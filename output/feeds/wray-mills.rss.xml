@@ -1,0 +1,1699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>The Art of Technology... Training</title><link>http://blog.techemstudios.com/</link><description></description><lastBuildDate>Sun, 26 Feb 2017 00:00:00 -0500</lastBuildDate><item><title>Read about Snakes on a Plane</title><link>http://blog.techemstudios.com/read-about-snakes-on-a-plane.html</link><description>&lt;hr /&gt;
+&lt;h3&gt;We are publishing on medium too&lt;/h3&gt;
+&lt;p&gt;And accepting submissions from all students and parents.
+&lt;img alt="Python on AWS" src="images/python_lambda.jpeg" /&gt;&lt;/p&gt;
+&lt;p&gt;We are experimenting with medium to better share and publish our
+experiences running Tech Em and the great technologies we get to
+use. Check out our latest &lt;a href="https://medium.com/the-art-of-technology-training/python-in-the-clouds-3b0f93f61372"&gt;here&lt;/a&gt; on medium.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Sun, 26 Feb 2017 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2017-02-26:read-about-snakes-on-a-plane.html</guid><category>python</category><category>aws</category></item><item><title>Led Pendant Follow-up</title><link>http://blog.techemstudios.com/led-pendant-follow-up.html</link><description>&lt;h3&gt;Thank you!&lt;/h3&gt;
+&lt;p&gt;I want to pass on my enthusiastic thanks for letting us provide
+Technology Enrichment to you and your kids! &lt;/p&gt;
+&lt;h3&gt;LED Pendant Information&lt;/h3&gt;
+&lt;p&gt;Here is some more information about the LED pendants your kids coded
+as the final project for their Elementary Computer Science class. And, if your kid did not get to complete her/his
+code, please
+&lt;a href="mailto:info@techemstudios.com?subject=finish-led"&gt;send us an email&lt;/a&gt;
+so that we can setup a time you all can come
+by our studio at Shady Grove and Nuckols to complete the coding.&lt;/p&gt;
+&lt;p&gt;The pendant consists of three main parts: the 8x8 LED matrix display;
+a microcontroller (it's actually a &lt;a href="https://www.adafruit.com/products/1222"&gt;"Gemma" microcontroller from
+Adafruit&lt;/a&gt;); and the lithium polymar (&lt;a href="https://www.adafruit.com/products/1578"&gt;lipo&lt;/a&gt;) rechargeable battery. There
+is an "on/off" switch on the Gemma or you simply plug the battery in to start the
+display and unplug to stop. The battery plugs into the bottom of the
+microcontroller in the off-white or black receptacle. The socket for
+the battery is quite tight, so it may take some fingernails and
+pulling the white connector back and forth to ease it out of the
+socket. Please don't pull by the wires -- the wires will come out of
+the connector if they are yanked.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma battery socket" src="http://blog.techemstudios.com/images/gemma-battery.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;On the top of the microcontroller is a micro USB receptacle which is
+used to transfer the code to the microcontroller (any USB connector
+will work to connect a laptop/desktop to the
+microcontroller). However, this plug does not charge the battery. See
+the section below if you and your kid would like to get the software
+necessary to refine their code or re-code their LED.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma mini usb socket" src="http://blog.techemstudios.com/images/gemma-usb.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;You should also have a very &lt;a href="https://www.adafruit.com/products/1304"&gt;small charger&lt;/a&gt; for the battery. This
+charger plugs into a USB port and will charge the lipo battery. There
+is a red light when charging and a green light that indicates the
+battery is fully charged.&lt;/p&gt;
+&lt;h3&gt;LED Coding information&lt;/h3&gt;
+&lt;p&gt;There are detailed tutorials available at adafruit if you would like
+to know how we constructed the pendant and all the component
+specifications. However, this is a quick overview to get you
+(re)coding the LED frame designs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://learn.adafruit.com/introducing-gemma/setting-up-with-arduino-ide"&gt;Arduino IDE v1.05 with Gemma software&lt;/a&gt; for your computer or laptop.&lt;/li&gt;
+&lt;li&gt;Configure the Arduino IDE to use the Gemma 8MHz and tinyISP.&lt;ul&gt;
+&lt;li&gt;Tools -&amp;gt; Board -&amp;gt; Adafruit Gemma 8MHz&lt;/li&gt;
+&lt;li&gt;Tools -&amp;gt; Programmer -&amp;gt; USBtinyISP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Download the required
+ &lt;a href="https://github.com/adafruit/TinyWireM/archive/master.zip"&gt;LED library&lt;/a&gt;,
+  unzip and put it in the Adafruit Arduino
+libraries directory.&lt;ul&gt;
+&lt;li&gt;Put the TinyWireM directory in your Documents/Arduino/libraries directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://secure.techemstudios.come/enrolled_children"&gt;Login&lt;/a&gt; to our
+  website and download your code or send us an email if you have
+  not received information on how to get your code.&lt;/li&gt;
+&lt;li&gt;Unzip your code into a directory.&lt;/li&gt;
+&lt;li&gt;Go into that directory and double-click on the file named for your
+kid with a .ino suffix. This will launch Adafruit Arduino.&lt;/li&gt;
+&lt;li&gt;The LED design is in the "bmo.h" file that will be automatically
+loaded on the second tab when you launch Arduino (for those of you who
+have programmed in C or C++ this is simply a header file). Your child
+should know how to edit this file to enhance or change their design.&lt;/li&gt;
+&lt;li&gt;Anywhere there is a "//" is a code comment and the text after it
+    is for explanation and not used in the design.&lt;/li&gt;
+&lt;li&gt;Each "frame" of the design consists of 8 lines of 8 1's and 0's
+    preceded by a "B" and followed with a ",". Thus, the lines
+    correspond to the rows in the matrix and a 1 will light the led at
+    that position and a 0 will turn off the led at that position.&lt;/li&gt;
+&lt;li&gt;Each frame concludes with a decimal number on the 9th line
+      followed by a comma. This decimal number represents the delay in
+      hundredths of a second for this frame. For example, if you want
+      the first frame to display for half a second, use 50. If you
+      want it to display for a whole second, use 100. This value can
+      only go up to 255 (a little over 2.5 seconds).&lt;/li&gt;
+&lt;li&gt;The file has some statements at the beginning of the file that you
+    shouldn't change and the file must conclude with a "};" on the last line.&lt;/li&gt;
+&lt;li&gt;Once you are happy with your design, you should compile it to make
+sure there are no errors.&lt;/li&gt;
+&lt;li&gt;After an error-free compile, plug in your microcontroller and you
+have about 10 seconds to click on the "upload" icon (on the top left
+of the IDE, there is a right arrow for upload) once the red light on
+the Gemma starts flashing to transfer the
+code to the microcontroller. Please note, the newer Gemma
+microcontrollers (late 2015 classes) take a few times plugging into
+your computer before they will go into the programming mode. Make sure
+the red light is flashing before you attempt the code upload.&lt;/li&gt;
+&lt;li&gt;Make sure you are happy with the design -- if you are, you may unplug
+  the USB and use the battery to power the microcontroller.&lt;/li&gt;
+&lt;li&gt;If you want to change the design again, it is easiest to unplug the
+  usb until you have re-compiled the code and plug in when you are
+  ready to try again.&lt;/li&gt;
+&lt;li&gt;Wait a few seconds for the code to transfer and the microcontroller
+to reboot and display the frames in your design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And, feel free to comment here or shoot us an email if you have ANY
+questions or issues.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Mon, 16 May 2016 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2016-05-16:led-pendant-follow-up.html</guid><category>computer science</category><category>led</category><category>gemma</category><category>arduino</category><category>coding</category></item><item><title>Programming (Spring 2016)</title><link>http://blog.techemstudios.com/programming-spring-2016.html</link><description>&lt;h3&gt;Spring 2016 Programming, Tuesday mornings and Thursday nights&lt;/h3&gt;
+&lt;p&gt;We'll use this blog page to post some of the code/concepts we learn in class and to post the challenges/homework to ensure you all are practicing in between classes. Just like sports or other schools subjects, practice makes perfect. At this point in your learning to code, the more you practice writing code and testing it and exploring changes and modifications, the better you will get. Remember, by the end of this class, you should be able to write somewhat complex programs to solve problems. Feel free to contact me via email if you have questions or use the comments section below.&lt;/p&gt;
+&lt;h3&gt;Some more background for parents&lt;/h3&gt;
+&lt;p&gt;For this class we are using Python. Specifically, we have been using Python 2.7 which you can download and install from &lt;a href="http://www.python.org"&gt;python.org&lt;/a&gt;. Your student should know how to launch Python's editor, IDLE and use that to create and modify programs. They are learning the syntax for the language in our class (as well as the general terms we used to describe part of a program, like: identifier, keyword, literal, expression, statement, conditional, function, etc.) It will take awhile for them to absorb these terms and thats ok -- we'll review them practically every class. You can always take the code from this page and paste it into a new file in IDLE and from the menu, choose Run -&amp;gt; Run Module which will run the program in another window.&lt;/p&gt;
+&lt;h3&gt;The random sentence code&lt;/h3&gt;
+&lt;p&gt;&lt;script src="https://gist.github.com/wray/4e469b9d87cb8d7e2bbe.js"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;h3&gt;Assignment 1&lt;/h3&gt;
+&lt;p&gt;Using the random sentence code, just as we replaced the nouns with animals, try replacing your verbs with verbs form the random from random lists: https://www.randomlists.com/data/verbs.json .&lt;/p&gt;
+&lt;p&gt;Then, you can explore replacing the object of your sentence with a noun from the pictionary list from random lists:
+https://www.randomlists.com/data/pictionary.json .&lt;/p&gt;
+&lt;h3&gt;Moon weight code&lt;/h3&gt;
+&lt;p&gt;&lt;script src="https://gist.github.com/wray/a6555c41154642196d9f.js"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;h3&gt;Assignment 2&lt;/h3&gt;
+&lt;p&gt;Take a look at the moon weight code and make sure you understand how to define a function and then use (or call) a function. As we discussed, this is a fundamental concept in many languages, especially Python. Good programmers will break up their code into functions to avoid using the same code (patterns of code) over and over again throughout their program. Remember, this is your primary weapon to support DRY (DO NOT REPEAT YOURSELF).&lt;/p&gt;
+&lt;p&gt;Now, for the hard part of the assignment. Go back to your random sentence code and assignment 1 where I asked you to use a list of verbs and pictionary. Notice that you will end up repeating 2 lines of code every time you grab a list. And this code is pretty complex and tricky (so it's easy to mistype and introduce a mistake). So, look at those lines and pick out all the parts that are exactly the same and the small part that is different. You should then be able to put that code in a function. And take the one place that HAS TO BE "different" and use that as input into the function. So, try putting that code into a function defined like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;random_word&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;collection_name&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+
+     &lt;span class="c1"&gt;# Your code goes here&lt;/span&gt;
+
+     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;word&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So, this function takes in as input (one parameter), the name of the word collection from the randomlists site, and returns a random word from that list. This is a little tricky because your existing code may use a list variable that is specifically named (e.g. animals). When you put this into a function that can be retrieving whatever list is specified by the input, you will want to make that variable less specific (e.g. words) -- in other words, this variable name does not have to change for each collection. The other hint in solving this involved string addition (we call concatenation). You will need to change the url to get the specified list.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://www.randomlists.com/data/&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;collection_name&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;.json&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Finally, remember in class we wrote some code where we would use a function on a function (call a function within a function call). For extra credit, you can use this technique to make your function definition just one line of code. Here is an example of that syntax -- note how the parenthesis control the order of the functions (just like in math). The inner function will be called first.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;12&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As always, comment here or email me if you have an issues or questions.&lt;/p&gt;
+&lt;h3&gt;Assignment 3&lt;/h3&gt;
+&lt;p&gt;Here is a real quick assignment to have you all continue to practice converting a problem to a programmed solution. Create a program that generates the &lt;a href="https://www.mathsisfun.com/numbers/fibonacci-sequence.html"&gt;Fibonacci Sequence&lt;/a&gt;. Create the sequence in a Python list. You can simply calculate the first 20 or 30 numbers. For extra credit, use a Python function as part of your solution.&lt;/p&gt;
+&lt;h3&gt;Assignment 4&lt;/h3&gt;
+&lt;p&gt;To make sure we get some more creativity into the class, we worked on a text-based choose your own adventure game in class. So, keep working on your choose your own adventure game (text version). Here is my short little choose your own adventure, just for your reference. Think about how your adventure design is like an upside down tree with branches. We actually call these blocks of code branches! Think about how to test your program -- you'll want to make sure you visit every branch to ensure all of your code works.&lt;/p&gt;
+&lt;script src="https://gist.github.com/wray/48cef3a6766ece0d8370.js"&gt;&lt;/script&gt;
+
+&lt;h3&gt;Assignment 5&lt;/h3&gt;
+&lt;p&gt;Make sure you have your fibonnacci program working with the graph. Explore the matplotlib library by graphing different lists: remember, it will simply plot x,y coordinates when provided a list of x values and a list of y values. The lists should be the same size.&lt;/p&gt;
+&lt;p&gt;Spoiler alert!! Please make sure your code is working first, before you take a look at this example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pyplot&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;math&lt;/span&gt;
+
+&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;
+
+&lt;span class="n"&gt;pyplot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;pyplot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Assignment 6&lt;/h3&gt;
+&lt;p&gt;Because Blaise Pascal is considered an early Computer Scientists and actually created and sold his mechanical "Pascal's Calculater" that is a wonderful example of early mechanical computers. Let's honor him by creating a program to generate &lt;a href="http://www.mathsisfun.com/pascals-triangle.html"&gt;Pascal's Triangle&lt;/a&gt;. As you think about the steps to create each row in the triangle, see if you can create a function that takes as input a row in the triangle to return the next row.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;pascal&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;prev_row&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# Your code goes here&lt;/span&gt;
+
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;row&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;With a simple function to compute the next row  you can create a loop that calls this function repeatedly to build the triangle. One hint  is that you need to start the triangle with a list containing the number 1.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;row&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Another hint is that the second row is a special case -- youf function could simply return [1,1] when input [1], because the Pascal's triangle pattern is much simpler to implement once you have 2 numbers in your list.&lt;/p&gt;
+&lt;p&gt;For extra credit, you can test your triangle by making sure that the sum of each row is equal to 2 raised to the row level in the tree, using 0 for the first row. In python, we use ** to indicate an exponent. So, the sum of the first row should equal 2**0, which is true cause the first row is simply 1. The second row is [1,1] so the sum is 2, which is equal to 2**1. And so on, and so on. And for super extra credit, you can graph the sums of the row -- use the row level for the y axis and the sum for the x axis.&lt;/p&gt;
+&lt;h3&gt;Assignment 7&lt;/h3&gt;
+&lt;p&gt;Make sure you understand how we solved Assignment 6 and you are clear on the difference between defining a function and calling (or using) a function. Because we wrote a function that returns the next row in Pascal's triangle based on the current row input, we are able to efficiently generate the triangle.&lt;/p&gt;
+&lt;p&gt;For the next assignment, I'd like for you all to try and get pyglet installed and run the following simple program. To install pyglet, you can go &lt;a href="https://bitbucket.org/pyglet/pyglet/wiki/Home"&gt;here&lt;/a&gt; and actually choose the &lt;a href="https://bitbucket.org/pyglet/pyglet/wiki/Download"&gt;download&lt;/a&gt; link.&lt;/p&gt;
+&lt;p&gt;Once downloaded, you should be able to unzip the download and look for a file in the directory called setup.py. You should be able to run this by double-clicking on it. Or you may have to launch IDLE (python) and open that file and choose run. Running that file will install pyglet on your machine and then you will be able to start using it.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pyglet&lt;/span&gt;
+
+&lt;span class="n"&gt;window&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pyglet&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;window&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Window&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;label&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pyglet&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Label&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                          &lt;span class="n"&gt;font_size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                          &lt;span class="n"&gt;font_name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Times New Roman&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                          &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;255&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;255&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;255&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;255&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+                          &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;window&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;70&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                          &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;window&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;on_draw&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;window&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;clear&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;draw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;window&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;on_draw&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;on_draw&lt;/span&gt;
+
+&lt;span class="n"&gt;pyglet&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Assignment 8 (started in class, can finish at home)&lt;/h3&gt;
+&lt;p&gt;Whether you realize it or not, you have already been using Object Oriented concepts because Python is an object-based language. We have discussed in class over the past two weeks the different between a class and an object -- a class provides the definition (code) so that many objects can be created from that class. Similar to functions, you define the class once to be used again and again every time you need an object of that class. We started with a class to define a multi-sided die and worked up to a simple dice rolling exercise where each die keeps track of its own history.&lt;/p&gt;
+&lt;p&gt;See the following gist -- should be similar to the code you wrote in class:
+&lt;script src="https://gist.github.com/wray/3f56149db45d954beed20764ad1b7c1e.js"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;To keep going with this assignment, think about how you could add code to the MultiSidedDie class to keep track of how often each side is rolled. The solution requires creating a dictionary variable in the class. The dictionary should have a key for each side of the dice where the value is updated each time that side is rolled. Using this stats dictionary and history list, you can then calculate the roll percentage for each side.&lt;/p&gt;
+&lt;p&gt;Remember the syntax for a dictionary:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# creating and populating a dictionary&lt;/span&gt;
+&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
+&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;key2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value2&lt;/span&gt;
+
+&lt;span class="c1"&gt;# getting values from a dictionary&lt;/span&gt;
+&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Assignment 9 (also mostly done in class)&lt;/h3&gt;
+&lt;p&gt;One of the many benefits of Object Oriented design and programming is to organize your code the same way humans organize their world -- classifications and class hiearchies. Defining a general class allows you to define more specific sub-classes without having to re-define the parent class methods. For example, we started to create some code to "model" a book. When using a book in the real world, you need to be able to read the book, turn pages, and place a bookmark to pick up where you left off before.&lt;/p&gt;
+&lt;p&gt;Review the following code which should look similar to the code you wrote in class:
+&lt;script src="https://gist.github.com/wray/707297e73e401d01329b87060b48ddbf.js"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;For fun, think about what you would need to do to create another sub-class of Book that is a pop up book.&lt;/p&gt;
+&lt;h3&gt;Python 3 and Graphics&lt;/h3&gt;
+&lt;p&gt;We are going to change direction a little bit and use Python 3 now and the graphics that come with Python 3 (along with a simple graphics library to make things a bit easier).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download &lt;a href="http://python.org"&gt;Python 3&lt;/a&gt; (if you haven't already).&lt;/li&gt;
+&lt;li&gt;Download &lt;a href="http://mcsp.wartburg.edu/zelle/python/graphics.py"&gt;graphics.py&lt;/a&gt; and put the file in the same folder as your python code.&lt;/li&gt;
+&lt;li&gt;Create a simple file using the Python3 IDLE with simply:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;graphics&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Run the program and in the window that opens, type in this:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; &lt;span class="n"&gt;win&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;GraphWin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Hello&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;You should see another window has popped up.&lt;/li&gt;
+&lt;li&gt;So, then you can:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; &lt;span class="n"&gt;win&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Don't forget, you can "use the source, Luke" and open the graphics.py file to see what other options you have -- we'll be using this graphics package for the final projects.&lt;/p&gt;
+&lt;h3&gt;Assignment 10 (mostly covered in class)&lt;/h3&gt;
+&lt;p&gt;Once you have graphics setup as above, we played around with the graphics file and talked about how it is Object-Oriented (as is most graphics modern graphics packages). Not only can we draw shapes in our graphics window, but we can also create entry boxes and wait for mouse clicks.&lt;/p&gt;
+&lt;p&gt;However, we quickly found that the graphics.py library doesn't include a button. So, we used our new Object-Oriented skills to extend the library to include a button. Make sure your code for the button is working for this assignment. Don't worry if some of the syntax seems odd -- class initializers can be confusing because the method must be named &lt;strong&gt;init&lt;/strong&gt; . And when we extend classes, we will want to call the parent class' initializer (the first line of code in our Button initializer). We then did something even more advanced -- we overrode the draw method in Rectangle to make sure our button class draws not just the rectangle, but also the text label.&lt;/p&gt;
+&lt;script src="https://gist.github.com/wray/b4744c0bdea2ccd7e3cc0e5b8150f8f2.js"&gt;&lt;/script&gt;
+
+&lt;h3&gt;Assignment 11&lt;/h3&gt;
+&lt;p&gt;For the final two weeks of class I'd like for everyone to go back to their choose your own adventure game and have it run with a graphics window. I'll start posting a few hints for that here.&lt;/p&gt;
+&lt;p&gt;I hope you all have been able to carry on with what we started in class. My graphics choose your own adventures follows below. Please come to class with questions on my use of the keywords break and pass.&lt;/p&gt;
+&lt;script src="https://gist.github.com/wray/11b9c498651c14ef81e7d33a028438cf.js"&gt;&lt;/script&gt;
+
+&lt;h3&gt;Final Assignment&lt;/h3&gt;
+&lt;p&gt;We have also been talking about the Dice Poker game so the final final project will be to also make that game use a graphics interface. You'll need to show the dice, the player's score and their current roll score. You'll need to have buttons to roll again as well as some way to choose which dice to re-roll.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Mon, 09 May 2016 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2016-05-09:programming-spring-2016.html</guid><category>python</category><category>pythonista</category></item><item><title>Gaming Camp (July 2015)</title><link>http://blog.techemstudios.com/gaming-camp-july-2015.html</link><description>&lt;h3&gt;Summer 2015 Gaming (Updated for the August Camp)&lt;/h3&gt;
+&lt;p&gt;You can access your &lt;a href="http://www.gamepressapp.com"&gt;Hyperpad (formerly GamePress)&lt;/a&gt; app or Unity projects by logging into TechEm's &lt;a href="https://secure.techemstudios.com"&gt;secure site&lt;/a&gt;. There is an enrollment record for every class, course, or camp you take at TechEm. So, go to the record for the gaming camp and there will be a zipfile that contains the GamePress app(s) you created during the camp or the Unity projects you edited or created.&lt;/p&gt;
+&lt;h3&gt;GamePress is now Hyperpad&lt;/h3&gt;
+&lt;p&gt;If you started with the Gamepress App and did not convert to &lt;a href="https://itunes.apple.com/us/app/id886106438"&gt;Hyperpad&lt;/a&gt; during camp, you can open your GamePress app in Hyperpad. As you learned, this app provides a
+   more advanced visual, event-oriented system that is optimized for
+   building classic arcade-style games. Please note that Gamepress is
+   no longer available on the app store. The good news is that your GamePress game will open in
+   Hyperpad. The bad news is that many of the GamePress graphics
+   (sprites) do not convert. Custom graphics convert and you can
+   create your own graphics to replace those that did not
+   convert. Please, feel free to contact us if you have any issues or
+   questions pertaining to the GamePress -&amp;gt; Hyperpad conversions. This
+   has actually been a good learning experience for our student
+   app/game developers because they see how designing and creating
+   graphics is just as time consuming and important as the actual game
+   play logic and coding.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Students testing a GamePress app" src="http://blog.techemstudios.com/images/gaming.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;For Unity, make sure you have the latest version of Unity installed, unzip the package and you will see your various projects -- play or edit them within the Unity environment.&lt;/p&gt;
+&lt;h3&gt;Recap on what we did&lt;/h3&gt;
+&lt;p&gt;We split into two groups, the Hyperpad group and the Unity group.&lt;/p&gt;
+&lt;p&gt;The Hyperpaders worked mainly with GamePress to build games in answer to several challenges put forth by the instructors. On the final day, they finished up their "primary" games and everyone "tested" the games. There were also several Minecraft sessions to break-up the GamePress sessions.&lt;/p&gt;
+&lt;p&gt;Hyperpad gives the students experience in event-driven programming and basic game logic. The games created are arcade style, 2-D. The instructor challenges were presented in order to show the many different types of games and applications that can be created in this environment.&lt;/p&gt;
+&lt;p&gt;The Unity group worked at first on a 2D pong game (July Session -- August session they started in 3D). They quickly moved on to more advanced 3D concepts, learning first about camera positioning and terrain in a 3D gamespace. They were able to then import a full 3D game and make their own modifcations.&lt;/p&gt;
+&lt;p&gt;Unity is a professional gaming environment with a learning curve that we get the campers over during their week. They should be able to continue editing the games they edited/created and should be ready to continue with advanced edits and basic programming in the environment.&lt;/p&gt;
+&lt;p&gt;And contact us if you have any issues or questions!&lt;/p&gt;
+&lt;p&gt;Happy gaming. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Tue, 01 Sep 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-09-01:gaming-camp-july-2015.html</guid><category>gaming</category><category>gamepress</category><category>unity</category></item><item><title>App Camp (Summer 2015)</title><link>http://blog.techemstudios.com/app-camp-summer-2015.html</link><description>&lt;h3&gt;Summer 2015 App Camps&lt;/h3&gt;
+&lt;p&gt;For many of the students in app camp this summer, we actually used apps to create apps. This is a nice way to get kids used to some of the basic concepts required to program (code) and ultimately build mobile applications. We jumped around using some of the best learning/app/game creation apps available. And all of them got an introduction to some text-based coding (Python) for some quick learning and exposure to programming language concepts.&lt;/p&gt;
+&lt;h3&gt;Apps Used&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://blog.techemstudios.com/tablet-app-lightbot.html"&gt;Lightbot&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.gethopscotch.com"&gt;Hopscotch&lt;/a&gt; -- Similar to MIT's
+   scratch programming system for kids,
+   Hopscotch provides a visual programming environment that takes
+   advantage of tablet capabilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gamepress App, which is now &lt;a href="https://itunes.apple.com/us/app/id886106438"&gt;Hyperpad&lt;/a&gt; -- This app provides a
+   more advanced visual, event-oriented system that is optimized for
+   building classic arcade-style games.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please note that Gamepress is
+   no longer available on the app store. The good news is that your GamePress game will open in
+   Hyperpad. The bad news is that many of the GamePress graphics
+   (sprites) do not convert. Custom graphics convert and you can
+   create your own graphics to replace those that did not
+   convert. Please, feel free to contact us if you have any issues or
+   questions pertaining to the GamePress -&amp;gt; Hyperpad conversions. This
+   has actually been a good learning experience for our student
+   app/game developers because they see how designing and creating
+   graphics is just as time consuming and important as the actual game
+   play logic and coding.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href="http://python.org"&gt;python programming language&lt;/a&gt; (text-based language) using
+ &lt;a href="http://omz-software.com/pythonista/"&gt;Pythonista&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Pythonista Fun&lt;/h3&gt;
+&lt;script src="https://gist.github.com/wray/1f699e6240fb9b0a94a0.js"&gt;&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Thu, 27 Aug 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-08-27:app-camp-summer-2015.html</guid><category>python</category><category>pythonista</category><category>hyperpad</category></item><item><title>JCC Coding</title><link>http://blog.techemstudios.com/jcc-coding.html</link><description>&lt;h3&gt;Summer 2015 JCC Coding Camp Recap&lt;/h3&gt;
+&lt;p&gt;Thank you so much for sending your kids to our Coding Camp at the JCC
+this summer! We've include a brief recap of the different apps we used
+that allowed us to present basic to intermediate concepts of
+coding. Along with our hands on experience, we had a chance to present
+some computer science history and general computing concepts.  &lt;/p&gt;
+&lt;p&gt;So, please visit our main &lt;a href="http://techemstudios.com"&gt;site&lt;/a&gt; for
+information on continuing your child's education in Computer Science
+and Programming. Our
+&lt;a href="http://techemstudios.com/all-classes.html"&gt;Fall classes&lt;/a&gt;  start the week of September 14th.&lt;/p&gt;
+&lt;h3&gt;Recap on the apps we used&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://blog.techemstudios.com/tablet-app-lightbot.html"&gt;Lightbot&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.gethopscotch.com"&gt;Hopscotch&lt;/a&gt; -- Similar to MIT's
+   scratch programming system for kids,
+   Hopscotch provides a visual programming environment that takes
+   advantage of tablet capabilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gamepress App, which is now &lt;a href="https://itunes.apple.com/us/app/id886106438"&gt;Hyperpad&lt;/a&gt; -- This app provides a
+   more advanced visual, event-oriented app that is optimized for
+   building classic arcade-style games.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href="http://python.org"&gt;python programming language&lt;/a&gt; (text-based language) using
+ &lt;a href="http://omz-software.com/pythonista/"&gt;Pythonista&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A sample of our mad libs code for pythonista
+&lt;script src="https://gist.github.com/wray/eafb281cae007a30f841.js"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Contact us with questions, more information and feedback&lt;/h3&gt;
+&lt;p&gt;We'd love to here from you all by either commenting here on the blog,
+emailing us or calling us (Contact Us on our &lt;a href="http://techemstudios.com"&gt;website&lt;/a&gt;).&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Thu, 27 Aug 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-08-27:jcc-coding.html</guid><category>coding</category><category>python</category></item><item><title>Notes on setting up pis for I/O lessons</title><link>http://blog.techemstudios.com/notes-on-setting-up-pis-for-io-lessons.html</link><description>&lt;p&gt;Just dropping in some code for instructors, students, and everyone
+[updated August 2015].&lt;/p&gt;
+&lt;h3&gt;Initial Config&lt;/h3&gt;
+&lt;p&gt;For classes and camps, we always start with an SD card that has
+raspian (the Operating System) pre-installed. Of course, for the last
+camp, we started with blank SD cards! So, on that first day, we were
+actually loading the OS on your cards.&lt;/p&gt;
+&lt;p&gt;After logging in, we then ran&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo raspi-config
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in order to extend the filesystem, set the correct time, and set the
+correct keyboard.&lt;/p&gt;
+&lt;p&gt;We also configured your wi-fi adapter by running the gui&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;startx
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and using the wifi settings to scan for networks, choose the network,
+type in the password, and connect. Remember, you'll have to do this
+for your home wireless netework. Try to run startx without sudo. If
+the GUI doesn't come up, you may have to use sudo. When you are using
+the LEDS or the temp sensor, you will have to run python as sudo.&lt;/p&gt;
+&lt;h3&gt;Config for LEDs, Minecraft and Temp sensor&lt;/h3&gt;
+&lt;p&gt;In lieu of burning a pre-configured SD, we can run this script on a
+raspbian pi (model 2 with pre-loaded raspian from Adafruit) in order to get python development tools, the
+RPi GPIO library and the DHT library from Adafruit. Note, that this setup
+assumes your pi has network (Internet) connectivity. You can type in
+these commands separately, starting with the first line not containing
+a #.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
+&lt;span class="c1"&gt;# Run this command using sudo&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Beforehand, you should expand filesystem, turn on ssh&lt;/span&gt;
+&lt;span class="c1"&gt;# and of course configure network.&lt;/span&gt;
+
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;easy_install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;U&lt;/span&gt; &lt;span class="n"&gt;distribute&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;upgrade&lt;/span&gt; &lt;span class="n"&gt;RPi&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GPIO&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;essential&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;adafruit&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Adafruit_Python_DHT&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;Adafruit_Python_DHT&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;..&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;LEDs&lt;/h3&gt;
+&lt;p&gt;So, for the Output portion of the I/O lesson (easier than input so you
+may as well start here), assume a green LED is wired to #20 and a red
+LED is wired to #21.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;RPi.GPIO&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;GPIO&lt;/span&gt;
+
+&lt;span class="n"&gt;DEBUG&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+
+&lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setmode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;BCM&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;GREEN_LED&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt; 
+&lt;span class="n"&gt;RED_LED&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;
+&lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GREEN_LED&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;OUT&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;RED_LED&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;OUT&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GREEN_LED&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;red_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;RED_LED&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So, a simple session to use these methods would look like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;led&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;red_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;red_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Extend the LED Morse Code output&lt;/h3&gt;
+&lt;p&gt;We started a program that reads input from a user and converts that
+input into LED morse code. Start with this snippet and see if you can
+finish it -- let us know how you do!!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Remember, everything after a # is a comment&lt;/span&gt;
+&lt;span class="c1"&gt;# Comments are here for humans to explain code to&lt;/span&gt;
+&lt;span class="c1"&gt;# other humans. Anything after a # is ignored by&lt;/span&gt;
+&lt;span class="c1"&gt;# the computer&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Use the imports you have for the leds&lt;/span&gt;
+&lt;span class="c1"&gt;# For example: from led import *&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="c1"&gt;#whatever code you already have here&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="c1"&gt;# whatever code you already have here&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_a&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_b&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_c&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_d&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_e&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_t&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;character&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;character&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="nb"&gt;globals&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;morse_&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;character&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lower&lt;/span&gt;&lt;span class="p"&gt;()]()&lt;/span&gt;
+    &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;KeyError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;character&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; not defined in morse yet.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Type in text to convert to morse code.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;raw_input&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;character&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;morse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;character&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you save this file as "morse_output.py" for example, you may run it
+with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;morse_output&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Input Sensor (Temp/Humidity Sensor including in your Tech Em kit)&lt;/h3&gt;
+&lt;p&gt;For the Input part of the lesson, here is some code that provides a single simple method to
+return temperature and humidity (from a DHT-22 temperature/humidity
+sensor &lt;a href="https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/wiring"&gt;wired to pin #4&lt;/a&gt;).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Template code for temperature and humidity from an Adafruit DHT22&lt;/span&gt;
+&lt;span class="c1"&gt;# sensor. Don&amp;#39;t forget to update this file if you connect the DHT22 &lt;/span&gt;
+&lt;span class="c1"&gt;# to another data pin,&lt;/span&gt;
+&lt;span class="c1"&gt;# want to change the delay, or logic for mailing. &lt;/span&gt;
+&lt;span class="c1"&gt;# For example, you may only want to&lt;/span&gt;
+&lt;span class="c1"&gt;# send notifications when certain thresholds are exceeded.&lt;/span&gt;
+&lt;span class="c1"&gt;# &lt;/span&gt;
+&lt;span class="c1"&gt;# Code provided for Tech Em students and open under Gnu GPL&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Wray Mills&lt;/span&gt;
+&lt;span class="c1"&gt;# 20141115&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;Adafruit_DHT&lt;/span&gt;
+&lt;span class="c1"&gt;# Tech Em mail utility&lt;/span&gt;
+&lt;span class="c1"&gt;# from mailit import *&lt;/span&gt;
+
+&lt;span class="n"&gt;sensor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DHT22&lt;/span&gt;
+&lt;span class="n"&gt;pin&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; 
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_temp_humidity&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_retry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sensor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pin&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;temp_f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mf"&gt;9.0&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mf"&gt;5.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;32.0&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp_f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;humidity&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Launch python with sudo, import this file and call the method to get
+the tuple of celsius temperature, fahrenheit temperature, and relative humidity.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Rpi prototype board with DHT22 on one side and two LEDs on the other" src="http://blog.techemstudios.com/images/rpi-io.jpg" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Fri, 21 Aug 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-08-21:notes-on-setting-up-pis-for-io-lessons.html</guid><category>raspberry pi</category><category>adafruit</category><category>python</category></item><item><title>3D Printing Summer Camp Recap</title><link>http://blog.techemstudios.com/3d-printing-summer-camp-recap.html</link><description>&lt;h3&gt;Summer 2015 3D Printing Camp Recap&lt;/h3&gt;
+&lt;p&gt;Thank you so much for sending your kids/coming to our 3D printing
+camp. Please see the details below on what we did throughout the week and some pointers and links if you want to continue exploring the 3D printing world.&lt;/p&gt;
+&lt;p&gt;Also, please visit our main &lt;a href="http://techemstudios.com"&gt;site&lt;/a&gt; for
+information on more summer camps at our studio and our Computer Science and Programming courses. Our Fall schedule will be up this week!&lt;/p&gt;
+&lt;h3&gt;Where are the rest of the prints??&lt;/h3&gt;
+&lt;p&gt;We have them at the studio. Feel free to come by and pick them up --
+we have camps this week and next week from 9 to 4 Monday through
+Thursday. We can also ship them to you. And don't hesitate to let us
+know if we missed a print or if you would like a replacement print.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Jets from the printer" src="http://blog.techemstudios.com/images/3d-fun.jpg" /&gt;&lt;/p&gt;
+&lt;h3&gt;Recap on what we did&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Geometry lesson: 0D, 1D, 2D, and 3D --
+    We discussed some mathematical aspects of 3
+    dimensions. They immediately started working with the 123D design
+    app to create their first "free-form" design.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.123dapp.com/design"&gt;123D Design&lt;/a&gt; --
+   This app is actually free and is a great start for those just
+   starting with CAD or the experienced designer. We use this app
+   for a majority of our design work (the students spent a good deal
+   of time using it during the week). We encourage the use of "primitive" shapes and
+   basic manipulations, but also allow them to use some of the
+   "built-in" shapes and full examples from the gallery.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.makerbot.com/printshop"&gt;Print Shop by Makerbot&lt;/a&gt; --
+   This app allowed the students to draw a picture on paper, take a
+   picture, and "extrude" it into a 3D design. Most of the students
+   used it to create rings and some of the other built-in design
+   maniuplations. This provides a nice break from the more technical
+   CAD-oriented 123D app.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3D printer pen --
+   Throughout the week, the students were allowed to use the 3D
+   printer pen to accentuate their designs or create separate designs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Minecraft --
+   As is the case for most camps for this age group, incorporating
+   minecraft is a must. And actually, it works well for a 3D printing
+   camp since the minecraft world is 3D. The campers worked on a
+   structure in minecraft that we printed in miniature in white.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other technology and math educational apps --
+    Because we spent many hours together, we let the students explore some of the other apps we have loaded on our iPads (and use for some of our other classes and camps). One of our popular apps that some tried out is &lt;a href="http://blog.techemstudios.com/tablet-app-lightbot.html"&gt;lightbot&lt;/a&gt;. Let me know if your kid tried out some other apps and I can give you some background and additional information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Our printers --
+    Some of you all had some questions about printers and buying one for home use. We use &lt;a href="http://makerbot.com"&gt;Makerbot&lt;/a&gt; printers and I highly recommend the previous generation Replicator 2 and Replicator 2x; however, they may be hard to find now. You may even want to research Replicator clones. The newer generation of Replicators with their "smart extruders" have actually proven to be less reliable and "less smart". There is actually a class action lawsuit being filed against Makerbot and their smart extruder technology. As is the case with most emerging technologies, it may be a few more years before a clear leader emerges with reliable products at a good price. And finally, a wonderful place to go and look and all that is being designed for 3D printing is &lt;a href="http://thingiverse.com"&gt;thingiverse&lt;/a&gt;. You'll be amazed at all the great designs people have uploaded to share with the world.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks again and Happy printing! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Mon, 27 Jul 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-07-27:3d-printing-summer-camp-recap.html</guid><category>3dprinting</category><category>minecraft</category></item><item><title>JCC 3D</title><link>http://blog.techemstudios.com/jcc-3d.html</link><description>&lt;h3&gt;Summer 2015 3D Printing at the JCC&lt;/h3&gt;
+&lt;h3&gt;By Wray Mills and Davis Mohar&lt;/h3&gt;
+&lt;p&gt;Thank you so much for sending your kids/coming to our 3D printing camp
+at the JCC. Please see the details below on what we did throughout the week and some pointers and links if you want to continue exploring the 3D printing world.&lt;/p&gt;
+&lt;p&gt;Also, please visit our main &lt;a href="http://techemstudios.com"&gt;site&lt;/a&gt; for information on summer camps at our studio and our Computer Science and Programming courses. Our Fall schedule will be up next week!&lt;/p&gt;
+&lt;h3&gt;Where are the rest of the prints??&lt;/h3&gt;
+&lt;p&gt;We are continuing to print some students' 3rd design and everyone's
+4th design (most of the 4th designs were built in minecraft). We will
+bring the prints back to the JCC and email everyone to let you all
+know when they are ready. We appreciate your patience and the students know
+that while the 3D printers are really cool, the current consumer and
+small-business grade additive 3D printers are slow.&lt;/p&gt;
+&lt;h3&gt;Recap on what we did&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Geometry lesson: 0D, 1D, 2D, and 3D --
+    On the first day we discussed some mathematical aspects of 3
+    dimensions. They immediately started working with the 123D design
+    app to create their first "free-form" design. The afternoon
+    challenge was a self-portrait.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.123dapp.com/design"&gt;123D Design&lt;/a&gt; --
+   This app is actually free and is a great start for those just
+   starting with CAD or the experienced designer. We use this app
+   for a majority of our design work (the students spent a good deal
+   of time using it this week). We encourage the use of "primitive" shapes and
+   basic manipulations, but also allow them to use some of the
+   "built-in" shapes and full examples from the gallery. The challenge
+   for the second day was to design some type of vehicle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.makerbot.com/printshop"&gt;Print Shop by Makerbot&lt;/a&gt; --
+   This app allowed the students to draw a picture on paper, take a
+   picture, and "extrude" it into a 3D design. Most of the students
+   used it to create rings and some of the other built-in design
+   maniuplations. This provides a nice break from the more technical
+   CAD-oriented 123D app.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3D printer pen --
+   Throughout the week, the students were allowed to use the 3D
+   printer pen to accentuate their designs or create separate designs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Minecraft --
+   As is the case for most camps for this age group, incorporating
+   minecraft is a must. And actually, it works well for a 3D printing
+   camp since the minecraft world is 3D. The campers worked on a
+   structure in minecraft that we will be printing for them during the
+   next week. So, the camp did turn into a minecraft camp the last day
+   -- once we start with minecraft, its tough to pull the kids back
+   into a more traditional design app. But, that's ok, we asked them
+   to take turns explaining to the group how minecraft relates to a 3D design
+   and printing class. The interesting thing is that most of the kids
+   explained that building in minecraft requires creativitiy and a similar creative process used while creating designs in the 123D design app (its just more fun in minecraft).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other technology and math educational apps --
+    Because we spent many hours together, we let the students explore some of the other apps we have loaded on our iPads (and use for some of our other classes and camps). One of our popular apps that some tried out is &lt;a href="http://blog.techemstudios.com/tablet-app-lightbot.html"&gt;lightbot&lt;/a&gt;. Let me know if your kid tried out some other apps and I can give you some background and additional information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Our printers --
+    Some of you all had some questions about printers and buying one for home use. We use &lt;a href="http://makerbot.com"&gt;Makerbot&lt;/a&gt; printers and I highly recommend the previous generation Replicator 2 and Replicator 2x; however, they may be hard to find now. You may even want to research Replicator clones. The newer generation of Replicators with their "smart extruders" have actually proven to be less reliable and "less smart". There is actually a class action lawsuit being filed against Makerbot and their smart extruder technology. As is the case with most emerging technologies, it may be a few more years before a clear leader emerges with reliable products at a good price. And finally, a wonderful place to go and look and all that is being designed for 3D printing is &lt;a href="http://thingiverse.com"&gt;thingiverse&lt;/a&gt;. You'll be amazed at all the great designs people have uploaded to share with the world.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks again and Happy printing! &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Fri, 24 Jul 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-07-24:jcc-3d.html</guid><category>3dprinting</category><category>minecraft</category></item><item><title>Some Code for RPi temp uploading</title><link>http://blog.techemstudios.com/some-code-for-rpi-temp-uploading.html</link><description>&lt;p&gt;Just dropping in some code for students to use.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/usr/bin/python&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Google Spreadsheet DHT Sensor Data-logging Example&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Depends on the &amp;#39;gspread&amp;#39; package being installed.  If you have pip installed&lt;/span&gt;
+&lt;span class="c1"&gt;# execute:&lt;/span&gt;
+&lt;span class="c1"&gt;#   sudo pip install gspread&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Copyright (c) 2014 Adafruit Industries&lt;/span&gt;
+&lt;span class="c1"&gt;# Author: Tony DiCola&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Permission is hereby granted, free of charge, to any person obtaining a copy&lt;/span&gt;
+&lt;span class="c1"&gt;# of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal&lt;/span&gt;
+&lt;span class="c1"&gt;# in the Software without restriction, including without limitation the rights&lt;/span&gt;
+&lt;span class="c1"&gt;# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&lt;/span&gt;
+&lt;span class="c1"&gt;# copies of the Software, and to permit persons to whom the Software is&lt;/span&gt;
+&lt;span class="c1"&gt;# furnished to do so, subject to the following conditions:&lt;/span&gt;
+
+&lt;span class="c1"&gt;# The above copyright notice and this permission notice shall be included in all&lt;/span&gt;
+&lt;span class="c1"&gt;# copies or substantial portions of the Software.&lt;/span&gt;
+
+&lt;span class="c1"&gt;# THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&lt;/span&gt;
+&lt;span class="c1"&gt;# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&lt;/span&gt;
+&lt;span class="c1"&gt;# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&lt;/span&gt;
+&lt;span class="c1"&gt;# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&lt;/span&gt;
+&lt;span class="c1"&gt;# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&lt;/span&gt;
+&lt;span class="c1"&gt;# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&lt;/span&gt;
+&lt;span class="c1"&gt;# SOFTWARE.&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;Adafruit_DHT&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;gspread&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Type of sensor, can be Adafruit_DHT.DHT11, Adafruit_DHT.DHT22, or Adafruit_DHT.AM2302.&lt;/span&gt;
+&lt;span class="n"&gt;DHT_TYPE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DHT22&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Example of sensor connected to Raspberry Pi pin 23&lt;/span&gt;
+&lt;span class="n"&gt;DHT_PIN&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;12&lt;/span&gt; 
+&lt;span class="c1"&gt;# Example of sensor connected to Beaglebone Black pin P8_11&lt;/span&gt;
+&lt;span class="c1"&gt;#DHT_PIN  = &amp;#39;P8_11&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Google Docs account email, password, and spreadsheet name.&lt;/span&gt;
+&lt;span class="n"&gt;GDOCS_EMAIL&lt;/span&gt;            &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;XXX&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;GDOCS_PASSWORD&lt;/span&gt;         &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;XXX&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;GDOCS_SPREADSHEET_NAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;XXX&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# How long to wait (in seconds) between measurements.&lt;/span&gt;
+&lt;span class="n"&gt;FREQUENCY_SECONDS&lt;/span&gt;      &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;login_open_sheet&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;spreadsheet&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Connect to Google Docs spreadsheet and return the first worksheet.&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;gc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;gspread&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;login&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;gc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;spreadsheet&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sheet1&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;worksheet&lt;/span&gt;
+    &lt;span class="k"&gt;except&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Unable to login and get spreadsheet.  Check email, password, spreadsheet name.&amp;#39;&lt;/span&gt;
+        &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Logging sensor measurements to {0}.&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GDOCS_SPREADSHEET_NAME&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;#print &amp;#39;Press Ctrl-C to quit.&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Login if necessary.&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;login_open_sheet&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GDOCS_EMAIL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GDOCS_PASSWORD&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GDOCS_SPREADSHEET_NAME&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Attempt to get sensor reading.&lt;/span&gt;
+&lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DHT_TYPE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;DHT_PIN&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Skip to the next reading if a valid measurement couldn&amp;#39;t be taken.&lt;/span&gt;
+&lt;span class="c1"&gt;# This might happen if the CPU is under a lot of load and the sensor&lt;/span&gt;
+&lt;span class="c1"&gt;# can&amp;#39;t be reliably read (timing is critical to read the sensor).&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;humidity&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="n"&gt;temp&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Temperature: {0:0.1f} C&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;temp&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Humidity:    {0:0.1f} %&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Append the data in the spreadsheet, including a timestamp&lt;/span&gt;
+&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;worksheet&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append_row&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;now&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;temp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mf"&gt;9.0&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;5.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;32.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="c1"&gt;# Error appending data, most likely because credentials are stale.&lt;/span&gt;
+    &lt;span class="c1"&gt;# Null out the worksheet so a login is performed at the top of the loop.&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Append error, logging in again&amp;#39;&lt;/span&gt;
+    &lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+    &lt;span class="c1"&gt;#time.sleep(FREQUENCY_SECONDS)&lt;/span&gt;
+    &lt;span class="c1"&gt;#continue&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Wait 30 seconds before continuing&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Wrote a row to {0}&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GDOCS_SPREADSHEET_NAME&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;#time.sleep(FREQUENCY_SECONDS)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Thu, 16 Jul 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-07-16:some-code-for-rpi-temp-uploading.html</guid><category>raspberry pi</category><category>adafruit</category><category>python</category></item><item><title>Notes on setting up pis to use Minecraft API</title><link>http://blog.techemstudios.com/notes-on-setting-up-pis-to-use-minecraft-api.html</link><description>&lt;p&gt;Just dropping in some code for instructors, students, and everyone
+[for Raspberry Pi 2].&lt;/p&gt;
+&lt;p&gt;Let's grab some Python libraries that can connect to your Minecraft World.
+Login to your pi and launch the GUI:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;startx
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Open up a browser and go to:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;www.wiley.com/go/adventuresinminecraft
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and download the starter kit. Choose "open" and open the program
+called Xarchiver. Click Action -&amp;gt; Extract on the Xarchiver menu. Type
+/home/pi in the Extract to: text box.&lt;/p&gt;
+&lt;p&gt;Now, open up IDLE (Python) and create a new program file. You'll want
+to save this file in the "My Adventures" folder you just created. You
+can name this first file "hello_minecraft.py". This actually assumes
+you have already done the LED input lesson and have a file led.py that
+you have copied into your "My Adventures" folder. Finally, since this
+code uses the raspberry pi I/O, you'll need to open up a new terminal
+window (LX Terminal), change directory (using "cd") to "My Adventures"
+and run the file with sudo.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.minecraft&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;minecraft&lt;/span&gt;
+
+&lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;postToChat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello Minecraft World&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;pos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;player&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getTilePos&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;led&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So, running this would go something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;My Adventures&amp;quot;&lt;/span&gt;
+sudo python hello_minecraft.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Want to build something?&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.minecraft&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;minecraft&lt;/span&gt;
+&lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.block&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;block&lt;/span&gt;
+
+&lt;span class="n"&gt;pos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;player&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getTilePos&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;150&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;TNT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Here is another cool program to try.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.minecraft&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;minecraft&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.block&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;block&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+
+&lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;bridge&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;buildBridge&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;pos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;player&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getTilePos&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AIR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WATER_FLOWING&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WATER_STATIONARY&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GLASS&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;coordinate&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+        &lt;span class="n"&gt;bridge&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;coordinate&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;elif&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GLASS&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bridge&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;coordinate&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bridge&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+            &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;coordinate&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;coordinate&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;coordinate&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AIR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.25&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.25&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;buildBridge&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And while you are at it, can you post the current temp to the chat??
+The hint here is that you should copy your temp.py file into your
+"MyAdventures" sub-directory, comment-out the deliver method and
+update the print method (at the end of the file) to postToChat. And,
+don't forget to do the minecraft setup (imports and creation) in order
+to postToChat.&lt;/p&gt;
+&lt;p&gt;What else can you do? Do you want to do? You all now have temp input,
+led output, minecraft control, and outbound email capabilities!!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Wed, 20 May 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-05-20:notes-on-setting-up-pis-to-use-minecraft-api.html</guid><category>raspberry pi</category><category>python</category><category>Minecraft</category></item><item><title>Some Code for RPi temp sensing</title><link>http://blog.techemstudios.com/some-code-for-rpi-temp-sensing.html</link><description>&lt;p&gt;Just dropping in some code for students to use.&lt;/p&gt;
+&lt;p&gt;After wiring your DS18B20, you need to prep your pi for using
+it. After logging in, do this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo nano /boot/config.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And add this line to it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;dtoverlay=w1-gpio
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, reboot your pi:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo reboot
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, let's test the temp sensor with these commands:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo modprobe w1-gpio
+sudo modprobe w1-therm
+cd /sys/bus/w1/devices
+ls
+cd 28&amp;lt;tab&amp;gt;
+cat w1_slave
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You should see two lines with a "YES" at the end of the first line and
+the temp reading at the end of the second. Once you've done this, go
+ahead and&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd ~
+sudo startx
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and launch python2, create a new file and put the code below in
+it. Save it as temp.py.&lt;/p&gt;
+&lt;p&gt;Here is the associated code that reads from the DS18B20 temp sensor.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;glob&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="c1"&gt;#from mailit import *&lt;/span&gt;
+
+&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;modprobe w1-gpio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;modprobe w1-therm&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;base_dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/sys/bus/w1/devices/&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;device_folder&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;base_dir&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;28*&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;device_file&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;device_folder&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/w1_slave&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_temp_raw&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;device_file&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;lines&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readlines&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_temp&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;lines&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;read_temp_raw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;YES&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;lines&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;read_temp_raw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;equals_pos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t=&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;equals_pos&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;temp_string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="n"&gt;equals_pos&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;
+        &lt;span class="n"&gt;temp_c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;temp_string&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mf"&gt;1000.0&lt;/span&gt;
+        &lt;span class="n"&gt;temp_f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;temp_c&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mf"&gt;9.0&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mf"&gt;5.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;32.0&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;temp_c&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp_f&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;The current temp is: &lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s1"&gt;C, &lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s1"&gt;F&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;read_temp&lt;/span&gt;&lt;span class="p"&gt;()))&lt;/span&gt;
+    &lt;span class="c1"&gt;#deliver(&amp;#39;The current temp is: %dC, %dF&amp;#39; % (read_temp()))&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1500&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is a very simple/generic mailing routine. Uncomment the "from
+mailit import *" and the function call to "deliver" in the above
+routine to have your temp reading sent via email. You should save this
+code in a file called mailit.py.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Simple smtp mail utility to be used by Tech Em students.&lt;/span&gt;
+&lt;span class="c1"&gt;# This will run on the RPi with the Occidentalis install.&lt;/span&gt;
+&lt;span class="c1"&gt;# Thus, it is a handy utility to use along with adafruit sensors&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# 201406 Wray Mills&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;smtplib&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;socket&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;email.mime.text&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;MIMEText&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+
+&lt;span class="c1"&gt;### &lt;/span&gt;
+&lt;span class="c1"&gt;# Change to your settings&lt;/span&gt;
+&lt;span class="c1"&gt;###&lt;/span&gt;
+&lt;span class="n"&gt;pi_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;wray-pi&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;somebody@somewhere.com&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;## Feel free to reuse the techem student relay&lt;/span&gt;
+&lt;span class="n"&gt;mail_user&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;student@techemstudios.com&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;mail_password&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;pword-on-whiteboard&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;deliver&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;subject&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;RPi output&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;smtplib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;SMTP&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;smtpout.secureserver.net&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3535&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Use 587 for gmail&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ehlo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="c1"&gt;#smtpserver.starttls() # Uncomment this line for gmail&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;login&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;mail_password&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;MIMEText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Subject&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;subject&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;From&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;(&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s1"&gt;)&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pi_name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;To&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sendmail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;as_string&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Wed, 13 May 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-05-13:some-code-for-rpi-temp-sensing.html</guid><category>raspberry pi</category><category>adafruit</category><category>python</category></item><item><title>NFES Winter Session</title><link>http://blog.techemstudios.com/nfes-winter-session.html</link><description>&lt;h3&gt;Thank you!&lt;/h3&gt;
+&lt;p&gt;I want to pass on my enthusiastic thanks for letting us provide
+Technology Enrichment to NFES! Joe and I thoroughly enjoyed the kids
+and the class and look forward to providing more enrichment at
+NFES. &lt;a href="mailto:info@techemstudios.com?subject=NFES-feecback"&gt;Let us know&lt;/a&gt;
+if you (and your kids) have any additional feedback for us.&lt;/p&gt;
+&lt;h3&gt;LED Pendant Information&lt;/h3&gt;
+&lt;p&gt;Here is some more information about the LED pendants your kids coded
+for our class.&lt;/p&gt;
+&lt;p&gt;The pendant consists of three main parts: the 8x8 LED matrix display;
+a microcontroller (it's actually a &lt;a href="https://www.adafruit.com/products/1222"&gt;"Gemma" microcontroller from
+Adafruit&lt;/a&gt;); and the lithium polymar (&lt;a href="https://www.adafruit.com/products/1578"&gt;lipo&lt;/a&gt;) rechargeable battery. There
+is no "on/off" switch -- you simply plug the battery in to start the
+display and unplug to stop. The battery plugs into the bottom of the
+microcontroller in the off-white receptacle.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma battery socket" src="http://blog.techemstudios.com/images/gemma-battery.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;On the top of the microcontroller is a mini USB receptacle which is
+used to transfer the code to the microcontroller (any USB connector
+will work to connect a laptop/desktop to the
+microcontroller). However, this plug does not charge the battery. See
+the section below if you and your kid would like to get the software
+necessary to refine their code or re-code their LED.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma mini usb socket" src="http://blog.techemstudios.com/images/gemma-usb.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Your child should also have a very &lt;a href="https://www.adafruit.com/products/1304"&gt;small charger&lt;/a&gt; for the battery. This
+charger plugs into a USB port and will charge the lipo battery. There
+is a red light when charging and a green light that indicates the
+battery is fully charged.&lt;/p&gt;
+&lt;h3&gt;LED Coding information&lt;/h3&gt;
+&lt;p&gt;There are detailed tutorials available at adafruit if you would like
+to know how we constructed the pendant and all the component
+specifications. However, this is a quick overview to get your child
+(re)coding the LED frame designs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://learn.adafruit.com/introducing-gemma/setting-up-with-arduino-ide"&gt;Arduino IDE v1.05 with Gemma software&lt;/a&gt; for your computer or laptop.&lt;/li&gt;
+&lt;li&gt;Configure the Arduino IDE to use the Gemma 8MHz and tinyISP.&lt;ul&gt;
+&lt;li&gt;Tools -&amp;gt; Board -&amp;gt; Adafruit Gemma 8MHz&lt;/li&gt;
+&lt;li&gt;Tools -&amp;gt; Programmer -&amp;gt; USBtinyISP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Download the required
+ &lt;a href="https://github.com/adafruit/TinyWireM/archive/master.zip"&gt;LED library&lt;/a&gt;,
+  unzip and put it in the Adafruit Arduino
+libraries directory.&lt;ul&gt;
+&lt;li&gt;Put the TinyWireM directory in your Documents/Arduino/libraries directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://secure.techemstudios.come/enrolled_children"&gt;Login&lt;/a&gt; to our website and download your kid's code.&lt;/li&gt;
+&lt;li&gt;Unzip your kid's code into a directory.&lt;/li&gt;
+&lt;li&gt;Go into that directory and double-click on the file named for your
+kid with a .ino suffix. This will launch Adafruit Arduino.&lt;/li&gt;
+&lt;li&gt;The LED design is in the "bmo.h" file that will be automatically
+loaded on the second tab when you launch Arduino (for those of you who
+have programmed in C or C++ this is simply a header file). Your child
+should know how to edit this file to enhance or change their design.&lt;/li&gt;
+&lt;li&gt;Anywhere there is a "//" is a code comment and the text after it
+    is for explanation and not used in the design.&lt;/li&gt;
+&lt;li&gt;Each "frame" of the design consists of 8 lines of 8 1's and 0's
+    preceded by a "B" and followed with a ",". Thus, the lines
+    correspond to the rows in the matrix and a 1 will light the led at
+    that position and a 0 will turn off the led at that position.&lt;/li&gt;
+&lt;li&gt;Each frame concludes with a decimal number on the 9th line
+      followed by a comma. This decimal number represents the delay in
+      hundredths of a second for this frame. For example, if you want
+      the first frame to display for half a second, use 50. If you
+      want it to display for a whole second, use 100. This value can
+      only go up to 255 (a little over 2.5 seconds).&lt;/li&gt;
+&lt;li&gt;The file has some statements at the beginning of the file that you
+    shouldn't change and the file must conclude with a "};" on the last line.&lt;/li&gt;
+&lt;li&gt;Once you are happy with your design, you should compile it to make
+sure there are no errors.&lt;/li&gt;
+&lt;li&gt;After an error-free compile, plug in your microcontroller and you
+have about 10 seconds to click on the "upload" icon (on the top left
+of the IDE, there is a right arrow for upload) to transfer the
+code to the microcontroller.&lt;/li&gt;
+&lt;li&gt;Make sure you are happy with the design -- if you are, you may unplug
+  the USB and use the battery to power the microcontroller.&lt;/li&gt;
+&lt;li&gt;If you want to change the design again, it is easiest to unplug the
+  usb until you have re-compiled the code and plug in when you are
+  ready to try again.&lt;/li&gt;
+&lt;li&gt;Wait a few seconds for the code to transfer and the microcontroller
+to reboot and display the frames in your design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And, feel free to comment here or shoot us an email if you have ANY
+questions or issues.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Tue, 24 Mar 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-03-24:nfes-winter-session.html</guid><category>computer science</category><category>led</category><category>gemma</category><category>arduino</category><category>coding</category></item><item><title>FORTRAN and CoffeeScript</title><link>http://blog.techemstudios.com/fortran-and-coffeescript.html</link><description>&lt;h3&gt;Language Elegance&lt;/h3&gt;
+&lt;p&gt;What does FORTRAN and CoffeeScript have in common? Well, aside from
+being programming languages (of course, there could be some arguments
+about formal languages vs. scripting languages vs. meta-scripting
+language -- just humor me for now), not much. But, I have the
+"pleasure" of working on a project that is using both. And, in fact,
+in a horrible violation of DRY, we are currently defining probability
+distributions and prob. dist. approximations in both! This will change soon; however, for now, it
+makes the project kind of cool. Its like the best and worst of
+old-school and new school. One can actually learn from reviewing dated
+FORTRAN code just as one can learn from the CoffeeScript and actually
+cross-leverage some concepts. Regardless, one can't help but
+appreciate the elegance of the CoffeeScript compared with the
+FORTRAN. Check this out:&lt;/p&gt;
+&lt;h4&gt;FORTRAN&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;!   Creating the Normal Approximation function. For now, we are using this from the shell.f module for the&lt;/span&gt;
+&lt;span class="c"&gt;!   Gaussian distributions.&lt;/span&gt;
+    &lt;span class="k"&gt;RECURSIVE FUNCTION &lt;/span&gt;&lt;span class="n"&gt;normal_approx&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="k"&gt;IMPLICIT NONE&lt;/span&gt;
+&lt;span class="k"&gt;      &lt;/span&gt;&lt;span class="kt"&gt;REAL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;KIND&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="k"&gt;INTENT&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;IN&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="kd"&gt;::&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;
+      &lt;span class="kt"&gt;REAL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;KIND&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="kd"&gt;::&lt;/span&gt; &lt;span class="n"&gt;normal_approx&lt;/span&gt;
+      &lt;span class="kt"&gt;INTEGER&lt;/span&gt; &lt;span class="kd"&gt;::&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;
+
+&lt;span class="c"&gt;!     if z is less than 0, then the value above is equal&lt;/span&gt;
+&lt;span class="c"&gt;!     to 1 - Q(-z), so return 1 - temp&lt;/span&gt;
+      &lt;span class="k"&gt;IF&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;THEN&lt;/span&gt;
+&lt;span class="k"&gt;         &lt;/span&gt;&lt;span class="n"&gt;normal_approx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;normal_approx&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="k"&gt;END IF&lt;/span&gt;
+
+
+&lt;span class="c"&gt;!     calculate the number according to the polynomial (these should be constants)&lt;/span&gt;
+      &lt;span class="n"&gt;normal_approx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mf"&gt;1.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;0.0498673470&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;
+     &lt;span class="mi"&gt;1&lt;/span&gt;                          &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;0.0211410061&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; 
+     &lt;span class="mi"&gt;2&lt;/span&gt;                          &lt;span class="mf"&gt;0.0032776263&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; 
+     &lt;span class="mi"&gt;3&lt;/span&gt;                          &lt;span class="mf"&gt;0.0000380036&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;
+     &lt;span class="mi"&gt;4&lt;/span&gt;                          &lt;span class="mf"&gt;0.0000488906&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;
+     &lt;span class="mi"&gt;5&lt;/span&gt;                          &lt;span class="mf"&gt;0.0000053830&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt; 
+
+&lt;span class="c"&gt;!     verify that the number is within the computational&lt;/span&gt;
+&lt;span class="c"&gt;!     limits of the dist_r &lt;/span&gt;
+      &lt;span class="k"&gt;IF&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;normal_approx&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;&lt;span class="k"&gt;THEN&lt;/span&gt;
+&lt;span class="k"&gt;         &lt;/span&gt;&lt;span class="n"&gt;normal_approx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+      &lt;span class="k"&gt;END IF&lt;/span&gt;
+&lt;span class="k"&gt;      IF&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;normal_approx&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;)))).&lt;/span&gt;&lt;span class="nb"&gt;AND&lt;/span&gt;&lt;span class="p"&gt;.(&lt;/span&gt;
+     &lt;span class="mi"&gt;1&lt;/span&gt;   &lt;span class="n"&gt;normal_approx&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="k"&gt;THEN&lt;/span&gt;
+&lt;span class="k"&gt;         &lt;/span&gt;&lt;span class="n"&gt;normal_approx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+      &lt;span class="k"&gt;END IF&lt;/span&gt;
+
+&lt;span class="k"&gt;      WRITE&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;UNIT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;FMT&lt;/span&gt;&lt;span class="o"&gt;=*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;normal approx at &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; is &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+     &lt;span class="mi"&gt;2&lt;/span&gt;    &lt;span class="n"&gt;normal_approx&lt;/span&gt;
+
+    &lt;span class="k"&gt;END FUNCTION&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Coffeescript&lt;/h4&gt;
+&lt;p&gt;Granted, this could use a little more comments. But, it essentially
+looks just like the definition for the Normal Approximation in the
+textbook, so we can simply reference the section in the function definition comment.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;Q&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="nx"&gt;Q&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;z&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;z&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+
+    &lt;span class="nx"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.0498673470&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.0211410061&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="mf"&gt;0.0032776263&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.0000380036&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="mf"&gt;0.0000488906&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.0000053830&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="nx"&gt;acc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;..&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+        &lt;span class="nx"&gt;acc&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nb"&gt;Math&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="nb"&gt;Math&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;acc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Digital Logic Design&lt;/h3&gt;
+&lt;p&gt;Oh, and just to make the week even more well-rounded (in a Comp
+Sci. sense), I've had a couple of my elementary classes working
+through the binary number system, basic logic gates to form
+half-adders to form full-adders to perform multi-digit binary
+arithmetic! All this provides a nice setup for their Arduino sketches
+for a microcontroller to control an 8x8 LED matrix.&lt;/p&gt;
+&lt;h3&gt;Minecraft, Arduino, Python, FORTRAN, C, Ruby, and Coffeescript for&lt;/h3&gt;
+&lt;h4&gt;LED controllers, minecraft server mods, enrollment systems, and&lt;/h4&gt;
+&lt;h4&gt;probabilistic distribution fitting engines&lt;/h4&gt;
+&lt;p&gt;And actually even a few more languages/tasks in between. So, actually, if every week could be this cool, that
+would be awesome. In fact, what makes this even better is that I get
+to share a lot of this with our next generation of Software
+Engineers. It's extremely rewarding to see such young students "coding"
+away in Python or even writing out bytes in bits for an Arduino sketch
+--  yes, 3rd graders defining bytes using bits in C. And to have an
+intern who is still just a sophomore in high school defining multiple
+ruby on rails environments (and all the related excruciating
+regression testing getting all the gems at the right versions) who can
+do such a task with very, very little guidance from me! And to work
+with an undergrad on a graduate-level project who is such a gifted
+coder in the most modern languages (like CoffeeScript) and who is
+headed to Microsoft this year, makes me very comfortable with the
+future of technology in the US!!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Wed, 11 Mar 2015 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-03-11:fortran-and-coffeescript.html</guid><category>FORTRAN</category><category>coffeescript</category><category>binary logic</category><category>half-adder</category></item><item><title>LED demo code</title><link>http://blog.techemstudios.com/led-demo-code.html</link><description>&lt;p&gt;Just dropping in some code for instructors, students, and everyone.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Animation data for Trinket/Gemma + LED matrix backpack jewelry. &lt;/span&gt;
+
+&lt;span class="cp"&gt;#define REPS 255 &lt;/span&gt;&lt;span class="c1"&gt;// Number of times to repeat the animation loop (1-255)&lt;/span&gt;
+
+&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;uint8_t&lt;/span&gt; &lt;span class="n"&gt;PROGMEM&lt;/span&gt; &lt;span class="n"&gt;anim&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 1 frame&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 0.5 second delay&lt;/span&gt;
+
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 2 frame&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 0.5 second delay&lt;/span&gt;
+
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 3 frame&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 0.25 second delay&lt;/span&gt;
+
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 0.25 second delay&lt;/span&gt;
+
+&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Tue, 03 Mar 2015 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2015-03-03:led-demo-code.html</guid><category>adafruit</category><category>arduino</category></item><item><title>NFES Follow Up</title><link>http://blog.techemstudios.com/nfes-follow-up.html</link><description>&lt;h3&gt;Thank you!&lt;/h3&gt;
+&lt;p&gt;I want to pass on my enthusiastic thanks for letting us provide
+Technology Enrichment to NFES! Kayla and I thoroughly enjoyed the kids
+and the class and look forward to providing more enrichment at NFES. In
+fact, we have learned a lot after our first (and largest enrichment
+class ever) session there. Thus, we are really excited to offer a
+continuation of this course where we plan to have a lower
+student-teacher ratio and will prioritize the hands-on projects over
+the classroom lecture. So, please &lt;a href="mailto:info@techemstudios.com?subject=NFES-session-2"&gt;let us know&lt;/a&gt; if you (and your kids)
+will be interested in a continuation session this winter. We would
+have it at the same time on Thursdays and the winter session runs January 22 -
+Feb 26.&lt;/p&gt;
+&lt;h3&gt;LED Pendant Information&lt;/h3&gt;
+&lt;p&gt;Here is some more information about the LED pendants your kids coded
+for our class. And, if your kid did not get to complete her/his code
+on the last day, please &lt;a href="mailto:info@techemstudios.com?subject=finish-led"&gt;send us an email&lt;/a&gt; so that we can setup some
+time in the winter when we are back at NFES or a time you all can come
+by our studio at Shady Grove and Nuckols to complete the coding.&lt;/p&gt;
+&lt;p&gt;The pendant consists of three main parts: the 8x8 LED matrix display;
+a microcontroller (it's actually a &lt;a href="https://www.adafruit.com/products/1222"&gt;"Gemma" microcontroller from
+Adafruit&lt;/a&gt;); and the lithium polymar (&lt;a href="https://www.adafruit.com/products/1578"&gt;lipo&lt;/a&gt;) rechargeable battery. There
+is no "on/off" switch -- you simply plug the battery in to start the
+display and unplug to stop. The battery plugs into the bottom of the
+microcontroller in the off-white receptacle.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma battery socket" src="http://blog.techemstudios.com/images/gemma-battery.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;On the top of the microcontroller is a mini USB receptacle which is
+used to transfer the code to the microcontroller (any USB connector
+will work to connect a laptop/desktop to the
+microcontroller). However, this plug does not charge the battery. See
+the section below if you and your kid would like to get the software
+necessary to refine their code or re-code their LED.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma mini usb socket" src="http://blog.techemstudios.com/images/gemma-usb.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Your child should also have a very &lt;a href="https://www.adafruit.com/products/1304"&gt;small charger&lt;/a&gt; for the battery. This
+charger plugs into a USB port and will charge the lipo battery. There
+is a red light when charging and a green light that indicates the
+battery is fully charged.&lt;/p&gt;
+&lt;h3&gt;LED Coding information&lt;/h3&gt;
+&lt;p&gt;There are detailed tutorials available at adafruit if you would like
+to know how we constructed the pendant and all the component
+specifications. However, this is a quick overview to get your child
+(re)coding the LED frame designs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://learn.adafruit.com/introducing-gemma/setting-up-with-arduino-ide"&gt;Arduino IDE v1.05 with Gemma software&lt;/a&gt; for your computer or laptop.&lt;/li&gt;
+&lt;li&gt;Configure the Arduino IDE to use the Gemma 8MHz and tinyISP.&lt;ul&gt;
+&lt;li&gt;Tools -&amp;gt; Board -&amp;gt; Adafruit Gemma 8MHz&lt;/li&gt;
+&lt;li&gt;Tools -&amp;gt; Programmer -&amp;gt; USBtinyISP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Download the required
+ &lt;a href="https://github.com/adafruit/TinyWireM/archive/master.zip"&gt;LED library&lt;/a&gt;,
+  unzip and put it in the Adafruit Arduino
+libraries directory.&lt;ul&gt;
+&lt;li&gt;Put the TinyWireM directory in your Documents/Arduino/libraries directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://secure.techemstudios.come/enrolled_children"&gt;Login&lt;/a&gt; to our website and download your kid's code.&lt;/li&gt;
+&lt;li&gt;Unzip your kid's code into a directory.&lt;/li&gt;
+&lt;li&gt;Go into that directory and double-click on the file named for your
+kid with a .ino suffix. This will launch Adafruit Arduino.&lt;/li&gt;
+&lt;li&gt;The LED design is in the "bmo.h" file that will be automatically
+loaded on the second tab when you launch Arduino (for those of you who
+have programmed in C or C++ this is simply a header file). Your child
+should know how to edit this file to enhance or change their design.&lt;/li&gt;
+&lt;li&gt;Anywhere there is a "//" is a code comment and the text after it
+    is for explanation and not used in the design.&lt;/li&gt;
+&lt;li&gt;Each "frame" of the design consists of 8 lines of 8 1's and 0's
+    preceded by a "B" and followed with a ",". Thus, the lines
+    correspond to the rows in the matrix and a 1 will light the led at
+    that position and a 0 will turn off the led at that position.&lt;/li&gt;
+&lt;li&gt;Each frame concludes with a decimal number on the 9th line
+      followed by a comma. This decimal number represents the delay in
+      hundredths of a second for this frame. For example, if you want
+      the first frame to display for half a second, use 50. If you
+      want it to display for a whole second, use 100. This value can
+      only go up to 255 (a little over 2.5 seconds).&lt;/li&gt;
+&lt;li&gt;The file has some statements at the beginning of the file that you
+    shouldn't change and the file must conclude with a "};" on the last line.&lt;/li&gt;
+&lt;li&gt;Once you are happy with your design, you should compile it to make
+sure there are no errors.&lt;/li&gt;
+&lt;li&gt;After an error-free compile, plug in your microcontroller and you
+have about 10 seconds to click on the "upload" icon (on the top left
+of the IDE, there is a right arrow for upload) to transfer the
+code to the microcontroller.&lt;/li&gt;
+&lt;li&gt;Make sure you are happy with the design -- if you are, you may unplug
+  the USB and use the battery to power the microcontroller.&lt;/li&gt;
+&lt;li&gt;If you want to change the design again, it is easiest to unplug the
+  usb until you have re-compiled the code and plug in when you are
+  ready to try again.&lt;/li&gt;
+&lt;li&gt;Wait a few seconds for the code to transfer and the microcontroller
+to reboot and display the frames in your design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And, feel free to comment here or shoot us an email if you have ANY
+questions or issues.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Mon, 10 Nov 2014 00:00:00 -0500</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-11-10:nfes-follow-up.html</guid><category>computer science</category><category>led</category><category>gemma</category><category>arduino</category><category>coding</category></item><item><title>Some Notes for Build Code Connect</title><link>http://blog.techemstudios.com/some-notes-for-build-code-connect.html</link><description>&lt;h3&gt;Quick notes from last night&lt;/h3&gt;
+&lt;p&gt;The site I was using for the Minecraft setup on the pi is &lt;a href="http://picraftbukkit.webs.com/pi-minecraft-server-how-to"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I would suggest using your new SD card to setup minecraft. Once I go through that process, I will publish it here. You can always get started by going to raspberrypi.org and following the instructions to get the latest Raspian installed on your pi on the new SD card. That will actually take the most time -- getting the java version of minecraft running on that will be easy.&lt;/p&gt;
+&lt;p&gt;You can use the comments here on this site to ask questions and/or shoot me an email. You could even send me an email from your pi -- just don't send it every 5 minutes!!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Thu, 23 Oct 2014 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-10-23:some-notes-for-build-code-connect.html</guid><category>computer science</category><category>python</category><category>raspberry pi</category></item><item><title>Some Notes for Homeschool Level 2 Computer Science and Tween/Teen Intro to Coding</title><link>http://blog.techemstudios.com/some-notes-for-homeschool-level-2-computer-science-and-tweenteen-intro-to-coding.html</link><description>&lt;p&gt;Remember, we have been doing two things when coding in our classes:&lt;/p&gt;
+&lt;p&gt;1) Using a command or terminal window to run python3. So far, we typically accomplish this by opening a terminal or command prompt and then using this command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd your_project/working_directory
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;What is "your_project/working_directory" ? Well, that depends on what you are using to edit the program files. If you are using Aptana then your project directory may be something like "Documents/Aptana Studio 3 Workspace/wray". Once you find it, remember that directory (write it down maybe). And once you have changed directory (using the cd command) into that area, you don't need to move out of that directory for the remainder of your session. So, to run the python interpreter and test your python code, you will use a command like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This will start the python interpreter -- you know you are in the interpreter because you will get the triple greater-than prompt. When you see that you can start testing your code like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;your_cool_python_file&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;call_your_cool_python_function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;your_parameter1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;your_parameter2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;your_object&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;YourClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;init_paramater1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;init_parameter2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;2) The second thing we do when coding is actually edit your python files. Using your favorite editor (e.g. Aptana, Eclipse, nano, vi), you will edit your python source files to be tested in the terminal window. Don't forget to save your changes. And you should restart the python interpreter every time and re-import your file, like this (in the python terminal):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;your_command_prompt&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;python3&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;your_cool_python_file&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Homework/Final Assignment&lt;/h3&gt;
+&lt;p&gt;I've been threatening homework for the past two weeks. So, let me post some here for you all. First, please review the instructions above and make sure you are proficient at editing python files and testing them. If nothing else, I want you to be very comfortable doing this so that you can continue to code and be ready for follow-up courses. Secondly, I want you to look at a "case study" in your book: go to page 399 and look at case study 12.3. This is the project I would like you all to do. There is a text-based version and then a graphics version if you are up to that challenge. In order to do the latter, you will likely need to start on the first part before Wednesday. Please come in Wednesday with any questions or issues you may have with this. It is very challenging, but I know you all are up to it. If you do want a bit more background (i.e. if you want something relatively dry to read to help you sleep) you can actually read the first part of Chapter 12 that starts on page 385. This material is very advanced so don't be discouraged if it doesn't make sense, but please email or post a question/discussion here on the blog.&lt;/p&gt;
+&lt;p&gt;Oh, and the link to some of the materials (like graphics.py) is &lt;a href="http://mcsp.wartburg.edu/zelle/python/"&gt;here&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Tue, 21 Oct 2014 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-10-21:some-notes-for-homeschool-level-2-computer-science-and-tweenteen-intro-to-coding.html</guid><category>computer science</category><category>python</category></item><item><title>Web App Camp</title><link>http://blog.techemstudios.com/web-app-camp.html</link><description>&lt;h1&gt;Web Camp Sites Update&lt;/h1&gt;
+&lt;p&gt;Most sites are up. Please watch your email -- I will send you an email when your site is ready. I do apologize for the delay, but we are spending some time doing additional customizations for each site. Also, in previous emails, I told you all to access the site using the username I put on the whiteboard the last day of camp. Instead, please use the username 'ec2-user' (referenced below). &lt;/p&gt;
+&lt;h1&gt;Maintaining your site&lt;/h1&gt;
+&lt;p&gt;I'll send you an email with your specific instructions. I am adding basic authentication to most sites (most everyone asked for it), so in that email will be a separate password for your site. Your login will be an "administrative" login -- other users may register, but they will be restricted on what they can do on your site. Once your site is up, you can maintain your site by connecting to the server like we did in class OR you can install ruby and ruby on rails on your own computer. Later, I'll include a brief overview of how to work on your own computer and then copy the files to the server. For now, you can use the server I have setup.&lt;/p&gt;
+&lt;h1&gt;Editing your files&lt;/h1&gt;
+&lt;p&gt;If you have Koder installed on your tablet, you can edit files just like you did in class. You will need to create a new remote SFTP project where the username is the name of your site and the username/password is what I wrote on the whiteboard. Your project will be in the same directory location it was for class (e.g. /webappcamp/&amp;lt;your_app&gt;).&lt;/p&gt;
+&lt;p&gt;If you don't have Koder or want to use your computer, you can use &lt;a href="http://www.barebones.com/products/bbedit/"&gt;bbedit&lt;/a&gt; on the Mac or use &lt;a href="http://www.thetechrepo.com/main-articles/542.html"&gt;WinSCP with Notepad++&lt;/a&gt;. Really, with WinSCP, you can use whatever editor you may already use.&lt;/p&gt;
+&lt;h1&gt;Accessing the console&lt;/h1&gt;
+&lt;p&gt;If you have iSSH installed on your tablet, you can connect to the server using the same username/password I wrote on the whiteboard. On Windows, you can use &lt;a href="http://www.putty.org"&gt;putty.exe&lt;/a&gt; to access the server and on Mac you can use the terminal with this command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh -l ec2-user &amp;lt;your_app&amp;gt;.techemstudios.com
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;There are essentially two things you will need the access to do:&lt;/p&gt;
+&lt;p&gt;After you make changes, to reload your applicaiton and see the changes, you need to:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd /webappcamp/&amp;lt;your_app&amp;gt;
+bundle exec rake assets:precompile
+touch tmp/restart.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If your site isn't working, you may want to review the application logfile (assume you are still in your app directory -- first command above):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;tail -500 log/production.log
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;An example of how to make changes&lt;/h1&gt;
+&lt;p&gt;A student had the typical setup we created in camp: The main "articles" with the ability to "post" comments on an article. So, they have "articles" and "posts". He noted that when viewing a particular posted comment on an article that page has a link at the bottom of the page called "back". And when we generated the scaffold code, it assumed "back" from a post should take you back to the lists of posts. Well, in our case, we don't want that. We want "back" to go to the list of articles (really the home page in our case). So, we needed to go in and modify that link. Here is what we did:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a remote editor to open up the file /webappcamp/&lt;your_app&gt;/app/views/posts/show.html.erb&lt;/li&gt;
+&lt;li&gt;Change the line of code where it creates the back link to use "articles_path" instead of "posts_path".&lt;/li&gt;
+&lt;li&gt;Save the change.&lt;/li&gt;
+&lt;li&gt;Access the console as described above: enter the 3 unix commands.&lt;/li&gt;
+&lt;li&gt;Refresh your browser viewing the page and voila! Your change is there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please feel free to continue to comment and/or send me email if you have more questions. I'm very happy to help you all maintain your sites and work with you all to make it easier. In other words, now that you know what the actual unix commands are to reloaded your app on the EC2 user, I can provide you all with a simpler way to execute that in one command from your desktop or laptop. I do want you all to understand what is going on before we build out some of that automagic.&lt;/p&gt;
+&lt;p&gt;Some sites/apps we visited/used by day:&lt;/p&gt;
+&lt;h1&gt;Monday&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro"&gt;w3schools.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.koderapp.com"&gt;koder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;h1&gt;Tuesday&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.zinger-soft.com/iSSH_features.html"&gt;iSSH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ruby-lang.org/en/"&gt;Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://rubyonrails.org"&gt;Ruby on Rails&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;h1&gt;Wednesday&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://guides.rubyonrails.org/getting_started.html"&gt;Ruby on Rails tutorial (a blog)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;h1&gt;Thursday&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://guides.rubyonrails.org/getting_started.html#adding-a-second-model"&gt;Ruby on Rails tutorial (creating a relation)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/NoamB/sorcery"&gt;sorcery (authentication)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Sun, 07 Sep 2014 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-09-07:web-app-camp.html</guid><category>web</category><category>html</category></item><item><title>Trac setup with GitHub</title><link>http://blog.techemstudios.com/trac-setup-with-github.html</link><description>&lt;p&gt;This entry documents the setup for the Trac/SVN server -- using git (on github) as the primary remote repository instead of the hosted svn.&lt;/p&gt;
+&lt;p&gt;We are using a server that hosts both SVN as well as several trac instances. This server resides within our internal restricted network. We'll refer to the trac/svn server as trac-1.&lt;/p&gt;
+&lt;p&gt;Essentially, the Trac-Git setup is detailed &lt;a href="http://trac.edgewall.org/wiki/TracGit"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I went through the process of adding a git repository (as the default) to an existing Trac project. The configuration essentially points to a locally cloned git repository (local on the Trac server). And this works well, but sort of assumes that this local repository is either an integrated git remote repository (one where all developers are syncing their changes) or that itself is being synced separately. And while I can setup post-receive hooks on the repository, these won't work unless developers are pushing to this repository or someone is fetching from the integrated repository (in github in our case). So, while not the best solution, I've setup a cron job to fetch from the github repository every 15 minutes. So far this seems to work out fairly well.&lt;/p&gt;
+&lt;p&gt;Definitely open to suggestions here.&lt;/p&gt;
+&lt;p&gt;I will be setting up some post-receive hooks to enhance the integration, so I may run across a better solution.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Mon, 18 Aug 2014 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-08-18:trac-setup-with-github.html</guid><category>trac</category><category>git</category></item><item><title>Gaming Camp</title><link>http://blog.techemstudios.com/gaming-camp.html</link><description>&lt;p&gt;You can access your &lt;a href="http://www.gamepressapp.com"&gt;GamePress&lt;/a&gt; app by logging into TechEm's &lt;a href="https://secure.techemstudios.com"&gt;secure site&lt;/a&gt;. There is an enrollment record for every class, course, or camp you take at TechEm. So, go to the record for the gaming camp and there will be a zipfile that contains the GamePress app(s) you created during the camp.&lt;/p&gt;
+&lt;p&gt;So, all you need to do is transfer the game files to your iPad and open up in GamePress. Once you have GamePress installed, one easy way to do this is email yourself the file (using an email address you can access on the iPad). When you choose the attachment on the iPad, you will have the option to "open in" GamePress. Do that and you can edit and/or play your game!!&lt;/p&gt;
+&lt;p&gt;And contact us if you have any issues or questions!&lt;/p&gt;
+&lt;p&gt;Happy gaming. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Fri, 18 Jul 2014 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-07-18:gaming-camp.html</guid><category>gaming</category><category>gamepress</category><category>unity</category></item><item><title>Rpi Temp. and Humidity sensing</title><link>http://blog.techemstudios.com/rpi-temp-and-humidity-sensing.html</link><description>&lt;p&gt;Login to your pi and enter some commands:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
+sudo apt-get install build-essential python-dev
+git clone git://github.com/adafruit/Adafruit_Python_DHT
+cd Adafruit_Python_DHT
+sudo python setup.py install
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, we'll look at an example to test reading your sensor from Python.&lt;/p&gt;
+&lt;p&gt;Once everyone has their sensors working again via Python. Copy in this new mailit.py:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Simple smtp mail utility to be used by Tech Em students.&lt;/span&gt;
+&lt;span class="c1"&gt;# This will run on the r-pi with the Occidentals install.&lt;/span&gt;
+&lt;span class="c1"&gt;# Thus, it is a nice utility to use along with adafruit sensors&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Tech Em Studios, Gnu GPL&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# 201406 Wray Mills&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;smtplib&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;socket&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;email.mime.text&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;MIMEText&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+
+&lt;span class="c1"&gt;###&lt;/span&gt;
+&lt;span class="c1"&gt;# Change to your settings&lt;/span&gt;
+&lt;span class="c1"&gt;###&lt;/span&gt;
+&lt;span class="n"&gt;pi_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;your-pi&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;somebody@somewhere.com&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;## Feel free to reuse, but please don&amp;#39;t abuse the techem student relay&lt;/span&gt;
+&lt;span class="n"&gt;mail_user&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;xxx@techemstudios.com&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;mail_password&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;pword&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;smtp_server&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;smtp.somwhere.net&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;smtp_port&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3535&lt;/span&gt; &lt;span class="c1"&gt;# Use 587 for gmail&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;deliver&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;subject&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;RPi output&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;smtplib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;SMTP&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;smtp_server&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;smtp_port&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Use 587 for gmail&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ehlo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="c1"&gt;#smtpserver.starttls() # Uncomment this line for gmail&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ehlo&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;login&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;mail_password&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;MIMEText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Subject&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;subject&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;From&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;(&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s1"&gt;)&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pi_name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;To&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sendmail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;as_string&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And create a new file called temp_humidity_emailer.py and copy this code into it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Template code for emailing temperature and humidity from an Adafruit DHT22&lt;/span&gt;
+&lt;span class="c1"&gt;# sensor. Don&amp;#39;t forget to update this file if you connect the DHT22 to another data pin,&lt;/span&gt;
+&lt;span class="c1"&gt;# want to change the delay, or logic for mailing. For example, you may only want to&lt;/span&gt;
+&lt;span class="c1"&gt;# send notifications when certain thresholds are exceeded.&lt;/span&gt;
+&lt;span class="c1"&gt;# &lt;/span&gt;
+&lt;span class="c1"&gt;# Code provided for Tech Em students and open under Gnu GPL&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Wray Mills&lt;/span&gt;
+&lt;span class="c1"&gt;# 20140618&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;Adafruit_DHT&lt;/span&gt;
+&lt;span class="c1"&gt;# Tech Em mail utility&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;mailit&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+
+&lt;span class="n"&gt;sensor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DHT22&lt;/span&gt;
+&lt;span class="n"&gt;pin&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; 
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_temp_humidity&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_retry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sensor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pin&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;temp_f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mf"&gt;9.0&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mf"&gt;5.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;32.0&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp_f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;humidity&lt;/span&gt;
+
+
+&lt;span class="n"&gt;deliver&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;The current temp is &lt;/span&gt;&lt;span class="si"&gt;%0.2f&lt;/span&gt;&lt;span class="s1"&gt; C, &lt;/span&gt;&lt;span class="si"&gt;%0.2f&lt;/span&gt;&lt;span class="s1"&gt; F, with a humidty of &lt;/span&gt;&lt;span class="si"&gt;%0.2f%%&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;read_temp_humidity&lt;/span&gt;&lt;span class="p"&gt;()))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then we'll talk about "cron" and look at how you can setup your pi such that whenever you power it up on a network, it will start sensing temp and humidity every x minutes. Of course, don't forget to adjust your mailit.py in order to configure who gets notified via email or text.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo crontab -e
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Use the nano editor to add a line like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;0,15,30,45 * * * * /usr/bin/python /home/pi/temp_humidity_emailer.py &amp;gt;&amp;gt; /home/pi/log/cron.log 2&amp;gt;&amp;amp;1
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To exit, ctrl-x, answer yes and then hit enter.&lt;/p&gt;
+&lt;p&gt;Don't forget, this is your pi and your code so you should try to modify the code (in temp_humidity_emailer.py) to only send notifications when the temp and/or humidity goes below or above some set levels. Ask me if you want to discuss how to properly create those conditions.&lt;/p&gt;
+&lt;p&gt;Now, if you want to "permanently" attach your sensor to the board to plug into the top of the pi, let's solder!!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="RPi with DHT22 sensor on top board" src="http://blog.techemstudios.com/images/pi-with-dht22.jpg" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Thu, 19 Jun 2014 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-06-19:rpi-temp-and-humidity-sensing.html</guid><category>raspberry pi</category><category>adafruit</category><category>python</category></item><item><title>Adafruit Gemma Musical Notes</title><link>http://blog.techemstudios.com/adafruit-gemma-musical-notes.html</link><description>&lt;p&gt;This entry documents my attempt at mapping out some musical notes to be used by students to create their own sounds.&lt;/p&gt;
+&lt;p&gt;I went ahead and created a header file to define the notes. I based the frequencies on arduino code from this &lt;a href="http://arduino.cc/en/Tutorial/Tone"&gt;site&lt;/a&gt;, which in turn references this &lt;a href="http://www.phy.mtu.edu/~suits/notefreqs.html"&gt;table&lt;/a&gt;. Essentially, dividing 1,000 by the frequency.&lt;/p&gt;
+&lt;p&gt;notes.h&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
+&lt;span class="cm"&gt;Note frequencies to be used by the playTone method found in the Adafruit Chirp Owl written by&lt;/span&gt;
+&lt;span class="cm"&gt;Becky Stern and T Main.&lt;/span&gt;
+
+&lt;span class="cm"&gt;Created 29 May 2014&lt;/span&gt;
+&lt;span class="cm"&gt;by Wray Mills&lt;/span&gt;
+&lt;span class="cm"&gt;based on Sound Effects with Arudino - http://www.mycontraption.com/sound-effects-with-and-arduino&lt;/span&gt;
+&lt;span class="cm"&gt;These frequencies differ from those provided on the Arduino Tone Tutorial - &lt;/span&gt;
+&lt;span class="cm"&gt;http://arduino.cc/en/Tutorial/Tone and the true note accuracy has not been verified, &lt;/span&gt;
+&lt;span class="cm"&gt;but the relative differences are such that simple melodies can be constructed.&lt;/span&gt;
+&lt;span class="cm"&gt;*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_C&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;956&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_D&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;851&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_E&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;758&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_F&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;716&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_G&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;638&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_A&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;568&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_B&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;506&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_hiC&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;478&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_hiD&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;426&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_hiG&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;319&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can then use the notes in calls to playTune (provided in the Gemma tutorials) to create music like the Star Wars Theme:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;// Generate the first few measures of the Star Wars Theme
+void starwars(){
+  playTone(note_D,100);
+  delay(50);
+  playTone(note_D,100);
+  delay(50);
+  playTone(note_D,100);
+  delay(50);
+  playTone(note_G,600);
+  delay(50);
+  playTone(note_hiD,600);
+  delay(50);
+  playTone(note_hiC,100);
+  delay(50);
+  playTone(note_B,100);
+  delay(50);
+  playTone(note_A,100);
+  delay(50);
+  playTone(note_hiG,600);
+  delay(50);
+  playTone(note_hiD,600);
+
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We are prepping for a birthday party -- doing a variation on this &lt;a href="https://learn.adafruit.com/chirping-plush-owl-toy/overview"&gt;adafruit project&lt;/a&gt;, so I'll post all the different functions we create. Oh, and of course, I'll post the kids creations as well, I can't wait to see what they design.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Thu, 29 May 2014 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-05-29:adafruit-gemma-musical-notes.html</guid><category>arduino</category><category>adafruit</category><category>gemma</category><category>speaker output</category></item><item><title>Trac setup on SVN server</title><link>http://blog.techemstudios.com/trac-setup-on-svn-server.html</link><description>&lt;p&gt;This entry documents the setup for a new project/group setup when using self-hosted SVN in lieu of github.&lt;/p&gt;
+&lt;p&gt;We are using a server that hosts both SVN as well as several trac instances. This server resides within our internal restricted network. We'll refer to the trac/svn server as trac-1.&lt;/p&gt;
+&lt;p&gt;SVN -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo svnadmin create in /Users/svn
+sudo chgrp -R _www # for Apache svn service access
+sudo chmod -R g+w
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Add permissions for developers in ${app_root}/.svn_authz&lt;/p&gt;
+&lt;p&gt;Can access via https://${trac-1.domain}/scc/${new_project} # via apache proxy connecting to specific trac instance port.&lt;/p&gt;
+&lt;p&gt;Then, you can do an svn import -m "initial import"&lt;/p&gt;
+&lt;p&gt;Trac - (now up to version 1.0.1)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;trac-admin &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;app_root&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;-trac initenv
+trac-admin &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;app_root&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;-trac permission add &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;admin_user&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; TRAC_ADMIN
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Adjust trac.conf for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;attachment size&lt;/li&gt;
+&lt;li&gt;email settings (including default notification settings)&lt;/li&gt;
+&lt;li&gt;svn settings! (Trac 1.0.1 does not favor or default to svn, so the svn modules need to be turned on in the conf file before you can set the repository in the interface). There is a link I should add here.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Immediately go in and adjust permissions to give unauthenticated none&lt;/p&gt;
+&lt;p&gt;Re-arrange permissions to give authenticated a rather large set of permissions (use another project as a template).&lt;/p&gt;
+&lt;p&gt;Configure the default repository.&lt;/p&gt;
+&lt;p&gt;Launch on specific port (add to crontab @reboot) -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;tracd -s -- port &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;project_port&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; --auth=&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; trac,&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;app_root&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/.htdigest,&amp;#39;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&amp;#39; --base-path=&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;app_root&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;-trac
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Finally, add users to the htdigest, update their name and email and notify them of their new credentials.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Tue, 27 May 2014 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-05-27:trac-setup-on-svn-server.html</guid><category>trac</category><category>svn</category><category>self-hosted</category></item><item><title>Relaxation Tip: Solder</title><link>http://blog.techemstudios.com/relaxation-tip-solder.html</link><description>&lt;p&gt;Seems like I've always had shaky hands. Probably why I'm not a surgeon. Well, that and I didn't even opt for pre-med, or go to medical school etc. Anyway, I did my fair share of soldering during college (mostly at a camera repair shop where I worked for a couple of years). I remember then I would need to watch my coffee and sugar intake, which was hard considering our shop was a block over from spudnuts. In order to solder, I would often have to sort of meditate for a bit to calm everything down and steady the hands. Zoom ahead 20 years and I'm trying to solder again and its a mess. The harder I concentrated, the more my hands shook -- years of coffee and restless everything syndrome while coding or "software architecting" have taken their toll. Finally, I remembered the meditation technique.&lt;/p&gt;
+&lt;p&gt;Not only did this allow me to actually solder the small pieces necessary to prep student projects, but also it is healty. 1) I'm steady enough not to burn myself which is healthy and 2) this self-calming extends past the soldering session (of course now I'll start resuming normal caffeine intake to try and prove that is isn't the coffee).&lt;/p&gt;
+&lt;p&gt;Regardless, if you don't already meditate or do something similar as part of your routine, find a nice soldering project that will force you to calm your nerves. Just don't breathe any of the solder fumes!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Wed, 21 May 2014 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-05-21:relaxation-tip-solder.html</guid><category>soldering</category></item><item><title>What is Tech Em Studios</title><link>http://blog.techemstudios.com/what-is-tech-em-studios.html</link><description>&lt;p&gt;Tech Em Studios offers classes and camps focused on applied computer science and computer-aided design at our studio in Short Pump and at local secondary schools. Our classes help students understand the exciting and evolving relationship of technology and creativity. So whether you want to learn about using technology for art, seriously prepare your child for an applied science and engineering program or get yourself up to speed on current device capabilities, we are building a range of curriculums to meet the needs of your family.&lt;/p&gt;
+&lt;p&gt;So, that is the marketing pitch. What about the story behind the creation of Tech Em? Well, we have three girls that are 5, 7, and 9 and I was concerned about their practical technology skills. It was 2013 after all and it seemed I had just as much opportunity to learn how to code and build my own circuits and rockets back in the 80's. Having been in "corporate" IT for almost 20 years, I had not kept up with technology education opportunities (or lack thereof) for secondary school students as well as adults outside the IT profession. That is how the idea for Tech Em starting brewing.&lt;/p&gt;
+&lt;p&gt;And we've become focused on the tech gap (and doing what we can to address the gap -- providing more tech education and experience). I'm referring to the gap growing between the demand for Programmers (people who can code) and people in the U.S. who can actually code. And so I've been developing curriculums that incorporate introductory Computer Science concepts in a very hands-on and applied way (designing, coding, testing, building). It actually all lines up very neatly with organizations like &lt;a href="http://code.org"&gt;code.org&lt;/a&gt;, the maker movement, all the open source hardware devices available and, of course, 3D printing.&lt;/p&gt;
+&lt;p&gt;Its turning out to be more than a new business venture, but a re-awakening of my inner geek since I get to re-learn and re-appreciate applied Computer Science to teach it. Furthermore, most of the kids I work with want to code and build more than use -- that actually isn't the problem. The challenge is sorting through all that is available to streamline kids' absorption of the key concepts so that they are learning how to think like a creative coder within the level-appropriate Engineering theory and discipline.&lt;/p&gt;
+&lt;p&gt;The name? Well, emersion is sort of a play on immersion, but is really the opposite of submersion. We'd like to think we are helping people rise up out of the sea of technology. Whether we are helping students keep from drowing in technology (devices) or we are training the next Engineers who are rising out of the sea of users to become builders and creators. Sounds pretty cool right, but also Tech Em just works better than Tech Im!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wray Mills</dc:creator><pubDate>Fri, 28 Mar 2014 23:08:00 -0400</pubDate><guid isPermaLink="false">tag:blog.techemstudios.com,2014-03-28:what-is-tech-em-studios.html</guid><category>mission</category></item></channel></rss>

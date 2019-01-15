@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Just dropping in some code for students to use. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 ...">
+        <meta name="keywords" content="adafruit, python, raspberry pi">
+        <link rel="icon" href="http://blog.techemstudios.com/favicon.ico">
+
+        <title>Some Code for RPi temp uploading - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="http://blog.techemstudios.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://blog.techemstudios.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="http://blog.techemstudios.com/theme/css/nest.css" rel="stylesheet">
+        <link href="http://blog.techemstudios.com/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('http://blog.techemstudios.com/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="http://blog.techemstudios.com/"><img class="mr20" src="http://blog.techemstudios.com/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Some Code for RPi temp uploading</h1>
+                      <p class="header-date"> <a href="http://blog.techemstudios.com/author/wray-mills.html">Wray Mills</a>, 2015-07-16,  <a href="http://blog.techemstudios.com/category/notes.html">Notes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="http://blog.techemstudios.com/tag/adafruit.html">adafruit</a>, <a href="http://blog.techemstudios.com/tag/python.html">python</a>, <a href="http://blog.techemstudios.com/tag/raspberry-pi.html">raspberry pi</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>Just dropping in some code for students to use.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="c1"># Google Spreadsheet DHT Sensor Data-logging Example</span>
+
+<span class="c1"># Depends on the &#39;gspread&#39; package being installed.  If you have pip installed</span>
+<span class="c1"># execute:</span>
+<span class="c1">#   sudo pip install gspread</span>
+
+<span class="c1"># Copyright (c) 2014 Adafruit Industries</span>
+<span class="c1"># Author: Tony DiCola</span>
+
+<span class="c1"># Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<span class="c1"># of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<span class="c1"># in the Software without restriction, including without limitation the rights</span>
+<span class="c1"># to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<span class="c1"># copies of the Software, and to permit persons to whom the Software is</span>
+<span class="c1"># furnished to do so, subject to the following conditions:</span>
+
+<span class="c1"># The above copyright notice and this permission notice shall be included in all</span>
+<span class="c1"># copies or substantial portions of the Software.</span>
+
+<span class="c1"># THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<span class="c1"># IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<span class="c1"># FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<span class="c1"># AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<span class="c1"># LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<span class="c1"># OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span>
+<span class="c1"># SOFTWARE.</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+
+<span class="kn">import</span> <span class="nn">Adafruit_DHT</span>
+<span class="kn">import</span> <span class="nn">gspread</span>
+
+<span class="c1"># Type of sensor, can be Adafruit_DHT.DHT11, Adafruit_DHT.DHT22, or Adafruit_DHT.AM2302.</span>
+<span class="n">DHT_TYPE</span> <span class="o">=</span> <span class="n">Adafruit_DHT</span><span class="o">.</span><span class="n">DHT22</span>
+
+<span class="c1"># Example of sensor connected to Raspberry Pi pin 23</span>
+<span class="n">DHT_PIN</span>  <span class="o">=</span> <span class="mi">12</span> 
+<span class="c1"># Example of sensor connected to Beaglebone Black pin P8_11</span>
+<span class="c1">#DHT_PIN  = &#39;P8_11&#39;</span>
+
+<span class="c1"># Google Docs account email, password, and spreadsheet name.</span>
+<span class="n">GDOCS_EMAIL</span>            <span class="o">=</span> <span class="s1">&#39;XXX&#39;</span>
+<span class="n">GDOCS_PASSWORD</span>         <span class="o">=</span> <span class="s1">&#39;XXX&#39;</span>
+<span class="n">GDOCS_SPREADSHEET_NAME</span> <span class="o">=</span> <span class="s1">&#39;XXX&#39;</span>
+
+<span class="c1"># How long to wait (in seconds) between measurements.</span>
+<span class="n">FREQUENCY_SECONDS</span>      <span class="o">=</span> <span class="mi">30</span>
+
+
+<span class="k">def</span> <span class="nf">login_open_sheet</span><span class="p">(</span><span class="n">email</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">spreadsheet</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Connect to Google Docs spreadsheet and return the first worksheet.&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">gc</span> <span class="o">=</span> <span class="n">gspread</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">email</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+        <span class="n">worksheet</span> <span class="o">=</span> <span class="n">gc</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">spreadsheet</span><span class="p">)</span><span class="o">.</span><span class="n">sheet1</span>
+        <span class="k">return</span> <span class="n">worksheet</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s1">&#39;Unable to login and get spreadsheet.  Check email, password, spreadsheet name.&#39;</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+
+<span class="k">print</span> <span class="s1">&#39;Logging sensor measurements to {0}.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GDOCS_SPREADSHEET_NAME</span><span class="p">)</span>
+<span class="c1">#print &#39;Press Ctrl-C to quit.&#39;</span>
+<span class="n">worksheet</span> <span class="o">=</span> <span class="bp">None</span>
+
+<span class="c1"># Login if necessary.</span>
+<span class="k">if</span> <span class="n">worksheet</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="n">worksheet</span> <span class="o">=</span> <span class="n">login_open_sheet</span><span class="p">(</span><span class="n">GDOCS_EMAIL</span><span class="p">,</span> <span class="n">GDOCS_PASSWORD</span><span class="p">,</span> <span class="n">GDOCS_SPREADSHEET_NAME</span><span class="p">)</span>
+
+<span class="c1"># Attempt to get sensor reading.</span>
+<span class="n">humidity</span><span class="p">,</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">Adafruit_DHT</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">DHT_TYPE</span><span class="p">,</span> <span class="n">DHT_PIN</span><span class="p">)</span>
+
+<span class="c1"># Skip to the next reading if a valid measurement couldn&#39;t be taken.</span>
+<span class="c1"># This might happen if the CPU is under a lot of load and the sensor</span>
+<span class="c1"># can&#39;t be reliably read (timing is critical to read the sensor).</span>
+<span class="k">if</span> <span class="n">humidity</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">or</span> <span class="n">temp</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s1">&#39;Temperature: {0:0.1f} C&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s1">&#39;Humidity:    {0:0.1f} %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span>
+
+<span class="c1"># Append the data in the spreadsheet, including a timestamp</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">worksheet</span><span class="o">.</span><span class="n">append_row</span><span class="p">((</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span> <span class="n">temp</span><span class="p">,</span> <span class="n">temp</span><span class="o">*</span><span class="mf">9.0</span><span class="o">/</span><span class="mf">5.0</span> <span class="o">+</span> <span class="mf">32.0</span><span class="p">,</span><span class="n">humidity</span><span class="p">))</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="c1"># Error appending data, most likely because credentials are stale.</span>
+    <span class="c1"># Null out the worksheet so a login is performed at the top of the loop.</span>
+    <span class="k">print</span> <span class="s1">&#39;Append error, logging in again&#39;</span>
+    <span class="n">worksheet</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="c1">#time.sleep(FREQUENCY_SECONDS)</span>
+    <span class="c1">#continue</span>
+
+<span class="c1"># Wait 30 seconds before continuing</span>
+<span class="k">print</span> <span class="s1">&#39;Wrote a row to {0}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GDOCS_SPREADSHEET_NAME</span><span class="p">)</span>
+<span class="c1">#time.sleep(FREQUENCY_SECONDS)</span>
+</pre></div>
+</td></tr></table>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm Studios on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

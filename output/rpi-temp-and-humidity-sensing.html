@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Login to your pi and enter some commands: sudo apt-get update sudo apt-get install build-essential python-dev git clone git://github.com/adafruit/Adafruit_Python_DHT cd Adafruit_Python_DHT sudo ...">
+        <meta name="keywords" content="adafruit, python, raspberry pi">
+        <link rel="icon" href="http://blog.techemstudios.com/favicon.ico">
+
+        <title>Rpi Temp. and Humidity sensing - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="http://blog.techemstudios.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://blog.techemstudios.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="http://blog.techemstudios.com/theme/css/nest.css" rel="stylesheet">
+        <link href="http://blog.techemstudios.com/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('http://blog.techemstudios.com/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="http://blog.techemstudios.com/"><img class="mr20" src="http://blog.techemstudios.com/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Rpi Temp. and Humidity sensing</h1>
+                      <p class="header-date"> <a href="http://blog.techemstudios.com/author/wray-mills.html">Wray Mills</a>, 2014-06-19,  <a href="http://blog.techemstudios.com/category/notes.html">Notes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="http://blog.techemstudios.com/tag/adafruit.html">adafruit</a>, <a href="http://blog.techemstudios.com/tag/python.html">python</a>, <a href="http://blog.techemstudios.com/tag/raspberry-pi.html">raspberry pi</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>Login to your pi and enter some commands:</p>
+<div class="highlight"><pre><span></span>sudo apt-get update
+sudo apt-get install build-essential python-dev
+git clone git://github.com/adafruit/Adafruit_Python_DHT
+cd Adafruit_Python_DHT
+sudo python setup.py install
+</pre></div>
+
+
+<p>Now, we'll look at an example to test reading your sensor from Python.</p>
+<p>Once everyone has their sensors working again via Python. Copy in this new mailit.py:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Simple smtp mail utility to be used by Tech Em students.</span>
+<span class="c1"># This will run on the r-pi with the Occidentals install.</span>
+<span class="c1"># Thus, it is a nice utility to use along with adafruit sensors</span>
+<span class="c1">#</span>
+<span class="c1"># Tech Em Studios, Gnu GPL</span>
+<span class="c1">#</span>
+<span class="c1"># 201406 Wray Mills</span>
+<span class="c1">#</span>
+
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="kn">import</span> <span class="nn">smtplib</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+
+<span class="kn">from</span> <span class="nn">email.mime.text</span> <span class="kn">import</span> <span class="n">MIMEText</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+
+<span class="c1">###</span>
+<span class="c1"># Change to your settings</span>
+<span class="c1">###</span>
+<span class="n">pi_name</span> <span class="o">=</span> <span class="s1">&#39;your-pi&#39;</span>
+<span class="n">to</span> <span class="o">=</span> <span class="s1">&#39;somebody@somewhere.com&#39;</span>
+
+<span class="c1">## Feel free to reuse, but please don&#39;t abuse the techem student relay</span>
+<span class="n">mail_user</span> <span class="o">=</span> <span class="s1">&#39;xxx@techemstudios.com&#39;</span>
+<span class="n">mail_password</span> <span class="o">=</span> <span class="s1">&#39;pword&#39;</span>
+<span class="n">smtp_server</span> <span class="o">=</span> <span class="s1">&#39;smtp.somwhere.net&#39;</span>
+<span class="n">smtp_port</span> <span class="o">=</span> <span class="mi">3535</span> <span class="c1"># Use 587 for gmail</span>
+
+<span class="k">def</span> <span class="nf">deliver</span> <span class="p">(</span> <span class="n">message</span><span class="p">,</span> <span class="n">subject</span> <span class="o">=</span> <span class="s1">&#39;RPi output&#39;</span> <span class="p">):</span>
+    <span class="n">smtpserver</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="n">smtp_server</span><span class="p">,</span><span class="n">smtp_port</span><span class="p">)</span> <span class="c1"># Use 587 for gmail</span>
+    <span class="n">smtpserver</span><span class="o">.</span><span class="n">ehlo</span><span class="p">()</span>
+    <span class="c1">#smtpserver.starttls() # Uncomment this line for gmail</span>
+    <span class="n">smtpserver</span><span class="o">.</span><span class="n">ehlo</span>
+    <span class="n">smtpserver</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">mail_user</span><span class="p">,</span> <span class="n">mail_password</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">subject</span>
+    <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;(</span><span class="si">%s</span><span class="s1">)</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">pi_name</span><span class="p">,</span><span class="n">mail_user</span><span class="p">)</span>
+    <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">to</span>
+    <span class="n">smtpserver</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">mail_user</span><span class="p">,</span> <span class="p">[</span><span class="n">to</span><span class="p">],</span> <span class="n">msg</span><span class="o">.</span><span class="n">as_string</span><span class="p">())</span>
+    <span class="n">smtpserver</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</pre></div>
+
+
+<p>And create a new file called temp_humidity_emailer.py and copy this code into it:</p>
+<div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Template code for emailing temperature and humidity from an Adafruit DHT22</span>
+<span class="c1"># sensor. Don&#39;t forget to update this file if you connect the DHT22 to another data pin,</span>
+<span class="c1"># want to change the delay, or logic for mailing. For example, you may only want to</span>
+<span class="c1"># send notifications when certain thresholds are exceeded.</span>
+<span class="c1"># </span>
+<span class="c1"># Code provided for Tech Em students and open under Gnu GPL</span>
+<span class="c1">#</span>
+<span class="c1"># Wray Mills</span>
+<span class="c1"># 20140618</span>
+<span class="c1">#</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">Adafruit_DHT</span>
+<span class="c1"># Tech Em mail utility</span>
+<span class="kn">from</span> <span class="nn">mailit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">sensor</span> <span class="o">=</span> <span class="n">Adafruit_DHT</span><span class="o">.</span><span class="n">DHT22</span>
+<span class="n">pin</span> <span class="o">=</span> <span class="mi">4</span> 
+
+<span class="k">def</span> <span class="nf">read_temp_humidity</span><span class="p">():</span>
+    <span class="n">humidity</span><span class="p">,</span> <span class="n">temperature</span> <span class="o">=</span> <span class="n">Adafruit_DHT</span><span class="o">.</span><span class="n">read_retry</span><span class="p">(</span><span class="n">sensor</span><span class="p">,</span> <span class="n">pin</span><span class="p">)</span>
+    <span class="n">temp_f</span> <span class="o">=</span> <span class="n">temperature</span> <span class="o">*</span> <span class="mf">9.0</span> <span class="o">/</span> <span class="mf">5.0</span> <span class="o">+</span> <span class="mf">32.0</span>
+    <span class="k">return</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">temp_f</span><span class="p">,</span> <span class="n">humidity</span>
+
+
+<span class="n">deliver</span><span class="p">(</span><span class="s1">&#39;The current temp is </span><span class="si">%0.2f</span><span class="s1"> C, </span><span class="si">%0.2f</span><span class="s1"> F, with a humidty of </span><span class="si">%0.2f%%</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">read_temp_humidity</span><span class="p">()))</span>
+</pre></div>
+
+
+<p>Then we'll talk about "cron" and look at how you can setup your pi such that whenever you power it up on a network, it will start sensing temp and humidity every x minutes. Of course, don't forget to adjust your mailit.py in order to configure who gets notified via email or text.</p>
+<div class="highlight"><pre><span></span>sudo crontab -e
+</pre></div>
+
+
+<p>Use the nano editor to add a line like this:</p>
+<div class="highlight"><pre><span></span>0,15,30,45 * * * * /usr/bin/python /home/pi/temp_humidity_emailer.py &gt;&gt; /home/pi/log/cron.log 2&gt;&amp;1
+</pre></div>
+
+
+<p>To exit, ctrl-x, answer yes and then hit enter.</p>
+<p>Don't forget, this is your pi and your code so you should try to modify the code (in temp_humidity_emailer.py) to only send notifications when the temp and/or humidity goes below or above some set levels. Ask me if you want to discuss how to properly create those conditions.</p>
+<p>Now, if you want to "permanently" attach your sensor to the board to plug into the top of the pi, let's solder!!</p>
+<p><img alt="RPi with DHT22 sensor on top board" src="http://blog.techemstudios.com/images/pi-with-dht22.jpg" /></p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm Studios on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

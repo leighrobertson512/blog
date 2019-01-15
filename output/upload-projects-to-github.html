@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="During Code Em, WEMS ASE, and the Homeschool classes, we have been writing code in Python to create commands for a Slackbot to respond to. We did this by learning the flow of GitHub. Below is an ...">
+        <meta name="keywords" content="code, computer science, github, python, slack">
+        <link rel="icon" href="http://blog.techemstudios.com/favicon.ico">
+
+        <title>Upload Projects to GitHub - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="http://blog.techemstudios.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://blog.techemstudios.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="http://blog.techemstudios.com/theme/css/nest.css" rel="stylesheet">
+        <link href="http://blog.techemstudios.com/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('http://blog.techemstudios.com/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="http://blog.techemstudios.com/"><img class="mr20" src="http://blog.techemstudios.com/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Upload Projects to GitHub</h1>
+                      <p class="header-date"> <a href="http://blog.techemstudios.com/author/josef-seiler.html">Josef Seiler</a>, 2016-11-23,  <a href="http://blog.techemstudios.com/category/notes.html">Notes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="http://blog.techemstudios.com/tag/code.html">code</a>, <a href="http://blog.techemstudios.com/tag/computer-science.html">computer science</a>, <a href="http://blog.techemstudios.com/tag/github.html">github</a>, <a href="http://blog.techemstudios.com/tag/python.html">python</a>, <a href="http://blog.techemstudios.com/tag/slack.html">slack</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <hr />
+<p>During Code Em, WEMS ASE, and the Homeschool classes, we have been writing code in Python to create commands for a <a href="http://blog.techemstudios.com/slack.html">Slackbot</a> to respond to. We did this by learning the flow of GitHub. Below is an outline of steps to help you create your own GitHub repository and add your code from other projects you have been working on with the class. Don't worry, we'll go over the following steps in class. But, if you want to get started early, hopefully these steps will help, and here you go!   </p>
+<h3>How to Upload Your Projects to Your Own Repository</h3>
+<p>Okay, so you've written several programs in Python. You may ask yourself: How can I organize them, work on them after class is over, make changes when I am not connected to the internet, keep track of the changes I make, 'permanently' save the changes I make, and share them with good friends?  </p>
+<p>I'm glad you asked! You can do all of the things above, with GitHub! This blog will help you "git" going on saving your projects to your own repository on GitHub.  </p>
+<p>First, log into your GitHub account, or (if you have not already) create an account on GitHub.  </p>
+<p>Though, we'll go over these steps in class hopefully, these will get you started.  </p>
+<h3>Step 1</h3>
+<h4>Create a Repository (Repo)</h4>
+<p>Once you are logged into GitHub, click the "plus" sign at the top right of your screen<br />
+<img alt="create repo" src="images/github_screenshots/one.jpg" /><sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>    </p>
+<p>Next, name your repository. Creating your repository is like creating/naming a new folder on your computer, except you're doing this via GitHub. Below, is just an example of what you might name your repository.  </p>
+<p><img alt="name repo" src="images/github_screenshots/two.jpg" /><sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>    </p>
+<p>Essentially, you just made a ".git directory (repository)"  </p>
+<hr />
+<h3>Step 2</h3>
+<h4>Checkout the Project</h4>
+<h5>Make a Working Directory</h5>
+<p>Clone your repository. In other words, make a copy of your new repository, known as your "Working Directory". To do this click the green 'Clone or download' button.<br />
+<img alt="clone repo" src="images/github_screenshots/clone.jpg" /><sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>    </p>
+<p>There more than a few ways to clone your repository to your computer. In these next steps, I'm going to show you how to clone your repository to open in GitHub Desktop. This will help if you've already downloaded <a href="https://desktop.github.com/">GitHub Desktop</a>. If not, you should be directed to the GitHub site to download the desktop app if you click "Open in Desktop". In contrast, you can clone/download your repository to save as a zip file. Just save and extract it to any of your directories on your computer. Furthermore, if you've downloaded the desktop app already and have it open, you can add the repository by copying the web URL and pasting it into the app. Either way, you will have to choose where you want to save your repository on your computer. You should get something like this:<br />
+<img alt="desktop app" src="images/github_screenshots/desktop.jpg" /><sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>    </p>
+<p>When you have your repository cloned to your desktop, you will see a 'History' tab and a 'Changes' tab. The history tab shows the collection of snapshots of changes made to your repository -this will grow with time! The changes tab, shows the current changes you have made in your Working Directory (or your local changes) that you have not committed. Once you commit those changes, you have essentially taken a snapshot of your changes. In order to push those changes, to be permanently saved to the repository on GitHub, you must press the <strong>sync</strong> button, located towards the top-right of the Desktop app (or "git push" in the command line), right above the list of the changes you've made.  </p>
+<p><img alt="desktop app two" src="images/github_screenshots/desktoptwo.jpg" /><sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>    </p>
+<hr />
+<p><strong>Remember to always sync!</strong><br />
+* When you click sync at the top right of the GitHub desktop, you are getting up-to-date with the most recent additions to that repository. This is also known as pulling/pushing. What happens when you sync:<br />
+    - fetches the latest changes made to the GitHub repo<br />
+    - Then those changes are merged to your local repository<br />
+    - now your local repository is updated  </p>
+<hr />
+<h3>Step 3</h3>
+<h4>Putting Your Projects Into Your Repository</h4>
+<p>You can also do this several ways. First, I suggest you locally (on your computer) set yourself up to be organized. Open your newly cloned repository (or local repository) that has been saved on your computer. Then create a new directory (folder) and name that directory something that makes sense to you. Since you will be uploading several Python programs, it may be a good idea to create a directory labeled "Python". Inside of that folder, you can create subdirectories. For instance, you could make the python folder house folders named "turtle_module", "grocery_list_program", "condition_statements", "loops", etc. -basically an organized collection of what you have been working on; even a directory for your class notes. Then, you can literally copy and paste the python files you have made during the class into those directories you just created -all housed in the parent directory of your cloned (local) repository.  </p>
+<p>If you go back to GitHub Desktop, you should see a few files under the changes tab. These are known as stage files. The changes will not be automatically updated to your 'master' repository. To do this, you must commit your changes (taking asnapshot of the changes) by writing a concise title or summary about your changes. For the description of the changes you have made, you can provide more detail. If you are satisfied with your changes, you can click 'Commit to master'. <strong>NEXT</strong>, click he sync button; this function will "push" your changes to the master repository. Once you have pushed your changes, you will find a list of your permanently saved changes under the history tab.  </p>
+<p><img alt="desktop commit" src="images/github_screenshots/desktopthree.jpg" /><sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>    </p>
+<p>That's it! You can check out your pushed changes by checking out your master repository on the GitHub site.  </p>
+<hr />
+<h3>Practice Makes Perfect</h3>
+<p>To help familiarize yourself with the flow of git, try first to perform the steps above on one, or two files at a time. Then, if you feel comfortable, make bigger commits. As in, upload more than two files into the directories of your local repository. Once, you get in the flow of git, it will become second-nature to you.  </p>
+<ul>
+<li>Summary of the steps  </li>
+<li>create a repository  </li>
+<li>clone that repository  <ul>
+<li>this makes a (local) working directory on your computer  </li>
+</ul>
+</li>
+<li>sync (pull/push)      </li>
+<li>make changes to your local repo  </li>
+<li>commit/push those changes to your master repo  </li>
+</ul>
+<p>Besides committing (locally), via GitHub Desktop or the command line/terminal, you can also commit changes you make right on the GitHub site.  </p>
+<p>So, that's  the <em>gist</em> of creating your own GitHub repository, cloning it, and uploading/updating your projects locally (on your device) and committing those changes to then show up (push) in your GitHub repository.  </p>
+<hr />
+<h3>Get to Your Projects Here</h3>
+<p>If you did not bring in your own laptop to work on during this session, all of your projects have been saved on either the Tech Em laptops or the iPads here at the studio. Lucky for you, I created a repository on GitHub, called <a href="https://github.com/jo3t3ch3m/TechEmStudents">TechEmStudents</a>. Previously we've saved student projects straight on the Tech Em Studios secure site. GitHub makes it a bit easier to get to your projects. You can click that link to see the projects you have worked on during this class! After clicking the link for the repo, just navigate to the directory with your name and you will find your projects. This will help you perform the steps (indicated in this blog) to upload your projects onto your own GitHub repository. If you don't see all of your projects on the repo yet, keep checking, projects are still being added to your directory.  </p>
+<hr />
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>https://git-scm.com/book/en/v2/Getting-Started-Git-Basics  &#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/  &#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>https://www.lynda.com/Git-tutorials/Unstaging-files/100222/111284-4.html?autoplay=true  &#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>https://github.com/  &#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm Studios on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>
