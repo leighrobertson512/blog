@@ -15,7 +15,7 @@ Status: draft
 ## Description
 
 1-week Session
-June 24, 9 - 12pm
+June 24-27, 9 - 12pm
 
 Students will learn about the
 history of computing and computer science; they will review
