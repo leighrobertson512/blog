@@ -15,7 +15,7 @@ Status: draft
 ## Description
 
 1-week Session
-June 24-28, 1 - 4pm
+June 24-27, 1 - 4pm
 
 Campers will learn about computer programming by writing Python code. Beginners will start with
 basic programs, while the advanced Pythonistas will be challenged with
