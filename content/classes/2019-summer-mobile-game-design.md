@@ -18,7 +18,7 @@ Status: draft
 July 1 to 3, 9 - 12pm
 
 If you have ever thought to yourself, "If I made my own game, I
-would....," then this is the camp for you! Campers design and build a
+would ... " then this is the camp for you! Campers design and build a
 custom arcade style game to play on a mobile device. Using the iPad
 kids will have the chance to design and implement their own game.
 
