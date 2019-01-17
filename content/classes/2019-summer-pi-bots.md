@@ -1,7 +1,7 @@
-Title: Raspberry Pi Device Engineering 2019
+Title: Raspberry Pi Bots 2019
 Date: 2019-01-09
 Curriculum: make-em
-Class: raspi-device
+Class: raspi-bots
 Session: Summer
 Hours:
 SectionId:
@@ -9,15 +9,16 @@ Year: 2019
 Tags: raspberry pi, device
 Illustration: raspberry-pi-stock.jpg
 Author: Wray Mills 
-Summary: Raspberry Pi Device Engineering
+Summary: Raspberry Pi Bots
 Status: draft
 
 ## Description
 
 Camp Session
-July 22 - 25, 9 - 12pm
+July 22 - 25, 1 - 4pm
 
-Campers create a cool technology project using a mini computing device (Raspberry Pi), coding skills and of course, their imaginations.
+What is a bot exactly? Our campers will learn by creating a bot using
+a Raspberry Pi and accessories, language skills, coding skills and of course, their imaginations.
 Materials fee to take home the project.
 
 ## Instructors
