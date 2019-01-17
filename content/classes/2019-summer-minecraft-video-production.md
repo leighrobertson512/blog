@@ -15,7 +15,7 @@ Status: draft
 ## Description
 
 Camp Session
-July 8 - 12, 9 - 12pm
+July 8 - 11, 9 - 12pm
 
 Do you love minecraft? Are you are a builder or a fighter? Want to
 capture your minecraft skills for friends and
