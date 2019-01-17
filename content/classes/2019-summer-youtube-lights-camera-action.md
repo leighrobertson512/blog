@@ -15,7 +15,7 @@ Status: draft
 ## Description
 
 Camp Session
-July 15 - 19, 9 - 12pm
+July 15 - 18, 9 - 12pm
 
 What makes a YouTube video popular? Campers learn the secrets behind
 creating a channel and getting compelling video footage while maintaining appropriate privacy, content and safty.
