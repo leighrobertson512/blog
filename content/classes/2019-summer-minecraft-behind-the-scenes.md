@@ -15,7 +15,7 @@ Status: draft
 ## Description
 
 Camp Session
-July 8 - 12, 1 - 4pm
+July 8 - 11, 1 - 4pm
 
 Do you love minecraft? Want to know more about what it takes to host
 the game? In this camp, campers will learn how to configure and run
