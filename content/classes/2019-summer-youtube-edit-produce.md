@@ -18,7 +18,7 @@ Camp Session
 July 15 - 18, 1 - 4pm
 
 What makes a YouTube video popular? Campers learn the secrets behind
-creating a channel and producing quality content through good editing while maintaining appropriate privacy, content and safty.
+creating a channel and producing quality content through good editing while maintaining appropriate privacy, content and safety.
 
 ## Instructors
 
