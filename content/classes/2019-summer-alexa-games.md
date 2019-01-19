@@ -17,10 +17,8 @@ Status: draft
 Camp Session
 August 12 - 15, 1 - 4pm
 
-Using Amazon's Alexa as the platform, campers will be pioneers in the
-world of VUI (Voice User Interface) by designing and building (coding)
-voice driven games. At the end of the week, they will publish their
-game so we all can play!
+Using Amazon's Alexa as the platform, campers will be pioneers in the world of VUI (Voice User Interface) by designing and building (coding) voice driven games. They will then learn how to share their game with the world!
+
 
 ## Instructors
 
