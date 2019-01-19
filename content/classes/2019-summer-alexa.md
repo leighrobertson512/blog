@@ -17,11 +17,7 @@ Status: draft
 Camp Session
 August 12 - 15, 9 - 12pm
 
-Students will learn about Amazon Alexa, and how she works. Throughout
-the week we will explore how to develop "skills," which are ways that
-we can teach Alexa to do new things through different computer
-languages. Campers at the end of the week will have completed their
-first Alexa skill, and can publish it to the Amazon store!
+Students will learn about Amazon Alexa, and how she works. Students will learn how to develop "skills," which is how we teach Alexa to do new things through configuration and coding. By the end of the week, campers will have a skill ready to publish to Amazon! 
 
 ## Instructors
 
