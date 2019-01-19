@@ -1,24 +1,26 @@
-Title: YouTube, Lights, Camera, Action Camp 2019
+Title: Social Media and Security 2019
 Date: 2019-01-09
-Curriculum: make-em
-Class: youtube-lca
+Curriculum: hack-em
+Class: social-security
 Session: Summer
 Hours:
 SectionId:
 Year: 2019
-Tags: youtube, video
-Illustration: IMG_9998.jpg
+Tags: security, ethical hacking, social media
+Illustration: raspberry-pi-stock.jpg
 Author: Wray Mills 
-Summary: YouTube, Lights, Camera, Action!
+Summary: Social Media and Security Camp
 Status: draft
 
 ## Description
 
 Camp Session
-July 15 - 18, 9 - 12pm
+August 19 - 22, 1 - 4pm
 
-What makes a YouTube video popular? Campers learn the secrets behind
-creating a channel and getting compelling video footage while maintaining appropriate privacy, content and safety.
+Does your child understand what a digital footprint is and its
+persistence? Campers will not only learn about Internet safety but also
+how to establish a secure and respectible digital portfolio. Materials will be
+shared with parents in order to continue the learning at home.
 
 ## Instructors
 

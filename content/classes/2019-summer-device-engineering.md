@@ -1,24 +1,24 @@
-Title: YouTube, Lights, Camera, Action Camp 2019
+Title: Raspberry Pi Device Engineering 2019
 Date: 2019-01-09
 Curriculum: make-em
-Class: youtube-lca
+Class: raspi-device
 Session: Summer
 Hours:
 SectionId:
 Year: 2019
-Tags: youtube, video
-Illustration: IMG_9998.jpg
+Tags: raspberry pi, device
+Illustration: raspberry-pi-stock.jpg
 Author: Wray Mills 
-Summary: YouTube, Lights, Camera, Action!
+Summary: Raspberry Pi Device Engineering
 Status: draft
 
 ## Description
 
 Camp Session
-July 15 - 18, 9 - 12pm
+July 22 - 25, 9 - 12pm
 
-What makes a YouTube video popular? Campers learn the secrets behind
-creating a channel and getting compelling video footage while maintaining appropriate privacy, content and safety.
+Campers create a cool technology project using a mini computing device (Raspberry Pi), coding skills and of course, their imaginations.
+Materials fee to take home the project.
 
 ## Instructors
 

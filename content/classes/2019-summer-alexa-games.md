@@ -1,24 +1,26 @@
-Title: YouTube, Lights, Camera, Action Camp 2019
+Title: Alexa Games 2019
 Date: 2019-01-09
 Curriculum: make-em
-Class: youtube-lca
+Class: alexa-games
 Session: Summer
 Hours:
 SectionId:
 Year: 2019
-Tags: youtube, video
-Illustration: IMG_9998.jpg
+Tags: alexa, aws, lambda
+Illustration: raspberry-pi-stock.jpg
 Author: Wray Mills 
-Summary: YouTube, Lights, Camera, Action!
+Summary: Alexa Games Camp
 Status: draft
 
 ## Description
 
 Camp Session
-July 15 - 18, 9 - 12pm
+August 12 - 15, 1 - 4pm
 
-What makes a YouTube video popular? Campers learn the secrets behind
-creating a channel and getting compelling video footage while maintaining appropriate privacy, content and safety.
+Using Amazon's Alexa as the platform, campers will be pioneers in the
+world of VUI (Voice User Interface) by designing and building (coding)
+voice driven games. At the end of the week, they will publish their
+game so we all can play!
 
 ## Instructors
 

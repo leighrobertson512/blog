@@ -1,24 +1,27 @@
-Title: YouTube, Lights, Camera, Action Camp 2019
+Title: Alexa Building Skills 2019
 Date: 2019-01-09
 Curriculum: make-em
-Class: youtube-lca
+Class: alexa-skills
 Session: Summer
 Hours:
 SectionId:
 Year: 2019
-Tags: youtube, video
-Illustration: IMG_9998.jpg
+Tags: alexa, aws, lambda
+Illustration: raspberry-pi-stock.jpg
 Author: Wray Mills 
-Summary: YouTube, Lights, Camera, Action!
+Summary: Alexa Skills
 Status: draft
 
 ## Description
 
 Camp Session
-July 15 - 18, 9 - 12pm
+August 12 - 15, 9 - 12pm
 
-What makes a YouTube video popular? Campers learn the secrets behind
-creating a channel and getting compelling video footage while maintaining appropriate privacy, content and safety.
+Students will learn about Amazon Alexa, and how she works. Throughout
+the week we will explore how to develop "skills," which are ways that
+we can teach Alexa to do new things through different computer
+languages. Campers at the end of the week will have completed their
+first Alexa skill, and can publish it to the Amazon store!
 
 ## Instructors
 

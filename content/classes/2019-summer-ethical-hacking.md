@@ -1,24 +1,25 @@
-Title: YouTube, Lights, Camera, Action Camp 2019
+Title: Ethical Hacking 2019
 Date: 2019-01-09
-Curriculum: make-em
-Class: youtube-lca
+Curriculum: hack-em
+Class: ethical-hacking
 Session: Summer
 Hours:
 SectionId:
 Year: 2019
-Tags: youtube, video
-Illustration: IMG_9998.jpg
+Tags: security, ethical hacking
+Illustration: raspberry-pi-stock.jpg
 Author: Wray Mills 
-Summary: YouTube, Lights, Camera, Action!
+Summary: Ethical Hacking
 Status: draft
 
 ## Description
 
 Camp Session
-July 15 - 18, 9 - 12pm
+August 19 - 22, 9 - 12pm
 
-What makes a YouTube video popular? Campers learn the secrets behind
-creating a channel and getting compelling video footage while maintaining appropriate privacy, content and safety.
+Have an interest in cryptography and cybersecurity? Campers explore
+the history of cryptography and fundamentals of data encryption. Using
+their knowledge for good, they learn how to stay safe on the net.
 
 ## Instructors
 

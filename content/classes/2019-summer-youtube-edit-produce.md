@@ -1,7 +1,7 @@
-Title: YouTube, Lights, Camera, Action Camp 2019
+Title: YouTube, Editing and Production Camp 2019
 Date: 2019-01-09
 Curriculum: make-em
-Class: youtube-lca
+Class: youtube-edit-produce
 Session: Summer
 Hours:
 SectionId:
@@ -9,16 +9,16 @@ Year: 2019
 Tags: youtube, video
 Illustration: IMG_9998.jpg
 Author: Wray Mills 
-Summary: YouTube, Lights, Camera, Action!
+Summary: YouTube, Editing and Production
 Status: draft
 
 ## Description
 
 Camp Session
-July 15 - 18, 9 - 12pm
+July 15 - 18, 1 - 4pm
 
 What makes a YouTube video popular? Campers learn the secrets behind
-creating a channel and getting compelling video footage while maintaining appropriate privacy, content and safety.
+creating a channel and producing quality content through good editing while maintaining appropriate privacy, content and safety.
 
 ## Instructors
 
