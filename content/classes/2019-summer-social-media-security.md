@@ -19,7 +19,7 @@ August 19 - 22, 1 - 4pm
 
 Does your child understand what a digital footprint is and its
 persistence? Campers will not only learn about Internet safety but also
-how to establish a secure and respectible digital portfolio. Materials will be
+how to establish a secure and respectable digital portfolio. Materials will be
 shared with parents in order to continue the learning at home.
 
 ## Instructors
