@@ -14,7 +14,6 @@ Summary: Next Up Intro to Computer Science
 # Jump to [Current Lesson](#day-3)
 
 # Description
-
 Tech Em's Middle School Introduction to Computer Science will expose
 students to the history of Computers. They will explore the difference
 between hardware and software; the binary number system and boolean
@@ -23,7 +22,6 @@ basic coding skills using visual and text-based languages.
 
 # Instructors
 ## Lead Instructor
-
 Chris Kefalas
 
 # Learning Objectives
@@ -58,6 +56,8 @@ Chris Kefalas
 ## It depends! -- Conditional Statements
 
 We'll discuss conditional statements in computer programs.
+
+![If only.](images/if.jpg)
 
 ## Out of Desk
 
