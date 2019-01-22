@@ -8,7 +8,7 @@ SectionId:
 Year: 2019
 Tags: computer science, coding
 Illustration: laptop-dark.jpg
-Author: Wray Mills 
+Author: Chris Kefalas
 Summary: Next Up Intro to Computer Science
 
 # Jump to [Current Lesson](#day-3)
