@@ -20,7 +20,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 MENUITEMS = ((u'Tech Em', u'http://techemstudios.com'),
-             (u'About', u'http://techemstudios.com/about-us'))
+             (u'About', u'http://techemstudios.com/about-us'),
+             (u'License',u'https://github.com/techemstudios/blog/blob/master/LICENSE'))
 
 # Blogroll
 LINKS =  ((u'Tech Em Studios', u'http://techemstudios.com'),
