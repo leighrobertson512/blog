@@ -54,7 +54,7 @@ Chris Kefalas
 
 ## External References
 
-<h1><a name="day-3">Day 3</a><h1>
+<h1><a name="day-3">Day 3</a></h1>
 ## It depends! -- Conditional Statements
 
 We'll discuss conditional statements in computer programs.
