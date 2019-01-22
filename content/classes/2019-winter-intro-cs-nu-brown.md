@@ -54,13 +54,11 @@ Chris Kefalas
 
 <h1><a name="day-3">Day 3</a></h1>
 ## It depends! -- Conditional Statements
-
 We'll discuss conditional statements in computer programs.
 
 ![If only.](images/if.jpg)
 
 ## Out of Desk
-
 Raise your hand, IF you are wearing a coat. Simple "boolean" condition.
 Touch your nose, WHEN you need help. Simple "state" condition.
 Raise your hand IF you are wearing a coat ELSE touch your nose.
@@ -69,7 +67,6 @@ Raise your hand IF you are wearing a coat ELSE touch your nose.
 
 
 ## Hands-On/coding
-
 We will spend time continuing our Crossy Road games, and adding one of
 the last steps that involves a type of event called a collision. In
 HopScotch, this is illustrated with the conditional Rule "When Bumps"
