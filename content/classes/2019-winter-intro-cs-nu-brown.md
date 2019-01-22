@@ -65,12 +65,9 @@ Raise your hand, IF you are wearing a coat. Simple "boolean" condition.
 Touch your nose, WHEN you need help. Simple "state" condition.
 Raise your hand IF you are wearing a coat ELSE touch your nose.
 
-[//]: # ( Notes
-For this activity we will ask the class questions that begin
+[//]: # (For this activity we will ask the class questions that begin
 with the word IF, and relate it to an article of clothing, and ask if
-them to raise their hands if the IF statement is true for them. *"If
-you are wearing a jacket, raise your hand"* *"If you are wearing shoes, and a hat... raise your hand"*
-)
+them to raise their hands if the IF statement is true for them. *"If you are wearing a jacket, raise your hand"* *"If you are wearing shoes, and a hat... raise your hand"*)
 
 
 ## Hands-On/coding
@@ -80,9 +77,7 @@ the last steps that involves a type of event called a collision. In
 HopScotch, this is illustrated with the conditional Rule "When Bumps"
 allowing us to CONDITIONALLY CONTROL what happens WHEN our character bumps into an enemy.
 
-[//]:# ( Notes
-We will spend time continuing our Crossy Road games, and adding one of the last steps that involves a type of event called a collision. In HopScotch, this is illustrated with the Rule "When ____ Bumps ____" and allows us to program what happens when our character bumps into an enemy. 
-)
+[//]: # (We will spend time continuing our Crossy Road games, and adding one of the last steps that involves a type of event called a collision. In HopScotch, this is illustrated with the Rule "When ____ Bumps ____" and allows us to program what happens when our character bumps into an enemy.)
 
 ## One thing to remember
 What is a conditional statement? It depends!
