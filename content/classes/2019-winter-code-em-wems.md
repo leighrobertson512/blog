@@ -52,7 +52,7 @@ Chris Kefalas
 ## GitHub - your online portfolio
 We'll discuss GitHub, what it is and create an account
 
-![If only.](images/hard-drive.jpg)
+![If only.](images/hard-drive.png)
 
 ## Out of Desk
 
