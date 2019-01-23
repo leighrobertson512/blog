@@ -7,7 +7,7 @@ Hours:
 SectionId:
 Year: 2019
 Tags: computer science, coding
-Illustration: laptop-dark.jpg
+Illustration: binary.jpg
 Author: Chris Kefalas
 Summary: Next Up Intro to Computer Science
 
