@@ -11,7 +11,7 @@ Illustration: intel-inside.jpg
 Author: Chris Kefalas
 Summary: WEMS Coding
 
-# Jump to [Current Lesson](#day-4)
+# Jump to [Current Lesson](#day-6)
 
 # Description
 Students will gain or expand their coding knowledge through a variety of programming languages and projects based on experience level, building from visual-based languages to Python. They will apply practical computer science skills such as source code control, software design, reverse engineering, bug resolution, and coding environments.
@@ -48,11 +48,11 @@ Chris Kefalas
 
 ## External References
 
-<h1><a name="day-4">Day 4</a></h1>
+<h1><a name="day-6">Day 6</a></h1>
 ## GitHub - your online portfolio
 We'll discuss GitHub, what it is and create an account
 
-![If only.](images/hard-drive.png)
+![If only.](images/github_screenshots/one.jpg)
 
 ## Out of Desk
 
