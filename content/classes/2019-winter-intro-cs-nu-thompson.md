@@ -10,6 +10,7 @@ Tags: computer science, coding
 Illustration: binary.jpg
 Author: Chris Kefalas
 Summary: Next Up Intro to Computer Science
+Status: drafts
 
 # Jump to [Current Lesson](#day-3)
 
