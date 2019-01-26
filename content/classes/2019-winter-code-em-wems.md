@@ -53,7 +53,7 @@ Chris Kefalas
 ## External References
 
 # Previous Classes
-The summary of [our previous classes]({filename}/2019-winter-code-em-wems-summaries.md).
+The summary of [our previous classes](/2019-winter-code-em-wems-summaries.md).
 
 # Day 6
 ## GitHub - your online portfolio
