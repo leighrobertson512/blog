@@ -1,5 +1,5 @@
 Title: WEMS Coding Winter 2019
-Date: 2019-01-22
+Date: 2019-01-28
 Curriculum: code-em
 Class: coding
 Session: Winter
@@ -45,15 +45,15 @@ Chris Kefalas
 ## Repos
 
 ## Related Blog Notes
- * [Github Part One](http://blog.techemstudios.com/github-part-one.html)
- * [Github Part Two](http://blog.techemstudios.com/github-part-two.html)
+ * [Github Part One](/github-part-one.html)
+ * [Github Part Two](/github-part-two.html)
 
 ## (GitHub) Assignments
 
 ## External References
 
 # Previous Classes
-The summary of [our previous classes](/2019-winter-code-em-wems-summaries.md).
+The summary of [our previous classes]({filename}/class-reflections/2019-winter-code-em-wems-summaries.md).
 
 # Day 6
 ## GitHub - your online portfolio
@@ -86,7 +86,7 @@ Create a repo with gh-pages turned on (pointing to /docs). Add a simple HTML/CSS
 
 ## Actual
 This is the
-[play by play]({filename}/2019-winter-code-em-wems-day6.md) for day 6!
+[play by play]({filename}/class-reflections/2019-winter-code-em-wems-day6.md) for day 6!
 
 <h1><a name="day-7">Day 7</a></h1>
 ## Cloud9 - Coding in the Clouds
