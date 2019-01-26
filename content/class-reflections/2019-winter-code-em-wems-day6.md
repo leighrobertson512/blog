@@ -1,4 +1,4 @@
-Title: WEMS Coding Winter 2019 Daily 6
+Title: WEMS Coding Winter 2019 Day 6
 Date: 2019-01-26
 Tags: computer science, coding, github, aws, cloud9
 Illustration:
