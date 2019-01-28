@@ -1,5 +1,5 @@
 Title: WEMS Coding Winter 2019
-Date: 2019-01-22
+Date: 2019-01-28
 Curriculum: code-em
 Class: coding
 Session: Winter
@@ -11,7 +11,7 @@ Illustration: intel-inside.jpg
 Author: Chris Kefalas
 Summary: WEMS Coding
 
-# Jump to [Current Lesson](#day-6)
+# Jump to [Current Lesson](#day-7)
 
 # Description
 Students will gain or expand their coding knowledge through a variety of programming languages and projects based on experience level, building from visual-based languages to Python. They will apply practical computer science skills such as source code control, software design, reverse engineering, bug resolution, and coding environments.
@@ -45,14 +45,17 @@ Chris Kefalas
 ## Repos
 
 ## Related Blog Notes
- * [Github Part One](http://blog.techemstudios.com/github-part-one.html)
- * [Github Part Two](http://blog.techemstudios.com/github-part-two.html)
+ * [Github Part One](/github-part-one.html)
+ * [Github Part Two](/github-part-two.html)
 
 ## (GitHub) Assignments
 
 ## External References
 
-<h1><a name="day-6">Day 6</a></h1>
+# Previous Classes
+The summary of [our previous classes]({filename}/class-reflections/2019-winter-code-em-wems-summaries.md).
+
+# Day 6
 ## GitHub - your online portfolio
 We'll discuss GitHub, what it is and create an account.
 
@@ -82,4 +85,19 @@ GitHub is your online Digital Portfolio.
 Create a repo with gh-pages turned on (pointing to /docs). Add a simple HTML/CSS website for the students to edit. We can go ahead and use a custom domain like wems.techemstudios.com to make it easier for the students/parents to access.
 
 ## Actual
+This is the
+[play by play]({filename}/class-reflections/2019-winter-code-em-wems-day6.md) for day 6!
 
+<h1><a name="day-7">Day 7</a></h1>
+## Cloud9 - Coding in the Clouds
+
+![Git it?](images/github_screenshots/one.jpg)
+
+## Out of Desk
+
+
+## Hands-On/coding
+
+## One thing to remember
+
+## Setup
