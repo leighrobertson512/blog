@@ -23,10 +23,10 @@
 
 /* Default styling */
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Avenir", sans-serif;
 /*    font-size: 15px;*/
-    color: #4b505a;
-    background-color: #f5f5f5;
+    color: #73AD39;
+    background-color: #C5FB8C;
     line-height: 24px;
     -webkit-font-smoothing:antialiased;
     text-rendering: optimizeLegibility;
@@ -122,6 +122,7 @@ h1 {
     font-weight: 600;
     letter-spacing: 2px;
     border:none;
+    font-family: 'Bauhaus';
 }
 
 h2 { 
@@ -130,6 +131,7 @@ h2 {
     font-weight: 600;
     margin-top: 40px;   
     margin-bottom: 40px;
+    font-family: 'Bauhaus';
 }
 h2:after {
     display: block;
@@ -146,6 +148,7 @@ h3 {
     font-weight: 600;
     margin-top: 30px; 
     margin-bottom: 30px;
+    font-family: 'Bauhaus';
 }
 h3:after {
     display: block;
@@ -162,13 +165,15 @@ h4 {
     margin-top: 30px; 
     margin-bottom: 30px;
     text-transform: uppercase;
+    font-family: 'Bauhaus';
 }
 h4:after {
     display: block;
     content: " ";
     margin-top: 10px;
     width: 40px;
-    border-bottom: 3px solid rgba(0,0,0,0.2);    
+    border-bottom: 3px solid rgba(0,0,0,0.2); 
+    font-family: 'Bauhaus';
 }
 
 /* Navbar */
