@@ -1,7 +1,11 @@
 Title: Avant Garde font
+
 Date: 2019-02-02
+
 Category: General  
+
 Tags: computer science, coding, github, slack, technology  
+
 Author: Quinn Davis
 
 ## Introduction  
