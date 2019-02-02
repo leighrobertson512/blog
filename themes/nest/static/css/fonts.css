@@ -4,7 +4,7 @@
   font-weight: 500;
   src: local("Avenir Next Medium"),
     local("Avenir Next Medium"),
-    url("../fonts/AvenirNext-Medium.ttf"
+    url("../fonts/AvenirNext-Medium.ttf"),
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-weight: bold;
   src: local("Avenir Next Bold"),
     local("Avenir Next Bold"),
-    url("../fonts/AvenirNext-Bold.ttf"
+    url("../fonts/AvenirNext-Bold.ttf"),
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-weight: 500;
   src: local("Bauhaus"),
     local("Bauhaus"),
-    url("../fonts/BauhausCTT.ttf"
+    url("../fonts/BauhausCTT.ttf"),
 }
 
 @font-face {
