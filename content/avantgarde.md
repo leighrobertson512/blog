@@ -8,5 +8,5 @@ Author: Quinn Davis
 
 hi i'm interested in avant garde gothic and graphic design and i like logos and stuff like that. i'm good at html + css and i'm gonna remake it.
 
-## Homepage 
+## Blog Draft
 ![blogdraft.001](images/blogdraft.001.png)  
