@@ -1,6 +1,6 @@
 Title: the bio of the tomato
 Date: 2018-02-02
-Catagory: General
+Category: General
 Tags: bio
 Author: Matthew Wozniak
 
