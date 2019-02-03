@@ -16,6 +16,12 @@ jobs:
         - git remote remove origin
         - git remote add origin https://$GH_TOKEN@github.com/techemstudios/blog-review
         - git push -f origin gh-pages
+    - stage: deploy_tomato
+      script:
+        - make github DOMAIN=blog-tomato.techemstudios.com
+        - git remote remove origin
+        - git remote add origin https://$GH_TOKEN@github.com/techemstudios/blog-tomato
+        - git push -f origin gh-pages
     - stage: deploy_prod
       script:
         - make github
@@ -24,6 +30,9 @@ jobs:
         - git push -f origin gh-pages
 stages:
   - name: deploy_review
+    if: branch != review-tomato
+  - name: deploy_tomato
+    if: branch = review-tomato
   - name: deploy_prod
     if: branch = master AND type != pull_request
 env:
