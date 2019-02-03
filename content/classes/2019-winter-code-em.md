@@ -57,26 +57,27 @@ This class will require 2+ hours of time outside the class. Several sessions wil
  * Work in Jupyter notebooks
 
 # Day by Day Topics
- * Review Hardware and Software
-   * Leave with GitHub and Cloud9 config
- * Flipped - (Python) Programming terms
-   * In class assignment
- * Flipped - (Python) Data Structures
-   * In class assignment
- * Flipped - Boolean logic
-   * In class assignment (Python coded full adder)
- * Flipped - Using (Python) Data structures
-   * In class assignment
- * Python on a device -- packaging and deployment
- * Come to class with project ideas
-   * Design Thinking project design
- * Flipped Jupyter Notebooks
-   * In class assignment
- * Project -- Finalize scope
- * Project -- Demo 1
- * Project -- Demo 2
- * Project -- Final Demo
-   * Presentation and blog write up
+
+  * Review Hardware and Software
+    * Leave with GitHub and Cloud9 config
+  * Flipped - (Python) Programming terms
+    * In class assignment
+  * Flipped - (Python) Data Structures
+    * In class assignment
+  * Flipped - Boolean logic
+    * In class assignment (Python coded full adder)
+  * Flipped - Using (Python) Data structures
+    * In class assignment
+  * Python on a device -- packaging and deployment
+  * Come to class with project ideas
+    * Design Thinking project design
+  * Flipped Jupyter Notebooks
+    * In class assignment
+  * Project -- Finalize scope
+  * Project -- Demo 1
+  * Project -- Demo 2
+  * Project -- Final Demo
+    * Presentation and blog write up
 
 # Materials
 Students should bring their own laptops if possible.
