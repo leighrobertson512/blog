@@ -4,14 +4,14 @@ Curriculum: code-em
 Class: coding
 Session: Winter
 Hours:
-SectionId:
+SectionId: 326
 Year: 2019
 Tags: computer science, coding, github
 Illustration: intel-inside.jpg
 Author: Chris Kefalas
 Summary: WEMS Coding
 
-# Jump to [Current Lesson](#day-7)
+# Jump to [Current Lesson](#day-8)
 
 # Description
 Students will gain or expand their coding knowledge through a variety of programming languages and projects based on experience level, building from visual-based languages to Python. They will apply practical computer science skills such as source code control, software design, reverse engineering, bug resolution, and coding environments.
@@ -88,13 +88,34 @@ Create a repo with gh-pages turned on (pointing to /docs). Add a simple HTML/CSS
 This is the
 [play by play]({filename}/class-reflections/2019-winter-code-em-wems-day6.md) for day 6!
 
-<h1><a name="day-7">Day 7</a></h1>
+# Day 7
 ## Cloud9 - Coding in the Clouds
+The students will do some text-based programming using the Python programming language. They will be using Python in an environment they can access from anywhere (with an Internet connection and browser) -- an environment aptly named Cloud9.
+
+![Py in the clouds](images/py-clouds.jpg)
+
+## Out of Desk
+Starting with a discussion about the origin of the term "Cloud 9", we'll discuss how coding today is actually quite different than it was even 5 years ago. There are more computing services available "on the cloud" while the speed and availability of the Internet has increased. So, using students to represents "computers in the cloud", we can act out how we will be accessing "desktops" in the cloud to do our work.
+
+## Hands-On/coding
+Each student will have his/her own Cloud9 environment. They will each use a separate Tech Em AWS login to access this environment -- a virtual desktop loaded with everything they need to code in Python (and many other languages), pre-configured so we can focus on learning the language and typing programs. Initially, they need to get used to accessing a code editor and a computer console in their browser. They will learn how to create new Python files, run them, and even learn what to do when there are errors.
+
+## One thing to remember
+Coding is bliss in the cloud.
+
+## Setup
+
+## Actual
+As was to be expected, one of the biggest challenges here is "traditional" typing. The students were using our Chromebooks to access Cloud 9. So, while the Chromebooks and Wi-Fi held up nicely, lots of typing on a traditional keyboard can be a challenge. We are often seeing students who can likely type faster using a phone-thumb input than a full-sized qwerty keyboard. We imagine computer input will evolve and for now (much as it evolved from separate keypunch operators to programmings typing in their own code), For now, typing without touchscreen input is an area where programming is like a musical instrument or sport and the key is practice, practice, practice.
+
+<h1><a name="day-8">Day 8</a></h1>
+## GitHub + Cloud9
+Different clouds working together.
 
 ![Git it?](images/github_screenshots/one.jpg)
 
 ## Out of Desk
-
+We will revisit the GitHub activity with a new twist, err, umm. cloud.
 
 ## Hands-On/coding
 
