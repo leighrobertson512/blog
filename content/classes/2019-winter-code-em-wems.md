@@ -98,7 +98,7 @@ The students will do some text-based programming using the Python programming la
 Starting with a discussion about the origin of the term "Cloud 9", we'll discuss how coding today is actually quite different than it was even 5 years ago. There are more computing services available "on the cloud" while the speed and availability of the Internet has increased. So, using students to represents "computers in the cloud", we can act out how we will be accessing "desktops" in the cloud to do our work.
 
 ## Hands-On/coding
-Each student will have his/her own Cloud9 environment. They will each use a separate Tech Em AWS login to access this environment -- a virtual desktop loaded with everything they need to code in Python (and many other languages), pre-configured so we can focus on learning the language and typing programs. Initially, they need to get used to accessing a code editor and a computer console in their browser. They will learn how to create new Python files, run them, and even learn what to do when there are errors.
+Each student will have his/her own Cloud9 environment. They will each use a separate Tech Em AWS (Amazon Web Services) login to access this environment -- a virtual desktop loaded with everything they need to code in Python (and many other languages), pre-configured so we can focus on learning the language and typing programs. Initially, they need to get used to accessing a code editor and a computer console in their browser. They will learn how to create new Python files, run them, and even learn what to do when there are errors.
 
 [//]: # (write, edit what Python code? I suggest you focus on a simple piece of code -- not even sure you want to talk about cloning since that happens in the terminal and may be a lot to handle. I would suggest you focus more on code editors and what cloud9 is, an editor in the cloud, and how it is like having their own laptop in the cloud, etc. It will take some time for them to learn how to work in that environment and create files and use the runner. I do think the focus should be on the coding and debugging. If they don't know some basic coding terms, you'll need to cover that. Some objectives would be some coding terms, relate back to lightbot and/or math: literals, operators, expressions, variables, assignment, statements, functions, just calling them at this point. And to drive it back home -- focused, one thing to remember: How to create a python module, program file and run it. Then pick back up with GitHub the following week. By that time, we can brainstorm on a way that better ties the cloud9 python and the github website.)
 
@@ -106,21 +106,27 @@ Each student will have his/her own Cloud9 environment. They will each use a sepa
 They should know how to create a Python file and run it (in their environment) -- *coding is bliss in the cloud*.
 
 ## Setup
+Prior to class, we created each student's Cloud9 environment. In doing so we also create them an AWS (Amazon Web Services) login in the Tech Em account. They will have a username and a beginning default password along with a unique link to their Cloud9 environment. The first time they access their environment they will need to provide their username and password and immediately change their password.
 
 ## Actual
 As was to be expected, one of the biggest challenges here is "traditional" typing. The students were using our Chromebooks to access Cloud 9. So, while the Chromebooks and Wi-Fi held up nicely, lots of typing on a traditional keyboard can be a challenge. We are often seeing students who can likely type faster using a phone-thumb input than a full-sized qwerty keyboard. We imagine computer input will evolve and for now (much as it evolved from separate keypunch operators to programmings typing in their own code), For now, typing without touchscreen input is an area where programming is like a musical instrument or sport and the key is practice, practice, practice.
 
 <h1><a name="day-8">Day 8</a></h1>
 ## GitHub + Cloud9
-Different clouds working together.
+Different clouds working together. Now we have a "laptop in the cloud" with its own set of folders -- we will learn how to "git" our code from the GitHub cloud onto our Cloud9 environment. Students will explore how to *commit*, *push* and *pull* their changes from Cloud9 to/from GitHub.
 
-![Git it?](images/github_screenshots/one.jpg)
+![Git it?](images/github-repos-flow.jpg)
 
 ## Out of Desk
-We will revisit the GitHub activity with a new twist, err, umm. cloud.
+We will revisit the GitHub activity with a new twist, err, umm. cloud. We have a new player now, Cloud9. This player is not all that different than using a desktop or laptop and Git. We'll continue with the students acting as themselves, Cloud9 and GitHub to pass along documents (code) in folders in order to continue providing that physical representation of all this virtual activity!
 
 ## Hands-On/coding
+Students will go back to the Website HTML -- this time, in their Cloud9 environment. They will use the same editing skills from last week and add some new skills to *pull* (update) the code from GitHub to Cloud9; *commit* their code in their Cloud9 environment and then *push* that new code to Cloud9. The "latest in wins" game from 2 weeks ago will continue, but with a twist. Their *pushes* will be blocked if they don't have the most recent code. This is intended to drive home the fact that GitHub maintains the primary repository for their code; each of their Cloud9 environments has a copy of what is in GitHub and it is actually up to them to keep their copy up-to-date.
+
+The passive intent here is to have students experience the issues a team has working on "the same document" at the same time. We will come back to that in future classes to discuss how team organization and additional Git capabilities can be used together to overcome these issues.
 
 ## One thing to remember
+A pull a day keeps the conflicts away!
 
 ## Setup
+For Day 7 setup, the Cloud9 environments that were setup included a copy (clone) of the website repo. Therefore, students will already have that code available. They'll need to immediately *pull* from the repo as a start to this lesson.
