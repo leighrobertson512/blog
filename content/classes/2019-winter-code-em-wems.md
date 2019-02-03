@@ -100,8 +100,10 @@ Starting with a discussion about the origin of the term "Cloud 9", we'll discuss
 ## Hands-On/coding
 Each student will have his/her own Cloud9 environment. They will each use a separate Tech Em AWS login to access this environment -- a virtual desktop loaded with everything they need to code in Python (and many other languages), pre-configured so we can focus on learning the language and typing programs. Initially, they need to get used to accessing a code editor and a computer console in their browser. They will learn how to create new Python files, run them, and even learn what to do when there are errors.
 
+[//]: # (write, edit what Python code? I suggest you focus on a simple piece of code -- not even sure you want to talk about cloning since that happens in the terminal and may be a lot to handle. I would suggest you focus more on code editors and what cloud9 is, an editor in the cloud, and how it is like having their own laptop in the cloud, etc. It will take some time for them to learn how to work in that environment and create files and use the runner. I do think the focus should be on the coding and debugging. If they don't know some basic coding terms, you'll need to cover that. Some objectives would be some coding terms, relate back to lightbot and/or math: literals, operators, expressions, variables, assignment, statements, functions, just calling them at this point. And to drive it back home -- focused, one thing to remember: How to create a python module, program file and run it. Then pick back up with GitHub the following week. By that time, we can brainstorm on a way that better ties the cloud9 python and the github website.)
+
 ## One thing to remember
-Coding is bliss in the cloud.
+They should know how to create a Python file and run it (in their environment) -- *coding is bliss in the cloud*.
 
 ## Setup
 
