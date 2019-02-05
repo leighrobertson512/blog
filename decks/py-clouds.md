@@ -1,4 +1,4 @@
-<!-- .slide: data-background-image="images/pyinclouds.jpeg" style="color:black" -->
+<!-- .slide: data-background-image="images/py-clouds.jpg" style="color:black" -->
 ### Python in the Clouds <!-- .element: style="color:black" -->
 ---
 
