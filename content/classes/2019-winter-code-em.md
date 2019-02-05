@@ -11,6 +11,8 @@ Illustration: raspberry-pi.jpg
 Author: Wray Mills  
 Summary: Studio Code Em Class
 
+# Jump to [Current Lesson](#day-1)
+
 # Description
 
 12-week Session
@@ -95,7 +97,7 @@ Students should have access to a Cloud9 capable browser outside of class.
 
 ## External References
 
-# Day 1
+<h1><a name="day-1">Day 1</a></h1>
 ## Computer Science Review
 Tubes to Gates, Ada to Python, what do you remember?
 
@@ -107,6 +109,12 @@ Setup with access to this blog, slack, GitHub and Cloud9 environment created.
 
 ## One Thing to Remember
 Writing code that other humans can understand is pretty much the point of programming languages.
+
+## Assignment
+Flipping next class, so review [this](decks/intro-to-code.html) before the next class. This
+presentation does not include the notes -- see if you remember the
+terms and look them up if necessary. Fire up the Python interpreter if
+needed to remember lists, tuples, classes and functions (methods).
 
 ## Setup
 Cloud9 environments.
