@@ -31,14 +31,14 @@ It's a bit more than a set of instructions
 
 
 ### Code Parts
+#### Decision Structures
 ---
-* Decision Structures
-if <cond>:
-  <statements>
-elif <cond2>:
-  <statements>
-else:
-  <statements>
+* if _cond_:
+  * _statement_
+* elif _cond2_:
+  * _statements_
+* else:
+  * _statements_
 
 
 ### Code Parts
