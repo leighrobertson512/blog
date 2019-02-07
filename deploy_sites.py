@@ -6,8 +6,8 @@ for branch in branches_raw[1:]:
   branch = branch.lstrip("  origin/")
   print("Branch: " + branch)
   
-  print    ("make github DOMAIN=" + branch "+.techemstudios.com")
-  os.system("make github DOMAIN=" + branch "+.techemstudios.com")
+  print    ("make github DOMAIN=" + branch + ".techemstudios.com")
+  os.system("make github DOMAIN=" + branch + ".techemstudios.com")
   
   print    ("git remote remove origin")
   os.system("git remote remove origin")
