@@ -1,6 +1,8 @@
-import os
+import subprocess
 
-branches_raw = os.system('git branch -a').split("\n")
+proc = subprocess.Popen('git branch -a', stdout=subprocess.PIPE)
+braches_raw = proc.stdout.read().split('\n')
+
 
 for branch in branches_raw[1:]:
   branch = branch.lstrip("  origin/")
