@@ -88,6 +88,7 @@ Students should have access to a Cloud9 capable browser outside of class.
 # On the line Resources
 
 ## On the line Presentations
+* [Intro to Code without notes](decks/intro-to-code.html)
 
 ## Repos
 
@@ -120,3 +121,24 @@ needed to remember lists, tuples, classes and functions (methods).
 Cloud9 environments.
 
 ## Actual
+We started off reviewing this blog and its purpose during this session -- the intent being that we use class time to "code" while we are together to help get students "unstuck". We quickly went through the review -- great recollection of Python programming basics and navigating within the Cloud9 environment. We got new AWS IAM accounts setup and Cloud9 environments.
+We'll need to work through some assignments that reinforce earlier binary number system and boolean algebra learnings! We were a little rusty there, but eventually remembered the primary gates and that they can be used to perform mathematical operations. We used paper instead of the whiteboard.
+
+# Day 2
+## Diagram your Code
+It is like English class, but your prose is code.
+
+## Out of Desk
+Musical Pair Programming. Starting with a base sketch of a program on paper, students will swap the paper to finish the challenge.
+
+## Hands On
+We'll work on the challenge to only use boolean operators to perform mathematical operations. This challenge will include methods for `half_adder` and `full_adder`. And we'll also use this to introduce some unit testing concepts.
+
+## One Thing to Remember
+The sum of A + B = (not A and B) or (A and not B)
+
+## Assignment
+Data Structures with a focus on Classes.
+
+## Setup
+Musical Code worksheet and tests for full/half adder.
