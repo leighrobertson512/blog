@@ -1,6 +1,6 @@
-import subprocess,os
+import subprocess
 
-proc = subprocess.run(['/usr/bin/git','branch', '-a'] , stdout=subprocess.PIPE)
+proc = subprocess.Popen(['/usr/bin/git','branch', '-a'] , stdout=subprocess.PIPE)
 braches_raw = proc.stdout.read().split('\n')
 
 
