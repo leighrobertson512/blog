@@ -11,7 +11,7 @@ Illustration: intel-inside.jpg
 Author: Chris Kefalas
 Summary: WEMS Coding
 
-# Jump to [Current Lesson](#day-8)
+# Jump to [Current Lesson](#day-9)
 
 # Description
 Students will gain or expand their coding knowledge through a variety of programming languages and projects based on experience level, building from visual-based languages to Python. They will apply practical computer science skills such as source code control, software design, reverse engineering, bug resolution, and coding environments.
@@ -43,6 +43,7 @@ Chris Kefalas
 ## On the line Presentations
 
 ## Repos
+ * [MyFirstWebsite](https://github.com/techemstudios/MyFirstWebsite)
 
 ## Related Blog Notes
  * [Github Part One](/github-part-one.html)
@@ -111,7 +112,7 @@ Prior to class, we created each student's Cloud9 environment. In doing so we als
 ## Actual
 As was to be expected, one of the biggest challenges here is "traditional" typing. The students were using our Chromebooks to access Cloud 9. So, while the Chromebooks and Wi-Fi held up nicely, lots of typing on a traditional keyboard can be a challenge. We are often seeing students who can likely type faster using a phone-thumb input than a full-sized qwerty keyboard. We imagine computer input will evolve and for now (much as it evolved from separate keypunch operators to programmings typing in their own code), For now, typing without touchscreen input is an area where programming is like a musical instrument or sport and the key is practice, practice, practice.
 
-<h1><a name="day-8">Day 8</a></h1>
+# Day 8
 ## GitHub + Cloud9
 Different clouds working together. Now we have a "laptop in the cloud" with its own set of folders -- we will learn how to "git" our code from the GitHub cloud onto our Cloud9 environment. Students will explore how to *commit*, *push* and *pull* their changes from Cloud9 to/from GitHub.
 
@@ -130,3 +131,29 @@ A pull a day keeps the conflicts away!
 
 ## Setup
 For Day 7 setup, the Cloud9 environments that were setup included a copy (clone) of the website repo. Therefore, students will already have that code available. They'll need to immediately *pull* from the repo as a start to this lesson.
+
+## Actual
+Lots of typing, but the students are getting used to coding in a "text-based" environment while also using a text-based command-line interface as part of a development workflow.
+
+<h1><a name="day-9">Day 9</a></h1>
+## Cloud9 + Python
+We will go back to coding in the clouds. Practice makes perfect and we want to ensure the students remember how to access their coding environment and create their own Python files so they can practice coding at home. They'll work more on running and debugging within the cloud environment. And finally, they'll do a `git pull` to grab some python _web app_ code we have ready for them to test.
+
+![Python!](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+
+## Out of Desk
+This time, it is up to the students to explain to us all the different sites we use in the cloud and how they fit together. Where is GitHub? Where is Cloud9? Where is the chromebook? We can use this as an opportunity to introduce the concept of a computer process so we can talk a bit more specifically about each process and where that process is running (_locally_ on their chromebook, in the cloud in AWS or in the cloud on GitHub).
+
+## Hands-On/coding
+Students will follow along while we create another Python file, edit it and run it. We'll review some basic Python terms and syntax: literals, expressions and statements. We'll review code blocks and how they are delineated in Python. Then we'll review conditions, conditional blocks as well as functions and function definition blocks.
+
+## One thing to remember
+``` python
+if True:
+  print("Python is great!")
+```
+
+## Setup
+For Day 9 setup, they'll need to get back on their Cloud9 environment and *pull* from the MyFirstWebstie repo to make sure they are in sync.
+
+## Actual
