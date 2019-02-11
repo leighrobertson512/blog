@@ -11,7 +11,7 @@ Illustration: raspberry-pi.jpg
 Author: Wray Mills  
 Summary: Studio Code Em Class
 
-# Jump to [Current Lesson](#day-1)
+# Jump to [Current Lesson](#current)
 
 # Description
 
@@ -64,7 +64,7 @@ This class will require 2+ hours of time outside the class. Several sessions wil
     * Leave with GitHub and Cloud9 config
   * Flipped - (Python) Programming terms
     * In class assignment
-  * Flipped - (Python) Data Structures
+  * Flipped - (Python) Data Structures and intro to Jupyter.
     * In class assignment
   * Flipped - Boolean logic
     * In class assignment (Python coded full adder)
@@ -98,7 +98,7 @@ Students should have access to a Cloud9 capable browser outside of class.
 
 ## External References
 
-<h1><a name="day-1">Day 1</a></h1>
+# Day 1
 ## Computer Science Review
 Tubes to Gates, Ada to Python, what do you remember?
 
@@ -124,21 +124,23 @@ Cloud9 environments.
 We started off reviewing this blog and its purpose during this session -- the intent being that we use class time to "code" while we are together to help get students "unstuck". We quickly went through the review -- great recollection of Python programming basics and navigating within the Cloud9 environment. We got new AWS IAM accounts setup and Cloud9 environments.
 We'll need to work through some assignments that reinforce earlier binary number system and boolean algebra learnings! We were a little rusty there, but eventually remembered the primary gates and that they can be used to perform mathematical operations. We used paper instead of the whiteboard.
 
-# Day 2
+<h1><a name="current">Day 2</a></h1>
 ## Diagram your Code
 It is like English class, but your prose is code.
 
+![The N in BNF](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Peternaur.JPG/90px-Peternaur.JPG)
+
 ## Out of Desk
-Musical Pair Programming. Starting with a base sketch of a program on paper, students will swap the paper to finish the challenge.
+Musical Pair Programming. Starting with a base sketch of a program on paper, students will swap the paper to finish the challenge. Part of the challenge will be to label the code with the terms reviewed in the assignment deck.
 
 ## Hands On
-We'll work on the challenge to only use boolean operators to perform mathematical operations. This challenge will include methods for `half_adder` and `full_adder`. And we'll also use this to introduce some unit testing concepts.
+We'll work on the challenge to only use boolean operators to perform mathematical operations. This challenge will include methods for `half_adder` and `full_adder`. And we'll also use this to introduce some unit testing concepts. In fact, since we started working some on the challenge to add numbers without use `+`, we are going to stop all that coding to write our tests first!
 
 ## One Thing to Remember
 The sum of A + B = (not A and B) or (A and not B)
 
 ## Assignment
-Data Structures with a focus on Classes.
+Data Structures with a focus on Classes, link TBD.
 
 ## Setup
-Musical Code worksheet and tests for full/half adder.
+Musical Code worksheet and tests for full/half adder. GitHub Classroom data assignment.
