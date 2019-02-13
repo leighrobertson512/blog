@@ -125,10 +125,11 @@ We started off reviewing this blog and its purpose during this session -- the in
 We'll need to work through some assignments that reinforce earlier binary number system and boolean algebra learnings! We were a little rusty there, but eventually remembered the primary gates and that they can be used to perform mathematical operations. We used paper instead of the whiteboard.
 
 <h1><a name="current">Day 2</a></h1>
+
 ## Diagram your Code
 It is like English class, but your prose is code.
 
-![The N in BNF](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Peternaur.JPG/90px-Peternaur.JPG)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Peternaur.JPG/90px-Peternaur.JPG" width="90" height="120">
 
 ## Out of Desk
 Musical Pair Programming. Starting with a base sketch of a program on paper, students will swap the paper to finish the challenge. Part of the challenge will be to label the code with the terms reviewed in the assignment deck.
@@ -139,8 +140,35 @@ We'll work on the challenge to only use boolean operators to perform mathematica
 ## One Thing to Remember
 The sum of A + B = (not A and B) or (A and not B)
 
-## Assignment
+## Assignment - Look here for coming assignment link.
 Data Structures with a focus on Classes, link TBD.
 
 ## Setup
 Musical Code worksheet and tests for full/half adder. GitHub Classroom data assignment.
+
+## Actual
+We actually jumped around a lot to make sure everyone: 1) is following this blog, 2) has access to slack, 3) can get back on their Cloud9, 4) can run Python code on Cloud9 and 5) can run a Jupyter Notebook server on Cloud9. And we got all this done while also reviewing terms and discussing the binary adder challenge and prepping for this week's assignment which will be posted here soon! We discussed test driven development and I proposed starting with this test for the final binary adder function:
+
+```python
+import unittest
+
+from binary_adder import *
+
+class TestAdder(unittest.TestCase):
+
+    def test_adder(self):
+        ''' Test a binary_adder function.
+        
+        Add two binary digits (input as strings). The solution must not use the '+' operator.
+        
+        '''
+        
+        self.assertEqual(binary_adder('1','1'),'10')
+        self.assertEqual(binary_adder('101','1010'),'1111')
+        self.assertEqual(binary_adder('1101','11100101010'),str(bin(0b1101 + 0b11100101010)[2:]))
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+As part of the challenge you should add tests for your `half_adder(a,b)` and your `full_adder(carry_in, a, b)`. Next time we'll discuss the difference between black box testing and clear box testing -- what type of test the above is and why this challenge also needs a clear box text.
