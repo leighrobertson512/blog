@@ -157,3 +157,6 @@ if True:
 For Day 9 setup, they'll need to get back on their Cloud9 environment and *pull* from the MyFirstWebstie repo to make sure they are in sync.
 
 ## Actual
+Overall it went pretty well, still our biggest slow down is getting everyone signed in. Cloud9 and really any IDE has been a little bit overwhelming for kids with all the buttons, and options, and areas that it has information. But we have tried to focus soley on the File Manager to the left, the Terminal along the bottom, and the text editor in the middle. I don't think most of them have really grasped what is happening with regards to a Python file, and a website. We could probably take a step back, and do a little bit of an easier Python exercise in Cloud9 before doing the dynamic website. Maybe I will try signing in the laptops before hand so that when we get there we can just jump right to the code. The logging in process doesn't bring as much entertainment as I'd hoped it would, and we keep forgetting our passwords.
+
+I'm not concerned though! I think that after next week they will all feel much more comfortable in Cloud9, and we can start really focusing on the code. I think the process is a bit distracting right now, and not as fun. But once they get it down, it's EZ PZ. We will all just use the same password for now though to limit difficulty on that front.
