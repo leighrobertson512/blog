@@ -49,6 +49,53 @@ Chris Kefalas
 
 ## External References
 
+----
+
+<h1><a name="day-3">Day 1</a></h1>
+## 
+
+<!--![If only.](images/if.jpg)-->
+
+## Out of Desk
+
+
+[//]: #
+
+## Hands-On/coding
+
+
+[//]: # 
+
+## One thing to remember
+
+## Setup
+
+## Actual
+
+
+<h1><a name="day-3">Day 2</a></h1>
+## 
+
+<!--![If only.](images/if.jpg)-->
+
+## Out of Desk
+
+
+[//]: # 
+
+## Hands-On/coding
+
+
+[//]: # 
+
+## One thing to remember
+
+## Setup
+
+## Actual
+
+----
+
 <h1><a name="day-3">Day 3</a></h1>
 ## 
 
