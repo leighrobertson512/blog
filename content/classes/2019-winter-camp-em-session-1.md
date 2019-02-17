@@ -63,12 +63,11 @@ We will take a look over the 3D printer, and learn about it's different parts. T
 
 
 ## Hands-On/coding
-Today will be the day we learn about the process of exporting, importing, and then exporting again! In order for us to make this all work, we need to go through a process of converting our creation so that the 3D printer can print it! 
+Today will be the day we learn about the process of exporting, importing, and then exporting again! In order for us to make this all work, we need to go through a process of converting our creation into a format that the 3D printer understands. Since we have a Makerbot 3D printer, we will be using their desktop software to prepare our prints.
 
-[//]: # (We will spend time continuing our Crossy Road games, and adding one of the last steps that involves a type of event called a collision. In HopScotch, this is illustrated with the Rule "When ____ Bumps ____" and allows us to program what happens when our character bumps into an enemy.)
+[//]: # Today will be the day we learn about the process of exporting, importing, and then exporting again! In order for us to make this all work, we need to go through a process of converting our creation into a format that the 3D printer understands. Since we have a Makerbot 3D printer, we will be using their desktop software to prepare our prints.
 
 ## One thing to remember
-What is a conditional statement? It depends!
 
 ## Setup
 
