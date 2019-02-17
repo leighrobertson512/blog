@@ -10,7 +10,7 @@ Tags: computer science, github, raspberry pi
 Illustration: intel-inside.jpg
 Author: Wray Mills
 Summary: WEMS Projects
-Status: drafts
+Status: draft
 
 # Description
 Students will collaborate to design and create a group project to be placed on display.
