@@ -1,5 +1,5 @@
 Title: WEMS Coding Winter 2019
-Date: 2019-02-04
+Date: 2019-02-14
 Curriculum: code-em
 Class: coding
 Session: Winter
@@ -10,8 +10,6 @@ Tags: computer science, coding, github
 Illustration: intel-inside.jpg
 Author: Chris Kefalas
 Summary: WEMS Coding
-
-# Jump to [Current Lesson](#day-9)
 
 # Description
 Students will gain or expand their coding knowledge through a variety of programming languages and projects based on experience level, building from visual-based languages to Python. They will apply practical computer science skills such as source code control, software design, reverse engineering, bug resolution, and coding environments.
@@ -32,15 +30,11 @@ Chris Kefalas
  * Repeat students know how to branch and PR in GitHub.
  * Repeat students will complete an appropriate level assignment.
  
-# Materials
-
-# Class References
+[//]: # (I don't think this group got very far in creating a Python program on their own. They likely would not be able to create a new Python file, run it and debug it. They definitely cannot cannot create a CLI program. We will want to try and fill those gaps during the first part of the next session, BEFORE they move on to the project code) 
  
 # On the line Resources
 
  * [Techem Github!](https://github.com/techemstudios)
-
-## On the line Presentations
 
 ## Repos
  * [MyFirstWebsite](https://github.com/techemstudios/MyFirstWebsite)
@@ -49,11 +43,7 @@ Chris Kefalas
  * [Github Part One](/github-part-one.html)
  * [Github Part Two](/github-part-two.html)
 
-## (GitHub) Assignments
-
-## External References
-
-# Previous Classes
+# Previous Classes in this session
 The summary of [our previous classes]({filename}/class-reflections/2019-winter-code-em-wems-summaries.md).
 
 # Day 6
@@ -157,6 +147,11 @@ if True:
 For Day 9 setup, they'll need to get back on their Cloud9 environment and *pull* from the MyFirstWebstie repo to make sure they are in sync.
 
 ## Actual
-Overall it went pretty well, still our biggest slow down is getting everyone signed in. Cloud9 and really any IDE has been a little bit overwhelming for kids with all the buttons, and options, and areas that it has information. But we have tried to focus soley on the File Manager to the left, the Terminal along the bottom, and the text editor in the middle. I don't think most of them have really grasped what is happening with regards to a Python file, and a website. We could probably take a step back, and do a little bit of an easier Python exercise in Cloud9 before doing the dynamic website. Maybe I will try signing in the laptops before hand so that when we get there we can just jump right to the code. The logging in process doesn't bring as much entertainment as I'd hoped it would, and we keep forgetting our passwords.
+Overall it went pretty well -- our biggest slow down still is getting everyone signed in. Cloud9 and really any IDE has been a little bit overwhelming for kids with all the buttons and options. So we have tried to focus on the File Manager to the left, the Terminal along the bottom, and the text editor in the middle. 
 
-I'm not concerned though! I think that after next week they will all feel much more comfortable in Cloud9, and we can start really focusing on the code. I think the process is a bit distracting right now, and not as fun. But once they get it down, it's EZ PZ. We will all just use the same password for now though to limit difficulty on that front.
+[//]: # (I don't think most of them have really grasped what is happening with regards to a Python file, and a website. We could probably take a step back, and do a little bit of an easier Python exercise in Cloud9 before doing the dynamic website. Maybe I will try signing in the laptops before hand so that when we get there we can just jump right to the code. The logging in process doesn't bring as much entertainment as I'd hoped it would, and we keep forgetting our passwords.)
+
+We are not concerned though! I think thatthey will all feel much more comfortable in Cloud9 with practice and we can start really focusing on the code. The process is a bit distracting right now, and not as fun. But once they get it down, it's EZ PZ. We will all just use the same password for now though to limit difficulty on that front.
+
+# Closing
+This has been a great session and the kids are using real-world tools and a real-world programming language. They are now armed with the tooling and basic skills to tackle a project. And working on a project is exactly what they need to apply these new skills -- getting lots of practice in this "cloud coding" environment so it becomes as easy as playing Fortnite.
