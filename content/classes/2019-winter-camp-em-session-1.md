@@ -51,7 +51,7 @@ Chris Kefalas
 
 ----
 
-<h1><a name="day-3">Day 1</a></h1>
+<h1><a name="day-1">Day 1</a></h1>
 ## 
 
 <!--![If only.](images/if.jpg)-->
@@ -72,8 +72,9 @@ Chris Kefalas
 
 ## Actual
 
+----
 
-<h1><a name="day-3">Day 2</a></h1>
+<h1><a name="day-2">Day 2</a></h1>
 ## 
 
 <!--![If only.](images/if.jpg)-->
@@ -120,3 +121,23 @@ Today will be the day we learn about the process of exporting, importing, and th
 
 ## Actual
 
+<h1><a name="day-4">Day 4</a></h1>
+## 
+
+<!--![If only.](images/if.jpg)-->
+
+## Out of Desk
+
+
+[//]: # 
+
+## Hands-On/coding
+
+
+[//]: # 
+
+## One thing to remember
+
+## Setup
+
+## Actual
