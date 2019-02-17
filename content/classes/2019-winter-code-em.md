@@ -124,8 +124,7 @@ Cloud9 environments.
 We started off reviewing this blog and its purpose during this session -- the intent being that we use class time to "code" while we are together to help get students "unstuck". We quickly went through the review -- great recollection of Python programming basics and navigating within the Cloud9 environment. We got new AWS IAM accounts setup and Cloud9 environments.
 We'll need to work through some assignments that reinforce earlier binary number system and boolean algebra learnings! We were a little rusty there, but eventually remembered the primary gates and that they can be used to perform mathematical operations. We used paper instead of the whiteboard.
 
-<h1><a name="current">Day 2</a></h1>
-
+# Day 2
 ## Diagram your Code
 It is like English class, but your prose is code.
 
@@ -140,7 +139,7 @@ We'll work on the challenge to only use boolean operators to perform mathematica
 ## One Thing to Remember
 The sum of A + B = (not A and B) or (A and not B)
 
-## Assignment - Look here for coming assignment link.
+## Assignment
 Data Structures with a focus on Classes -- the GitHub assignent link is in the class slack channel.
 
 ## Setup
@@ -172,3 +171,28 @@ if __name__ == '__main__':
 ```
 
 As part of the challenge you should add tests for your `half_adder(a,b)` and your `full_adder(carry_in, a, b)`. Next time we'll discuss the difference between black box testing and clear box testing -- what type of test the above is and why this challenge also needs a clear box text.
+
+<h1><a name="current">Day 3</a></h1>
+
+## Data
+What is it good for? Absolutely everything!
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Collegiate_Dictionary.jpg/1024px-Collegiate_Dictionary.jpg" width="200">
+
+## Out of Desk
+Back to the books: dictionaries and indexes. Python dictionaries and keys are rooted in real-world books. We'll take some time to revisit physical books to reinforce programming language data structure terms.
+
+## Hands On
+We'll continue work on the Elementary Data 1 assignment in class. If the students get through the basic assignment, they can create unit tests to verify their solutions!
+
+## One Thing to Consider
+Is a 3D dictionary an actual Webster's Dictionary or a Python dictionary of dictionaries of dictionaries?
+
+## Assignment
+Elementary Data 2 will be the assignment -- link will be in our slack channel when ready.
+
+## Setup
+Elementary Data 1 assignment.
+
+## Actual
+
