@@ -1,5 +1,5 @@
 Title: Studio Code Em Padawans Winter 2019
-Date: 2019-02-05
+Date: 2019-02-18
 Curriculum: code-em
 Class: studio-code-em
 Session: Winter
@@ -141,7 +141,7 @@ We'll work on the challenge to only use boolean operators to perform mathematica
 The sum of A + B = (not A and B) or (A and not B)
 
 ## Assignment - Look here for coming assignment link.
-Data Structures with a focus on Classes, link TBD.
+Data Structures with a focus on Classes -- the GitHub assignent link is in the class slack channel.
 
 ## Setup
 Musical Code worksheet and tests for full/half adder. GitHub Classroom data assignment.
