@@ -45,10 +45,12 @@ Chris Kefalas
 # Day 1
 
 ## Intro to Computer Science
-
+History of Computer Science, and Computers. Talking about the progress we have made in the last couple decades, and ending with the transistor. 
 
 
 ## Out of Desk
+
+We will go over Lightbot first on the whiteboard, and then we will act out how it works by having one person play the programmer, and one person play the robot. The programmer will have to program the "human robot" with instructions in order to get it to move certain area of the room. We will see how putting these instructions in the correct order is crucial, we will also mention the concept of efficency, and how we can work to make our programs more effecient. 
 
 ## Hands On
 
@@ -66,7 +68,7 @@ We started off with the powerpoint, and went through the history of computers en
 
 ----
 
-# Day 2
+# Day 2 - Base 2, and Binary Number System
 
 ## Intro to Computer Science
 
@@ -82,7 +84,7 @@ We started off with the powerpoint, and went through the history of computers en
 
 ----
 
-# Day 2
+# Day 3 - Procedures, Review Binary Number System
 
 ## Intro to Computer Science
 
