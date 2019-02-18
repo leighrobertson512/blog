@@ -64,3 +64,36 @@ Instructions, and sequences. The students should be famialiar, and comfortable o
 
 We started off with the powerpoint, and went through the history of computers ending our discussion with transistors, and taking a look at the vacuum tubes. We talked a bit about computer programming, and went over Lightbot using the white board. 
 
+----
+
+# Day 2
+
+## Intro to Computer Science
+
+## Out of Desk
+
+## Hands On
+
+## One Thing to Remember
+
+## Setup
+
+## Actual
+
+----
+
+# Day 2
+
+## Intro to Computer Science
+
+## Out of Desk
+
+## Hands On
+
+## One Thing to Remember
+
+## Setup
+
+## Actual
+
+----
