@@ -71,7 +71,7 @@ Our hands on activity will start with using the iPads and a couple different 3D 
 [//]: # 
 
 ## One thing to remember
-
+How the 3D printer operates, and some vocabulary words like third diminsion, extruder, and filament. They should also continue brainstorming what they would like to design, and print out! 
 
 
 ## Setup
@@ -83,7 +83,9 @@ The kids enjoyed the slide show, especially the part about the 3D printer that p
 ----
 
 <h1><a name="day-2">Day 2</a></h1>
-## 
+## Minecraft 3D Printing & Design
+
+Today we revisit some of the concepts that we had gone over the last class. And we start looking at how we can use Minecraft as a way to design our ideas, and build them. And then use a software called Mineways to export them in a format that is acceptable for the 3D printer to use. 
 
 <!--![If only.](images/if.jpg)-->
 
@@ -93,15 +95,33 @@ The kids enjoyed the slide show, especially the part about the 3D printer that p
 [//]: # 
 
 ## Hands-On/coding
+Today instead of using iPads we will all be using the Macbook laptops. Mineways unfortunately only works with the PC version of Minecraft. The kids will have two opportunities to build different things. The first challenge will be the build a house, or castle, or structure of some kind. The second challenge will be to be a statue, or something that they have thought of themselves! 
+
+We will then see how we can take those files and move them to Mineways to complete the next step in our process.
 
 
-[//]: # 
+[//]: # Today instead of using iPads we will all be using the Macbook laptops. Mineways unfortunately only works with the PC version of Minecraft. The kids will have two opportunities to build different things. The first challenge will be the build a house, or castle, or structure of some kind. The second challenge will be to be a statue, or something that they have thought of themselves! 
+
+We will then see how we can take those files and move them to Mineways to complete the next step in our process.
+
 
 ## One thing to remember
+Today we went over the process, which is really four steps.
+
+- Build it
+- Export to Mineways for conversation 
+- Import into Makerbot software for preparation
+- Export onto a SD card, and put into the 3D Printer to start your print!
+
+Kids should have an understanding of this process, and what it takes for each step to be completed. First we need to create our design, in this instance we will be using Minecraft to create, and build. Then we need to do essentially a file conversation from one format to another format that the Makerbot software is about to understand. Next we will use the Makerbot software to lay out our design, and prepare it for printing. Finally we will get the final file onto an SD card, inserted into the printer and start the print. 
 
 ## Setup
 
 ## Actual
+
+I've noticed over the years of teaching this class that different kids enjoy different ways of designing things, seems pretty obvious. But they also prefer certain devices. Being that this group is younger they definitely prefer the iPads for making things. Unfortunately Mineways only does PC Minecraft worlds, so we worked on the PC version, and the kids made some cool things. 
+
+They will be printed out in the studio this week
 
 ----
 
