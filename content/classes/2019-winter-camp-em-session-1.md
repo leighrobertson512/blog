@@ -52,25 +52,33 @@ Chris Kefalas
 ----
 
 <h1><a name="day-1">Day 1</a></h1>
-## 
+
+## Minecraft 3D Printing & Design
+
+Our focus for Day 1 will be on the 3D printing side mostly, and how everything works. We will start with our 3D Printing slide show, that gives us a brief overview of the third diminsion and what that means. After we will spend some time looking at two different iPad apps, Makerbot App, 123D Design. 
 
 <!--![If only.](images/if.jpg)-->
 
 ## Out of Desk
-
-
+The kids will have a chance to examine the 3D printers, and get an understanding of how they operate. And we will start a print so we can see all the moving parts. 
 [//]: #
 
 ## Hands-On/coding
+
+Our hands on activity will start with using the iPads and a couple different 3D design applications. We will use the Makerbot iPad software to create different types of customizable prebuilt items. After getting a grasp on that, we will move to 123D Design and start working with the primitive shapes, and our imaginations to design something from scratch! 
 
 
 [//]: # 
 
 ## One thing to remember
 
+
+
 ## Setup
 
 ## Actual
+
+The kids enjoyed the slide show, especially the part about the 3D printer that prints with chocolate instead of plastics. We also took a look at both of the printers, and started a print so we could all see it in action. The MakerBot App was a lot of fun, I think they liked the bracelets the most, but they also made some really cool medals. I think it can be a little overwhelming starting with a blank slate, but we had some fun in 123D Design using different shapes, and learning how we could snap them together. 
 
 ----
 
