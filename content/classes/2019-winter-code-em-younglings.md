@@ -49,6 +49,7 @@ Chris Kefalas
 # Day 1
 
 ## Intro to Computer Science
+
 History of Computer Science, and Computers. Talking about the progress we have made in the last couple decades, and ending with the transistor. 
 
 
@@ -68,13 +69,14 @@ Instructions, and sequences. The students should be famialiar, and comfortable o
 
 ## Actual
 
-We started off with the powerpoint, and went through the history of computers ending our discussion with transistors, and taking a look at the vacuum tubes. We talked a bit about computer programming, and went over Lightbot using the white board. 
+We started off with the reveal deck, and went through the history of computers ending our discussion with transistors, and taking a look at the vacuum tubes. We talked a bit about computer programming, and went over Lightbot using the white board. 
 
 ----
 
 # Day 2 - Base 2, and Binary Number System
 
-## Intro to Computer Science
+## Code Em
+
 We reviewed the history of computers, and talked about vacuum tubes, and transistors. Next we introduced how the Binary Number system relates to all this, and computer science. 
 
 ## Out of Desk
@@ -94,6 +96,8 @@ How to convert Decimal numbers to Binary numbers
 
 ## Actual
 
+The second day went really well. 
+
 ----
 
 # Day 3 - Procedures, Review Binary Number System
@@ -104,7 +108,7 @@ We will review Binary Numbers, and practice converting
 
 ## Hands-On/Coding
 
-We will finish up Lightbot, and potentially start Hopscotch. She has been progressing quickly which is awesome. Probably can start Python soon. 
+We will finish up Lightbot, and our understanding of procedures. Next moving onto Hopscotch, and the next step in programming. 
 
 
 ## One Thing to Remember
