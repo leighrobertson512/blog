@@ -56,37 +56,37 @@ Chris Kefalas
 
 ## Minecraft 3D Printing & Design
 
-Our focus for Day 1 will be on the 3D printing side mostly, and how everything works. We will start with our 3D Printing slide show, that gives us a brief overview of the third diminsion and what that means. After we will spend some time looking at two different iPad apps, Makerbot App, 123D Design. 
+Our focus will be on the 3D printing mostly, and how everything works. Starting with our 3D Printing deck, students will learn about the third diminsion, see examples of 3D prints, and learn about different methods that people have invented to print three diminsion objects. After a quick discussion, we will hop onto the iPads and work with an app called 123D Design, as well as an app called Makerbot. 
 
 <!--![If only.](images/if.jpg)-->
 
 ## Out of Desk
-The kids will have a chance to examine the 3D printers, and get an understanding of how they operate. And we will start a print so we can see all the moving parts. 
+Examine the 3D printers, and get an understanding of how they operate. Start a print so we can see all the moving parts. 
 
-[//]: # (The kids will have a chance to examine the 3D printers, and get an understanding of how they operate. And we will start a print so we can see all the moving parts.)
+[//]: # (Examine the 3D printers, and get an understanding of how they operate. Start a print so we can see all the moving parts.)
 
 ## Hands-On/coding
 
-Our hands on activity will start with using the iPads and a couple different 3D design applications. We will use the Makerbot iPad software to create different types of customizable prebuilt items. After getting a grasp on that, we will move to 123D Design and start working with the primitive shapes, and our imaginations to design something from scratch! 
+Start with using the iPads and a couple different 3D design applications. We will use the Makerbot iPad software to create different types of customizable prebuilt items. After getting a grasp on that, we will move to 123D Design and start working with the primitive shapes, and our imaginations to design something from scratch! 
 
 
 ## One thing to remember
 
-How the 3D printer operates, and some vocabulary words like third diminsion, extruder, and filament. They should also continue brainstorming what they would like to design, and print out! 
+How the 3D printer operates, and some vocabulary words like *third diminsion*, *extruder*, and *filament*. Students should also continue brainstorming what they would like to design, and print out! It never hurts to spend some time sketching out on paper with a pencil your ideas.
 
 
 ## Setup
 
 ## Actual
 
-The kids enjoyed the slide show, especially the part about the 3D printer that prints with chocolate instead of plastics. We also took a look at both of the printers, and started a print so we could all see it in action. The MakerBot App was a lot of fun, I think they liked the bracelets the most, but they also made some really cool medals. I think it can be a little overwhelming starting with a blank slate, but we had some fun in 123D Design using different shapes, and learning how we could snap them together. 
+The kids enjoyed the Reveal deck, especially the part about the 3D printer that prints with chocolate instead of plastics. We also took a look at both of the printers, and started a print so we could all see it in action. The MakerBot App was a lot of fun, I think they liked the bracelets the most, but they also made some really cool medals. I think it can be a little overwhelming starting with a blank slate, but we had some fun in 123D Design using different shapes, and learning how we could snap them together to create all sorts of wild things.
 
 ----
 
 # Day 2
 ## Minecraft 3D Printing & Design
 
-Today we revisit some of the concepts that we had gone over the last class. And we start looking at how we can use Minecraft as a way to design our ideas, and build them. And then use a software called Mineways to export them in a format that is acceptable for the 3D printer to use. 
+Revisit some of the concepts that we had gone over the last class. Start looking at how we can use Minecraft as a way to design our ideas, and build them. Finally, use a software called Mineways to export them in a format that is acceptable for the 3D printer.
 
 <!--![If only.](images/if.jpg)-->
 
@@ -95,7 +95,7 @@ Today we revisit some of the concepts that we had gone over the last class. And 
 
 ## Hands-On/coding
 
-Today instead of using iPads we will all be using the Macbook laptops. Mineways unfortunately only works with the PC version of Minecraft. The kids will have two opportunities to build different things. The first challenge will be the build a house, or castle, or structure of some kind. The second challenge will be to be a statue, or something that they have thought of themselves! We will then see how we can take those files and move them to Mineways to complete the next step in our process.
+Instead of using iPads we will all be using the Macbook laptops. Mineways unfortunately only works with the PC version of Minecraft. The kids will have two opportunities to build different things. The first challenge will behe build a house, or castle, or structure of some kind. The second challenge will be to be a statue, or something that they have thought of themselves! We will then see how we can take those files and move them to Mineways to complete the next step in our process.
 
 
 ## One thing to remember
