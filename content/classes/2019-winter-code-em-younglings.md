@@ -27,10 +27,14 @@ Chris Kefalas
 
 # Materials
 
-# On the line Resources
+- iPads
+- Lightbot
+- Hopscotch
+- Whiteboard 
 
-## On the line Presentations
-<!--* [Intro to Code without notes](decks/intro-to-code.html)-->
+# Online Resources
+
+[Code Em Deck](decks/code-em.html)
 
 ## Repos
 
