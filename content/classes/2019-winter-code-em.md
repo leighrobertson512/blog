@@ -195,4 +195,4 @@ Elementary Data 2 will be the assignment -- link will be in our slack channel wh
 Elementary Data 1 assignment.
 
 ## Actual
-
+Just starting to test Kanban.
