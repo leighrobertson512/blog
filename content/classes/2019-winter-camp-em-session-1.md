@@ -95,7 +95,7 @@ Revisit some of the concepts that we had gone over the last class. Start looking
 
 ## Hands-On/coding
 
-Instead of using iPads we will all be using the Macbook laptops. Mineways unfortunately only works with the PC version of Minecraft. The kids will have two opportunities to build different things. The first challenge will behe build a house, or castle, or structure of some kind. The second challenge will be to be a statue, or something that they have thought of themselves! We will then see how we can take those files and move them to Mineways to complete the next step in our process.
+Instead of using iPads we will all be using the Macbook laptops. Mineways unfortunately only works with the PC version of Minecraft. The kids will have two opportunities to build different things. The first challenge willhe build a house, or castle, or structure of some kind. The second challenge will be to be a statue, or something that they have thought of themselves! We will then see how we can take those files and move them to Mineways to complete the next step in our process.
 
 
 ## One thing to remember
