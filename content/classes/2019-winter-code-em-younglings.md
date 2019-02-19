@@ -71,12 +71,20 @@ We started off with the powerpoint, and went through the history of computers en
 # Day 2 - Base 2, and Binary Number System
 
 ## Intro to Computer Science
+We reviewed the history of computers, and talked about vacuum tubes, and transistors. Next we introduced how the Binary Number system relates to all this, and computer science. 
 
 ## Out of Desk
 
-## Hands On
+We will start with going over the Base 10 number system which we are familar with, and know as decimal. Then we will introduce what computers use to speak which is known as the Base 2 system, or the Binary number system. Using the white board we will go through converting 1-10 in decimal to binary and make sure we have a solid understanding of it. 
+
+## Hands On/Coding
+We will continue our progress with Lightbot. We ended last week with the first and second level of Section 2. We used the white board 
+
 
 ## One Thing to Remember
+
+How to convert Decimal numbers to Binary numbers
+
 
 ## Setup
 
@@ -86,11 +94,14 @@ We started off with the powerpoint, and went through the history of computers en
 
 # Day 3 - Procedures, Review Binary Number System
 
-## Intro to Computer Science
+We will review Binary Numbers, and practice converting
 
 ## Out of Desk
 
-## Hands On
+## Hands-On/Coding
+
+We will finish up Lightbot, and potentially start Hopscotch. She has been progressing quickly which is awesome. Probably can start Python soon. 
+
 
 ## One Thing to Remember
 
