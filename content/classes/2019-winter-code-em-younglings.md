@@ -96,7 +96,7 @@ How to convert Decimal numbers to Binary numbers
 
 ## Actual
 
-The second day went really well. 
+The second day went really well, and we are making good progress on Lightbot.  
 
 ----
 
@@ -108,13 +108,17 @@ We will review Binary Numbers, and practice converting
 
 ## Hands-On/Coding
 
-We will finish up Lightbot, and our understanding of procedures. Next moving onto Hopscotch, and the next step in programming. 
+We will finish up Lightbot, and our understanding of procedures. 
 
 
 ## One Thing to Remember
 
+What the point of using procedures is, and how they help us improve our efficiency
+
 ## Setup
 
 ## Actual
+
+We are rocking! She has a great understanding of the Base 10, and Base 2 number systems. We started with going over those on the whiteboard, and filling in our place values. And finishing with converting decimal numbers to binary digits. She has really enjoyed Lightbot so we stayed on that, and got all the way to the end of the Unloading section, which should be Section 3. I'm sure she will want to finish the last level because she likes the challenge and we couldn't figure it out before class ended, but after that we will move onto Hopscotch because she is totally ready. And I think will really enjoy all the flexiable and creativity that it allows. 
 
 ----
