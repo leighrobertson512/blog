@@ -1,4 +1,4 @@
-TYPE or PASTE your text here... Click the RED SPELL CHECK buttonTitle: Studio Code Em Younglings Winter 2019
+Title: Studio Code Em Younglings Winter 2019
 Date: 2019-02-18
 Curriculum: code-em
 Class: studio-code-em
