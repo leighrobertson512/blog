@@ -73,6 +73,8 @@ Planning for 8 days. Last day can be final project wrap-up etc. if needed.
 
 ## (GitHub) Assignments
 
+* [Homework Assignment #1](https://github.com/techemstudios/MyFirstWebsite/blob/master/homework/my-first-assignment.md)
+
 ## External References
 
 # Day 1
