@@ -57,6 +57,8 @@ History of Computer Science, and Computers. Talking about the progress we have m
 
 We will go over Lightbot first on the whiteboard, and then we will act out how it works by having one person play the programmer, and one person play the robot. The programmer will have to program the "human robot" with instructions in order to get it to move certain area of the room. We will see how putting these instructions in the correct order is crucial, we will also mention the concept of efficiency, and how we can work to make our programs more efficient. 
 
+[//]: #(We need to be very precise when we talk about efficiency. I believe in your case your are referring to improving the act of writing code and not the runtime of the program. In Computer Science, efficiency is typically either referring to the overall input vs. output (overall software development system productivity -- including creation, testing and maintainability) or the run-time efficiency of a program or system. In fact, the latter is typically what is discussed in a class where individual developers are writing programs. So, your context of discussion at this point should reiterate the lecture about Ada Lovelace and the concepts around writing code that is not just easier _for other humans_ to read, but also maintain. If you repeat the same code over and over again, instead of using a procedue, when you make a change to that logic, you need to change it x number of times instead of once. So, that makes the debugging and maintenance of the code more efficient but not the program itself. Don't confuse a Day1 CS class with the term efficiency unless you are speaking to the high level objectives of an Engineer -- your statements here and perhaps your implied instruction to the student that using procedures will make your program faster are not correct.) 
+
 ## Hands On
 
 Kids will start with using the iPads along with an app called Lightbot. There they have to program a robot using the instructions that Lightbot provides. The first section of Lightbot focuses on sequences, and putting groups of instructions into code blocks, preparing us for procedures. 
@@ -73,9 +75,9 @@ We started off with the reveal deck, and went through the history of computers e
 
 ----
 
-# Day 2 - Base 10 and Base 2 Number Systems
+# Day 2
 
-## Code Em
+## Base 10 and Base 2 Number Systems
 
 We reviewed the history of computers, and talked about vacuum tubes, and transistors. Next we introduced how the Binary Number system relates to all this, and computer science. 
 
@@ -102,7 +104,7 @@ The second day went really well, and we are making good progress on Lightbot.
 
 <h1><a name="current">Day 3</a></h1>
 
-<!--# Day 3 - Procedures, Review Binary Number System-->
+## Procedures, Review Binary Number System
 
 We will review Binary Numbers, and practice converting
 
@@ -115,7 +117,7 @@ We will finish up Lightbot, and our understanding of procedures.
 
 ## One Thing to Remember
 
-What the point of using procedures is, and how they help us improve our efficiency
+Procedures keep you DRY!
 
 ## Setup
 
