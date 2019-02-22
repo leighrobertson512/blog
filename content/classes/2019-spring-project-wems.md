@@ -117,5 +117,5 @@ _Beginning of Class_ routine:
 
 ## Actual
 
-[NOT COMPLETED]
+We are totally making some progress on AWS Cloud9, using a classroom password, and putting the Chrome web browser into _incognito_ mode has made the beginning routine a bit quicker. Still a bit of confusion with the file manager in Cloud 9, and navigating around via the Terminal. But I'm confident with practice each week they will have no problem picking it up. **Homework Assignment #1** was sent home with students, it simply asks them to make an attempt to log into their Cloud 9 _Laptop in the Clouds_ from home. also talk to their parents about an e-mail address that we can use for Slack, our classroom code collaboration software. 
 
