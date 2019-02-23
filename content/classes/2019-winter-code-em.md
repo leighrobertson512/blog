@@ -172,8 +172,8 @@ if __name__ == '__main__':
 
 As part of the challenge you should add tests for your `half_adder(a,b)` and your `full_adder(carry_in, a, b)`. Next time we'll discuss the difference between black box testing and clear box testing -- what type of test the above is and why this challenge also needs a clear box text.
 
-<h1><a name="current">Day 3</a></h1>
 
+# Day 3
 ## Data
 What is it good for? Absolutely everything!
 
@@ -195,4 +195,14 @@ Elementary Data 2 will be the assignment -- link will be in our slack channel wh
 Elementary Data 1 assignment.
 
 ## Actual
-Just starting to test Kanban.
+We made sure again that everyone has access to slack and cloud9. We accepted the assignment and walked through that Jupyter notebook to review the 3 questions for the assignment. Hope ya'll are working on it!! We also re-reviewed the half-adder assignment and reviewed the logic gate circuit for a half adder and full adder -- where the full adder takes two bits and a carry bit to add and produces a sum and carry for the next stage full adder. Please review the code in last week's Actual. Use it to test your full adder assignment.
+So, there are two assignments in progress right now!
+
+<h1><a name="current">Day 4</a></h1>
+
+## More Data
+## Out of Desk
+## Hands On
+## One Thing to Consider
+## Assignment
+## Setup
