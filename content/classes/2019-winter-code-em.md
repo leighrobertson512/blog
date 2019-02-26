@@ -201,8 +201,20 @@ So, there are two assignments in progress right now!
 <h1><a name="current">Day 4</a></h1>
 
 ## More Data
+Lists, tuples and bears, oh my!
+
 ## Out of Desk
+Divide and conquer or seeing the forest in the trees.
+
 ## Hands On
+We'll go through the Elementary Data 1 assignment to check on progress. I expect we'll need to revisit getting input from a user to populate our Contacts dictionaries. We'll also review a quick way to _persist_ the data to avoid going through a new Contact list setup everytime. The classtime will be used to make sure we can get through the other 2 parts of the assignment and prep for the next Elementary Data Assignment.
+
 ## One Thing to Consider
+Big Oh of Log N.
+
 ## Assignment
+Elementary Data 2 will be posted by the end of the week.
+
 ## Setup
+ * Cards for search.
+ * Pickle example.
