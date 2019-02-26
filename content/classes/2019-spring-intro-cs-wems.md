@@ -65,11 +65,14 @@ Conduct a class exercise to physically demonstrate how a transistor works:
 
 ## Hands-On/coding
 
-Ciruitry iPad app reviewing what we learned last class since it was two weeks ago because of a snow day
+The kids will be asked to draw the different kinds of logic gates we have talked about on the mini qhiteboards. Once they have completed that, they should use an iPad with the app Circuitry to create the logic gates in the app.
 
 ## One thing to remember
 
-AND, OR, NOT gate - How many inputs? - How many outputs? - Truth table values
+- AND, OR, NOT gate
+- How many inputs?
+- How many outputs?
+- Truth table values
 
 ## Setup
 
