@@ -65,6 +65,3 @@ AND, OR, NOT gate
 ## Setup
 
 ## Actual
-
-[NOT COMPLETED]
-
