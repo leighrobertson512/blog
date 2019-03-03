@@ -1,5 +1,5 @@
 Title: WEMS Spring Intro To CS
-Date: 2019-02-17
+Date: 2019-02-25
 Curriculum: intro-cs
 Class: Intro CS
 Session: Spring
