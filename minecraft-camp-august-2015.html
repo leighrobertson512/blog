@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Here are some notes on the various things we did or discussed over the week. Some of the students stayed on Minecraft Pocket Edition, while most of the students worked on preparing a world for a...">
+        <meta name="keywords" content="bukkit, minecraft, python">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Minecraft Camp (August 2015) - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Categories Atom Feed" />
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                                <a href="https://github.com/techemstudios/blog/blob/master/LICENSE">License</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Minecraft Camp (August 2015)</h1>
+                      <p class="header-date"> <a href="/author/wray.html">Wray</a>, 2015-08-09,  <a href="/category/classes.html">Classes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/bukkit.html">bukkit</a>, <a href="/tag/minecraft.html">minecraft</a>, <a href="/tag/python.html">python</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>Here are some notes on the various things we did or discussed over the week. Some of the students stayed on Minecraft Pocket Edition, while most of the students worked on preparing a world for a final show-down using the PC version. Regardless, you and your students can use this blog post as a reference for doing more on your own with Minecraft.</p>
+<h3>Minecraft PE Server</h3>
+<p>We discussed servers and clients and the networking involved to make games like minecraft work. We setup a minecraft PE server. If you are interested in running a PE server for your own home network, you can find one here (you must use the development version to be compatible with the latest iOS Pocket Edition):</p>
+<p><a href="http://www.pocketmine.net">Get PocketMine</a></p>
+<p>The instructions are relatively straightforward and this server acts similar to the PC server version in that it will create several configuration files after the first time the server is run. However, please keep in mind the following pros and cons when it comes to running this server vs. simply sharing your PE world with others on your network (essentially Minecraft PE can run as a "server" for others on your network).</p>
+<ul>
+<li>
+<p>Good</p>
+<ul>
+<li>PocketMine will support more players (especially if you have an i7 machine with 8+ GB ram).</li>
+<li>PocketMine will allow op commands at the console so you have more control over your world.</li>
+<li>Just like the PC edition, PocketMine has access controls (whitelist) to constrain access.</li>
+<li>Just like the PC edition, PocketMine will support some plugins.</li>
+<li>If you expose your PocketMine server to the Internet (port forward), users outside your network can join your server.</li>
+</ul>
+</li>
+<li>
+<p>Bad</p>
+<ul>
+<li>PocketMine is not as stable and can get glitchy and force reconnects, etc.</li>
+<li>PocketMine does require a separate laptop/pc running it on the network so its not as easy to create an "ad-hoc" world.</li>
+<li>PocketMine is not quite as up-to-date as Minecraft PE and certainly behind the PC edition.</li>
+</ul>
+</li>
+</ul>
+<p>Another <a href="http://www.howtogeek.com/202961/how-to-run-a-local-minecraft-pe-server-for-fun-and-persistent-world-building/">nice article</a> to read with information on PocketMine and configuring it.</p>
+<p>So, the other thing we covered with some of the students in camp is how you can actually get another app that works with Apple's Game Center that allows you to expose your PocketMine PE world outside of your network. This is actually pretty cool, but a little tricky to setup. Furthermore, there are so many people just waiting for new PE worlds to be exposed that your world can quickly be invaded by TNT wielding and lava toting fire starters! The app's site does an ok job explaining how to set things up, but feel free to shoot me an email or comment here if you have some issues:</p>
+<p><a href="https://itunes.apple.com/us/app/multiplayer-for-minecraft-pe/id609704981?mt=8">Multiplayer for Minecraft PE</a></p>
+<h3>Minecraft PE powered rails and redstone</h3>
+<p>We also spent some time on minecraft PE showing how one can use powered rails and build binary logic gates! There is a <a href="https://www.youtube.com/watch?v=bLK58PRzaSU">good YouTube resource</a> for doing that.</p>
+<p>We didn't get to doing this in PC redstone, but I would encourage that you all try this at home (and let us know how it goes).</p>
+<p><img alt="August 2015 Minecraft camp" src="/images/minecraft-camp1.jpg"></p>
+<h3>Minecraft Bukkit server and Python</h3>
+<p>So, we also did quite a bit with a version of minecraft known as Bukkit. This is similar to the version that runs on the raspberry pi in that it allows us to make server modifications using Python. Here are roughly the steps we went through (and the students who coded should mostly remember how this goes).</p>
+<ul>
+<li>Download the AdventuresInMinecraft zipfile from your enrollment record (which includes some of "instructor code" that we used during the week) or download the starter kit from <a href="http://blog.techemstudios.com/minecraft-camp-august-2015.html">here</a></li>
+<li>Go to the "AdventuresInMinecraft" directory</li>
+<li>Run the StartBukkit command</li>
+<li>Launch Minecraft</li>
+<li>Make sure your Minecraft profile is using version 1.6.4 (yes, bukkit is not near the latest version)</li>
+<li>Choose multiplayer, direct connect, with a host of "localhost"</li>
+<li>Launch the Python 2.* "IDLE" application</li>
+<li>Open up any of the modules we created in the "AdventuresInMinecraft/MyAdventures" directory</li>
+<li>The IDLE application has the option to "Run Module" which will run the python code that connects to your running bukkit server and whose results you should see in your running Minecraft application.</li>
+<li>Remember, building large structures (like a sphere of size 100 or greater) will take some time. Build this out of TNT and light and you will likely bog down your server for an hour or so!</li>
+<li>If your world is lagging due to some large build, you can go into "AdventuresInMinecraft/Bukkit" and delete your world! Of course, you are <em>deleting your world</em>, so test your builds before you build in a world you want to keep.</li>
+</ul>
+<h3>Thank you</h3>
+<p>Thanks again. I probably learned more than you all did and I appreciate that. Please comment here or send me email if you need anything else. For those of you who were using our laptops and want to do the Bukkit server on your own, let me know if you need more detailed instructions and I'll work with you all. Check out our Fall classes coming up. I know you all would do great in these classes and I'm happy to talk to you about which class would be best for your child.</p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="https://github.com/techemstudios" target="_blank">TechEm on GitHub</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://register.techemstudios.com" target="_blank">Register!</a></li>
+                            <li><a href="https://secure.techemstudios.com" target="_blank">Enrollment</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

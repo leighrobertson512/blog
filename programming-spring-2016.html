@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Spring 2016 Programming, Tuesday mornings and Thursday nights We&#39;ll use this blog page to post some of the code/concepts we learn in class and to post the challenges/homework to ensure you all are...">
+        <meta name="keywords" content="python, pythonista">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Programming (Spring 2016) - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Categories Atom Feed" />
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                                <a href="https://github.com/techemstudios/blog/blob/master/LICENSE">License</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Programming (Spring 2016)</h1>
+                      <p class="header-date"> <a href="/author/wray-mills.html">Wray Mills</a>, 2016-05-09,  <a href="/category/classes.html">Classes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/python.html">python</a>, <a href="/tag/pythonista.html">pythonista</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <h3>Spring 2016 Programming, Tuesday mornings and Thursday nights</h3>
+<p>We'll use this blog page to post some of the code/concepts we learn in class and to post the challenges/homework to ensure you all are practicing in between classes. Just like sports or other schools subjects, practice makes perfect. At this point in your learning to code, the more you practice writing code and testing it and exploring changes and modifications, the better you will get. Remember, by the end of this class, you should be able to write somewhat complex programs to solve problems. Feel free to contact me via email if you have questions or use the comments section below.</p>
+<h3>Some more background for parents</h3>
+<p>For this class we are using Python. Specifically, we have been using Python 2.7 which you can download and install from <a href="http://www.python.org">python.org</a>. Your student should know how to launch Python's editor, IDLE and use that to create and modify programs. They are learning the syntax for the language in our class (as well as the general terms we used to describe part of a program, like: identifier, keyword, literal, expression, statement, conditional, function, etc.) It will take awhile for them to absorb these terms and thats ok -- we'll review them practically every class. You can always take the code from this page and paste it into a new file in IDLE and from the menu, choose Run -&gt; Run Module which will run the program in another window.</p>
+<h3>The random sentence code</h3>
+<p><script src="https://gist.github.com/wray/4e469b9d87cb8d7e2bbe.js"></script></p>
+<h3>Assignment 1</h3>
+<p>Using the random sentence code, just as we replaced the nouns with animals, try replacing your verbs with verbs form the random from random lists: https://www.randomlists.com/data/verbs.json .</p>
+<p>Then, you can explore replacing the object of your sentence with a noun from the pictionary list from random lists:
+https://www.randomlists.com/data/pictionary.json .</p>
+<h3>Moon weight code</h3>
+<p><script src="https://gist.github.com/wray/a6555c41154642196d9f.js"></script></p>
+<h3>Assignment 2</h3>
+<p>Take a look at the moon weight code and make sure you understand how to define a function and then use (or call) a function. As we discussed, this is a fundamental concept in many languages, especially Python. Good programmers will break up their code into functions to avoid using the same code (patterns of code) over and over again throughout their program. Remember, this is your primary weapon to support DRY (DO NOT REPEAT YOURSELF).</p>
+<p>Now, for the hard part of the assignment. Go back to your random sentence code and assignment 1 where I asked you to use a list of verbs and pictionary. Notice that you will end up repeating 2 lines of code every time you grab a list. And this code is pretty complex and tricky (so it's easy to mistype and introduce a mistake). So, look at those lines and pick out all the parts that are exactly the same and the small part that is different. You should then be able to put that code in a function. And take the one place that HAS TO BE "different" and use that as input into the function. So, try putting that code into a function defined like this:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">random_word</span><span class="p">(</span><span class="n">collection_name</span><span class="p">):</span>
+
+     <span class="c1"># Your code goes here</span>
+
+     <span class="k">return</span> <span class="n">word</span>
+</pre></div>
+
+
+<p>So, this function takes in as input (one parameter), the name of the word collection from the randomlists site, and returns a random word from that list. This is a little tricky because your existing code may use a list variable that is specifically named (e.g. animals). When you put this into a function that can be retrieving whatever list is specified by the input, you will want to make that variable less specific (e.g. words) -- in other words, this variable name does not have to change for each collection. The other hint in solving this involved string addition (we call concatenation). You will need to change the url to get the specified list.</p>
+<div class="highlight"><pre><span></span><span class="s1">&#39;https://www.randomlists.com/data/&#39;</span> <span class="o">+</span> <span class="n">collection_name</span> <span class="o">+</span> <span class="s1">&#39;.json&#39;</span>
+</pre></div>
+
+
+<p>Finally, remember in class we wrote some code where we would use a function on a function (call a function within a function call). For extra credit, you can use this technique to make your function definition just one line of code. Here is an example of that syntax -- note how the parenthesis control the order of the functions (just like in math). The inner function will be called first.</p>
+<div class="highlight"><pre><span></span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">))</span>
+</pre></div>
+
+
+<p>As always, comment here or email me if you have an issues or questions.</p>
+<h3>Assignment 3</h3>
+<p>Here is a real quick assignment to have you all continue to practice converting a problem to a programmed solution. Create a program that generates the <a href="https://www.mathsisfun.com/numbers/fibonacci-sequence.html">Fibonacci Sequence</a>. Create the sequence in a Python list. You can simply calculate the first 20 or 30 numbers. For extra credit, use a Python function as part of your solution.</p>
+<h3>Assignment 4</h3>
+<p>To make sure we get some more creativity into the class, we worked on a text-based choose your own adventure game in class. So, keep working on your choose your own adventure game (text version). Here is my short little choose your own adventure, just for your reference. Think about how your adventure design is like an upside down tree with branches. We actually call these blocks of code branches! Think about how to test your program -- you'll want to make sure you visit every branch to ensure all of your code works.</p>
+<script src="https://gist.github.com/wray/48cef3a6766ece0d8370.js"></script>
+
+<h3>Assignment 5</h3>
+<p>Make sure you have your fibonnacci program working with the graph. Explore the matplotlib library by graphing different lists: remember, it will simply plot x,y coordinates when provided a list of x values and a list of y values. The lists should be the same size.</p>
+<p>Spoiler alert!! Please make sure your code is working first, before you take a look at this example:</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">pyplot</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">14</span><span class="p">)</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">):</span>
+    <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="k">print</span> <span class="n">y</span>
+
+<span class="n">pyplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<h3>Assignment 6</h3>
+<p>Because Blaise Pascal is considered an early Computer Scientists and actually created and sold his mechanical "Pascal's Calculater" that is a wonderful example of early mechanical computers. Let's honor him by creating a program to generate <a href="http://www.mathsisfun.com/pascals-triangle.html">Pascal's Triangle</a>. As you think about the steps to create each row in the triangle, see if you can create a function that takes as input a row in the triangle to return the next row.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pascal</span><span class="p">(</span><span class="n">prev_row</span><span class="p">):</span>
+
+  <span class="c1"># Your code goes here</span>
+
+  <span class="k">return</span> <span class="n">row</span>
+</pre></div>
+
+
+<p>With a simple function to compute the next row  you can create a loop that calls this function repeatedly to build the triangle. One hint  is that you need to start the triangle with a list containing the number 1.</p>
+<div class="highlight"><pre><span></span><span class="n">row</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+
+<p>Another hint is that the second row is a special case -- youf function could simply return [1,1] when input [1], because the Pascal's triangle pattern is much simpler to implement once you have 2 numbers in your list.</p>
+<p>For extra credit, you can test your triangle by making sure that the sum of each row is equal to 2 raised to the row level in the tree, using 0 for the first row. In python, we use ** to indicate an exponent. So, the sum of the first row should equal 2**0, which is true cause the first row is simply 1. The second row is [1,1] so the sum is 2, which is equal to 2**1. And so on, and so on. And for super extra credit, you can graph the sums of the row -- use the row level for the y axis and the sum for the x axis.</p>
+<h3>Assignment 7</h3>
+<p>Make sure you understand how we solved Assignment 6 and you are clear on the difference between defining a function and calling (or using) a function. Because we wrote a function that returns the next row in Pascal's triangle based on the current row input, we are able to efficiently generate the triangle.</p>
+<p>For the next assignment, I'd like for you all to try and get pyglet installed and run the following simple program. To install pyglet, you can go <a href="https://bitbucket.org/pyglet/pyglet/wiki/Home">here</a> and actually choose the <a href="https://bitbucket.org/pyglet/pyglet/wiki/Download">download</a> link.</p>
+<p>Once downloaded, you should be able to unzip the download and look for a file in the directory called setup.py. You should be able to run this by double-clicking on it. Or you may have to launch IDLE (python) and open that file and choose run. Running that file will install pyglet on your machine and then you will be able to start using it.</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyglet</span>
+
+<span class="n">window</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">Window</span><span class="p">()</span>
+
+<span class="n">label</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">,</span>
+                          <span class="n">font_size</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
+                          <span class="n">font_name</span><span class="o">=</span><span class="s2">&quot;Times New Roman&quot;</span><span class="p">,</span>
+                          <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">),</span>
+                          <span class="n">x</span><span class="o">=</span><span class="n">window</span><span class="o">.</span><span class="n">width</span><span class="o">//</span><span class="mi">2</span><span class="o">-</span><span class="mi">70</span><span class="p">,</span>
+                          <span class="n">y</span><span class="o">=</span><span class="n">window</span><span class="o">.</span><span class="n">width</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">on_draw</span><span class="p">():</span>
+    <span class="n">window</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+    <span class="n">label</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+<span class="n">window</span><span class="o">.</span><span class="n">on_draw</span> <span class="o">=</span> <span class="n">on_draw</span>
+
+<span class="n">pyglet</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+
+
+<h3>Assignment 8 (started in class, can finish at home)</h3>
+<p>Whether you realize it or not, you have already been using Object Oriented concepts because Python is an object-based language. We have discussed in class over the past two weeks the different between a class and an object -- a class provides the definition (code) so that many objects can be created from that class. Similar to functions, you define the class once to be used again and again every time you need an object of that class. We started with a class to define a multi-sided die and worked up to a simple dice rolling exercise where each die keeps track of its own history.</p>
+<p>See the following gist -- should be similar to the code you wrote in class:
+<script src="https://gist.github.com/wray/3f56149db45d954beed20764ad1b7c1e.js"></script></p>
+<p>To keep going with this assignment, think about how you could add code to the MultiSidedDie class to keep track of how often each side is rolled. The solution requires creating a dictionary variable in the class. The dictionary should have a key for each side of the dice where the value is updated each time that side is rolled. Using this stats dictionary and history list, you can then calculate the roll percentage for each side.</p>
+<p>Remember the syntax for a dictionary:</p>
+<div class="highlight"><pre><span></span><span class="c1"># creating and populating a dictionary</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+<span class="n">d</span><span class="p">[</span><span class="n">key2</span><span class="p">]</span> <span class="o">=</span> <span class="n">value2</span>
+
+<span class="c1"># getting values from a dictionary</span>
+<span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+</pre></div>
+
+
+<h3>Assignment 9 (also mostly done in class)</h3>
+<p>One of the many benefits of Object Oriented design and programming is to organize your code the same way humans organize their world -- classifications and class hiearchies. Defining a general class allows you to define more specific sub-classes without having to re-define the parent class methods. For example, we started to create some code to "model" a book. When using a book in the real world, you need to be able to read the book, turn pages, and place a bookmark to pick up where you left off before.</p>
+<p>Review the following code which should look similar to the code you wrote in class:
+<script src="https://gist.github.com/wray/707297e73e401d01329b87060b48ddbf.js"></script></p>
+<p>For fun, think about what you would need to do to create another sub-class of Book that is a pop up book.</p>
+<h3>Python 3 and Graphics</h3>
+<p>We are going to change direction a little bit and use Python 3 now and the graphics that come with Python 3 (along with a simple graphics library to make things a bit easier).</p>
+<ul>
+<li>Download <a href="http://python.org">Python 3</a> (if you haven't already).</li>
+<li>Download <a href="http://mcsp.wartburg.edu/zelle/python/graphics.py">graphics.py</a> and put the file in the same folder as your python code.</li>
+<li>Create a simple file using the Python3 IDLE with simply:</li>
+</ul>
+<div class="highlight"><pre><span></span> <span class="kn">from</span> <span class="nn">graphics</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+
+
+<ul>
+<li>Run the program and in the window that opens, type in this:</li>
+</ul>
+<div class="highlight"><pre><span></span> <span class="n">win</span> <span class="o">=</span> <span class="n">GraphWin</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<ul>
+<li>You should see another window has popped up.</li>
+<li>So, then you can:</li>
+</ul>
+<div class="highlight"><pre><span></span> <span class="n">win</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>Don't forget, you can "use the source, Luke" and open the graphics.py file to see what other options you have -- we'll be using this graphics package for the final projects.</p>
+<h3>Assignment 10 (mostly covered in class)</h3>
+<p>Once you have graphics setup as above, we played around with the graphics file and talked about how it is Object-Oriented (as is most graphics modern graphics packages). Not only can we draw shapes in our graphics window, but we can also create entry boxes and wait for mouse clicks.</p>
+<p>However, we quickly found that the graphics.py library doesn't include a button. So, we used our new Object-Oriented skills to extend the library to include a button. Make sure your code for the button is working for this assignment. Don't worry if some of the syntax seems odd -- class initializers can be confusing because the method must be named <strong>init</strong> . And when we extend classes, we will want to call the parent class' initializer (the first line of code in our Button initializer). We then did something even more advanced -- we overrode the draw method in Rectangle to make sure our button class draws not just the rectangle, but also the text label.</p>
+<script src="https://gist.github.com/wray/b4744c0bdea2ccd7e3cc0e5b8150f8f2.js"></script>
+
+<h3>Assignment 11</h3>
+<p>For the final two weeks of class I'd like for everyone to go back to their choose your own adventure game and have it run with a graphics window. I'll start posting a few hints for that here.</p>
+<p>I hope you all have been able to carry on with what we started in class. My graphics choose your own adventures follows below. Please come to class with questions on my use of the keywords break and pass.</p>
+<script src="https://gist.github.com/wray/11b9c498651c14ef81e7d33a028438cf.js"></script>
+
+<h3>Final Assignment</h3>
+<p>We have also been talking about the Dice Poker game so the final final project will be to also make that game use a graphics interface. You'll need to show the dice, the player's score and their current roll score. You'll need to have buttons to roll again as well as some way to choose which dice to re-roll.</p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="https://github.com/techemstudios" target="_blank">TechEm on GitHub</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://register.techemstudios.com" target="_blank">Register!</a></li>
+                            <li><a href="https://secure.techemstudios.com" target="_blank">Enrollment</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

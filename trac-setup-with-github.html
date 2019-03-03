@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This entry documents the setup for the Trac/SVN server -- using git (on github) as the primary remote repository instead of the hosted svn. We are using a server that hosts both SVN as well as...">
+        <meta name="keywords" content="git, trac">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Trac setup with GitHub - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Categories Atom Feed" />
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                                <a href="https://github.com/techemstudios/blog/blob/master/LICENSE">License</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Trac setup with GitHub</h1>
+                      <p class="header-date"> <a href="/author/wray-mills.html">Wray Mills</a>, 2014-08-18,  <a href="/category/notes.html">Notes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/git.html">git</a>, <a href="/tag/trac.html">trac</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>This entry documents the setup for the Trac/SVN server -- using git (on github) as the primary remote repository instead of the hosted svn.</p>
+<p>We are using a server that hosts both SVN as well as several trac instances. This server resides within our internal restricted network. We'll refer to the trac/svn server as trac-1.</p>
+<p>Essentially, the Trac-Git setup is detailed <a href="http://trac.edgewall.org/wiki/TracGit">here</a>.</p>
+<p>I went through the process of adding a git repository (as the default) to an existing Trac project. The configuration essentially points to a locally cloned git repository (local on the Trac server). And this works well, but sort of assumes that this local repository is either an integrated git remote repository (one where all developers are syncing their changes) or that itself is being synced separately. And while I can setup post-receive hooks on the repository, these won't work unless developers are pushing to this repository or someone is fetching from the integrated repository (in github in our case). So, while not the best solution, I've setup a cron job to fetch from the github repository every 15 minutes. So far this seems to work out fairly well.</p>
+<p>Definitely open to suggestions here.</p>
+<p>I will be setting up some post-receive hooks to enhance the integration, so I may run across a better solution.</p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="https://github.com/techemstudios" target="_blank">TechEm on GitHub</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://register.techemstudios.com" target="_blank">Register!</a></li>
+                            <li><a href="https://secure.techemstudios.com" target="_blank">Enrollment</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Language Elegance What does FORTRAN and CoffeeScript have in common? Well, aside from being programming languages (of course, there could be some arguments about formal languages vs. scripting...">
+        <meta name="keywords" content="binary logic, coffeescript, FORTRAN, half-adder">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>FORTRAN and CoffeeScript - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Categories Atom Feed" />
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                                <a href="https://github.com/techemstudios/blog/blob/master/LICENSE">License</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">FORTRAN and CoffeeScript</h1>
+                      <p class="header-date"> <a href="/author/wray-mills.html">Wray Mills</a>, 2015-03-11,  <a href="/category/general.html">General</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/binary-logic.html">binary logic</a>, <a href="/tag/coffeescript.html">coffeescript</a>, <a href="/tag/fortran.html">FORTRAN</a>, <a href="/tag/half-adder.html">half-adder</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <h3>Language Elegance</h3>
+<p>What does FORTRAN and CoffeeScript have in common? Well, aside from
+being programming languages (of course, there could be some arguments
+about formal languages vs. scripting languages vs. meta-scripting
+language -- just humor me for now), not much. But, I have the
+"pleasure" of working on a project that is using both. And, in fact,
+in a horrible violation of DRY, we are currently defining probability
+distributions and prob. dist. approximations in both! This will change soon; however, for now, it
+makes the project kind of cool. Its like the best and worst of
+old-school and new school. One can actually learn from reviewing dated
+FORTRAN code just as one can learn from the CoffeeScript and actually
+cross-leverage some concepts. Regardless, one can't help but
+appreciate the elegance of the CoffeeScript compared with the
+FORTRAN. Check this out:</p>
+<h4>FORTRAN</h4>
+<div class="highlight"><pre><span></span><span class="c">!   Creating the Normal Approximation function. For now, we are using this from the shell.f module for the</span>
+<span class="c">!   Gaussian distributions.</span>
+    <span class="k">RECURSIVE FUNCTION </span><span class="n">normal_approx</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+      <span class="k">IMPLICIT NONE</span>
+<span class="k">      </span><span class="kt">REAL</span><span class="p">(</span><span class="nb">KIND</span><span class="o">=</span><span class="mi">8</span><span class="p">),</span><span class="k">INTENT</span><span class="p">(</span><span class="n">IN</span><span class="p">)</span> <span class="kd">::</span> <span class="n">z</span>
+      <span class="kt">REAL</span><span class="p">(</span><span class="nb">KIND</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span> <span class="kd">::</span> <span class="n">normal_approx</span>
+      <span class="kt">INTEGER</span> <span class="kd">::</span> <span class="n">i</span>
+
+<span class="c">!     if z is less than 0, then the value above is equal</span>
+<span class="c">!     to 1 - Q(-z), so return 1 - temp</span>
+      <span class="k">IF</span><span class="p">(</span><span class="n">z</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">THEN</span>
+<span class="k">         </span><span class="n">normal_approx</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">normal_approx</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">z</span><span class="p">)</span>
+      <span class="k">END IF</span>
+
+
+<span class="c">!     calculate the number according to the polynomial (these should be constants)</span>
+      <span class="n">normal_approx</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">((</span><span class="mf">1.0</span> <span class="o">+</span> <span class="mf">0.0498673470</span> <span class="o">*</span> <span class="n">z</span>
+     <span class="mi">1</span>                          <span class="o">+</span> <span class="mf">0.0211410061</span><span class="o">*</span><span class="n">z</span><span class="o">*</span><span class="n">z</span> <span class="o">+</span> 
+     <span class="mi">2</span>                          <span class="mf">0.0032776263</span><span class="o">*</span><span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> 
+     <span class="mi">3</span>                          <span class="mf">0.0000380036</span><span class="o">*</span><span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">+</span>
+     <span class="mi">4</span>                          <span class="mf">0.0000488906</span><span class="o">*</span><span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span>
+     <span class="mi">5</span>                          <span class="mf">0.0000053830</span><span class="o">*</span><span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="mi">6</span><span class="p">))</span> <span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">16</span><span class="p">)))</span> 
+
+<span class="c">!     verify that the number is within the computational</span>
+<span class="c">!     limits of the dist_r </span>
+      <span class="k">IF</span><span class="p">(</span><span class="n">normal_approx</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">1</span><span class="mf">0.0</span> <span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">16</span><span class="p">)))</span><span class="k">THEN</span>
+<span class="k">         </span><span class="n">normal_approx</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="mf">0.0</span> <span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">16</span><span class="p">))</span>
+      <span class="k">END IF</span>
+<span class="k">      IF</span><span class="p">((</span><span class="n">normal_approx</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span><span class="mf">0.0</span> <span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">)))).</span><span class="nb">AND</span><span class="p">.(</span>
+     <span class="mi">1</span>   <span class="n">normal_approx</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">))</span><span class="k">THEN</span>
+<span class="k">         </span><span class="n">normal_approx</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span><span class="mf">0.0</span> <span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">))</span>
+      <span class="k">END IF</span>
+
+<span class="k">      WRITE</span><span class="p">(</span><span class="n">UNIT</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span><span class="n">FMT</span><span class="o">=*</span><span class="p">)</span> <span class="s2">&quot;normal approx at &quot;</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="s2">&quot; is &quot;</span><span class="p">,</span>
+     <span class="mi">2</span>    <span class="n">normal_approx</span>
+
+    <span class="k">END FUNCTION</span>
+</pre></div>
+
+
+<h4>Coffeescript</h4>
+<p>Granted, this could use a little more comments. But, it essentially
+looks just like the definition for the Normal Approximation in the
+textbook, so we can simply reference the section in the function definition comment.</p>
+<div class="highlight"><pre><span></span><span class="nx">Q</span> <span class="o">=</span> <span class="p">(</span><span class="nx">z</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="nx">Q</span><span class="p">(</span><span class="o">-</span> <span class="nx">z</span><span class="p">)</span> <span class="k">if</span> <span class="nx">z</span> <span class="o">&lt;</span> <span class="mi">0</span>
+
+    <span class="k">return</span> <span class="mf">0.5</span> <span class="k">if</span> <span class="nx">z</span> <span class="o">==</span> <span class="mi">0</span>
+
+    <span class="nx">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.0498673470</span><span class="p">,</span> <span class="mf">0.0211410061</span><span class="p">,</span>
+            <span class="mf">0.0032776263</span><span class="p">,</span> <span class="mf">0.0000380036</span><span class="p">,</span>
+            <span class="mf">0.0000488906</span><span class="p">,</span> <span class="mf">0.0000053830</span><span class="p">]</span>
+    <span class="nx">acc</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="mf">0..6</span><span class="p">]</span>
+        <span class="nx">acc</span> <span class="o">+=</span> <span class="nx">b</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="nx">z</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="nx">acc</span><span class="p">,</span> <span class="o">-</span><span class="mi">16</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+</pre></div>
+
+
+<h3>Digital Logic Design</h3>
+<p>Oh, and just to make the week even more well-rounded (in a Comp
+Sci. sense), I've had a couple of my elementary classes working
+through the binary number system, basic logic gates to form
+half-adders to form full-adders to perform multi-digit binary
+arithmetic! All this provides a nice setup for their Arduino sketches
+for a microcontroller to control an 8x8 LED matrix.</p>
+<h3>Minecraft, Arduino, Python, FORTRAN, C, Ruby, and Coffeescript for</h3>
+<h4>LED controllers, minecraft server mods, enrollment systems, and</h4>
+<h4>probabilistic distribution fitting engines</h4>
+<p>And actually even a few more languages/tasks in between. So, actually, if every week could be this cool, that
+would be awesome. In fact, what makes this even better is that I get
+to share a lot of this with our next generation of Software
+Engineers. It's extremely rewarding to see such young students "coding"
+away in Python or even writing out bytes in bits for an Arduino sketch
+--  yes, 3rd graders defining bytes using bits in C. And to have an
+intern who is still just a sophomore in high school defining multiple
+ruby on rails environments (and all the related excruciating
+regression testing getting all the gems at the right versions) who can
+do such a task with very, very little guidance from me! And to work
+with an undergrad on a graduate-level project who is such a gifted
+coder in the most modern languages (like CoffeeScript) and who is
+headed to Microsoft this year, makes me very comfortable with the
+future of technology in the US!!</p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="https://github.com/techemstudios" target="_blank">TechEm on GitHub</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://register.techemstudios.com" target="_blank">Register!</a></li>
+                            <li><a href="https://secure.techemstudios.com" target="_blank">Enrollment</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

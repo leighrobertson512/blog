@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Art of Technology... Training - Joe Seiler</title><link href="/" rel="alternate"></link><link href="/feeds/joe-seiler.atom.xml" rel="self"></link><id>/</id><updated>2016-03-03T00:00:00-05:00</updated><entry><title>ECS1 at Tech Em</title><link href="/ecs1-at-tech-em.html" rel="alternate"></link><published>2016-03-03T00:00:00-05:00</published><updated>2016-03-03T00:00:00-05:00</updated><author><name>Joe Seiler</name></author><id>tag:None,2016-03-03:/ecs1-at-tech-em.html</id><summary type="html">&lt;p&gt;Elementary Computer Science&lt;/p&gt;</summary><content type="html">&lt;h1&gt;&lt;strong&gt;Intro to Elementary Computer Science&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2&gt;What we went over: Variables/values&lt;/h2&gt;
+&lt;h1&gt;In terms of math, we defined a variable to be a quantity that is able to assume different numerical values.Variables store values so we can use them multiple times.&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1&gt;What apps we used in class: &lt;strong&gt;Hopscotch&lt;/strong&gt;&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1&gt;Exercise we completed in Hopscotch:&lt;/h1&gt;
+&lt;h1&gt;To explore how to use values within variables, we programmed our character, a text object (your name) to make a square using a loop (from our first Hopscotch challenge last week).&lt;/h1&gt;
+&lt;h1&gt;We assigned a value (which is constant, this way we can use it more than once) as "X", some of you chose your name or other word for the value.&lt;/h1&gt;
+&lt;h1&gt;We set our value to display a number, "1."&lt;/h1&gt;
+&lt;h1&gt;We then used the value we created to set our text object as that value ("X"). Our text object was now displaying the number 1 as it performed the sequence of instructions to make a square.&lt;/h1&gt;
+&lt;h1&gt;To have our value continuously count up, we input 'Increase value' to be a part of our square instructions. We set it to increase our value "X" by 1.&lt;/h1&gt;
+&lt;h1&gt;Now, when we played our square instructions, each time your object turned to make the corner of the square, that number value increased by 1!&lt;/h1&gt;
+&lt;h1&gt;If you had your loop repeat 100 times or forever (endless loop), the object would increase its value by 1 until it reached 100 or it would keep counting up to infinity!&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Ar_aYu-_WHI"&gt;Link to a simliar exercise we did to showcase variable usage in Hopscotch app&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h1&gt;Terms:&lt;/h1&gt;
+&lt;h2&gt;&lt;strong&gt;A Variable&lt;/strong&gt; a quantity that is able to assume different numerical values.&lt;/h2&gt;
+&lt;h2&gt;&lt;strong&gt;Value&lt;/strong&gt; remains constant.&lt;/h2&gt;
+&lt;h2&gt;&lt;strong&gt;Loop&lt;/strong&gt; a sequence of instructions that is repeated until it recieves the order to stop.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h1&gt;Next class we will recap on logic gates and learn how we can combine them to form adders!&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1&gt;See you next class, March 21st!&lt;/h1&gt;</content><category term="variables"></category><category term="hopscotch"></category></entry></feed>

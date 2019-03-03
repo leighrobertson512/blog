@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Week One 01/10/2017 How to Solve a Problem How to approach, visualize and make a plan to solve a problem We reviewed our general approach to solving a large problem with our example of cleaning a...">
+        <meta name="keywords" content="coding, computer science, github, raspberry pi, slack">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Code Em Winter 2017 - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Categories Atom Feed" />
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/gears.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                                <a href="https://github.com/techemstudios/blog/blob/master/LICENSE">License</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Code Em Winter 2017</h1>
+                      <p class="header-date"> <a href="/author/josef-seiler.html">Josef Seiler</a>, 2017-04-05,  <a href="/category/classes.html">Classes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/coding.html">coding</a>, <a href="/tag/computer-science.html">computer science</a>, <a href="/tag/github.html">github</a>, <a href="/tag/raspberry-pi.html">raspberry pi</a>, <a href="/tag/slack.html">slack</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <h3>Week One</h3>
+<p><code>01/10/2017</code>  </p>
+<h4>How to Solve a Problem</h4>
+<h6>How to approach, visualize and make a plan to solve a problem</h6>
+<p>We reviewed our general approach to solving a large problem with our example of cleaning a whole house. The thought of cleaning each room in the entire house is overwhelming <strong>-not for long!</strong>. Let's make it more manageable. First, <em>ask questions</em>: what is the problem? are there any special cases? Next, <em>look for familiar things</em>: if you have solved a similar problem, see if that solution can apply to the new problem. Next, <em>divide and conquer</em>: to make it seem more manageable, we strategized on how to break up the large task into smaller, more manageable ones. Finally, <em>make a plan (or algorithm)</em>: make a plan to tackle the new subsets of problems that make up the larger one; start at a subtask, finish it, then move on to the next; until the whole task is completed.  </p>
+<h4>Binary Search Tree</h4>
+<h5>How computers efficiently search through a sorted list</h5>
+<p>I'm thinking of a number... Choose a number between 1 and 20. If your first guess was in the middle, that was a great start! Then I could say if your guess was lower or higher than the number I'm thinking of. If you continue with using that method (start in the middle of the range of numbers), then you will guess correctly, <em>much</em> faster than simply guessing : is it one? is it two? is it three? and so on, or guessing numbers randomly. Take a look at the search tree below. The tree has a range of 15.
+<img alt="interactive quiz" src="images/binary_search_tree_image.jpg"><br>
+Every node in the tree has a value. Do you see a pattern? The subtree to the right of its node is greater than (<em>&gt;</em>) its parent nodes value. The subtree to the left of its node is less than (<em>&lt;</em>) its parent nodes value.  </p>
+<p>From here, we worked to create a random number guessing game in Python. The computer randomly chooses from a range of values, and the user tries to guess it. The bigger the range of values, the more you see how effective using the binary search method is. So, you can start to see how computers can handle large amounts of data with some simple tricks. Handling data will be a major theme in the coming weeks. Below is the gist:  </p>
+<p>We'll come back to this concept later... We will actually build a binary search program!<br>
+<script src="https://gist.github.com/jo3t3ch3m/78ed5dbb6baaa57b3a18a7e9e242b674.js"></script>  </p>
+<p><strong>Assignment One</strong>: Try making this program continuous by adding a while loop.  </p>
+<hr>
+<h3>Week Two</h3>
+<p><code>01/17/2017</code>  </p>
+<h4>Python Dictionaries</h4>
+<p>A Python dictionary (or MAP) is a collection of key-value pairs. In other words, think of Python dictionaries as glossaries or dictionaries in the real world. In a glossary or dictionary, you have words that each have their own meaning. To relate it to a Python dictionary, the dictionary word is the <em>key</em> and the meaning of the word is the <em>value</em>. We started with a class exercise to gather our data (or information). We gathered basic information about one another. The keys were categories like "last_name", "favorite_food", "lucky_number", etc. The answers to each question is the value.  </p>
+<p>Here's an example: <script src="https://gist.github.com/jo3t3ch3m/f697f828f0c1b68e57f085708a12358e.js"></script>  </p>
+<p>To relate the accessibility of Python dictionaries, consider an example in the real-world: You are searching for one word in a very large dictionary, glossary, or encyclopedia. You COULD search each word starting from the beginning (this would take quite a while). OR you could use different search methods: Look up the starting letter of the word (or key); this narrows your search down a bit. Now, you can just search for the word (key) in that selection to get its VALUE.  </p>
+<p><strong>Assignment Two</strong>: Make an interactive program where a user can input their information from prompts by the computer. After the user types in their responses, those values are automatically added to a dictionary.  </p>
+<hr>
+<h3>Week Three</h3>
+<p><code>01/24/2017</code>  </p>
+<h4>Nesting</h4>
+<h6>More abstraction!</h6>
+<p>You can 'store' a set of dictionaries in a list or a list of items as a value in a dictionary. Remember lists?! "Yes!"... Good! We stored our freshly made dictionaries for each classmate from last week into a Python list. This method is called nesting. Another neat trick, spreading a program you made across several different programs. You performed something like this when you made the random number game program a couple weeks ago and when we built programs using the turtle module. You simply import your program:  </p>
+<p><code>from dictionary import *</code><br>
+Remember, once you type this in a new program, you can utilize everything you wrote in the program you imported; eliminating having to write the same things over again. I say "more abstraction", because with nesting you can hide certain details of the data inside of each dictionary; moreover, when you import a program, you can use data and functions from that program without having to 'muck up the waters' with code in this new file.  </p>
+<script src="https://gist.github.com/jo3t3ch3m/b145ad5423686b0cf2e4645e1f64b18f.js"></script>
+
+<p><strong>Assignment Three</strong>: try making a loop to add all your dictionaries into the list. Next week, we'll compare tuples and look into defining our own functions and loops to make things way easier.  </p>
+<hr>
+<h3>Week Four</h3>
+<p><code>01/31/2017</code>  </p>
+<h4>Python Tuples</h4>
+<p>Remember our grocery list program? Python lists are great for storing sets of items that can change throughout a program's life. But, what if you wanted to create a list of items that cannot change (Python calls items that cannot change, IMMUTABLE)? This is what tuples are for! Using tuples is more efficient than using lists when you want to store a set of values that you don't want to be changed. A tuple looks just like a list, except you use a set of parentheses () instead of square brackets []. Just like with a list, once you define a tuple, you can get to each item by referencing its index position. Let's take a look at an example of tuple:  </p>
+<h4>Rectangle Dimensions</h4>
+<p>If we have a rectangle that should always be a certain size, we can make sure that its size doesn’t change by putting the dimensions into a tuple. Let's say x (the width) is 200, and y (height) is 50. In other words, <code>dimensions = (200, 50)</code>  </p>
+<p>We can access each element of the tuple just like we do with lists: <code>print(dimensions[0])</code> would return our x value. Seem familiar?  </p>
+<p>However, if we try to change one of the values in the same we do with lists... <code>dimensions[0] = 370</code> We get an error. Why? Because values in a tuple are immutable, they can't change! What we can do is "replace" the tuple we want to change. We did this by redefining the tuple. We also learned to loop through our tuple, to have all the items in the tuple return.  </p>
+<h4>Tally Sticks</h4>
+<h5>Data</h5>
+<p>Here's an excerpt from Wray's <a href="https://gist.github.com/wray/35e11797609c4adb58dfba37f340ecc1">lesson</a>: Data is at the heart of most computation. Remember, the earliest computers helped people "store" their counts - tally sticks. Today's computer systems are excellent data storage systems. So, it makes sense to learn some about how computer programs store and retrieve data.  </p>
+<p>We started by storing mock contact records, using a tuple to define the things we want to collect:  </p>
+<p><code>contact = (‘first_name’, ‘last_name’, ‘mobile_phone’, ‘home_phone’, ‘zip_code’)</code>  </p>
+<p>Well, if we had a lot of contacts to store, writing this over and over again could take a while. Instead, of writing a tuple for each contact, we defined a function to help us create contacts. Recall, <strong>DRY</strong> stands for Don't Repeat Yourself. We then realized we wanted to do a lot more with the items. For example, we'll want to store many contacts, add more records, delete some, and so on. So, a list would work better!  </p>
+<p><strong>Assignment Four</strong>: start trying to get these items into a list. Start with an empty list, then add to it using list functions we've learned.  </p>
+<h3>Week Five</h3>
+<p><code>02/07/2017</code>  </p>
+<h4>Lists Over Tuples</h4>
+<p>Lists over tuples, at least in this case. So, we realized we can do a lot more with a list than we can with a tuple. Remember, we can't change items in a tuple, but we can with a list. Here's are starting list:  </p>
+<p><code>contacts = []</code> now, we just add to the list.<br>
+<code>contacts.append(create_contact("John","Doe","804-555-1235","804-555-1236"))</code> and so on.  </p>
+<p><strong>Assignment Five</strong>: Create a loop to ask for contact data from a user. You may recognize a similar tactic we used when we made our grocery list program. There, we had our program accept input from a user and had the program add to our list, whatever the user typed in.</p>
+<p>Next week, we'll go back to nesting, then come back to Wray's lecture on data!  </p>
+<hr>
+<h3>Week Six</h3>
+<p><code>02/14/2017</code>  </p>
+<h4>Make the Data 'Reachable'</h4>
+<p>So, we have our stored data in a list. Now we'll try to use this data, or search it. A list (or dictionary <strong>HINT</strong>) can contain millions of items. Python has a way we can search large amounts of information. We've already tried our hand at loops and conditionals, so let's create a simple search by first name. Take a look at the Gist on GitHub, starting at line 46.<br>
+<script src="https://gist.github.com/jo3t3ch3m/77be4c0f06b00f62653cfe36c40cfa9b.js"></script>  </p>
+<hr>
+<h3>Week Seven</h3>
+<p><code>02/21/2017</code>  </p>
+<h4>Nest a List in a Dictionary</h4>
+<p>Recall from Week two and three: we have already made a few dictionaries and are familiar with how to access information from them. Anytime you want more than one value associated with a key, go ahead and nest a list inside that dictionary. We completed a good example of how to do this. Consider describing a pizza someone wants to order. Sure if you used a list, you could store a list of the pizza toppings; however, you can use a dictionary to effectively describe absolutely everything on the pizza. For our example, two kinds of information are being stored for each pizza; type of crust and a list of toppings.  </p>
+<p>Here's the gist:  </p>
+<script src="https://gist.github.com/jo3t3ch3m/97d423651ed2080c8c3941f2f084df92.js"></script>
+
+<p>Included in the gist is our example of the favorite programming languages poll; now, with nested lists.  </p>
+<p>Below, the slides from this class if you want a little review with some nice visuals.<br>
+<iframe src="https://docs.google.com/presentation/d/1dBi-DF9wLJTLOB1OhBlwrP7Ppg8iTO35VROwwCc5j8w/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  </p>
+<p><strong>Assignment Six</strong>: Make your pizza program interactive. We had nice practice with this last year in our grocery list program. Have your program request user input to build a pizza using while loops. Ideally, you can pass your program to someone to build their own pizza and see the type of pizza they built looped back to them. Next week we'll finish up nesting and become masters at user input and while loops!  </p>
+<hr>
+<h3>Week Eight</h3>
+<p><code>02/28/2017</code>  </p>
+<h4>User Input</h4>
+<p>Most programs are created to solve a problem. This is why we started this session with displaying techniques for solving problems by breaking them down into smaller, more manageable ones. We continue this theme throughout our session together. To understand the problem, we usually look to who has the problem and what their problem is. I'd bring up use-case (just did!), but we'll work up to that. Instead, just think; in order to solve a user's issue, we usually need to get information provided by the user. I personally think it is more fun and engaging to write programs which ask the user for input and you do something with that input. We have already had a little experience writing programs that take user input when we wrote our grocery list and text adventure programs. We started our look towards user input by running through several programs:  </p>
+<script src="https://gist.github.com/joetechem/00ca9dbae6a381de13120e5b9def3ff8.js"></script>
+
+<p><strong>Assignment Seven</strong>: Now that you have a good grasp on how to get input from a user. Revisit your pizza program once again and add the techniques we learned in class. If you are over pizza, check out the other challenge in the slides from last week's blogpost. Write an interactive program that prompts the user for input on their favorite cities and fill in a dictionary with that input. This is done in a similar style as the pizza program (nesting a list in a dictionary). <strong>BONUS</strong>: taking input is great, but sometimes it ends before you want it to. Try your hand at adding a while loop to keep the program running as long as the user wants it to. Check out the <a href="https://gist.github.com/joetechem/99d51badbd674b0e3d60aefa7170694a">gist</a> on GitHub to help you get started on while loops.  </p>
+<h4><a href="http://register.techemstudios.com/">New Summer Camp Schedule</a></h4>
+<hr>
+<h3>Week Nine</h3>
+<p><code>03/07/2017</code>  </p>
+<h4>While Loops</h4>
+<p>In most programs, <code>while</code> loops are used to keep a program running, as long as certain conditions are true. We started out with a simple counting program that starts counting from a number (adds to the number). Python will keep adding to the number until it is less than or equal to a certain number. Then we added to the program, a <code>while</code> loop and <code>continue</code>. Once, Python runs through the code in the loop once. When it comes to the <code>continue</code> statement, Python again starts from the beginning of the loop. This process is repeated until the number we specify is finally reached. Some of you noticed that this program could be useful to mock as a timer in a game!  </p>
+<p><code>current_number = 0          
+while current_number &lt;= 10:        
+    current_number += 1      
+    if current_number % 2 == 0:       
+        continue  
+    print(current_number)</code>   </p>
+<p>In the counting program, we went over a new operator in Python, modulo. This operation performs division of two numbers, but returns the remainder.  </p>
+<p>Check out the slides from tonight's class:  </p>
+<iframe src="https://docs.google.com/presentation/d/1l1C7IXf4p9GenKdDELQLLSrPkZULozX1HsvWfYVGwWU/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<p><strong>Assignment Eight</strong>: Write a program using a while loop that asks for user input to fill in a dictionary. In class, we did this to fill a list. The dictionary can be anything you want it to be! Look earlier in this post to get some review on dictionaries if you need to. Remember to use Slack if you have any questions!      </p>
+<hr>
+<h3>Week Ten</h3>
+<p><code>03/14/2017</code>  </p>
+<h4>Object-Oriented Programming (OOP)</h4>
+<p>Or object-oriented development(OOD) is a helpful way to break-down (or model) complex systems into a collection of simpler objects that communicate with each other. This is one of the most effective practices in writing large software systems and is great for modeling the real-world in code. We quickly went through some vocabulary we'll find in OOP: Classes, Objects, Attributes, Methods, Instantiation, etc. Instead of getting bogged down in definitions, we took a look at a few examples.  </p>
+<p>When you think of the term, "vehicle" you might think of it as something that you can use to take you somewhere, i.e. a car, boat, or bicycle. Well, all these have attributes that are little different, but they are similar in that they are considered a vehicle. When we compare the car and the bicycle to the boat, we can say the car and bicycle are different from the boat, because they are "wheeled" vehicles. We can compare the car to the bicycle and see that one requires gas and the other doesn't. We can go further and compare cars to one another; some are SUVs, others are sedans and so on. Each type of car has their own unique properties and things it can do, but their similarities can be traced back to being a general car, wheeled vehicle (like a bike) and a vehicle (like a boat). So, you can see how we can model almost any real-world thing using this approach. That can be a lot to follow, so here's the same example displayed as picture:  </p>
+<p><img alt="oop vehicles" src="images/oop.jpg">  </p>
+<p>We took a look at another example, where we compared a dog to a sidewalk. How can they be similar?! Well, both are things or nouns. In Python, we call them objects. We categorized this example further using a similar approach as before. We started with the category (or class) "Things" and created sub-classes. When we define a class, we tell Python what general behavior all the sub-classes and objects will have. Objects have their own properties and functions. A dog is living so it is part of the class Animate. A sidewalk or a dog's chew toy are non-living, so it is part of the class Inanimate. We put this example to the test by creating and defining a class for a dog (in general) in Python.   </p>
+<p><img alt="class hierachry" src="images/Class-hierarchy.jpg">  </p>
+<script src="https://gist.github.com/joetechem/bcb7a0e6ccd33af82410962064298a6b.js"></script>
+
+<p><strong>Assignment Nine</strong>: Try categorizing something you collect or interests you by defining it in a class and use an example to test some of the methods and attributes you made that make up that class. You can model it from the gist example we worked on in class.    </p>
+<p><iframe src="https://docs.google.com/presentation/d/1XD2AJ2XU35jTxbl1gUfe9NS-VbvsQv6hlv35PGBM0jg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  </p>
+<hr>
+<h3>Week Eleven</h3>
+<p><code>03/21/2017</code>  </p>
+<h4>Store Functions in Modules</h4>
+<p>We created a function in one Python file, saved it, then used it by making its function call in a separate file. This practices becomes very useful when working on a large project, such as a website application or a game. Having a large list of functions in one file, keeps you from 'mucking' up other files you are working in. All you have to do is import that filename in the one you're working in; keeping your code neat and organized. We call the import file (or files), <strong>modules</strong>.   </p>
+<h4>Pygame</h4>
+<p>Pygame is a collection of Python modules that basically contain already written functions, classes and objects, so we don't need to worry ourselves with creating them from scratch. What we worry about is calling those functions and dealing with the logic in our game, which helps to create games fairly quickly! We started our look at pygame by working on making a basic snake game (or slither.io). This exercise involved adding missing code and using debugging techniques led by a <a href="https://github.com/chk18/snake_pygame/blob/master/snake_handout.pdf">pdf handout</a> made by Chris. You can check out the code we worked on from the <a href="https://github.com/chk18/snake_pygame">GitHub repository</a>. For the most part, all <em>pygames</em> (and games in general) contain the same "skeleton" i.e., color variables, window sizes, game logic, a main game loop, controls, etc. After feeling comfortable with completing one game, you can essentially reuse much of this "skeleton".  </p>
+<h4>Preparing for Web Apps</h4>
+<p>The whole notion of storing functions in variables and working with a sort of "framework" in pygame will prepare us for using the Django web framework to create our own basic website in Python!  </p>
+<hr>
+<h3>Week 12</h3>
+<p><code>04/04/2017</code>  </p>
+<h4>Python Projects</h4>
+<p>Parents, you can find your child's Python Projects they have been working on this session on the repository called, <a href="https://github.com/joetechem/TechEmStudentsProjects">"TechEmStudentsProjects" on GitHub</a>. Here, there is also the projects from last year in case you missed them. You can view them right on the site, or you can download the files compressed (or zipped) and extract them on your computer to edit and run them.   </p>
+<h4>Practice... Practice!</h4>
+<p>Python is free. If you have not already downloaded Python at home, you can find it at <a href="https://www.python.org/">Python.org</a>. Just follow the steps to download (we used Python version 2.7) on the site and create Python programs the same way we have been doing in class on the chromebooks.  </p>
+<p>If you have any questions about Python, GitHub, or anything feel free to email us at info@techemstudios.com or reach out to us on <a href="https://slack.com/?cvosrc=ppc.google.slack&amp;cvo_campaign=&amp;cvo_crid=189426831117&amp;Matchtype=p&amp;utm_source=google&amp;utm_medium=ppc&amp;utm_campaign=generalbrand&amp;c3api=5542,189426831117,slack&amp;gclid=COPV7-qKjtMCFUiHswodKx4OKg">Slack</a>. Be sure to look at back at the blogs for handy programming content.    </p>
+<h3>Summer Camps</h3>
+<p>We have returning summer camps and brand new ones. Here is the <a href="http://register.techemstudios.com/">New Summer Camp Schedule</a>. We hope to see you there!  </p>
+<p>Thank you for another great Code Em Session!  </p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="https://github.com/techemstudios" target="_blank">TechEm on GitHub</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://register.techemstudios.com" target="_blank">Register!</a></li>
+                            <li><a href="https://secure.techemstudios.com" target="_blank">Enrollment</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

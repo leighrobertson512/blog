@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Art of Technology... Training - Notes</title><link href="/" rel="alternate"></link><link href="/feeds/notes.atom.xml" rel="self"></link><id>/</id><updated>2017-08-10T00:00:00-04:00</updated><entry><title>How to Install a Hardware Monitor on the Raspberry Pi</title><link href="/how-to-install-a-hardware-monitor-on-the-raspberry-pi.html" rel="alternate"></link><published>2017-08-10T00:00:00-04:00</published><updated>2017-08-10T00:00:00-04:00</updated><author><name>Alex Noll</name></author><id>tag:None,2017-08-10:/how-to-install-a-hardware-monitor-on-the-raspberry-pi.html</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Installing Cayenne&lt;/h3&gt;
+&lt;p&gt;To start, Cayenne is an IoT type hardware monitor in which you can check up on your Pi's status (Temperature, CPU load, GPU load, GPIO pins used, and much more!) from your mobile phone, or any web browser! Installation is as simple as creating an account and then …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Installing Cayenne&lt;/h3&gt;
+&lt;p&gt;To start, Cayenne is an IoT type hardware monitor in which you can check up on your Pi's status (Temperature, CPU load, GPU load, GPIO pins used, and much more!) from your mobile phone, or any web browser! Installation is as simple as creating an account and then running a few commands in your Pi's terminal.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cayenne" src="images/cayennedashboard.JPG"&gt;&lt;/p&gt;
+&lt;h4&gt;Step-By-Step Instructions for Setting Up Cayenne&lt;/h4&gt;
+&lt;p&gt;For starters, you'll need to create an account at &lt;a href="www.mydevices.com/cayenne"&gt;www.mydevices.com/cayenne&lt;/a&gt;, after this you'll want to log in, and the click on add new, followed by Device/Widget.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="1st Step" src="images/deviceadd.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;On the next page, you'll need to select Raspberry Pi, under Single Board Computers. The following page will include links to the mobile apps, should you want to setup from the mobile app, or it'll provide you with the commands to run in your Pi's Terminal. For this tutorial, we used the commands in the terminal: &lt;code&gt;wget https://cayenne.mydevices.com/dl/rpi_8hg1hglupv.sh&lt;/code&gt; , followed by &lt;code&gt;sudo bash rpi_8hg1hglupv.sh -v&lt;/code&gt; . Allow your Pi to fully install everything and it should be ready for on-the-move monitoring!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="1st Command" src="images/IMG_0543.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="2nd Command" src="images/IMG_0544.JPG"&gt;&lt;/p&gt;
+&lt;hr&gt;</content><category term="computer science"></category><category term="raspberry pi"></category><category term="IoT"></category><category term="software"></category></entry><entry><title>How to make a Raspberry Pi Soundboard</title><link href="/how-to-make-a-raspberry-pi-soundboard.html" rel="alternate"></link><published>2017-08-10T00:00:00-04:00</published><updated>2017-08-10T00:00:00-04:00</updated><author><name>Alex Noll</name></author><id>tag:None,2017-08-10:/how-to-make-a-raspberry-pi-soundboard.html</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;How to Setup a Soundboard&lt;/h3&gt;
+&lt;p&gt;For this tutorial, you'll need a Raspberry Pi, Breadboard, bunches of cables and buttons, and an output speaker (through HDMI or the 3.5mm output). Once you have everything, you're good to go. You'll have a lot of code to input, but you can also …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;How to Setup a Soundboard&lt;/h3&gt;
+&lt;p&gt;For this tutorial, you'll need a Raspberry Pi, Breadboard, bunches of cables and buttons, and an output speaker (through HDMI or the 3.5mm output). Once you have everything, you're good to go. You'll have a lot of code to input, but you can also find the code here: &lt;a href="http://cdn.makezine.com/make/33/soundboard.py"&gt;http://cdn.makezine.com/make/33/soundboard.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;as for the many lines of code...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; import pygame.mixer
+from &lt;span class="nb"&gt;time&lt;/span&gt; import sleep
+import RPi.GPIO as GPIO
+from sys import &lt;span class="nb"&gt;exit&lt;/span&gt;
+
+GPIO.setmode&lt;span class="o"&gt;(&lt;/span&gt;GPIO.BCM&lt;span class="o"&gt;)&lt;/span&gt;
+GPIO.setup&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;23&lt;/span&gt;, GPIO.IN&lt;span class="o"&gt;)&lt;/span&gt;
+GPIO.setup&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;24&lt;/span&gt;, GPIO.IN&lt;span class="o"&gt;)&lt;/span&gt;
+GPIO.setup&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;25&lt;/span&gt;, GPIO.IN&lt;span class="o"&gt;)&lt;/span&gt;
+
+pygame.mixer.init&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;48000&lt;/span&gt;, -16, &lt;span class="m"&gt;1&lt;/span&gt;, &lt;span class="m"&gt;1024&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+
+&lt;span class="nv"&gt;sndA&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; pygame.mixer.Sound&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.wav&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="nv"&gt;sndB&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; pygame.mixer.Sound&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.wav&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="nv"&gt;sndC&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; pygame.mixer.Sound&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.wav&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+
+&lt;span class="nv"&gt;soundChannelA&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; pygame.mixer.Channel&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="nv"&gt;soundChannelB&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; pygame.mixer.Channel&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="nv"&gt;soundChannelC&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; pygame.mixer.Channel&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+
+print &lt;span class="s2"&gt;&amp;quot;Sampler Ready.&amp;quot;&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt; True:
+   try:
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;GPIO.input&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;23&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; True&lt;span class="o"&gt;)&lt;/span&gt;:
+         soundChannelA.play&lt;span class="o"&gt;(&lt;/span&gt;sndA&lt;span class="o"&gt;)&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;GPIO.input&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;24&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; True&lt;span class="o"&gt;)&lt;/span&gt;:
+         soundChannelB.play&lt;span class="o"&gt;(&lt;/span&gt;sndB&lt;span class="o"&gt;)&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;GPIO.input&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;25&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; True&lt;span class="o"&gt;)&lt;/span&gt;:
+         soundChannelC.play&lt;span class="o"&gt;(&lt;/span&gt;sndC&lt;span class="o"&gt;)&lt;/span&gt;
+      sleep&lt;span class="o"&gt;(&lt;/span&gt;.01&lt;span class="o"&gt;)&lt;/span&gt;
+   except KeyboardInterrupt:
+      exit&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After putting the code into a text editor, you'll need to get some .wav files to have play each time you hit a button, one place for some funny .wav files is: &lt;a href="http://cdn.makezine.com/make/33/pd_sound_effects.zip"&gt;http://cdn.makezine.com/make/33/pd_sound_effects.zip&lt;/a&gt;. After downloading, or creating you own .wav files, just put their file names on lines 13, 14, &amp;amp; 15. After completing these steps, you have some wiring to do.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wiring" src="images/wiring.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;In the diagram shown, no breakout boards were used, but you can see the positive coming off of the 3v3 pin to the positive rail of the breadboard. After the positive, you'll need a ground, in the diagram, it's the 3rd pin on the right. Now you'll want to place down all of your buttons. After placing down all of your buttons, you'll need a positive from the positive rail connect to each button at the top pin of the button. After connecting the positives for each button, you'll need the GPIO cables for each button, as well as a 10K resistor, both of which are connected to the bottom pin of the button. The resistors have to connect to the negative rail, while the GPIO cables connect to pins 23, 24, and 25. After wiring everything up, you can return to the Terminal.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="our wiring" src="images/IMG_0547.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;You need to make sure to have all of your .WAV files and your .py file all in the same folder, preferably on your desktop. For this tutorial, we named our folder "soundboard", in the Terminal, you'll need to change your directory to the Desktop, and then to your folder, using: &lt;code&gt;cd Desktop&lt;/code&gt; and &lt;code&gt;cd soundboard&lt;/code&gt;, after this, run &lt;code&gt;sudo python soundboard.py&lt;/code&gt;. After running, wait until your Terminal says Sampler Ready and then you're good to go!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sampler Ready" src="images/IMG_0551.JPG"&gt;&lt;/p&gt;
+&lt;hr&gt;</content><category term="computer science"></category><category term="raspberry pi"></category><category term="hardware"></category><category term="wiring"></category></entry><entry><title>Make a Raspberry Pi Powered Alexa</title><link href="/make-a-raspberry-pi-powered-alexa.html" rel="alternate"></link><published>2017-06-29T00:00:00-04:00</published><updated>2017-06-29T00:00:00-04:00</updated><author><name>Alex Noll</name></author><id>tag:None,2017-06-29:/make-a-raspberry-pi-powered-alexa.html</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Process for Building Your PiLexa&lt;/h3&gt;
+&lt;p&gt;To start, you'll need a USB microphone, keyboard, mouse and speaker (connected via HDMI or the 3.5mm audio connector), and about an hour of time. Just to begin, you'll want to be running the latest version of Raspbian and you'll need an Amazon Developer …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Process for Building Your PiLexa&lt;/h3&gt;
+&lt;p&gt;To start, you'll need a USB microphone, keyboard, mouse and speaker (connected via HDMI or the 3.5mm audio connector), and about an hour of time. Just to begin, you'll want to be running the latest version of Raspbian and you'll need an Amazon Developer account as well.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pieces" src="images/IMG_0036.JPG"&gt;&lt;/p&gt;
+&lt;h4&gt;Step-By-Step Instructions for Setting Up Alexa&lt;/h4&gt;
+&lt;p&gt;Once you have everything ready, you'll need to be on developer.amazon.com and click on the alexa tab. Once there, you'll then click on the Alexa Voice Service. Next, click on the register a product button and choose device in the subfolder. You can set your Device Type ID and Display Name to whatever you want, but next you'll need to set your security profile description to also, whatever you want. You'll want to take note of your Client ID and Client Secret, as you'll need them later. Next you'll need to configure your web settings with the allowed origin as &lt;code&gt;https://localhost:3000&lt;/code&gt; and then for your allowed return url you'll need &lt;code&gt;https://localhost:3000/authresponse&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="1st Step" src="images/IMG_3033.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;Now that you have what you need from Amazon, it's time to get to configuring your Pi. On your Pi, you'll want to open up one terminal for now and type in "cd Desktop" , followed by &lt;code&gt;git clone https://github.com/alexa/alexa-avs-sample-app.git&lt;/code&gt; and press enter. Once that's done, you need to type &lt;code&gt;cd ~/Desktop/alexa-avs-sample-app&lt;/code&gt;. After that, type &lt;code&gt;nano automated_install.sh&lt;/code&gt; and press enter.&lt;/p&gt;
+&lt;p&gt;Next you'll fill in your Product ID, Client ID, and Client Secret. Afterward you'll need to &lt;code&gt;cd ~/Desktop/alexa/alexa-avs-sample-app&lt;/code&gt; and press enter, then followed by &lt;code&gt;. automated_install.sh&lt;/code&gt; and press enter. At this point you should fill in each option that follows as needed.&lt;/p&gt;
+&lt;p&gt;This following process requires three separate open terminals for each set of commands and must be done in sequential order. For the first terminal, type in &lt;code&gt;cd ~/Desktop/alexa-avs-sample-app/samples&lt;/code&gt; and press enter, then type in &lt;code&gt;cd companionService &amp;amp;&amp;amp; npm start&lt;/code&gt; and press enter.&lt;/p&gt;
+&lt;p&gt;The next terminal will require the following two commands &lt;code&gt;cd ~/Desktop/alexa-avs-sample-app/samples&lt;/code&gt; with Enter, and then &lt;code&gt;cd javaclient &amp;amp;&amp;amp; mvn exec:exec&lt;/code&gt; with Enter. You'll want to make sure you're logged into your Amazon account and deal with any Java pop-ups that may occur.&lt;/p&gt;
+&lt;p&gt;This is the last step, in which we will start the wake word engine so that your Pi will respond when you say "Alexa". To do this, in your third terminal you'll type in &lt;code&gt;cd ~/Desktop/alexa-avs-sample-app/samples&lt;/code&gt; and press Enter. and then, type in &lt;code&gt;cd wakeWordAgent/src &amp;amp;&amp;amp; ./wakeWordAgent -e kitt_ai&lt;/code&gt; and Press Enter.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Finished" src="images/IMG_3078.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;Congratulations your PiLexa should be up and running, should you want to improve your diy echo's ability to understand you, you may want to type in &lt;code&gt;alsamixer&lt;/code&gt; , use f6 to select the audio device, and then adjust volume settings. To save your adjustments hit ESC, and then in a terminal type &lt;code&gt;sudo alsactl store&lt;/code&gt; and press Enter.  &lt;/p&gt;
+&lt;p&gt;For even more information on the subject, definitely check out this article on LifeHacker, it provides visual demonstrations and a bit of trouble-shooting as well :&lt;a href="http://lifehacker.com/how-to-build-your-own-amazon-echo-with-a-raspberry-pi-1787726931"&gt;http://lifehacker.com/how-to-build-your-own-amazon-echo-with-a-raspberry-pi-1787726931&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Stay Tuned for the Chromebook-Ubuntu Powered Alexa!&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="teaser" src="images/IMG_0225.JPG"&gt;  &lt;/p&gt;</content><category term="computer science"></category><category term="raspberry pi"></category><category term="hardware"></category><category term="Echo"></category><category term="Alexa"></category></entry><entry><title>PiTop Building</title><link href="/pitop-building.html" rel="alternate"></link><published>2017-06-27T00:00:00-04:00</published><updated>2017-06-27T00:00:00-04:00</updated><author><name>Alex Noll</name></author><id>tag:None,2017-06-27:/pitop-building.html</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Process for Building Your PiTop&lt;/h3&gt;
+&lt;p&gt;The PiTop comes in the box with the chassis to house the custom PCB, Raspberry Pi, Keyboard and Trackpad, as well as all of the cables. Once you've unboxed your PiTop, you just need to obtain a 2nd or 3rd generation Raspberry Pi, and you're …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Process for Building Your PiTop&lt;/h3&gt;
+&lt;p&gt;The PiTop comes in the box with the chassis to house the custom PCB, Raspberry Pi, Keyboard and Trackpad, as well as all of the cables. Once you've unboxed your PiTop, you just need to obtain a 2nd or 3rd generation Raspberry Pi, and you're all good to go.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="PiTop unboxing" src="images/IMG_3300.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;The base of the PiTop comes out of the box seperated from the keyboard and screen.The needed cables and screws are stored in seperate bags and the PiTop includes one extra of each screw, should you lose one.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="parts needed" src="images/IMG_3283.JPG"&gt;&lt;/p&gt;
+&lt;h4&gt;Step-By-Step Instructions for Building your PiTop&lt;/h4&gt;
+&lt;p&gt;Once you've prepped everything you need (Your Pi, your chassis, screws, and cables ), you can begin building the PiTop. To start, you'll want to install four brass spacers and bolts onto both the Pi and the custom PCB, a miniature socket wrench may be helpful, but it can be done without one as well.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pi Securing" src="images/IMG_3316.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;After you've installed the spacers, you'll want to prep the chassis for installation by removing the magnetic rails from the underside of the chassis. While focused on the chassis, you'll want to slide the screen and lid into the hinges on the base and then tighten it with the screws at the bottom of each hinge.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="PiTop Underside" src="images/IMG_3269.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;Following the attachment of the screen and lid, you'll need eight of the silver spacers so you can install the custom PCB and Raspberry Pi onto the rails, starting with the PCB, you'll place it on the left side of the rail system and align the pins with the battery slots in the aluminum base. If properly plugged in, the brass spacers will begin to show on the underside of the rails, here you will use the silver spacers to screw in the spacers using a provided allen wrench.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Aligning PCB" src="images/IMG_3297.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;You will repeat the above process with the Raspberry Pi, without the process of aligning the pins. Move the Pi over to the right-hand side of the rail system, but not so far as to obstruct the USB ports (as you will need them later for the keyboard). Now you should connect the Pi with the PCB using the provided HDMI cable, Ribbon Cable (which should be routed through the provided cable management), and the USB cord for powering the Pi.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cabling" src="images/IMG_3310.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;After wiring the Pi with the PCB, you should prep the keyboard for installation and wire the power button connector to the PCB, while wiring the Keyboard connector to the bottom left USB port on the Pi.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Keyboard" src="images/IMG_3282.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;Upon connecting all of the wires, slide in your acrylic PiTop base, and boot it up. Congratulations, you've finished a PiTop!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Completion" src="images/IMG_3293.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;For more information, such as where to get your own PiTop or additional parts check out the following links below :
+&lt;a href="https://www.adafruit.com/product/3065"&gt;https://www.adafruit.com/product/3065&lt;/a&gt;
+and
+&lt;a href="https://pi-top.com/"&gt;https://pi-top.com/&lt;/a&gt;&lt;/p&gt;</content><category term="computer science"></category><category term="raspberry pi"></category><category term="hardware"></category></entry><entry><title>Upload Projects to GitHub</title><link href="/upload-projects-to-github.html" rel="alternate"></link><published>2016-11-23T00:00:00-05:00</published><updated>2016-11-23T00:00:00-05:00</updated><author><name>Josef Seiler</name></author><id>tag:None,2016-11-23:/upload-projects-to-github.html</id><summary type="html">&lt;hr&gt;
+&lt;p&gt;During Code Em, WEMS ASE, and the Homeschool classes, we have been writing code in Python to create commands for a &lt;a href="http://blog.techemstudios.com/slack.html"&gt;Slackbot&lt;/a&gt; to respond to. We did this by learning the flow of GitHub. Below is an outline of steps to help you create your own GitHub repository and add …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;p&gt;During Code Em, WEMS ASE, and the Homeschool classes, we have been writing code in Python to create commands for a &lt;a href="http://blog.techemstudios.com/slack.html"&gt;Slackbot&lt;/a&gt; to respond to. We did this by learning the flow of GitHub. Below is an outline of steps to help you create your own GitHub repository and add your code from other projects you have been working on with the class. Don't worry, we'll go over the following steps in class. But, if you want to get started early, hopefully these steps will help, and here you go!   &lt;/p&gt;
+&lt;h3&gt;How to Upload Your Projects to Your Own Repository&lt;/h3&gt;
+&lt;p&gt;Okay, so you've written several programs in Python. You may ask yourself: How can I organize them, work on them after class is over, make changes when I am not connected to the internet, keep track of the changes I make, 'permanently' save the changes I make, and share them with good friends?  &lt;/p&gt;
+&lt;p&gt;I'm glad you asked! You can do all of the things above, with GitHub! This blog will help you "git" going on saving your projects to your own repository on GitHub.  &lt;/p&gt;
+&lt;p&gt;First, log into your GitHub account, or (if you have not already) create an account on GitHub.  &lt;/p&gt;
+&lt;p&gt;Though, we'll go over these steps in class hopefully, these will get you started.  &lt;/p&gt;
+&lt;h3&gt;Step 1&lt;/h3&gt;
+&lt;h4&gt;Create a Repository (Repo)&lt;/h4&gt;
+&lt;p&gt;Once you are logged into GitHub, click the "plus" sign at the top right of your screen&lt;br&gt;
+&lt;img alt="create repo" src="images/github_screenshots/one.jpg"&gt;&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;    &lt;/p&gt;
+&lt;p&gt;Next, name your repository. Creating your repository is like creating/naming a new folder on your computer, except you're doing this via GitHub. Below, is just an example of what you might name your repository.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="name repo" src="images/github_screenshots/two.jpg"&gt;&lt;sup id="fnref2:4"&gt;&lt;a class="footnote-ref" href="#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;    &lt;/p&gt;
+&lt;p&gt;Essentially, you just made a ".git directory (repository)"  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step 2&lt;/h3&gt;
+&lt;h4&gt;Checkout the Project&lt;/h4&gt;
+&lt;h5&gt;Make a Working Directory&lt;/h5&gt;
+&lt;p&gt;Clone your repository. In other words, make a copy of your new repository, known as your "Working Directory". To do this click the green 'Clone or download' button.&lt;br&gt;
+&lt;img alt="clone repo" src="images/github_screenshots/clone.jpg"&gt;&lt;sup id="fnref3:4"&gt;&lt;a class="footnote-ref" href="#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;    &lt;/p&gt;
+&lt;p&gt;There more than a few ways to clone your repository to your computer. In these next steps, I'm going to show you how to clone your repository to open in GitHub Desktop. This will help if you've already downloaded &lt;a href="https://desktop.github.com/"&gt;GitHub Desktop&lt;/a&gt;. If not, you should be directed to the GitHub site to download the desktop app if you click "Open in Desktop". In contrast, you can clone/download your repository to save as a zip file. Just save and extract it to any of your directories on your computer. Furthermore, if you've downloaded the desktop app already and have it open, you can add the repository by copying the web URL and pasting it into the app. Either way, you will have to choose where you want to save your repository on your computer. You should get something like this:&lt;br&gt;
+&lt;img alt="desktop app" src="images/github_screenshots/desktop.jpg"&gt;&lt;sup id="fnref4:4"&gt;&lt;a class="footnote-ref" href="#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;    &lt;/p&gt;
+&lt;p&gt;When you have your repository cloned to your desktop, you will see a 'History' tab and a 'Changes' tab. The history tab shows the collection of snapshots of changes made to your repository -this will grow with time! The changes tab, shows the current changes you have made in your Working Directory (or your local changes) that you have not committed. Once you commit those changes, you have essentially taken a snapshot of your changes. In order to push those changes, to be permanently saved to the repository on GitHub, you must press the &lt;strong&gt;sync&lt;/strong&gt; button, located towards the top-right of the Desktop app (or "git push" in the command line), right above the list of the changes you've made.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="desktop app two" src="images/github_screenshots/desktoptwo.jpg"&gt;&lt;sup id="fnref5:4"&gt;&lt;a class="footnote-ref" href="#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;    &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Remember to always sync!&lt;/strong&gt;&lt;br&gt;
+* When you click sync at the top right of the GitHub desktop, you are getting up-to-date with the most recent additions to that repository. This is also known as pulling/pushing. What happens when you sync:&lt;br&gt;
+    - fetches the latest changes made to the GitHub repo&lt;br&gt;
+    - Then those changes are merged to your local repository&lt;br&gt;
+    - now your local repository is updated  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step 3&lt;/h3&gt;
+&lt;h4&gt;Putting Your Projects Into Your Repository&lt;/h4&gt;
+&lt;p&gt;You can also do this several ways. First, I suggest you locally (on your computer) set yourself up to be organized. Open your newly cloned repository (or local repository) that has been saved on your computer. Then create a new directory (folder) and name that directory something that makes sense to you. Since you will be uploading several Python programs, it may be a good idea to create a directory labeled "Python". Inside of that folder, you can create subdirectories. For instance, you could make the python folder house folders named "turtle_module", "grocery_list_program", "condition_statements", "loops", etc. -basically an organized collection of what you have been working on; even a directory for your class notes. Then, you can literally copy and paste the python files you have made during the class into those directories you just created -all housed in the parent directory of your cloned (local) repository.  &lt;/p&gt;
+&lt;p&gt;If you go back to GitHub Desktop, you should see a few files under the changes tab. These are known as stage files. The changes will not be automatically updated to your 'master' repository. To do this, you must commit your changes (taking asnapshot of the changes) by writing a concise title or summary about your changes. For the description of the changes you have made, you can provide more detail. If you are satisfied with your changes, you can click 'Commit to master'. &lt;strong&gt;NEXT&lt;/strong&gt;, click he sync button; this function will "push" your changes to the master repository. Once you have pushed your changes, you will find a list of your permanently saved changes under the history tab.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="desktop commit" src="images/github_screenshots/desktopthree.jpg"&gt;&lt;sup id="fnref6:4"&gt;&lt;a class="footnote-ref" href="#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;    &lt;/p&gt;
+&lt;p&gt;That's it! You can check out your pushed changes by checking out your master repository on the GitHub site.  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Practice Makes Perfect&lt;/h3&gt;
+&lt;p&gt;To help familiarize yourself with the flow of git, try first to perform the steps above on one, or two files at a time. Then, if you feel comfortable, make bigger commits. As in, upload more than two files into the directories of your local repository. Once, you get in the flow of git, it will become second-nature to you.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Summary of the steps  &lt;/li&gt;
+&lt;li&gt;create a repository  &lt;/li&gt;
+&lt;li&gt;clone that repository  &lt;ul&gt;
+&lt;li&gt;this makes a (local) working directory on your computer  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sync (pull/push)      &lt;/li&gt;
+&lt;li&gt;make changes to your local repo  &lt;/li&gt;
+&lt;li&gt;commit/push those changes to your master repo  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Besides committing (locally), via GitHub Desktop or the command line/terminal, you can also commit changes you make right on the GitHub site.  &lt;/p&gt;
+&lt;p&gt;So, that's  the &lt;em&gt;gist&lt;/em&gt; of creating your own GitHub repository, cloning it, and uploading/updating your projects locally (on your device) and committing those changes to then show up (push) in your GitHub repository.  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Get to Your Projects Here&lt;/h3&gt;
+&lt;p&gt;If you did not bring in your own laptop to work on during this session, all of your projects have been saved on either the Tech Em laptops or the iPads here at the studio. Lucky for you, I created a repository on GitHub, called &lt;a href="https://github.com/jo3t3ch3m/TechEmStudents"&gt;TechEmStudents&lt;/a&gt;. Previously we've saved student projects straight on the Tech Em Studios secure site. GitHub makes it a bit easier to get to your projects. You can click that link to see the projects you have worked on during this class! After clicking the link for the repo, just navigate to the directory with your name and you will find your projects. This will help you perform the steps (indicated in this blog) to upload your projects onto your own GitHub repository. If you don't see all of your projects on the repo yet, keep checking, projects are still being added to your directory.  &lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;https://git-scm.com/book/en/v2/Getting-Started-Git-Basics&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;https://www.lynda.com/Git-tutorials/Unstaging-files/100222/111284-4.html?autoplay=true&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:4"&gt;
+&lt;p&gt;https://github.com/&amp;#160;&lt;a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;a class="footnote-backref" href="#fnref2:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;a class="footnote-backref" href="#fnref3:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;a class="footnote-backref" href="#fnref4:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;a class="footnote-backref" href="#fnref5:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;a class="footnote-backref" href="#fnref6:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="computer science"></category><category term="python"></category><category term="code"></category><category term="github"></category><category term="slack"></category></entry><entry><title>Slack</title><link href="/slack.html" rel="alternate"></link><published>2016-11-08T00:00:00-05:00</published><updated>2016-11-08T00:00:00-05:00</updated><author><name>Chris Kefalas</name></author><id>tag:None,2016-11-08:/slack.html</id><summary type="html">&lt;h3&gt;Why Slack?&lt;/h3&gt;
+&lt;p&gt;Slack has come onto the scene in the last couple years as a way for groups of people to communicate, in a chat room like setting. What makes Slack stand out from similar pieces of software is it's ease of use, and simplicity. At Tech 'Em Studios we …&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Why Slack?&lt;/h3&gt;
+&lt;p&gt;Slack has come onto the scene in the last couple years as a way for groups of people to communicate, in a chat room like setting. What makes Slack stand out from similar pieces of software is it's ease of use, and simplicity. At Tech 'Em Studios we use Slack to talk amongst each other, and share ideas. The real fun with Slack comes when you
+dive into all of it's features, and the many different types of textual bots you can have feeding your Slack channel with information.  &lt;/p&gt;
+&lt;p&gt;Our goal with using Slack with the students is firstly to be able to allow them to ask questions to the instructors when they aren't in class. But also as part of an activity
+that involves using the Python programming language to create, and program your own Slack bot! With the knowledge that the students learn from class they will be able to commit changes to the class bot, and make it talk back depending on what is said to it. We like this activity because it's fun, as well as gets the kids thinking about artificial intelligence! My plan for this blog post is to talk about getting signed up, joining Slack, and bit more about it features.  &lt;/p&gt;
+&lt;h3&gt;Signing up&lt;/h3&gt;
+&lt;p&gt;In order to get signed up with the Tech 'Em Student's Slack channel you will need to provide us with your  email either in class, or by sending us an email at &lt;a href="mailto:info@techemstudios.com"&gt;info@techemstudios.com&lt;/a&gt;. If your child doesn't have an email, I suggest creating one via Gmail, or having them use yours. Email is simply needed to sign up for Slack, and as a method of resetting, or recovering your password.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Email Inbox" src="images/slack-gmail2.jpg"&gt;  &lt;/p&gt;
+&lt;p&gt;You will receive the invitation in your inbox. By click the big green button you will start the registration process. Things that has been &lt;strong&gt;underlined in red&lt;/strong&gt; is the identifying parts for you to be able to verify you have received the correct invitation, and your child will be joining a Slack channel controlled, and administered by Tech 'Em Studios.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please note&lt;/strong&gt;, you will be invited by either Joe Seiler, Chris Kefalas, or Wray Mills. If one of those names isn't listed, you know someones 'a phishing!  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Email" src="images/slack-invite3.jpg"&gt;    &lt;/p&gt;
+&lt;p&gt;If you have any other questions about getting signed up, please don't hesitate to reach out to us at &lt;a href="mailto:info@techemstudios.com"&gt;info@techemstudios.com&lt;/a&gt;    &lt;/p&gt;
+&lt;h3&gt;Joining Slack&lt;/h3&gt;
+&lt;p&gt;After you have click the big green button you will be prompted to type in your name, and choose a username. This user name can be anything, granted it is appropriate, and within Slack's guidelines for user name creation.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="create" src="images/slack-create1.jpg"&gt;  &lt;/p&gt;
+&lt;p&gt;You will than be prompted to create a password for your account. We always recommend using a Great password!    &lt;/p&gt;
+&lt;p&gt;&lt;img alt="password" src="images/slack-password4.jpg"&gt;  &lt;/p&gt;
+&lt;p&gt;The next screen you will see will look like the one below. It will offer to walk you through a tutorial of how Slack works, and is set up. It's super quick and gives you a basic idea of the layout.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="tutorial" src="images/slack-tut6.jpg"&gt;  &lt;/p&gt;
+&lt;h3&gt;Slacking?&lt;/h3&gt;
+&lt;p&gt;Slack is set up as a system of chat rooms known as channels that are always prefixed with a octothorpe (#). Everyone is automatically joined into the channel known as #general. Currently we have configured Slack so that all our students are in #general, and can read, and write. The purpose of #general is for dialogue between everyone, as well as relaying the latest messages from Tech 'Em Studio headquarters! From there we have created private channels named after each class that only the particular students in that class can join. The goal with the private channels is to allow each class to interact with their bot, as well as let them talk amongst themselves. We hope that by creating these class channels the students will be able to better interact with other students, and help each other out.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Slack" src="images/slack-slack-5.jpg"&gt;  &lt;/p&gt;
+&lt;p&gt;The channels you see on the side will be different depending on what class the student is in. Everyone though is automatically joined into #general, and #random, and their respective class channels as well.  &lt;/p&gt;
+&lt;p&gt;Students can also create private messages with other students that are part of the Slack channel.  &lt;/p&gt;
+&lt;p&gt;Slack is available for Windows, macOS, and Linux operating systems. As well as Android, iOS, and you can even use Slack in a web browser by navigating to https://techemstudents.slack.com.  &lt;/p&gt;
+&lt;h3&gt;Slack bot&lt;/h3&gt;
+&lt;p&gt;Just as much as the Slack craze has been sweeping the nation, the Slack &lt;em&gt;bot&lt;/em&gt; craze has been steadily gaining traction. A Slack bot is a textual bot that can be programmed to provide a certain function. People have created hundreds of these bots to do anything you can think of! Taco Bell even has one called &lt;a href="https://www.tacobell.com/feed/tacobot"&gt;Taco Bot&lt;/a&gt; that lets you order tacos straight from Slack!  &lt;/p&gt;
+&lt;p&gt;The main ones you will see hanging out in our channel are Twitter bot, Github bot, Travis bot, and our work in progress #general Python bot. Some bots you can interact with via typing in certain commands. Other bots will just feed information into your channel based on certain circumstances. For instance, whenever we post a tweet to our Twitter account, it will relay that message into the Slack channel for everyone to see. In a similar manner, the Github bot will post a message whenever someone has made a new commit to the repo!  &lt;/p&gt;
+&lt;p&gt;The students will be working with the Python programming language to create their own Slack bots! Either for their own use, and experimentations, or as a general bot to hang out in their class channel. They will than be able to program that bot to respond to certain commands with just text, or make a query to a certain data set online. It really is a lot of fun, and the possibilities are endless when thinking of different ways you can interact with the bot.  &lt;/p&gt;
+&lt;p&gt;These bots can either be ran on a Raspberry Pi, your PC, or even in the cloud! Slack is a free service up until a certain amount of users. So at the end of the session, students can create their own Slack channels, and start crafting their own bots to hang out in their channels!  &lt;/p&gt;
+&lt;h3&gt;Final Thoughts&lt;/h3&gt;
+&lt;p&gt;Slack is awesome, and personally is the only thing I can see replacing e-mail one day. We are hoping that by using Slack, and allowing students to communicate amongst themselves, as well as with teachers outside of the classroom will really help to make all of the classes feel more seamless. Slack is a great way to open the discussion about problems students are having with assignments, and for teachers to provide live help to walk them through issues that might arise. A lot of our classes we only get to spend one hour a week with the students. But with Slack it extends that, and allows them to reach out for help anytime during the week!  &lt;/p&gt;
+&lt;p&gt;Let us know if you have any questions by emailing us at &lt;a href="info@techemstudios.com"&gt;info@techemstudios.com&lt;/a&gt; please.  &lt;/p&gt;
+&lt;p&gt;Ready to sign up for GitHub? Check out the blog about &lt;a href="http://blog.techemstudios.com/github-part-one.html"&gt;GitHub&lt;/a&gt;  &lt;/p&gt;</content><category term="slack"></category><category term="github"></category><category term="python"></category><category term="coding"></category><category term="code em"></category><category term="homeschool"></category><category term="create em"></category><category term="game em"></category></entry><entry><title>GitHub Part One</title><link href="/github-part-one.html" rel="alternate"></link><published>2016-11-07T00:00:00-05:00</published><updated>2016-11-07T00:00:00-05:00</updated><author><name>Josef Seiler</name></author><id>tag:None,2016-11-07:/github-part-one.html</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Sign Up for GitHub!&lt;/h3&gt;
+&lt;p&gt;"GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere." &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;  &lt;/p&gt;
+&lt;h3&gt;Step 1&lt;/h3&gt;
+&lt;p&gt;Start up your web browser and go to https://github.com/  &lt;br&gt;
+&lt;img alt="github1" src="images/github1.jpg"&gt;   &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;Create an account (You must have an email …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Sign Up for GitHub!&lt;/h3&gt;
+&lt;p&gt;"GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere." &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;  &lt;/p&gt;
+&lt;h3&gt;Step 1&lt;/h3&gt;
+&lt;p&gt;Start up your web browser and go to https://github.com/  &lt;br&gt;
+&lt;img alt="github1" src="images/github1.jpg"&gt;   &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;Create an account (You must have an email to sign up for GitHub).&lt;br&gt;
+&lt;img alt="github2" src="images/github2.jpg"&gt;  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step 3&lt;/h3&gt;
+&lt;p&gt;You can just select the "free" plan.
+&lt;img alt="github1" src="images/github3.jpg"&gt;  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step 4&lt;/h3&gt;
+&lt;p&gt;You can answer a few questions about yourself or just click 'skip this step'  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="github1" src="images/github4.jpg"&gt;  &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Be sure to verify your email that you used to sign up for Slack. In the slack channel for your class, notify either Wray (@wray), Chris (@chk) or me (@joe). Then Look in your inbox for a recent email from GitHub, and follow the steps in the email to accept the GitHub invitation.&lt;/strong&gt;     &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step 5&lt;/h3&gt;
+&lt;p&gt;If you are in the WEMS ASE class: In your GitHub search box, type "wems ase" or click this link: &lt;a href="https://github.com/wray/code_em"&gt;CODE EM&lt;/a&gt;   &lt;/p&gt;
+&lt;p&gt;If you are in the Code Em or Homeschool class at Tech Em Studios: In your GitHub search box, type "code_em" or click this link: &lt;a href="https://github.com/wray/wems"&gt;WEMS ASE&lt;/a&gt;    &lt;/p&gt;
+&lt;p&gt;This will take you to the Tech Em repository for your class's Slackbot. For WEMS ASE students, substitute "code_em" in the following screenshots for "wems ase".  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="github1" src="images/github6.jpg"&gt;   &lt;/p&gt;
+&lt;p&gt;&lt;img alt="github1" src="images/github7.jpg"&gt;  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step 6&lt;/h3&gt;
+&lt;p&gt;Think of the repository as a shared folder. Once you are in your class's repository, select 'clone or download'.  &lt;/p&gt;
+&lt;p&gt;Then select 'Open in Desktop'  &lt;/p&gt;
+&lt;p&gt;You will then be directed to desktop.github.com to download the GitHub Desktop.&lt;/p&gt;
+&lt;p&gt;This saves the code_em (or wems ase) repository on your computer, labeled, code_em (or wems ase).   &lt;/p&gt;
+&lt;p&gt;&lt;img alt="github1" src="images/github8.jpg"&gt;   &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step 7&lt;/h3&gt;
+&lt;p&gt;Once you download GitHub Desktop, and cloned your class's repository, this is what you should see:&lt;br&gt;
+&lt;img alt="github1" src="images/github9.jpg"&gt;   &lt;/p&gt;
+&lt;p&gt;Above, are the changes you have made "locally". Meaning it shows you what code_em (or wems ase) files you have edited and saved on your computer. Right now, it should say no local changes.  &lt;/p&gt;
+&lt;p&gt;The "History" tab shows you all the changes you and others have made to files in the code_em (or wems ase) repository:  &lt;br&gt;
+&lt;img alt="github1" src="images/github10.jpg"&gt;&lt;br&gt;
+It will show several changes already made to the repository. In the coming weeks, the number of those changes will grow!  &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.techemstudios.com/github-part-two.html"&gt;Move on to the next GitHub steps here&lt;/a&gt;  &lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;https://github.com/&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="github"></category><category term="python"></category><category term="coding"></category><category term="slack"></category></entry><entry><title>GitHub Part Two</title><link href="/github-part-two.html" rel="alternate"></link><published>2016-11-07T00:00:00-05:00</published><updated>2016-11-07T00:00:00-05:00</updated><author><name>Josef Seiler</name></author><id>tag:None,2016-11-07:/github-part-two.html</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Using GitHub Desktop&lt;/h3&gt;
+&lt;p&gt;So, you've just downloaded/cloned the "folder" code_em (or wems ase) onto your computer. Now you have a 'local' repository named code_em. In other words, you have a folder on your computer saved as code_em (wems ase), in the location where you chose to have it saved …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Using GitHub Desktop&lt;/h3&gt;
+&lt;p&gt;So, you've just downloaded/cloned the "folder" code_em (or wems ase) onto your computer. Now you have a 'local' repository named code_em. In other words, you have a folder on your computer saved as code_em (wems ase), in the location where you chose to have it saved.   &lt;/p&gt;
+&lt;h3&gt;Making Code Changes&lt;/h3&gt;
+&lt;p&gt;If you navigate to the code_em/wems ase folder on your computer, you will find a subfolder called "slackbot_ce" (or "slackbot_wems") This contains directory for the class. You can make changes to the files under &lt;em&gt;your&lt;/em&gt; directory. In other words, you are able to work on the "slacklib.py" Python file that is located in &lt;em&gt;your&lt;/em&gt; folder.  &lt;/p&gt;
+&lt;p&gt;To make code changes, you can use a text editor or edit with Python's IDLE by right-clicking the file and select "Edit with IDLE" and be sure to save your changes.  &lt;/p&gt;
+&lt;p&gt;If you do not already have Python 2.7, go ahead and download it &lt;a href="https://www.python.org/downloads/"&gt;here&lt;/a&gt;&lt;br&gt;
+Remember to edit your slacklib.py with Python 2.7 (not any other version).    &lt;/p&gt;
+&lt;h3&gt;Committing Your Code Changes&lt;/h3&gt;
+&lt;p&gt;Your saved changes do not show up on the GitHub website just yet. To see your changes on the website, open GitHub Desktop and make sure you are on the "Changes tab" -it will be highlighted in blue. Here, you will see a list of all the changes you have made:    &lt;/p&gt;
+&lt;p&gt;&lt;img alt="github-desktop showing commit" src="images/github-desktop-1.jpg"&gt;  &lt;/p&gt;
+&lt;p&gt;Once you give a short Summary and Description of the changes you had just made, you can click the 'Commit to master' at the bottom of the screen! Essentially, this sends your updated changes to the code_em/wems ase repository on GitHub. Now you will be able to see your updates (a detailed view of what you have changed) on the GitHub repository as well as on your 'local' repository.  &lt;/p&gt;
+&lt;h3&gt;"Sync early, sync often" -Wray&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Before you commit&lt;/strong&gt;, be sure to always "sync".    &lt;/p&gt;
+&lt;p&gt;This gets the latest and greatest commits to the repository. Think of it as updating your 'local' repository.    &lt;/p&gt;
+&lt;h3&gt;See Slack BOT run&lt;/h3&gt;
+&lt;p&gt;Once you have committed your changes i.e. your new Slack Bot commands, sign into Slack and test them out! Though, it will take several minutes for the process to finish, before your Slack Bot responds to your commands correctly. There will be another blog post explaining the process in more detail.     &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.techemstudios.com/slack.html"&gt;Return to the Slack intro blog here&lt;/a&gt;  &lt;/p&gt;</content><category term="github"></category><category term="python"></category><category term="coding"></category><category term="slack"></category></entry><entry><title>Notes On Setting Up Your Robot</title><link href="/notes-on-setting-up-your-robot.html" rel="alternate"></link><published>2016-08-22T00:00:00-04:00</published><updated>2016-08-22T00:00:00-04:00</updated><author><name>Josef Seiler and Chris Kefalas</name></author><id>tag:None,2016-08-22:/notes-on-setting-up-your-robot.html</id><summary type="html">&lt;h2&gt;Some Notes on Configuring the BombiniBot&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Three Preceding Steps to Control your BombiniBot Robot&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download the &lt;strong&gt;Scratch based programming environment&lt;/strong&gt; from &lt;a href="http://www.mindsensors.com/content/76-bombinibot-assembly-instructions-and-downloads"&gt;mindsensors.com&lt;/a&gt; and choose the windows link or the mac link depending on your operating system.   &lt;/p&gt;
+&lt;p&gt;i) This will download as a compressed (zip) file, so unzip the folder …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h2&gt;Some Notes on Configuring the BombiniBot&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Three Preceding Steps to Control your BombiniBot Robot&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download the &lt;strong&gt;Scratch based programming environment&lt;/strong&gt; from &lt;a href="http://www.mindsensors.com/content/76-bombinibot-assembly-instructions-and-downloads"&gt;mindsensors.com&lt;/a&gt; and choose the windows link or the mac link depending on your operating system.   &lt;/p&gt;
+&lt;p&gt;i) This will download as a compressed (zip) file, so unzip the folder once it is done downloading.&lt;br&gt;
+  i) The folder will shown as 'BombiniBotWin' or 'BombiniBotMac'  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the Arduino drivers &lt;a href="http://www.mindsensors.com/stem-with-robotics/43-bombinibot-kit-teach-robotics-and-scratch-programming"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;i) Scroll down till you see &lt;strong&gt;DOWNLOAD&lt;/strong&gt;, select this, then select the download file for Arduino CH430 Drivers. Unzip the folder once it has completed downloading.&lt;br&gt;
+  i) This will greatly help with pairing the robot successfully.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the &lt;strong&gt;Arduino Environment&lt;/strong&gt; on &lt;a href="http://www.mindsensors.com/content/76-bombinibot-assembly-instructions-and-downloads"&gt;mindsensors.com&lt;/a&gt; Unzip the folder once it has completed downloading.  &lt;/p&gt;
+&lt;p&gt;i) You will use this when programming your Arduino Compatible Board. 
+  i) The folder will be shown as 'arduino-1.6.3-windows' or 'arduino-1.6.3-mac'  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3&gt;Connect your Robot to Bluetooth:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Turn your robot on. &lt;em&gt;If the LED light on your is blinking fast, your robot is ready to pair. If the LED is solid red or is blinking slow, follow the troubleshooting steps below&lt;/em&gt;  &lt;ul&gt;
+&lt;li&gt;On your computer, open Settings. &lt;/li&gt;
+&lt;li&gt;Navigate to Devices to get to bluetooth. Make sure bluetooth is 'On'. &lt;/li&gt;
+&lt;li&gt;Pair your robot to the computer. Your robot number is specified on the robot itself on the top board, the BombiniBot board.    &lt;/li&gt;
+&lt;li&gt;Under Related Settings, click More Bluetooth Options and select COM Ports. Note the COM Port number for the Outgoing Direction. (I suggest writing the COM Port down for reference).  &lt;/li&gt;
+&lt;li&gt;Once you have paired your robot and noted the Outgoing COM Port, open the &lt;strong&gt;bbbpanel&lt;/strong&gt; found in the BombiniBot folder you downloaded previously.&lt;ul&gt;
+&lt;li&gt;Under BombiniBot Port: select the correct Outgoing COM Port you noted earlier.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Select Connect  (If connected, your robot's LED light should now be green)  &lt;/li&gt;
+&lt;li&gt;Once connected, select Run Scratch  &lt;ul&gt;
+&lt;li&gt;With the scratch based programming environment that is open, you can add instructions for your robot by dragging and dropping them.  &lt;/li&gt;
+&lt;li&gt;To have your robot carry out these instructions, click the green flag at the top right of the window and watch your robot perform the steps you told it to perform!  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Run Your Robot using Arduino:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Turn your robot off. &lt;em&gt;If the LED light on your is blinking fast, your robot is ready to pair. If the LED is solid red or is blinking slow, follow the troubleshooting steps below&lt;/em&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connect your robot to your computer with a Printer/Device cable. &lt;ul&gt;
+&lt;li&gt;Make sure your robot is turned off and the battery holder unplugged while it is connect to your computer.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If your robot does not show its LED light as green, follow the steps for trouleshooting in the next section.  &lt;/li&gt;
+&lt;li&gt;Run Arduino found in the 'arduino-1.6.3-windows' or 'arduino-1.6.3-mac' folder you downloaded previously.  &lt;/li&gt;
+&lt;li&gt;Make sure to include the BombiniBot library by navigating to Sketch.  &lt;/li&gt;
+&lt;li&gt;From here, you can add lines of code for the robot to run (without having it connected to bluetooth)  &lt;/li&gt;
+&lt;li&gt;This is how we coded the robots to move autonomously.  &lt;/li&gt;
+&lt;li&gt;The examples provided in the 'arduino-1.6.3' folder.&lt;ul&gt;
+&lt;li&gt;To do this, select the BombiniBot folder under examples and select the examples to be opened with Arduino.&lt;/li&gt;
+&lt;li&gt;From here, we were introduced to having our robots move autonomously. We tweaked the arudino code examples to uniquely maneuver our robots.   &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;To Upload the arduino code for your robot to carry out the instructions, click Upload. Your robot should show its LED light as green. Uplug the robot. Connect the battery holder and turn on the power to the robot.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Troubleshooting your Robot!&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If your robot's LED light is a solid red, follow these steps:  &lt;ul&gt;
+&lt;li&gt;Open up your command prompt (on Windows) or your Terminal (On Mac) &lt;ul&gt;
+&lt;li&gt;For Windows I would suggest opening the 'Power Shell' -you can use almost all of the same commands as in the Terminal on Mac.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Navigate to the BombiniBotWin or BombiniBotMac folder  &lt;/li&gt;
+&lt;li&gt;For Windows, type prog.bat COM17 (or the COM Port number you noted earlier)  &lt;/li&gt;
+&lt;li&gt;For Mac, type prog.bash COM17 (or the COM Port number you noted earlier)  &lt;/li&gt;
+&lt;li&gt;Then hit enter  &lt;/li&gt;
+&lt;li&gt;After this program runs, your robot will show a green light (if you have your robot directly plugged in to run arduino) or will blink red (if you are trying to connect via bluetooth) and is now ready to accept instructions!  &lt;/li&gt;
+&lt;li&gt;Now go back to Arduino and upload the code  &lt;br&gt;
+&lt;a href="https://www.youtube.com/embed/BQvLqbQ0q_Q"&gt;Follow the steps in this video link to run the prog.bash/prog.bat&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further issues could be due to the 'whiskers' or antennae on the robot.&lt;/p&gt;
+&lt;p&gt;From the mindsensors.com overview of the BombiniBot, here is a close-up of the whiskers' location and a bit on what they do&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;:  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="whiskers" src="images/robot-whiskers.jpg"&gt;
+&lt;img alt="whiskers testing" src="images/robot-auto.jpg"&gt;  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Hardware Checks &amp;amp; Double Checks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Verify all of your connections are solid, and cables secured in their correct homes.   &lt;/li&gt;
+&lt;li&gt;Make sure your batteries are inserted into the pack correctly, facing the right way.  &lt;/li&gt;
+&lt;li&gt;Confirm you've fully attached the battery connector to the battery pack. Secure the battery back on the chassis, and make sure it isn't going to slide out!  &lt;/li&gt;
+&lt;li&gt;Pay attention to your whiskers, and make sure they aren't touching any parts of the PCB board. You can loosen the screws to realign them, and then tighten the screws back up to secure them.  &lt;/li&gt;
+&lt;li&gt;When you're finished tinkering with your BombiniBot make sure to switch off the power!  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;em&gt;mindsensors.com&lt;/em&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="techcamp"></category><category term="computer science"></category><category term="robot"></category></entry><entry><title>Led Pendant Follow-up</title><link href="/led-pendant-follow-up.html" rel="alternate"></link><published>2016-05-16T00:00:00-04:00</published><updated>2016-05-16T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2016-05-16:/led-pendant-follow-up.html</id><summary type="html">&lt;p&gt;Follow up on LED pendant projects&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Thank you!&lt;/h3&gt;
+&lt;p&gt;I want to pass on my enthusiastic thanks for letting us provide
+Technology Enrichment to you and your kids! &lt;/p&gt;
+&lt;h3&gt;LED Pendant Information&lt;/h3&gt;
+&lt;p&gt;Here is some more information about the LED pendants your kids coded
+as the final project for their Elementary Computer Science class. And, if your kid did not get to complete her/his
+code, please
+&lt;a href="mailto:info@techemstudios.com?subject=finish-led"&gt;send us an email&lt;/a&gt;
+so that we can setup a time you all can come
+by our studio at Shady Grove and Nuckols to complete the coding.&lt;/p&gt;
+&lt;p&gt;The pendant consists of three main parts: the 8x8 LED matrix display;
+a microcontroller (it's actually a &lt;a href="https://www.adafruit.com/products/1222"&gt;"Gemma" microcontroller from
+Adafruit&lt;/a&gt;); and the lithium polymar (&lt;a href="https://www.adafruit.com/products/1578"&gt;lipo&lt;/a&gt;) rechargeable battery. There
+is an "on/off" switch on the Gemma or you simply plug the battery in to start the
+display and unplug to stop. The battery plugs into the bottom of the
+microcontroller in the off-white or black receptacle. The socket for
+the battery is quite tight, so it may take some fingernails and
+pulling the white connector back and forth to ease it out of the
+socket. Please don't pull by the wires -- the wires will come out of
+the connector if they are yanked.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma battery socket" src="/images/gemma-battery.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;On the top of the microcontroller is a micro USB receptacle which is
+used to transfer the code to the microcontroller (any USB connector
+will work to connect a laptop/desktop to the
+microcontroller). However, this plug does not charge the battery. See
+the section below if you and your kid would like to get the software
+necessary to refine their code or re-code their LED.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma mini usb socket" src="/images/gemma-usb.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;You should also have a very &lt;a href="https://www.adafruit.com/products/1304"&gt;small charger&lt;/a&gt; for the battery. This
+charger plugs into a USB port and will charge the lipo battery. There
+is a red light when charging and a green light that indicates the
+battery is fully charged.&lt;/p&gt;
+&lt;h3&gt;LED Coding information&lt;/h3&gt;
+&lt;p&gt;There are detailed tutorials available at adafruit if you would like
+to know how we constructed the pendant and all the component
+specifications. However, this is a quick overview to get you
+(re)coding the LED frame designs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://learn.adafruit.com/introducing-gemma/setting-up-with-arduino-ide"&gt;Arduino IDE v1.05 with Gemma software&lt;/a&gt; for your computer or laptop.&lt;/li&gt;
+&lt;li&gt;Configure the Arduino IDE to use the Gemma 8MHz and tinyISP.&lt;ul&gt;
+&lt;li&gt;Tools -&amp;gt; Board -&amp;gt; Adafruit Gemma 8MHz&lt;/li&gt;
+&lt;li&gt;Tools -&amp;gt; Programmer -&amp;gt; USBtinyISP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Download the required
+ &lt;a href="https://github.com/adafruit/TinyWireM/archive/master.zip"&gt;LED library&lt;/a&gt;,
+  unzip and put it in the Adafruit Arduino
+libraries directory.&lt;ul&gt;
+&lt;li&gt;Put the TinyWireM directory in your Documents/Arduino/libraries directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://secure.techemstudios.come/enrolled_children"&gt;Login&lt;/a&gt; to our
+  website and download your code or send us an email if you have
+  not received information on how to get your code.&lt;/li&gt;
+&lt;li&gt;Unzip your code into a directory.&lt;/li&gt;
+&lt;li&gt;Go into that directory and double-click on the file named for your
+kid with a .ino suffix. This will launch Adafruit Arduino.&lt;/li&gt;
+&lt;li&gt;The LED design is in the "bmo.h" file that will be automatically
+loaded on the second tab when you launch Arduino (for those of you who
+have programmed in C or C++ this is simply a header file). Your child
+should know how to edit this file to enhance or change their design.&lt;/li&gt;
+&lt;li&gt;Anywhere there is a "//" is a code comment and the text after it
+    is for explanation and not used in the design.&lt;/li&gt;
+&lt;li&gt;Each "frame" of the design consists of 8 lines of 8 1's and 0's
+    preceded by a "B" and followed with a ",". Thus, the lines
+    correspond to the rows in the matrix and a 1 will light the led at
+    that position and a 0 will turn off the led at that position.&lt;/li&gt;
+&lt;li&gt;Each frame concludes with a decimal number on the 9th line
+      followed by a comma. This decimal number represents the delay in
+      hundredths of a second for this frame. For example, if you want
+      the first frame to display for half a second, use 50. If you
+      want it to display for a whole second, use 100. This value can
+      only go up to 255 (a little over 2.5 seconds).&lt;/li&gt;
+&lt;li&gt;The file has some statements at the beginning of the file that you
+    shouldn't change and the file must conclude with a "};" on the last line.&lt;/li&gt;
+&lt;li&gt;Once you are happy with your design, you should compile it to make
+sure there are no errors.&lt;/li&gt;
+&lt;li&gt;After an error-free compile, plug in your microcontroller and you
+have about 10 seconds to click on the "upload" icon (on the top left
+of the IDE, there is a right arrow for upload) once the red light on
+the Gemma starts flashing to transfer the
+code to the microcontroller. Please note, the newer Gemma
+microcontrollers (late 2015 classes) take a few times plugging into
+your computer before they will go into the programming mode. Make sure
+the red light is flashing before you attempt the code upload.&lt;/li&gt;
+&lt;li&gt;Make sure you are happy with the design -- if you are, you may unplug
+  the USB and use the battery to power the microcontroller.&lt;/li&gt;
+&lt;li&gt;If you want to change the design again, it is easiest to unplug the
+  usb until you have re-compiled the code and plug in when you are
+  ready to try again.&lt;/li&gt;
+&lt;li&gt;Wait a few seconds for the code to transfer and the microcontroller
+to reboot and display the frames in your design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And, feel free to comment here or shoot us an email if you have ANY
+questions or issues.&lt;/p&gt;</content><category term="computer science"></category><category term="led"></category><category term="gemma"></category><category term="arduino"></category><category term="coding"></category></entry><entry><title>Notes on setting up pis for I/O lessons</title><link href="/notes-on-setting-up-pis-for-io-lessons.html" rel="alternate"></link><published>2015-08-21T00:00:00-04:00</published><updated>2015-08-21T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2015-08-21:/notes-on-setting-up-pis-for-io-lessons.html</id><summary type="html">&lt;p&gt;Some notes and code&lt;/p&gt;</summary><content type="html">&lt;p&gt;Just dropping in some code for instructors, students, and everyone
+[updated August 2015].&lt;/p&gt;
+&lt;h3&gt;Initial Config&lt;/h3&gt;
+&lt;p&gt;For classes and camps, we always start with an SD card that has
+raspian (the Operating System) pre-installed. Of course, for the last
+camp, we started with blank SD cards! So, on that first day, we were
+actually loading the OS on your cards.&lt;/p&gt;
+&lt;p&gt;After logging in, we then ran&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo raspi-config
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in order to extend the filesystem, set the correct time, and set the
+correct keyboard.&lt;/p&gt;
+&lt;p&gt;We also configured your wi-fi adapter by running the gui&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;startx
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and using the wifi settings to scan for networks, choose the network,
+type in the password, and connect. Remember, you'll have to do this
+for your home wireless netework. Try to run startx without sudo. If
+the GUI doesn't come up, you may have to use sudo. When you are using
+the LEDS or the temp sensor, you will have to run python as sudo.&lt;/p&gt;
+&lt;h3&gt;Config for LEDs, Minecraft and Temp sensor&lt;/h3&gt;
+&lt;p&gt;In lieu of burning a pre-configured SD, we can run this script on a
+raspbian pi (model 2 with pre-loaded raspian from Adafruit) in order to get python development tools, the
+RPi GPIO library and the DHT library from Adafruit. Note, that this setup
+assumes your pi has network (Internet) connectivity. You can type in
+these commands separately, starting with the first line not containing
+a #.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
+&lt;span class="c1"&gt;# Run this command using sudo&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Beforehand, you should expand filesystem, turn on ssh&lt;/span&gt;
+&lt;span class="c1"&gt;# and of course configure network.&lt;/span&gt;
+
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;easy_install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;U&lt;/span&gt; &lt;span class="n"&gt;distribute&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;upgrade&lt;/span&gt; &lt;span class="n"&gt;RPi&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GPIO&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;essential&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;adafruit&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Adafruit_Python_DHT&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;Adafruit_Python_DHT&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;..&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;LEDs&lt;/h3&gt;
+&lt;p&gt;So, for the Output portion of the I/O lesson (easier than input so you
+may as well start here), assume a green LED is wired to #20 and a red
+LED is wired to #21.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;RPi.GPIO&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;GPIO&lt;/span&gt;
+
+&lt;span class="n"&gt;DEBUG&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+
+&lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setmode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;BCM&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;GREEN_LED&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt; 
+&lt;span class="n"&gt;RED_LED&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;
+&lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GREEN_LED&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;OUT&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;RED_LED&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;OUT&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GREEN_LED&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;red_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;GPIO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;RED_LED&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So, a simple session to use these methods would look like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;led&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;red_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;red_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Extend the LED Morse Code output&lt;/h3&gt;
+&lt;p&gt;We started a program that reads input from a user and converts that
+input into LED morse code. Start with this snippet and see if you can
+finish it -- let us know how you do!!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Remember, everything after a # is a comment&lt;/span&gt;
+&lt;span class="c1"&gt;# Comments are here for humans to explain code to&lt;/span&gt;
+&lt;span class="c1"&gt;# other humans. Anything after a # is ignored by&lt;/span&gt;
+&lt;span class="c1"&gt;# the computer&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Use the imports you have for the leds&lt;/span&gt;
+&lt;span class="c1"&gt;# For example: from led import *&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="c1"&gt;#whatever code you already have here&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="c1"&gt;# whatever code you already have here&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_a&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_b&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_c&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_d&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_e&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse_t&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;dash&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;morse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;character&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;character&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="nb"&gt;globals&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;morse_&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;character&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lower&lt;/span&gt;&lt;span class="p"&gt;()]()&lt;/span&gt;
+    &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;KeyError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;character&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; not defined in morse yet.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Type in text to convert to morse code.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;raw_input&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;character&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;morse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;character&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you save this file as "morse_output.py" for example, you may run it
+with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;morse_output&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Input Sensor (Temp/Humidity Sensor including in your Tech Em kit)&lt;/h3&gt;
+&lt;p&gt;For the Input part of the lesson, here is some code that provides a single simple method to
+return temperature and humidity (from a DHT-22 temperature/humidity
+sensor &lt;a href="https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/wiring"&gt;wired to pin #4&lt;/a&gt;).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Template code for temperature and humidity from an Adafruit DHT22&lt;/span&gt;
+&lt;span class="c1"&gt;# sensor. Don&amp;#39;t forget to update this file if you connect the DHT22 &lt;/span&gt;
+&lt;span class="c1"&gt;# to another data pin,&lt;/span&gt;
+&lt;span class="c1"&gt;# want to change the delay, or logic for mailing. &lt;/span&gt;
+&lt;span class="c1"&gt;# For example, you may only want to&lt;/span&gt;
+&lt;span class="c1"&gt;# send notifications when certain thresholds are exceeded.&lt;/span&gt;
+&lt;span class="c1"&gt;# &lt;/span&gt;
+&lt;span class="c1"&gt;# Code provided for Tech Em students and open under Gnu GPL&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Wray Mills&lt;/span&gt;
+&lt;span class="c1"&gt;# 20141115&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;Adafruit_DHT&lt;/span&gt;
+&lt;span class="c1"&gt;# Tech Em mail utility&lt;/span&gt;
+&lt;span class="c1"&gt;# from mailit import *&lt;/span&gt;
+
+&lt;span class="n"&gt;sensor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DHT22&lt;/span&gt;
+&lt;span class="n"&gt;pin&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; 
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_temp_humidity&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_retry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sensor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pin&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;temp_f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mf"&gt;9.0&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mf"&gt;5.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;32.0&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp_f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;humidity&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Launch python with sudo, import this file and call the method to get
+the tuple of celsius temperature, fahrenheit temperature, and relative humidity.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Rpi prototype board with DHT22 on one side and two LEDs on the other" src="/images/rpi-io.jpg"&gt;&lt;/p&gt;</content><category term="raspberry pi"></category><category term="adafruit"></category><category term="python"></category></entry><entry><title>Coding Camp 2015</title><link href="/coding-camp-2015.html" rel="alternate"></link><published>2015-07-21T00:00:00-04:00</published><updated>2015-07-21T00:00:00-04:00</updated><author><name>Davis Mohar</name></author><id>tag:None,2015-07-21:/coding-camp-2015.html</id><summary type="html">&lt;p&gt;Review and Follow Up&lt;/p&gt;</summary><content type="html">&lt;h4&gt;By Davis Mohar&lt;/h4&gt;
+&lt;p&gt;Thanks for a great week everyone!&lt;/p&gt;
+&lt;p&gt;Last week, we split into two groups, beginners and people who already had some experience with coding. The group with experience coding started the week working with python, and the beginner group started out with Lightbot and Hopscotch in order to introduce programming concepts such as finding patterns and creating functions to complete this pattern.&lt;/p&gt;
+&lt;p&gt;The advanced group spent the first day on an introduction to python. On the second and third days, we continued with input/output and learned about data stuctures and the turtle library, which provides easy graphics in python. We ended the camp working on some challenges that ranged from more turtle graphics to a dice games.&lt;/p&gt;
+&lt;p&gt;The beginner group spent the first day in Lightbot, which focuses on pattern recognition. The first half of the second day we started with Hopscotch, which emphasis creating functions to use multiple times. In the second half of the day, we started with python, learning the basic syntax as well as creating a basic calculator. On the third day we added features on to the calculator, such as the ability to use multiple operators and also created a dice rolling simulator using the python random number library. The final day was spent learning the turtle library.&lt;/p&gt;
+&lt;p&gt;Both Lightbot and Hopscotch can be found on the Apple App Store, There is a free trial version of lightbot as well as the full version for $3. Hopscotch is free on the App Store.&lt;/p&gt;
+&lt;p&gt;Pythonista, the app we used to write and run python code on the ipads can be downloaded from the App Store for $7 or Python can be downloaded for free to run on your computer &lt;a href="https://www.python.org/downloads/"&gt;here&lt;/a&gt;
+(make sure you download Python 2.7.10 and not Python 3.4.3, they have significant differences)&lt;/p&gt;
+&lt;p&gt;If you are interested in continuing learning python, &lt;a href="http://www.amazon.com/Python-Kids-Playful-Introduction-Programming/dp/1593274076"&gt;Python for Kids&lt;/a&gt; is a great place to start.&lt;/p&gt;</content><category term="coding"></category><category term="python"></category></entry><entry><title>Some Code for RPi temp uploading</title><link href="/some-code-for-rpi-temp-uploading.html" rel="alternate"></link><published>2015-07-16T00:00:00-04:00</published><updated>2015-07-16T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2015-07-16:/some-code-for-rpi-temp-uploading.html</id><summary type="html">&lt;p&gt;Some notes and code&lt;/p&gt;</summary><content type="html">&lt;p&gt;Just dropping in some code for students to use.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/usr/bin/python&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Google Spreadsheet DHT Sensor Data-logging Example&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Depends on the &amp;#39;gspread&amp;#39; package being installed.  If you have pip installed&lt;/span&gt;
+&lt;span class="c1"&gt;# execute:&lt;/span&gt;
+&lt;span class="c1"&gt;#   sudo pip install gspread&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Copyright (c) 2014 Adafruit Industries&lt;/span&gt;
+&lt;span class="c1"&gt;# Author: Tony DiCola&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Permission is hereby granted, free of charge, to any person obtaining a copy&lt;/span&gt;
+&lt;span class="c1"&gt;# of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal&lt;/span&gt;
+&lt;span class="c1"&gt;# in the Software without restriction, including without limitation the rights&lt;/span&gt;
+&lt;span class="c1"&gt;# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&lt;/span&gt;
+&lt;span class="c1"&gt;# copies of the Software, and to permit persons to whom the Software is&lt;/span&gt;
+&lt;span class="c1"&gt;# furnished to do so, subject to the following conditions:&lt;/span&gt;
+
+&lt;span class="c1"&gt;# The above copyright notice and this permission notice shall be included in all&lt;/span&gt;
+&lt;span class="c1"&gt;# copies or substantial portions of the Software.&lt;/span&gt;
+
+&lt;span class="c1"&gt;# THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&lt;/span&gt;
+&lt;span class="c1"&gt;# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&lt;/span&gt;
+&lt;span class="c1"&gt;# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&lt;/span&gt;
+&lt;span class="c1"&gt;# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&lt;/span&gt;
+&lt;span class="c1"&gt;# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&lt;/span&gt;
+&lt;span class="c1"&gt;# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&lt;/span&gt;
+&lt;span class="c1"&gt;# SOFTWARE.&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;Adafruit_DHT&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;gspread&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Type of sensor, can be Adafruit_DHT.DHT11, Adafruit_DHT.DHT22, or Adafruit_DHT.AM2302.&lt;/span&gt;
+&lt;span class="n"&gt;DHT_TYPE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DHT22&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Example of sensor connected to Raspberry Pi pin 23&lt;/span&gt;
+&lt;span class="n"&gt;DHT_PIN&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;12&lt;/span&gt; 
+&lt;span class="c1"&gt;# Example of sensor connected to Beaglebone Black pin P8_11&lt;/span&gt;
+&lt;span class="c1"&gt;#DHT_PIN  = &amp;#39;P8_11&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Google Docs account email, password, and spreadsheet name.&lt;/span&gt;
+&lt;span class="n"&gt;GDOCS_EMAIL&lt;/span&gt;            &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;XXX&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;GDOCS_PASSWORD&lt;/span&gt;         &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;XXX&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;GDOCS_SPREADSHEET_NAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;XXX&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# How long to wait (in seconds) between measurements.&lt;/span&gt;
+&lt;span class="n"&gt;FREQUENCY_SECONDS&lt;/span&gt;      &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;login_open_sheet&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;spreadsheet&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Connect to Google Docs spreadsheet and return the first worksheet.&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;gc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;gspread&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;login&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;gc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;spreadsheet&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sheet1&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;worksheet&lt;/span&gt;
+    &lt;span class="k"&gt;except&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Unable to login and get spreadsheet.  Check email, password, spreadsheet name.&amp;#39;&lt;/span&gt;
+        &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Logging sensor measurements to {0}.&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GDOCS_SPREADSHEET_NAME&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;#print &amp;#39;Press Ctrl-C to quit.&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Login if necessary.&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;login_open_sheet&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GDOCS_EMAIL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GDOCS_PASSWORD&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GDOCS_SPREADSHEET_NAME&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Attempt to get sensor reading.&lt;/span&gt;
+&lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DHT_TYPE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;DHT_PIN&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Skip to the next reading if a valid measurement couldn&amp;#39;t be taken.&lt;/span&gt;
+&lt;span class="c1"&gt;# This might happen if the CPU is under a lot of load and the sensor&lt;/span&gt;
+&lt;span class="c1"&gt;# can&amp;#39;t be reliably read (timing is critical to read the sensor).&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;humidity&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="n"&gt;temp&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Temperature: {0:0.1f} C&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;temp&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Humidity:    {0:0.1f} %&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Append the data in the spreadsheet, including a timestamp&lt;/span&gt;
+&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;worksheet&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append_row&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;now&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;temp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mf"&gt;9.0&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;5.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;32.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="c1"&gt;# Error appending data, most likely because credentials are stale.&lt;/span&gt;
+    &lt;span class="c1"&gt;# Null out the worksheet so a login is performed at the top of the loop.&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Append error, logging in again&amp;#39;&lt;/span&gt;
+    &lt;span class="n"&gt;worksheet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;
+    &lt;span class="c1"&gt;#time.sleep(FREQUENCY_SECONDS)&lt;/span&gt;
+    &lt;span class="c1"&gt;#continue&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Wait 30 seconds before continuing&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Wrote a row to {0}&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GDOCS_SPREADSHEET_NAME&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;#time.sleep(FREQUENCY_SECONDS)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content><category term="raspberry pi"></category><category term="adafruit"></category><category term="python"></category></entry><entry><title>Minecraft Camp</title><link href="/minecraft-camp.html" rel="alternate"></link><published>2015-06-29T00:00:00-04:00</published><updated>2015-06-29T00:00:00-04:00</updated><author><name>Davis Mohar</name></author><id>tag:None,2015-06-29:/minecraft-camp.html</id><summary type="html">&lt;p&gt;Review and Follow Up&lt;/p&gt;</summary><content type="html">&lt;h4&gt;By Davis Mohar&lt;/h4&gt;
+&lt;p&gt;Thanks for such a great Camp everybody!&lt;/p&gt;
+&lt;p&gt;Once you download the and unzip the zipfile that is part of your https://secure.techemstudios.com enrollment record, simply follow these instructions to run any of the programs:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go into the AdventuresInMinecraft folder, then bukkit, then run the start program&lt;/li&gt;
+&lt;li&gt;Start up minecraft&lt;/li&gt;
+&lt;li&gt;On the bottom left corner, select new profile, and then on the 'use version' box, select release 1.6.4&lt;/li&gt;
+&lt;li&gt;Select Save Profile&lt;/li&gt;
+&lt;li&gt;Select Play&lt;/li&gt;
+&lt;li&gt;Select Muliplayer&lt;/li&gt;
+&lt;li&gt;Click Direct Connect&lt;/li&gt;
+&lt;li&gt;In the Server Adress box, enter in localhost&lt;/li&gt;
+&lt;li&gt;Back in the AdventuresInMinecraft folder, go into the MyAdventures folder and run any of the programs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you are insterested in continuing to learn about programming for minecraft, then you can buy the "Adventures in Minecaft" book &lt;a href="http://www.amazon.com/Adventures-Minecraft-David-Whale/dp/111894691X"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="minecraft"></category><category term="python"></category></entry><entry><title>Notes on setting up pis to use Minecraft API</title><link href="/notes-on-setting-up-pis-to-use-minecraft-api.html" rel="alternate"></link><published>2015-05-20T00:00:00-04:00</published><updated>2015-05-20T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2015-05-20:/notes-on-setting-up-pis-to-use-minecraft-api.html</id><summary type="html">&lt;p&gt;Some notes and code&lt;/p&gt;</summary><content type="html">&lt;p&gt;Just dropping in some code for instructors, students, and everyone
+[for Raspberry Pi 2].&lt;/p&gt;
+&lt;p&gt;Let's grab some Python libraries that can connect to your Minecraft World.
+Login to your pi and launch the GUI:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;startx
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Open up a browser and go to:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;www.wiley.com/go/adventuresinminecraft
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and download the starter kit. Choose "open" and open the program
+called Xarchiver. Click Action -&amp;gt; Extract on the Xarchiver menu. Type
+/home/pi in the Extract to: text box.&lt;/p&gt;
+&lt;p&gt;Now, open up IDLE (Python) and create a new program file. You'll want
+to save this file in the "My Adventures" folder you just created. You
+can name this first file "hello_minecraft.py". This actually assumes
+you have already done the LED input lesson and have a file led.py that
+you have copied into your "My Adventures" folder. Finally, since this
+code uses the raspberry pi I/O, you'll need to open up a new terminal
+window (LX Terminal), change directory (using "cd") to "My Adventures"
+and run the file with sudo.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.minecraft&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;minecraft&lt;/span&gt;
+
+&lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;postToChat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello Minecraft World&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;pos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;player&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getTilePos&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;led&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;green_led&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So, running this would go something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;My Adventures&amp;quot;&lt;/span&gt;
+sudo python hello_minecraft.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Want to build something?&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.minecraft&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;minecraft&lt;/span&gt;
+&lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.block&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;block&lt;/span&gt;
+
+&lt;span class="n"&gt;pos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;player&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getTilePos&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;150&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;TNT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Here is another cool program to try.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.minecraft&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;minecraft&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mcpi.block&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;block&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+
+&lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Minecraft&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;bridge&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;buildBridge&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;pos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;player&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getTilePos&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AIR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WATER_FLOWING&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WATER_STATIONARY&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GLASS&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;coordinate&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+        &lt;span class="n"&gt;bridge&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;coordinate&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;elif&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GLASS&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bridge&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;coordinate&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bridge&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+            &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;coordinate&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;coordinate&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;coordinate&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AIR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.25&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.25&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;buildBridge&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And while you are at it, can you post the current temp to the chat??
+The hint here is that you should copy your temp.py file into your
+"MyAdventures" sub-directory, comment-out the deliver method and
+update the print method (at the end of the file) to postToChat. And,
+don't forget to do the minecraft setup (imports and creation) in order
+to postToChat.&lt;/p&gt;
+&lt;p&gt;What else can you do? Do you want to do? You all now have temp input,
+led output, minecraft control, and outbound email capabilities!!&lt;/p&gt;</content><category term="raspberry pi"></category><category term="python"></category><category term="Minecraft"></category></entry><entry><title>Some Code for RPi temp sensing</title><link href="/some-code-for-rpi-temp-sensing.html" rel="alternate"></link><published>2015-05-13T00:00:00-04:00</published><updated>2015-05-13T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2015-05-13:/some-code-for-rpi-temp-sensing.html</id><summary type="html">&lt;p&gt;Some notes and code&lt;/p&gt;</summary><content type="html">&lt;p&gt;Just dropping in some code for students to use.&lt;/p&gt;
+&lt;p&gt;After wiring your DS18B20, you need to prep your pi for using
+it. After logging in, do this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo nano /boot/config.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And add this line to it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;dtoverlay=w1-gpio
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, reboot your pi:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo reboot
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, let's test the temp sensor with these commands:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo modprobe w1-gpio
+sudo modprobe w1-therm
+cd /sys/bus/w1/devices
+ls
+cd 28&amp;lt;tab&amp;gt;
+cat w1_slave
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You should see two lines with a "YES" at the end of the first line and
+the temp reading at the end of the second. Once you've done this, go
+ahead and&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd ~
+sudo startx
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and launch python2, create a new file and put the code below in
+it. Save it as temp.py.&lt;/p&gt;
+&lt;p&gt;Here is the associated code that reads from the DS18B20 temp sensor.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;glob&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="c1"&gt;#from mailit import *&lt;/span&gt;
+
+&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;modprobe w1-gpio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;modprobe w1-therm&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;base_dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/sys/bus/w1/devices/&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;device_folder&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;glob&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;base_dir&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;28*&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;device_file&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;device_folder&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/w1_slave&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_temp_raw&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;device_file&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;lines&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readlines&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_temp&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;lines&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;read_temp_raw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;YES&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;lines&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;read_temp_raw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;equals_pos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t=&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;equals_pos&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;temp_string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="n"&gt;equals_pos&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;
+        &lt;span class="n"&gt;temp_c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;temp_string&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mf"&gt;1000.0&lt;/span&gt;
+        &lt;span class="n"&gt;temp_f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;temp_c&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mf"&gt;9.0&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mf"&gt;5.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;32.0&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;temp_c&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp_f&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;The current temp is: &lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s1"&gt;C, &lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s1"&gt;F&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;read_temp&lt;/span&gt;&lt;span class="p"&gt;()))&lt;/span&gt;
+    &lt;span class="c1"&gt;#deliver(&amp;#39;The current temp is: %dC, %dF&amp;#39; % (read_temp()))&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1500&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is a very simple/generic mailing routine. Uncomment the "from
+mailit import *" and the function call to "deliver" in the above
+routine to have your temp reading sent via email. You should save this
+code in a file called mailit.py.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Simple smtp mail utility to be used by Tech Em students.&lt;/span&gt;
+&lt;span class="c1"&gt;# This will run on the RPi with the Occidentalis install.&lt;/span&gt;
+&lt;span class="c1"&gt;# Thus, it is a handy utility to use along with adafruit sensors&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# 201406 Wray Mills&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;smtplib&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;socket&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;email.mime.text&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;MIMEText&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+
+&lt;span class="c1"&gt;### &lt;/span&gt;
+&lt;span class="c1"&gt;# Change to your settings&lt;/span&gt;
+&lt;span class="c1"&gt;###&lt;/span&gt;
+&lt;span class="n"&gt;pi_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;wray-pi&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;somebody@somewhere.com&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;## Feel free to reuse the techem student relay&lt;/span&gt;
+&lt;span class="n"&gt;mail_user&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;student@techemstudios.com&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;mail_password&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;pword-on-whiteboard&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;deliver&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;subject&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;RPi output&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;smtplib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;SMTP&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;smtpout.secureserver.net&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3535&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Use 587 for gmail&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ehlo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="c1"&gt;#smtpserver.starttls() # Uncomment this line for gmail&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;login&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;mail_password&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;MIMEText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Subject&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;subject&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;From&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;(&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s1"&gt;)&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pi_name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;To&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sendmail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;as_string&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="raspberry pi"></category><category term="adafruit"></category><category term="python"></category></entry><entry><title>Homeschool Conference (201503)</title><link href="/homeschool-conference-201503.html" rel="alternate"></link><published>2015-03-24T00:00:00-04:00</published><updated>2015-03-24T00:00:00-04:00</updated><author><name>Wray</name></author><id>tag:None,2015-03-24:/homeschool-conference-201503.html</id><summary type="html">&lt;p&gt;Highlights from my presentation&lt;/p&gt;</summary><content type="html">&lt;p&gt;Since I covered a bunch of stuff, here are some of the references
+and high points from my talk: "Technology in your Homeschool Curriculum"&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Homeschool Student working on code for microcontroller" src="/images/hs-talk-40.jpg"&gt;&lt;/p&gt;
+&lt;h3&gt;The links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://code.org"&gt;Code.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/circuit-coder/id492180472"&gt;Circuit Coder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://lightbot.com"&gt;Lightbot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://scratch.mit.edu"&gt;Scratch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gethopscotch.com"&gt;Hopscotch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://omz-software.com/pythonista/"&gt;Pythonista&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.gamepressapp.com"&gt;GamePress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.projectpixelpress.com/floors/"&gt;Floors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.adafruit.com"&gt;Adafruit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.raspberrypi.org"&gt;RaspberryPi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;History&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Prehistoric: Tally Sticks&lt;/li&gt;
+&lt;li&gt;1800's, mechanical: Pascal's Calculator, Arithmometer, Babbage's&lt;/li&gt;
+&lt;li&gt;Machines, Ada Lovelace&lt;/li&gt;
+&lt;li&gt;1940's, vacuum tube: ENIAC&lt;/li&gt;
+&lt;li&gt;1970' to today: microchip and the raspberry pi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;ENIAC vs. Raspberry Pi&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="ENIAC vs. Raspberry Pi" src="/images/hs-talk-11.jpg"&gt;&lt;/p&gt;
+&lt;h3&gt;Binary Logic&lt;/h3&gt;
+&lt;p&gt;What can one do with billions of transistors?&lt;/p&gt;
+&lt;p&gt;Start with one transistor, simple switching device (digital). It's on
+or off, true or false, 0 or 1. Wire a couple together and you get an
+AND gate.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="AND Gate" src="/images/hs-talk-15.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Combine a NOT gate and an AND gate and you can solve the
+truth table where you want the output to be true (1) only when B
+is 1. That is to say: let there be truth when (NOT A) AND B.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="&amp;quot;Quarter&amp;quot; Adder" src="/images/hs-talk-18.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;So, if you wire the A input to a NOT gate and have that go into an AND gate that
+B is also wired to, then you have the result. Suppose you now want to add A
+and B, then simply use the mirror of (NOT A) AND B and "OR" it: ((NOT A)
+AND B) OR (A AND (NOT B)). That gives you the sum, but don't forget
+the carry which is simply A AND B.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Half adder truth table" src="/images/hs-talk-19.jpg"&gt;
+&lt;img alt="Half adder circuit" src="/images/hs-talk-21.jpg"&gt;
+&lt;img alt="Half adder running circuit" src="/images/hs-talk-22.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Now you have a binary half adder (you can add two digits). Combine two
+of those (along with an OR of the CARRY output for each) and you have
+a full adder. String together 3 full adders and you can add two 3
+digit binary numbers!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Binary addition" src="/images/hs-talk-27.jpg"&gt;
+&lt;img alt="Binary adder circuit" src="/images/hs-talk-28.jpg"&gt;
+&lt;img alt="Binary adder running circuit" src="/images/hs-talk-29.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Wasn't that easy??&lt;/p&gt;
+&lt;h3&gt;Coding&lt;/h3&gt;
+&lt;p&gt;Having gone through lightbot, a teacher can re-iterate the
+fundamentals with a language like Python: procedures, overloading,
+loops, and conditionals. Futhermore, with concepts learned in Scratch,
+Hopscotch, and even game-creation apps like GamePress, variables of
+varying data-types can be explained. Start with a simple program to
+emulate "Mad Libs" and work up to more complex programs that can
+leverage device (pythonista) libraries for accelerometer or screen
+input; leverage minecraft (Bukkit server) libraries to build things in
+a Minecraft world; leverage GPIO libraries to read sensor input/update
+led output from a raspberry pi cobbler kit.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Make it... Fun" src="/images/hs-talk-46.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;This BMO-creeper contains a student coded microcontroller, not TNT.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="BMO-Creeper" src="/images/hs-talk-41.jpg"&gt;&lt;/p&gt;</content><category term="computer science"></category><category term="binary"></category><category term="python"></category><category term="raspberry pi"></category><category term="adafruit"></category><category term="gemma"></category><category term="lightbot"></category></entry><entry><title>LED demo code</title><link href="/led-demo-code.html" rel="alternate"></link><published>2015-03-03T00:00:00-05:00</published><updated>2015-03-03T00:00:00-05:00</updated><author><name>Wray Mills</name></author><id>tag:None,2015-03-03:/led-demo-code.html</id><summary type="html">&lt;p&gt;Some notes and code&lt;/p&gt;</summary><content type="html">&lt;p&gt;Just dropping in some code for instructors, students, and everyone.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Animation data for Trinket/Gemma + LED matrix backpack jewelry. &lt;/span&gt;
+
+&lt;span class="cp"&gt;#define REPS 255 &lt;/span&gt;&lt;span class="c1"&gt;// Number of times to repeat the animation loop (1-255)&lt;/span&gt;
+
+&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;uint8_t&lt;/span&gt; &lt;span class="n"&gt;PROGMEM&lt;/span&gt; &lt;span class="n"&gt;anim&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 1 frame&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B11111111&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 0.5 second delay&lt;/span&gt;
+
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 2 frame&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00000000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 0.5 second delay&lt;/span&gt;
+
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 3 frame&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 0.25 second delay&lt;/span&gt;
+
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B01001001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B00100100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;B10010010&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 0.25 second delay&lt;/span&gt;
+
+&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="adafruit"></category><category term="arduino"></category></entry><entry><title>NFES Follow Up</title><link href="/nfes-follow-up.html" rel="alternate"></link><published>2014-11-10T00:00:00-05:00</published><updated>2014-11-10T00:00:00-05:00</updated><author><name>Wray Mills</name></author><id>tag:None,2014-11-10:/nfes-follow-up.html</id><summary type="html">&lt;p&gt;Follow up on the LED pendant projects&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Thank you!&lt;/h3&gt;
+&lt;p&gt;I want to pass on my enthusiastic thanks for letting us provide
+Technology Enrichment to NFES! Kayla and I thoroughly enjoyed the kids
+and the class and look forward to providing more enrichment at NFES. In
+fact, we have learned a lot after our first (and largest enrichment
+class ever) session there. Thus, we are really excited to offer a
+continuation of this course where we plan to have a lower
+student-teacher ratio and will prioritize the hands-on projects over
+the classroom lecture. So, please &lt;a href="mailto:info@techemstudios.com?subject=NFES-session-2"&gt;let us know&lt;/a&gt; if you (and your kids)
+will be interested in a continuation session this winter. We would
+have it at the same time on Thursdays and the winter session runs January 22 -
+Feb 26.&lt;/p&gt;
+&lt;h3&gt;LED Pendant Information&lt;/h3&gt;
+&lt;p&gt;Here is some more information about the LED pendants your kids coded
+for our class. And, if your kid did not get to complete her/his code
+on the last day, please &lt;a href="mailto:info@techemstudios.com?subject=finish-led"&gt;send us an email&lt;/a&gt; so that we can setup some
+time in the winter when we are back at NFES or a time you all can come
+by our studio at Shady Grove and Nuckols to complete the coding.&lt;/p&gt;
+&lt;p&gt;The pendant consists of three main parts: the 8x8 LED matrix display;
+a microcontroller (it's actually a &lt;a href="https://www.adafruit.com/products/1222"&gt;"Gemma" microcontroller from
+Adafruit&lt;/a&gt;); and the lithium polymar (&lt;a href="https://www.adafruit.com/products/1578"&gt;lipo&lt;/a&gt;) rechargeable battery. There
+is no "on/off" switch -- you simply plug the battery in to start the
+display and unplug to stop. The battery plugs into the bottom of the
+microcontroller in the off-white receptacle.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma battery socket" src="/images/gemma-battery.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;On the top of the microcontroller is a mini USB receptacle which is
+used to transfer the code to the microcontroller (any USB connector
+will work to connect a laptop/desktop to the
+microcontroller). However, this plug does not charge the battery. See
+the section below if you and your kid would like to get the software
+necessary to refine their code or re-code their LED.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gemma mini usb socket" src="/images/gemma-usb.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Your child should also have a very &lt;a href="https://www.adafruit.com/products/1304"&gt;small charger&lt;/a&gt; for the battery. This
+charger plugs into a USB port and will charge the lipo battery. There
+is a red light when charging and a green light that indicates the
+battery is fully charged.&lt;/p&gt;
+&lt;h3&gt;LED Coding information&lt;/h3&gt;
+&lt;p&gt;There are detailed tutorials available at adafruit if you would like
+to know how we constructed the pendant and all the component
+specifications. However, this is a quick overview to get your child
+(re)coding the LED frame designs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href="https://learn.adafruit.com/introducing-gemma/setting-up-with-arduino-ide"&gt;Arduino IDE v1.05 with Gemma software&lt;/a&gt; for your computer or laptop.&lt;/li&gt;
+&lt;li&gt;Configure the Arduino IDE to use the Gemma 8MHz and tinyISP.&lt;ul&gt;
+&lt;li&gt;Tools -&amp;gt; Board -&amp;gt; Adafruit Gemma 8MHz&lt;/li&gt;
+&lt;li&gt;Tools -&amp;gt; Programmer -&amp;gt; USBtinyISP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Download the required
+ &lt;a href="https://github.com/adafruit/TinyWireM/archive/master.zip"&gt;LED library&lt;/a&gt;,
+  unzip and put it in the Adafruit Arduino
+libraries directory.&lt;ul&gt;
+&lt;li&gt;Put the TinyWireM directory in your Documents/Arduino/libraries directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://secure.techemstudios.come/enrolled_children"&gt;Login&lt;/a&gt; to our website and download your kid's code.&lt;/li&gt;
+&lt;li&gt;Unzip your kid's code into a directory.&lt;/li&gt;
+&lt;li&gt;Go into that directory and double-click on the file named for your
+kid with a .ino suffix. This will launch Adafruit Arduino.&lt;/li&gt;
+&lt;li&gt;The LED design is in the "bmo.h" file that will be automatically
+loaded on the second tab when you launch Arduino (for those of you who
+have programmed in C or C++ this is simply a header file). Your child
+should know how to edit this file to enhance or change their design.&lt;/li&gt;
+&lt;li&gt;Anywhere there is a "//" is a code comment and the text after it
+    is for explanation and not used in the design.&lt;/li&gt;
+&lt;li&gt;Each "frame" of the design consists of 8 lines of 8 1's and 0's
+    preceded by a "B" and followed with a ",". Thus, the lines
+    correspond to the rows in the matrix and a 1 will light the led at
+    that position and a 0 will turn off the led at that position.&lt;/li&gt;
+&lt;li&gt;Each frame concludes with a decimal number on the 9th line
+      followed by a comma. This decimal number represents the delay in
+      hundredths of a second for this frame. For example, if you want
+      the first frame to display for half a second, use 50. If you
+      want it to display for a whole second, use 100. This value can
+      only go up to 255 (a little over 2.5 seconds).&lt;/li&gt;
+&lt;li&gt;The file has some statements at the beginning of the file that you
+    shouldn't change and the file must conclude with a "};" on the last line.&lt;/li&gt;
+&lt;li&gt;Once you are happy with your design, you should compile it to make
+sure there are no errors.&lt;/li&gt;
+&lt;li&gt;After an error-free compile, plug in your microcontroller and you
+have about 10 seconds to click on the "upload" icon (on the top left
+of the IDE, there is a right arrow for upload) to transfer the
+code to the microcontroller.&lt;/li&gt;
+&lt;li&gt;Make sure you are happy with the design -- if you are, you may unplug
+  the USB and use the battery to power the microcontroller.&lt;/li&gt;
+&lt;li&gt;If you want to change the design again, it is easiest to unplug the
+  usb until you have re-compiled the code and plug in when you are
+  ready to try again.&lt;/li&gt;
+&lt;li&gt;Wait a few seconds for the code to transfer and the microcontroller
+to reboot and display the frames in your design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And, feel free to comment here or shoot us an email if you have ANY
+questions or issues.&lt;/p&gt;</content><category term="computer science"></category><category term="led"></category><category term="gemma"></category><category term="arduino"></category><category term="coding"></category></entry><entry><title>Some Notes for Build Code Connect</title><link href="/some-notes-for-build-code-connect.html" rel="alternate"></link><published>2014-10-23T00:00:00-04:00</published><updated>2014-10-23T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2014-10-23:/some-notes-for-build-code-connect.html</id><summary type="html">&lt;p&gt;Some notes&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Quick notes from last night&lt;/h3&gt;
+&lt;p&gt;The site I was using for the Minecraft setup on the pi is &lt;a href="http://picraftbukkit.webs.com/pi-minecraft-server-how-to"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I would suggest using your new SD card to setup minecraft. Once I go through that process, I will publish it here. You can always get started by going to raspberrypi.org and following the instructions to get the latest Raspian installed on your pi on the new SD card. That will actually take the most time -- getting the java version of minecraft running on that will be easy.&lt;/p&gt;
+&lt;p&gt;You can use the comments here on this site to ask questions and/or shoot me an email. You could even send me an email from your pi -- just don't send it every 5 minutes!!&lt;/p&gt;</content><category term="computer science"></category><category term="python"></category><category term="raspberry pi"></category></entry><entry><title>Some Notes for Homeschool Level 2 Computer Science and Tween/Teen Intro to Coding</title><link href="/some-notes-for-homeschool-level-2-computer-science-and-tweenteen-intro-to-coding.html" rel="alternate"></link><published>2014-10-21T00:00:00-04:00</published><updated>2014-10-21T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2014-10-21:/some-notes-for-homeschool-level-2-computer-science-and-tweenteen-intro-to-coding.html</id><summary type="html">&lt;p&gt;Some notes and assignments&lt;/p&gt;</summary><content type="html">&lt;p&gt;Remember, we have been doing two things when coding in our classes:&lt;/p&gt;
+&lt;p&gt;1) Using a command or terminal window to run python3. So far, we typically accomplish this by opening a terminal or command prompt and then using this command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd your_project/working_directory
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;What is "your_project/working_directory" ? Well, that depends on what you are using to edit the program files. If you are using Aptana then your project directory may be something like "Documents/Aptana Studio 3 Workspace/wray". Once you find it, remember that directory (write it down maybe). And once you have changed directory (using the cd command) into that area, you don't need to move out of that directory for the remainder of your session. So, to run the python interpreter and test your python code, you will use a command like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This will start the python interpreter -- you know you are in the interpreter because you will get the triple greater-than prompt. When you see that you can start testing your code like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;your_cool_python_file&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;call_your_cool_python_function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;your_parameter1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;your_parameter2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;your_object&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;YourClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;init_paramater1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;init_parameter2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;2) The second thing we do when coding is actually edit your python files. Using your favorite editor (e.g. Aptana, Eclipse, nano, vi), you will edit your python source files to be tested in the terminal window. Don't forget to save your changes. And you should restart the python interpreter every time and re-import your file, like this (in the python terminal):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;your_command_prompt&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;python3&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;your_cool_python_file&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Homework/Final Assignment&lt;/h3&gt;
+&lt;p&gt;I've been threatening homework for the past two weeks. So, let me post some here for you all. First, please review the instructions above and make sure you are proficient at editing python files and testing them. If nothing else, I want you to be very comfortable doing this so that you can continue to code and be ready for follow-up courses. Secondly, I want you to look at a "case study" in your book: go to page 399 and look at case study 12.3. This is the project I would like you all to do. There is a text-based version and then a graphics version if you are up to that challenge. In order to do the latter, you will likely need to start on the first part before Wednesday. Please come in Wednesday with any questions or issues you may have with this. It is very challenging, but I know you all are up to it. If you do want a bit more background (i.e. if you want something relatively dry to read to help you sleep) you can actually read the first part of Chapter 12 that starts on page 385. This material is very advanced so don't be discouraged if it doesn't make sense, but please email or post a question/discussion here on the blog.&lt;/p&gt;
+&lt;p&gt;Oh, and the link to some of the materials (like graphics.py) is &lt;a href="http://mcsp.wartburg.edu/zelle/python/"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="computer science"></category><category term="python"></category></entry><entry><title>Web App Camp</title><link href="/web-app-camp.html" rel="alternate"></link><published>2014-09-07T00:00:00-04:00</published><updated>2014-09-07T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2014-09-07:/web-app-camp.html</id><summary type="html">&lt;p&gt;Camp notes for students&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Web Camp Sites Update&lt;/h1&gt;
+&lt;p&gt;Most sites are up. Please watch your email -- I will send you an email when your site is ready. I do apologize for the delay, but we are spending some time doing additional customizations for each site. Also, in previous emails, I told you all to access the site using the username I put on the whiteboard the last day of camp. Instead, please use the username 'ec2-user' (referenced below). &lt;/p&gt;
+&lt;h1&gt;Maintaining your site&lt;/h1&gt;
+&lt;p&gt;I'll send you an email with your specific instructions. I am adding basic authentication to most sites (most everyone asked for it), so in that email will be a separate password for your site. Your login will be an "administrative" login -- other users may register, but they will be restricted on what they can do on your site. Once your site is up, you can maintain your site by connecting to the server like we did in class OR you can install ruby and ruby on rails on your own computer. Later, I'll include a brief overview of how to work on your own computer and then copy the files to the server. For now, you can use the server I have setup.&lt;/p&gt;
+&lt;h1&gt;Editing your files&lt;/h1&gt;
+&lt;p&gt;If you have Koder installed on your tablet, you can edit files just like you did in class. You will need to create a new remote SFTP project where the username is the name of your site and the username/password is what I wrote on the whiteboard. Your project will be in the same directory location it was for class (e.g. /webappcamp/&amp;lt;your_app&gt;).&lt;/p&gt;
+&lt;p&gt;If you don't have Koder or want to use your computer, you can use &lt;a href="http://www.barebones.com/products/bbedit/"&gt;bbedit&lt;/a&gt; on the Mac or use &lt;a href="http://www.thetechrepo.com/main-articles/542.html"&gt;WinSCP with Notepad++&lt;/a&gt;. Really, with WinSCP, you can use whatever editor you may already use.&lt;/p&gt;
+&lt;h1&gt;Accessing the console&lt;/h1&gt;
+&lt;p&gt;If you have iSSH installed on your tablet, you can connect to the server using the same username/password I wrote on the whiteboard. On Windows, you can use &lt;a href="http://www.putty.org"&gt;putty.exe&lt;/a&gt; to access the server and on Mac you can use the terminal with this command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh -l ec2-user &amp;lt;your_app&amp;gt;.techemstudios.com
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;There are essentially two things you will need the access to do:&lt;/p&gt;
+&lt;p&gt;After you make changes, to reload your applicaiton and see the changes, you need to:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd /webappcamp/&amp;lt;your_app&amp;gt;
+bundle exec rake assets:precompile
+touch tmp/restart.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If your site isn't working, you may want to review the application logfile (assume you are still in your app directory -- first command above):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;tail -500 log/production.log
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;An example of how to make changes&lt;/h1&gt;
+&lt;p&gt;A student had the typical setup we created in camp: The main "articles" with the ability to "post" comments on an article. So, they have "articles" and "posts". He noted that when viewing a particular posted comment on an article that page has a link at the bottom of the page called "back". And when we generated the scaffold code, it assumed "back" from a post should take you back to the lists of posts. Well, in our case, we don't want that. We want "back" to go to the list of articles (really the home page in our case). So, we needed to go in and modify that link. Here is what we did:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a remote editor to open up the file /webappcamp/&lt;your_app&gt;/app/views/posts/show.html.erb&lt;/li&gt;
+&lt;li&gt;Change the line of code where it creates the back link to use "articles_path" instead of "posts_path".&lt;/li&gt;
+&lt;li&gt;Save the change.&lt;/li&gt;
+&lt;li&gt;Access the console as described above: enter the 3 unix commands.&lt;/li&gt;
+&lt;li&gt;Refresh your browser viewing the page and voila! Your change is there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please feel free to continue to comment and/or send me email if you have more questions. I'm very happy to help you all maintain your sites and work with you all to make it easier. In other words, now that you know what the actual unix commands are to reloaded your app on the EC2 user, I can provide you all with a simpler way to execute that in one command from your desktop or laptop. I do want you all to understand what is going on before we build out some of that automagic.&lt;/p&gt;
+&lt;p&gt;Some sites/apps we visited/used by day:&lt;/p&gt;
+&lt;h1&gt;Monday&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro"&gt;w3schools.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.koderapp.com"&gt;koder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;h1&gt;Tuesday&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.zinger-soft.com/iSSH_features.html"&gt;iSSH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ruby-lang.org/en/"&gt;Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://rubyonrails.org"&gt;Ruby on Rails&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;h1&gt;Wednesday&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://guides.rubyonrails.org/getting_started.html"&gt;Ruby on Rails tutorial (a blog)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;h1&gt;Thursday&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://guides.rubyonrails.org/getting_started.html#adding-a-second-model"&gt;Ruby on Rails tutorial (creating a relation)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/NoamB/sorcery"&gt;sorcery (authentication)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="web"></category><category term="html"></category></entry><entry><title>Trac setup with GitHub</title><link href="/trac-setup-with-github.html" rel="alternate"></link><published>2014-08-18T00:00:00-04:00</published><updated>2014-08-18T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2014-08-18:/trac-setup-with-github.html</id><summary type="html">&lt;p&gt;Trac server setup with Git&lt;/p&gt;</summary><content type="html">&lt;p&gt;This entry documents the setup for the Trac/SVN server -- using git (on github) as the primary remote repository instead of the hosted svn.&lt;/p&gt;
+&lt;p&gt;We are using a server that hosts both SVN as well as several trac instances. This server resides within our internal restricted network. We'll refer to the trac/svn server as trac-1.&lt;/p&gt;
+&lt;p&gt;Essentially, the Trac-Git setup is detailed &lt;a href="http://trac.edgewall.org/wiki/TracGit"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I went through the process of adding a git repository (as the default) to an existing Trac project. The configuration essentially points to a locally cloned git repository (local on the Trac server). And this works well, but sort of assumes that this local repository is either an integrated git remote repository (one where all developers are syncing their changes) or that itself is being synced separately. And while I can setup post-receive hooks on the repository, these won't work unless developers are pushing to this repository or someone is fetching from the integrated repository (in github in our case). So, while not the best solution, I've setup a cron job to fetch from the github repository every 15 minutes. So far this seems to work out fairly well.&lt;/p&gt;
+&lt;p&gt;Definitely open to suggestions here.&lt;/p&gt;
+&lt;p&gt;I will be setting up some post-receive hooks to enhance the integration, so I may run across a better solution.&lt;/p&gt;</content><category term="trac"></category><category term="git"></category></entry><entry><title>Gaming Camp</title><link href="/gaming-camp.html" rel="alternate"></link><published>2014-07-18T00:00:00-04:00</published><updated>2014-07-18T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2014-07-18:/gaming-camp.html</id><summary type="html">&lt;p&gt;Notes on gamepress downloads&lt;/p&gt;</summary><content type="html">&lt;p&gt;You can access your &lt;a href="http://www.gamepressapp.com"&gt;GamePress&lt;/a&gt; app by logging into TechEm's &lt;a href="https://secure.techemstudios.com"&gt;secure site&lt;/a&gt;. There is an enrollment record for every class, course, or camp you take at TechEm. So, go to the record for the gaming camp and there will be a zipfile that contains the GamePress app(s) you created during the camp.&lt;/p&gt;
+&lt;p&gt;So, all you need to do is transfer the game files to your iPad and open up in GamePress. Once you have GamePress installed, one easy way to do this is email yourself the file (using an email address you can access on the iPad). When you choose the attachment on the iPad, you will have the option to "open in" GamePress. Do that and you can edit and/or play your game!!&lt;/p&gt;
+&lt;p&gt;And contact us if you have any issues or questions!&lt;/p&gt;
+&lt;p&gt;Happy gaming. &lt;/p&gt;</content><category term="gaming"></category><category term="gamepress"></category><category term="unity"></category></entry><entry><title>Rpi Temp. and Humidity sensing</title><link href="/rpi-temp-and-humidity-sensing.html" rel="alternate"></link><published>2014-06-19T00:00:00-04:00</published><updated>2014-06-19T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2014-06-19:/rpi-temp-and-humidity-sensing.html</id><summary type="html">&lt;p&gt;Some notes and code&lt;/p&gt;</summary><content type="html">&lt;p&gt;Login to your pi and enter some commands:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
+sudo apt-get install build-essential python-dev
+git clone git://github.com/adafruit/Adafruit_Python_DHT
+cd Adafruit_Python_DHT
+sudo python setup.py install
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, we'll look at an example to test reading your sensor from Python.&lt;/p&gt;
+&lt;p&gt;Once everyone has their sensors working again via Python. Copy in this new mailit.py:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Simple smtp mail utility to be used by Tech Em students.&lt;/span&gt;
+&lt;span class="c1"&gt;# This will run on the r-pi with the Occidentals install.&lt;/span&gt;
+&lt;span class="c1"&gt;# Thus, it is a nice utility to use along with adafruit sensors&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Tech Em Studios, Gnu GPL&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# 201406 Wray Mills&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;smtplib&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;socket&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;email.mime.text&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;MIMEText&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+
+&lt;span class="c1"&gt;###&lt;/span&gt;
+&lt;span class="c1"&gt;# Change to your settings&lt;/span&gt;
+&lt;span class="c1"&gt;###&lt;/span&gt;
+&lt;span class="n"&gt;pi_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;your-pi&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;somebody@somewhere.com&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;## Feel free to reuse, but please don&amp;#39;t abuse the techem student relay&lt;/span&gt;
+&lt;span class="n"&gt;mail_user&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;xxx@techemstudios.com&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;mail_password&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;pword&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;smtp_server&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;smtp.somwhere.net&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;smtp_port&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3535&lt;/span&gt; &lt;span class="c1"&gt;# Use 587 for gmail&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;deliver&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;subject&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;RPi output&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;smtplib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;SMTP&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;smtp_server&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;smtp_port&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Use 587 for gmail&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ehlo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="c1"&gt;#smtpserver.starttls() # Uncomment this line for gmail&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ehlo&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;login&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;mail_password&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;MIMEText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Subject&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;subject&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;From&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;(&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s1"&gt;)&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pi_name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;To&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sendmail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mail_user&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;as_string&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+    &lt;span class="n"&gt;smtpserver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And create a new file called temp_humidity_emailer.py and copy this code into it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Template code for emailing temperature and humidity from an Adafruit DHT22&lt;/span&gt;
+&lt;span class="c1"&gt;# sensor. Don&amp;#39;t forget to update this file if you connect the DHT22 to another data pin,&lt;/span&gt;
+&lt;span class="c1"&gt;# want to change the delay, or logic for mailing. For example, you may only want to&lt;/span&gt;
+&lt;span class="c1"&gt;# send notifications when certain thresholds are exceeded.&lt;/span&gt;
+&lt;span class="c1"&gt;# &lt;/span&gt;
+&lt;span class="c1"&gt;# Code provided for Tech Em students and open under Gnu GPL&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Wray Mills&lt;/span&gt;
+&lt;span class="c1"&gt;# 20140618&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;Adafruit_DHT&lt;/span&gt;
+&lt;span class="c1"&gt;# Tech Em mail utility&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;mailit&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+
+&lt;span class="n"&gt;sensor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DHT22&lt;/span&gt;
+&lt;span class="n"&gt;pin&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; 
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_temp_humidity&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;humidity&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Adafruit_DHT&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_retry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sensor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pin&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;temp_f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mf"&gt;9.0&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mf"&gt;5.0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mf"&gt;32.0&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;temperature&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;temp_f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;humidity&lt;/span&gt;
+
+
+&lt;span class="n"&gt;deliver&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;The current temp is &lt;/span&gt;&lt;span class="si"&gt;%0.2f&lt;/span&gt;&lt;span class="s1"&gt; C, &lt;/span&gt;&lt;span class="si"&gt;%0.2f&lt;/span&gt;&lt;span class="s1"&gt; F, with a humidty of &lt;/span&gt;&lt;span class="si"&gt;%0.2f%%&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;read_temp_humidity&lt;/span&gt;&lt;span class="p"&gt;()))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then we'll talk about "cron" and look at how you can setup your pi such that whenever you power it up on a network, it will start sensing temp and humidity every x minutes. Of course, don't forget to adjust your mailit.py in order to configure who gets notified via email or text.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo crontab -e
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Use the nano editor to add a line like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;0,15,30,45 * * * * /usr/bin/python /home/pi/temp_humidity_emailer.py &amp;gt;&amp;gt; /home/pi/log/cron.log 2&amp;gt;&amp;amp;1
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To exit, ctrl-x, answer yes and then hit enter.&lt;/p&gt;
+&lt;p&gt;Don't forget, this is your pi and your code so you should try to modify the code (in temp_humidity_emailer.py) to only send notifications when the temp and/or humidity goes below or above some set levels. Ask me if you want to discuss how to properly create those conditions.&lt;/p&gt;
+&lt;p&gt;Now, if you want to "permanently" attach your sensor to the board to plug into the top of the pi, let's solder!!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="RPi with DHT22 sensor on top board" src="/images/pi-with-dht22.jpg"&gt;&lt;/p&gt;</content><category term="raspberry pi"></category><category term="adafruit"></category><category term="python"></category></entry><entry><title>Adafruit Gemma Musical Notes</title><link href="/adafruit-gemma-musical-notes.html" rel="alternate"></link><published>2014-05-29T00:00:00-04:00</published><updated>2014-05-29T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2014-05-29:/adafruit-gemma-musical-notes.html</id><summary type="html">&lt;p&gt;Arduino (Gemma) Sketch for musical output&lt;/p&gt;</summary><content type="html">&lt;p&gt;This entry documents my attempt at mapping out some musical notes to be used by students to create their own sounds.&lt;/p&gt;
+&lt;p&gt;I went ahead and created a header file to define the notes. I based the frequencies on arduino code from this &lt;a href="http://arduino.cc/en/Tutorial/Tone"&gt;site&lt;/a&gt;, which in turn references this &lt;a href="http://www.phy.mtu.edu/~suits/notefreqs.html"&gt;table&lt;/a&gt;. Essentially, dividing 1,000 by the frequency.&lt;/p&gt;
+&lt;p&gt;notes.h&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
+&lt;span class="cm"&gt;Note frequencies to be used by the playTone method found in the Adafruit Chirp Owl written by&lt;/span&gt;
+&lt;span class="cm"&gt;Becky Stern and T Main.&lt;/span&gt;
+
+&lt;span class="cm"&gt;Created 29 May 2014&lt;/span&gt;
+&lt;span class="cm"&gt;by Wray Mills&lt;/span&gt;
+&lt;span class="cm"&gt;based on Sound Effects with Arudino - http://www.mycontraption.com/sound-effects-with-and-arduino&lt;/span&gt;
+&lt;span class="cm"&gt;These frequencies differ from those provided on the Arduino Tone Tutorial - &lt;/span&gt;
+&lt;span class="cm"&gt;http://arduino.cc/en/Tutorial/Tone and the true note accuracy has not been verified, &lt;/span&gt;
+&lt;span class="cm"&gt;but the relative differences are such that simple melodies can be constructed.&lt;/span&gt;
+&lt;span class="cm"&gt;*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_C&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;956&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_D&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;851&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_E&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;758&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_F&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;716&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_G&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;638&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_A&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;568&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_B&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;506&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_hiC&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;478&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_hiD&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;426&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+const&lt;span class="w"&gt; &lt;/span&gt;long&lt;span class="w"&gt; &lt;/span&gt;note_hiG&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;319&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can then use the notes in calls to playTune (provided in the Gemma tutorials) to create music like the Star Wars Theme:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;// Generate the first few measures of the Star Wars Theme
+void starwars(){
+  playTone(note_D,100);
+  delay(50);
+  playTone(note_D,100);
+  delay(50);
+  playTone(note_D,100);
+  delay(50);
+  playTone(note_G,600);
+  delay(50);
+  playTone(note_hiD,600);
+  delay(50);
+  playTone(note_hiC,100);
+  delay(50);
+  playTone(note_B,100);
+  delay(50);
+  playTone(note_A,100);
+  delay(50);
+  playTone(note_hiG,600);
+  delay(50);
+  playTone(note_hiD,600);
+
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We are prepping for a birthday party -- doing a variation on this &lt;a href="https://learn.adafruit.com/chirping-plush-owl-toy/overview"&gt;adafruit project&lt;/a&gt;, so I'll post all the different functions we create. Oh, and of course, I'll post the kids creations as well, I can't wait to see what they design.&lt;/p&gt;</content><category term="arduino"></category><category term="adafruit"></category><category term="gemma"></category><category term="speaker output"></category></entry><entry><title>Trac setup on SVN server</title><link href="/trac-setup-on-svn-server.html" rel="alternate"></link><published>2014-05-27T00:00:00-04:00</published><updated>2014-05-27T00:00:00-04:00</updated><author><name>Wray Mills</name></author><id>tag:None,2014-05-27:/trac-setup-on-svn-server.html</id><summary type="html">&lt;p&gt;Trac/SVN server setup documentation&lt;/p&gt;</summary><content type="html">&lt;p&gt;This entry documents the setup for a new project/group setup when using self-hosted SVN in lieu of github.&lt;/p&gt;
+&lt;p&gt;We are using a server that hosts both SVN as well as several trac instances. This server resides within our internal restricted network. We'll refer to the trac/svn server as trac-1.&lt;/p&gt;
+&lt;p&gt;SVN -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo svnadmin create in /Users/svn
+sudo chgrp -R _www # for Apache svn service access
+sudo chmod -R g+w
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Add permissions for developers in ${app_root}/.svn_authz&lt;/p&gt;
+&lt;p&gt;Can access via https://${trac-1.domain}/scc/${new_project} # via apache proxy connecting to specific trac instance port.&lt;/p&gt;
+&lt;p&gt;Then, you can do an svn import -m "initial import"&lt;/p&gt;
+&lt;p&gt;Trac - (now up to version 1.0.1)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;trac-admin &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;app_root&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;-trac initenv
+trac-admin &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;app_root&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;-trac permission add &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;admin_user&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; TRAC_ADMIN
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Adjust trac.conf for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;attachment size&lt;/li&gt;
+&lt;li&gt;email settings (including default notification settings)&lt;/li&gt;
+&lt;li&gt;svn settings! (Trac 1.0.1 does not favor or default to svn, so the svn modules need to be turned on in the conf file before you can set the repository in the interface). There is a link I should add here.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Immediately go in and adjust permissions to give unauthenticated none&lt;/p&gt;
+&lt;p&gt;Re-arrange permissions to give authenticated a rather large set of permissions (use another project as a template).&lt;/p&gt;
+&lt;p&gt;Configure the default repository.&lt;/p&gt;
+&lt;p&gt;Launch on specific port (add to crontab @reboot) -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;tracd -s -- port &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;project_port&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; --auth=&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; trac,&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;app_root&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/.htdigest,&amp;#39;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&amp;#39; --base-path=&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;app_root&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;new_project&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;-trac
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Finally, add users to the htdigest, update their name and email and notify them of their new credentials.&lt;/p&gt;</content><category term="trac"></category><category term="svn"></category><category term="self-hosted"></category></entry></feed>

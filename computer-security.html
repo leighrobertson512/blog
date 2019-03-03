@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Computer Safety On Wednesday after we had gotten everything hooked up, and our Windows installation completed I wanted to take some time to talk to the kids about the importance of computer, and...">
+        <meta name="keywords" content="BYOC, Security">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Computer Security - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Categories Atom Feed" />
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                                <a href="https://github.com/techemstudios/blog/blob/master/LICENSE">License</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Computer Security</h1>
+                      <p class="header-date"> <a href="/author/chris-kefalas.html">Chris Kefalas</a>, 2016-07-22,  <a href="/category/general.html">General</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/byoc.html">BYOC</a>, <a href="/tag/security.html">Security</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <h3>Computer Safety</h3>
+<p>On Wednesday after we had gotten everything hooked up, and our Windows installation completed I wanted to take some time to talk to the kids about the importance of computer,  and Internet safety.  We live in an exciting age with the Internet of Things, but with the excitement comes some risk. While it's great having all of these devices online, it makes the attack surface for malicious actors much larger. There is good news though! We can all take steps to greatly reduce our risk of falling victim to scams, viruses, and annoying adware. My goal with this post is to detail what I went over in the presentation, and also provide direct links to the software I recommend on keeping yourself safe online. </p>
+<hr>
+<h4>The Threat is Real</h4>
+<ul>
+<li>Over <strong>169 million personal records</strong> were exposed in 2015, stemming from 781 publicized breaches across the financial, business, education, government and healthcare sectors. <a href="http://www.idtheftcenter.org/ITRC-Surveys-Studies/2015databreaches.html">[1]</a></li>
+<li>In 2015, there were <strong>38 percent</strong> more security incidents detected than in 2014.<a href="http://www.pwc.com/gx/en/issues/cyber-security/information-security-survey.html">[2]</a></li>
+<li><strong>34.2%</strong> of user computers were subjected to at least one web attack over the year.<a href="https://securelist.com/analysis/kaspersky-security-bulletin/73038/kaspersky-security-bulletin-2015-overall-statistics-for-2015/">[3]</a></li>
+</ul>
+<p>There are plenty of malicious actors out there, from all across the globe. It can be very hard to prosecute, and find these people because of international laws, but also because they usually take good care in making sure what they do is untraceable back to them.</p>
+<blockquote>
+<p>I am convinced that there are only two types of companies: those that have been hacked and those that will be. And even they are converging into one category: companies that have been hacked and will be hacked again.  </p>
+</blockquote>
+<ul>
+<li>Robert S. Mueller, III, FBI Director, 2012 <a href="https://archives.fbi.gov/archives/news/speeches/combating-threats-in-the-cyber-world-outsmarting-terrorists-hackers-and-spies">[4]</a> </li>
+</ul>
+<p>We can't protect ourselves from everything, and we are helpless when a company gets hacked. But we can take many steps to help protect ourselves from making it any easier for an attacker to get our information, or infect our computer with malicious software. </p>
+<p>Focus Points:</p>
+<ul>
+<li><strong>Strong Passwords </strong></li>
+<li><strong>Anti-Virus</strong></li>
+<li><strong>Adware &amp; Spyware detection</strong></li>
+<li><strong>Protecting Yourself Online</strong></li>
+</ul>
+<p>By looking into these areas, and being aware of what you are doing on the computer you will be ahead of the game, and able to detect, and know what to do if something ever happens!</p>
+<hr>
+<h3>Strong Passwords</h3>
+<p><img alt="Strong Passwords" src="http://imgur.com/rMagpJb.jpg"></p>
+<p>We all love a nice, easy, quick password to type in. Something that isn't hard to remember. Guess who else loves those passwords?! Those dudes trying to get your bank account number! The password is going to be your first defense, especially with your online accounts. By creating a strong password you are making it harder for an attacker to guess that password. One of the most popular attacks towards someones password is using a Brute Force attack where they use a dictionary to guess all the combinations of various words. So by creating a password that isn't found in a dictionary, you are a step ahead of the game in protecting yourself. You'll be best protected by using upper and lower case letters, numbers, and symbols in your password. Make sure to use a minimum of 12 characters when choosing a password, and if you are really worried never use the same password twice. Using a password manager like KeyPassX <a href="https://www.keepassx.org">[5]</a> or LastPass <a href="https://lastpass.com">[6]</a> can help you keep track of all these unique, and complicated passwords! </p>
+<h3>Anti-Virus</h3>
+<p>Viruses can definitely be a pain, and make your experience frustrating. Anti-Virus programs have evolved over the years, and we have seen many different companies market their latest and greatest. Thankfully for Windows users Microsoft has gotten on board and created <strong>Windows Defender</strong>. This is a piece of software that comes installed on Windows 8, and Windows 10. Users running systems with versions of Windows pre Windows 8, you will look for <strong>Security Essentials</strong> which is the same thing. Both of these pieces of software will be free, and included with Windows. </p>
+<p>If you're looking to add another layer of Anti-Virus, I would suggest looking into Anti-Virus Guard <a href="http://www.avg.com/us-en/homepage">[7]</a>, AVG for short. It is a free, anti-virus that will help catch anything that Windows Defender might miss. </p>
+<p>Apple users can use the OS X version of AVG to protect themselves from viruses. Apple computers tend to be targeted less because they are less prevalent in the computer population than Windows operating computers. But you still should be aware of the possibilities, and protect yourself. </p>
+<p>Both of these are going to be a good first line of defense from most of the main- stream virus that your computer has potential to catch. It's very important to make sure you keep these updated, and are using the latest virus definitions. If your computer does get a virus that you are having trouble removing, look through Google for anything related to that specific virus, or seek out professional assistance. </p>
+<h3>Adware, Spyware Detection</h3>
+<p>While these types of malicious software aren't going to kill you, they will definitely make your user experience annoying. <strong>Adware</strong> is known as a type of software that installs and displays ads on the users screen. They work by hijacking the legitimate ads on websites, and display their own. Sometimes even displaying ads outside of the web browser. They usually come from clicking on malicious links, or from installing certain kinds of software that sneak them in. </p>
+<blockquote>
+<p>Whenever installing new software always make sure to read the check boxes! Sometimes those check boxes will ask you if you want to install some sketchy ad package! Their hope is that you won't read them, and click next next next! </p>
+</blockquote>
+<p><strong>Spyware</strong> is much more malicious. You can define spyware as any type of malicious software that is meant to spy on the user looking to gather login, and password information. They are looking to get into your email, and your bank accounts. Usually you will get spyware from clicking on malicious links, and downloading fake software that isn't the application you think it is. Always know the sites that you are on, and pay attention to the URL. </p>
+<p>Two pieces of software that I recommend to take care of this would be Malware Bytes<a href="https://www.malwarebytes.com">[8]</a>, and Super-Anti Spyware<a href="http://superantispyware.com">[9]</a>. Both have free versions that you can use to help remove these types of software, and help hopefully stop them before even have a chance! You need to make sure that you use the latest versions, and also before running scans, update your virus definitions. Updating your virus definitions can be done inside the application. If you don't want to have the application running all the time, I would suggest to try run it at least twice a month. It can never hurt, and will help to remove any junk that you might not even know you have! They can be sneaky! </p>
+<h3>Protecting Yourself Online</h3>
+<p>We do so much online these days! We do our banking, talk to friends, and family. We play video games, and video chat! And with Internet access available practically all over the globe, there are tons of people online, going to the same sites that we all use. Being safe online is a top priority for anyone wanting to protect their personal information, and avoid any types of identity theft. </p>
+<ul>
+<li>You can never over stress the importance of having a strong password. That is going to help you tremendously in avoiding someone being able to guess your password, and getting access to your account. </li>
+<li>Remember to use a combination of upper and lower case letters, numbers, and symbols. A minimum length of 12-14 characters is suggested. </li>
+<li>Don't use the same password for all your accounts, especially ones you are really trying to protect. This prevents them getting your password from one site, and than being able to compromise all your accounts. </li>
+<li>Use a password manager to help keep track of the different sites, and different passwords you create. </li>
+<li>
+<p>Use Two-Factor Authentication if you available. </p>
+</li>
+<li>
+<p>Never <strong>EVER</strong> reveal any personally identifiable information to strangers online. There shouldn't ever been any reason to, and if someone is asking for that information there intentions should be questioned. Don't trust that just because someone has a Facebook, and pictures that they are who they say they are. You should always be cautious when talking with others online. By never revealing anything about yourself, and potentially using a pesudo first name you can keep yourself safe while navigating the web, and talking to others! </p>
+</li>
+<li>
+<p>If available for that site,  always use <strong>HTTPS!!!</strong> HTTPS is a secure version of HTTP that will help to encrypt your traffic so if the attacker does get ahold of it, they shouldn't have any idea what it says! There are a couple plugins<a href="https://www.eff.org/https-everywhere%20">[13]</a> that will force your browser to use HTTPS if available. You can tell if you are using HTTPS when visiting a certain website by looking at the address bar up top and seeing a pad lock. Firefox and Google Chrome will display a green pad lock, and Safari will show gray pad lock. Also the URL will start with HTTPS instead of HTTP. </p>
+</li>
+<li>
+<p>Another good way to keep the malicious activity found on some websites at bay is the use of an AdBlocker. There are a couple different ones out there, but I would recommend uBlock<a href="https://www.ublock.org">[11]</a>, or AdBlockPlus<a href="https://adblockplus.org">[10]</a>. They both do the same thing, so choose either one. You don't need to install both of them. By using a piece of software like this you will be blocking ads, and reduce the chances of clicking on a malicious one. As well as be preventing some of the malicious scripts that hide on some websites. </p>
+</li>
+</ul>
+<h4><strong>Phishing</strong></h4>
+<p>Phishing is something that I wanted to mention in this post because I feel that it is a very effective attack for attackers to gain access to peoples personal accounts. And over the years has become a more prevalent threat on the Internet. </p>
+<p><img alt="Phishing" src="http://imgur.com/s3azhQU.jpg"></p>
+<p>Phishing is the practice of sending fake emails that appear to look real, and come from reputable sources. Usually they will be like an email from your bank saying to please reset your password, with a link below that they want you to click. Usually they will even make the email format look exactly like how a legitimate one. But that is the point, to make you think it actually came from your bank! Some tips below for detecting phishing emails: </p>
+<ul>
+<li>Pay very close attention to the senders email address. You can't always count on this to not be spoofed and appear to be actually from the bank, but most of the time you will see something like <em>bankofamerica.blah.silly@loserhacker.com</em>. So while at first glance it might appear to be from Bank of America, looking a little closer we can see that it definitely didn't, and should be discarded.</li>
+<li>If the email is very vague about who specifically they are contacting that can raise some flags. For example if the message starts with "Hello TechEm, we are contacting to ..." versus just "Hello, we are contacting to ..."  This is important because attackers will send these phishing emails out en masse and usually don't know any information of the recipients. </li>
+<li>Also just look closely, and read the email before you jump to click on something in it. You might see something out of place, and easily figure out the email is fake. </li>
+</ul>
+<p>At the end of the day if you are really worried that the email might be fake, just ignore it and call the company up directly. Than you can be assured that you aren't replying or clicking anything suspicious. They might even be able to tell you if they sent you an email recently so you know for sure! Better to be safe than sorry! </p>
+<p>If you want to read more about phishing, the Federal Trade Commission has written some good information<a href="https://www.consumer.ftc.gov/articles/0003-phishing">[12]</a> to help people learn about these types of attacks, and other tips on preventing them.</p>
+<h3>Final Thoughts</h3>
+<p>Like mentioned in the beginning we can't always protect ourselves from every threat out there in cyber space. But we can reduce our chances, and make exploring the web much safer for ourselves. We can take steps to prevent sketchy software from installing and infecting our computers. We can use software to detect, and clean up anything that might have been installed under our nose. And we can use methods to make sure our passwords are strong, and our accounts are locked down. Setting up alerts for logins to your accounts is always useful, and using Two-Factor authentication whenever available is the ultimate thing for locking down an account, and keeping the bad guys out.  These are all things we already do every day like locking our houses, using a locked and fire proof filing cabinet or safe. It's just instead of calling you on the phone to scam you, or knocking on your door, they send you an email, or message you through Facebook. Some of the attacks have shifted, and gotten more technical but a lot is very similar to things we already work to protect ourselves against. It's just the attack surface has changed to the computer. So we have to evolve our techniques, and adjust our perspective of the possible avenues of attacks. Thankfully it's not close to impossible, and allows us to remain safe, and avoid having information compromised! </p>
+<p>I'm sure I've left something out! And I always suggest people to look for themselves, and read through a couple different sites to learn about computer safety, and security. These are the tips, and tricks I have been using to keep myself safe online, and should give you a little overview of where to start if you are interested in protecting yourself more, and different types of software to do so. Please don't hesitant if you have any questions to reach out, and email me. I love talking about computer security, and safety! </p>
+<p>Chris Kefalas
+me@chriskefalas.me</p>
+<hr>
+<h4>Links:</h4>
+<p>[1] "Identity Theft Resource Center Breach Report Hits Near Record High in 2015." ID Theft Center. January 26, 2016. Accessed July 21, 2016. http://www.idtheftcenter.org/ITRC-Surveys-Studies/2015databreaches.html.</p>
+<p>[2] "Global State of Information Security® Survey 2016." PwC. Accessed July 21, 2016. http://www.pwc.com/gx/en/issues/cyber-security/information-security-survey.html.</p>
+<p>[3] "Kaspersky Security Bulletin 2015." Secure List. December 15, 2015. Accessed July 21, 2016. https://securelist.com/analysis/kaspersky-security-bulletin/73038/kaspersky-security-bulletin-2015-overall-statistics-for-2015/.</p>
+<p>[4] "Combating Threats in the Cyber World: Outsmarting Terrorists, Hackers, and Spies." FBI. March 1, 2012. Accessed July 21, 2016. https://archives.fbi.gov/archives/news/speeches/combating-threats-in-the-cyber-world-outsmarting-terrorists-hackers-and-spies.</p>
+<p>[5] https://www.keepassx.org</p>
+<p>[6] https://lastpass.com</p>
+<p>[7] http://www.avg.com/us-en/homepage</p>
+<p>[8] https://www.malwarebytes.com</p>
+<p>[9] http://superantispyware.com</p>
+<p>[10] https://adblockplus.org</p>
+<p>[11] https://www.ublock.org</p>
+<p>[12] https://www.consumer.ftc.gov/articles/0003-phishing</p>
+<p>[13] https://www.eff.org/https-everywhere%20</p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="https://github.com/techemstudios" target="_blank">TechEm on GitHub</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://register.techemstudios.com" target="_blank">Register!</a></li>
+                            <li><a href="https://secure.techemstudios.com" target="_blank">Enrollment</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

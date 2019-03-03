@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Process for Building Your PiLexa To start, you&#39;ll need a USB microphone, keyboard, mouse and speaker (connected via HDMI or the 3.5mm audio connector), and about an hour of time. Just to begin,...">
+        <meta name="keywords" content="Alexa, computer science, Echo, hardware, raspberry pi">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Make a Raspberry Pi Powered Alexa - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Categories Atom Feed" />
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                                <a href="https://github.com/techemstudios/blog/blob/master/LICENSE">License</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Make a Raspberry Pi Powered Alexa</h1>
+                      <p class="header-date"> <a href="/author/alex-noll.html">Alex Noll</a>, 2017-06-29,  <a href="/category/notes.html">Notes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/alexa.html">Alexa</a>, <a href="/tag/computer-science.html">computer science</a>, <a href="/tag/echo.html">Echo</a>, <a href="/tag/hardware.html">hardware</a>, <a href="/tag/raspberry-pi.html">raspberry pi</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <hr>
+<h3>Process for Building Your PiLexa</h3>
+<p>To start, you'll need a USB microphone, keyboard, mouse and speaker (connected via HDMI or the 3.5mm audio connector), and about an hour of time. Just to begin, you'll want to be running the latest version of Raspbian and you'll need an Amazon Developer account as well.</p>
+<p><img alt="Pieces" src="images/IMG_0036.JPG"></p>
+<h4>Step-By-Step Instructions for Setting Up Alexa</h4>
+<p>Once you have everything ready, you'll need to be on developer.amazon.com and click on the alexa tab. Once there, you'll then click on the Alexa Voice Service. Next, click on the register a product button and choose device in the subfolder. You can set your Device Type ID and Display Name to whatever you want, but next you'll need to set your security profile description to also, whatever you want. You'll want to take note of your Client ID and Client Secret, as you'll need them later. Next you'll need to configure your web settings with the allowed origin as <code>https://localhost:3000</code> and then for your allowed return url you'll need <code>https://localhost:3000/authresponse</code>.</p>
+<p><img alt="1st Step" src="images/IMG_3033.JPG"></p>
+<p>Now that you have what you need from Amazon, it's time to get to configuring your Pi. On your Pi, you'll want to open up one terminal for now and type in "cd Desktop" , followed by <code>git clone https://github.com/alexa/alexa-avs-sample-app.git</code> and press enter. Once that's done, you need to type <code>cd ~/Desktop/alexa-avs-sample-app</code>. After that, type <code>nano automated_install.sh</code> and press enter.</p>
+<p>Next you'll fill in your Product ID, Client ID, and Client Secret. Afterward you'll need to <code>cd ~/Desktop/alexa/alexa-avs-sample-app</code> and press enter, then followed by <code>. automated_install.sh</code> and press enter. At this point you should fill in each option that follows as needed.</p>
+<p>This following process requires three separate open terminals for each set of commands and must be done in sequential order. For the first terminal, type in <code>cd ~/Desktop/alexa-avs-sample-app/samples</code> and press enter, then type in <code>cd companionService &amp;&amp; npm start</code> and press enter.</p>
+<p>The next terminal will require the following two commands <code>cd ~/Desktop/alexa-avs-sample-app/samples</code> with Enter, and then <code>cd javaclient &amp;&amp; mvn exec:exec</code> with Enter. You'll want to make sure you're logged into your Amazon account and deal with any Java pop-ups that may occur.</p>
+<p>This is the last step, in which we will start the wake word engine so that your Pi will respond when you say "Alexa". To do this, in your third terminal you'll type in <code>cd ~/Desktop/alexa-avs-sample-app/samples</code> and press Enter. and then, type in <code>cd wakeWordAgent/src &amp;&amp; ./wakeWordAgent -e kitt_ai</code> and Press Enter.</p>
+<p><img alt="Finished" src="images/IMG_3078.JPG"></p>
+<p>Congratulations your PiLexa should be up and running, should you want to improve your diy echo's ability to understand you, you may want to type in <code>alsamixer</code> , use f6 to select the audio device, and then adjust volume settings. To save your adjustments hit ESC, and then in a terminal type <code>sudo alsactl store</code> and press Enter.  </p>
+<p>For even more information on the subject, definitely check out this article on LifeHacker, it provides visual demonstrations and a bit of trouble-shooting as well :<a href="http://lifehacker.com/how-to-build-your-own-amazon-echo-with-a-raspberry-pi-1787726931">http://lifehacker.com/how-to-build-your-own-amazon-echo-with-a-raspberry-pi-1787726931</a></p>
+<hr>
+<h3>Stay Tuned for the Chromebook-Ubuntu Powered Alexa!</h3>
+<p><img alt="teaser" src="images/IMG_0225.JPG">  </p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="https://github.com/techemstudios" target="_blank">TechEm on GitHub</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://register.techemstudios.com" target="_blank">Register!</a></li>
+                            <li><a href="https://secure.techemstudios.com" target="_blank">Enrollment</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

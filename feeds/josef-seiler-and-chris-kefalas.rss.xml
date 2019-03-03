@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>The Art of Technology... Training - Josef Seiler and Chris Kefalas</title><link>/</link><description></description><lastBuildDate>Mon, 22 Aug 2016 00:00:00 -0400</lastBuildDate><item><title>Notes On Setting Up Your Robot</title><link>/notes-on-setting-up-your-robot.html</link><description>&lt;h2&gt;Some Notes on Configuring the BombiniBot&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Three Preceding Steps to Control your BombiniBot Robot&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download the &lt;strong&gt;Scratch based programming environment&lt;/strong&gt; from &lt;a href="http://www.mindsensors.com/content/76-bombinibot-assembly-instructions-and-downloads"&gt;mindsensors.com&lt;/a&gt; and choose the windows link or the mac link depending on your operating system.   &lt;/p&gt;
+&lt;p&gt;i) This will download as a compressed (zip) file, so unzip the folder …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Josef Seiler and Chris Kefalas</dc:creator><pubDate>Mon, 22 Aug 2016 00:00:00 -0400</pubDate><guid isPermaLink="false">tag:None,2016-08-22:/notes-on-setting-up-your-robot.html</guid><category>techcamp</category><category>computer science</category><category>robot</category></item></channel></rss>

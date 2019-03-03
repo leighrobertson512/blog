@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="How to Setup a Soundboard For this tutorial, you&#39;ll need a Raspberry Pi, Breadboard, bunches of cables and buttons, and an output speaker (through HDMI or the 3.5mm output). Once you have...">
+        <meta name="keywords" content="computer science, hardware, raspberry pi, wiring">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>How to make a Raspberry Pi Soundboard - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Categories Atom Feed" />
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                                <a href="https://github.com/techemstudios/blog/blob/master/LICENSE">License</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">How to make a Raspberry Pi Soundboard</h1>
+                      <p class="header-date"> <a href="/author/alex-noll.html">Alex Noll</a>, 2017-08-10,  <a href="/category/notes.html">Notes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/computer-science.html">computer science</a>, <a href="/tag/hardware.html">hardware</a>, <a href="/tag/raspberry-pi.html">raspberry pi</a>, <a href="/tag/wiring.html">wiring</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <hr>
+<h3>How to Setup a Soundboard</h3>
+<p>For this tutorial, you'll need a Raspberry Pi, Breadboard, bunches of cables and buttons, and an output speaker (through HDMI or the 3.5mm output). Once you have everything, you're good to go. You'll have a lot of code to input, but you can also find the code here: <a href="http://cdn.makezine.com/make/33/soundboard.py">http://cdn.makezine.com/make/33/soundboard.py</a></p>
+<p>as for the many lines of code...</p>
+<div class="highlight"><pre><span></span> import pygame.mixer
+from <span class="nb">time</span> import sleep
+import RPi.GPIO as GPIO
+from sys import <span class="nb">exit</span>
+
+GPIO.setmode<span class="o">(</span>GPIO.BCM<span class="o">)</span>
+GPIO.setup<span class="o">(</span><span class="m">23</span>, GPIO.IN<span class="o">)</span>
+GPIO.setup<span class="o">(</span><span class="m">24</span>, GPIO.IN<span class="o">)</span>
+GPIO.setup<span class="o">(</span><span class="m">25</span>, GPIO.IN<span class="o">)</span>
+
+pygame.mixer.init<span class="o">(</span><span class="m">48000</span>, -16, <span class="m">1</span>, <span class="m">1024</span><span class="o">)</span>
+
+<span class="nv">sndA</span> <span class="o">=</span> pygame.mixer.Sound<span class="o">(</span><span class="s2">&quot;.wav&quot;</span><span class="o">)</span>
+<span class="nv">sndB</span> <span class="o">=</span> pygame.mixer.Sound<span class="o">(</span><span class="s2">&quot;.wav&quot;</span><span class="o">)</span>
+<span class="nv">sndC</span> <span class="o">=</span> pygame.mixer.Sound<span class="o">(</span><span class="s2">&quot;.wav&quot;</span><span class="o">)</span>
+
+<span class="nv">soundChannelA</span> <span class="o">=</span> pygame.mixer.Channel<span class="o">(</span><span class="m">1</span><span class="o">)</span>
+<span class="nv">soundChannelB</span> <span class="o">=</span> pygame.mixer.Channel<span class="o">(</span><span class="m">2</span><span class="o">)</span>
+<span class="nv">soundChannelC</span> <span class="o">=</span> pygame.mixer.Channel<span class="o">(</span><span class="m">3</span><span class="o">)</span>
+
+print <span class="s2">&quot;Sampler Ready.&quot;</span>
+
+<span class="k">while</span> True:
+   try:
+      <span class="k">if</span> <span class="o">(</span>GPIO.input<span class="o">(</span><span class="m">23</span><span class="o">)</span> <span class="o">==</span> True<span class="o">)</span>:
+         soundChannelA.play<span class="o">(</span>sndA<span class="o">)</span>
+      <span class="k">if</span> <span class="o">(</span>GPIO.input<span class="o">(</span><span class="m">24</span><span class="o">)</span> <span class="o">==</span> True<span class="o">)</span>:
+         soundChannelB.play<span class="o">(</span>sndB<span class="o">)</span>
+      <span class="k">if</span> <span class="o">(</span>GPIO.input<span class="o">(</span><span class="m">25</span><span class="o">)</span> <span class="o">==</span> True<span class="o">)</span>:
+         soundChannelC.play<span class="o">(</span>sndC<span class="o">)</span>
+      sleep<span class="o">(</span>.01<span class="o">)</span>
+   except KeyboardInterrupt:
+      exit<span class="o">()</span>
+</pre></div>
+
+
+<p>After putting the code into a text editor, you'll need to get some .wav files to have play each time you hit a button, one place for some funny .wav files is: <a href="http://cdn.makezine.com/make/33/pd_sound_effects.zip">http://cdn.makezine.com/make/33/pd_sound_effects.zip</a>. After downloading, or creating you own .wav files, just put their file names on lines 13, 14, &amp; 15. After completing these steps, you have some wiring to do.</p>
+<p><img alt="wiring" src="images/wiring.jpg"></p>
+<p>In the diagram shown, no breakout boards were used, but you can see the positive coming off of the 3v3 pin to the positive rail of the breadboard. After the positive, you'll need a ground, in the diagram, it's the 3rd pin on the right. Now you'll want to place down all of your buttons. After placing down all of your buttons, you'll need a positive from the positive rail connect to each button at the top pin of the button. After connecting the positives for each button, you'll need the GPIO cables for each button, as well as a 10K resistor, both of which are connected to the bottom pin of the button. The resistors have to connect to the negative rail, while the GPIO cables connect to pins 23, 24, and 25. After wiring everything up, you can return to the Terminal.</p>
+<p><img alt="our wiring" src="images/IMG_0547.JPG"></p>
+<p>You need to make sure to have all of your .WAV files and your .py file all in the same folder, preferably on your desktop. For this tutorial, we named our folder "soundboard", in the Terminal, you'll need to change your directory to the Desktop, and then to your folder, using: <code>cd Desktop</code> and <code>cd soundboard</code>, after this, run <code>sudo python soundboard.py</code>. After running, wait until your Terminal says Sampler Ready and then you're good to go!</p>
+<p><img alt="Sampler Ready" src="images/IMG_0551.JPG"></p>
+<hr>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="https://github.com/techemstudios" target="_blank">TechEm on GitHub</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://register.techemstudios.com" target="_blank">Register!</a></li>
+                            <li><a href="https://secure.techemstudios.com" target="_blank">Enrollment</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

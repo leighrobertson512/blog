@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Art of Technology... Training - Christopher Kefalas</title><link href="/" rel="alternate"></link><link href="/feeds/christopher-kefalas.atom.xml" rel="self"></link><id>/</id><updated>2019-02-25T00:00:00-05:00</updated><entry><title>WEMS Spring Tiny Tech</title><link href="/wems-spring-tiny-tech.html" rel="alternate"></link><published>2019-02-25T00:00:00-05:00</published><updated>2019-02-25T00:00:00-05:00</updated><author><name>Christopher Kefalas</name></author><id>tag:None,2019-02-25:/wems-spring-tiny-tech.html</id><summary type="html">&lt;p&gt;WEMS Tiny Tech&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Description&lt;/h1&gt;
+&lt;p&gt;Students will learn about the history of computing and computer science; they will review the evolving machines and the people behind them. Students will be introduced to the binary building blocks of modern computers: the binary number system, logic gates, and elementary boolean logic. They will learn about computer programming, "coding", and explore the basic concepts through: visual languages, coding games and a text-based language.&lt;/p&gt;
+&lt;h1&gt;Instructors&lt;/h1&gt;
+&lt;h2&gt;Lead Instructor&lt;/h2&gt;
+&lt;p&gt;Christopher Kefalas&lt;/p&gt;
+&lt;h1&gt;Class Session Learning Objectives&lt;/h1&gt;
+&lt;h1&gt;Materials&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;iPads&lt;/li&gt;
+&lt;li&gt;Whiteboard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Class References&lt;/h1&gt;
+&lt;h1&gt;On the line Resources&lt;/h1&gt;
+&lt;h2&gt;On the line Presentations&lt;/h2&gt;
+&lt;h2&gt;Repos&lt;/h2&gt;
+&lt;h2&gt;Related Blog Notes&lt;/h2&gt;
+&lt;h2&gt;(GitHub) Assignments&lt;/h2&gt;
+&lt;h2&gt;External References&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h1&gt;Day 1&lt;/h1&gt;
+&lt;h2&gt;Conditionals &amp;amp; Loops!&lt;/h2&gt;
+&lt;p&gt;We will do a quick refresher on Conditionals since we had a snow day last week, and then move onto loops!&lt;/p&gt;
+&lt;h2&gt;Out of Desk&lt;/h2&gt;
+&lt;h2&gt;Hands-On/coding&lt;/h2&gt;
+&lt;p&gt;Starting with Kodeable and making sure all the students have a good grasp of Conditionals and all the levels in the &lt;em&gt;Conditionals Canyon&lt;/em&gt; section of the app. Once we are done there we will move over to the next section which is loops! Loops are introduced with three levels, students will practice identifying the patterns in each level and figuring out which instructions are needed in order for the loop to function correctly.&lt;/p&gt;
+&lt;h2&gt;One thing to remember&lt;/h2&gt;
+&lt;p&gt;Why do we use loops?&lt;/p&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;iPads&lt;/li&gt;
+&lt;li&gt;Whiteboard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Actual&lt;/h2&gt;</content><category term="computer science"></category></entry></feed>

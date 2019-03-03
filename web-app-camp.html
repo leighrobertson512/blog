@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Web Camp Sites Update Most sites are up. Please watch your email -- I will send you an email when your site is ready. I do apologize for the delay, but we are spending some time doing additional...">
+        <meta name="keywords" content="html, web">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Web App Camp - The Art of Technology... Training</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="The Art of Technology... Training Categories Atom Feed" />
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/raspberry-pi-stock.jpg'); background-position: center; background-size: cover;">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/small-icon.png" alt="logo">The Art of Technology... Training</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="http://techemstudios.com">Tech Em</a>
+                                <a href="http://techemstudios.com/about-us">About</a>
+                                <a href="https://github.com/techemstudios/blog/blob/master/LICENSE">License</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Web App Camp</h1>
+                      <p class="header-date"> <a href="/author/wray-mills.html">Wray Mills</a>, 2014-09-07,  <a href="/category/notes.html">Notes</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+<a href="/tag/html.html">html</a>, <a href="/tag/web.html">web</a>                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <h1>Web Camp Sites Update</h1>
+<p>Most sites are up. Please watch your email -- I will send you an email when your site is ready. I do apologize for the delay, but we are spending some time doing additional customizations for each site. Also, in previous emails, I told you all to access the site using the username I put on the whiteboard the last day of camp. Instead, please use the username 'ec2-user' (referenced below). </p>
+<h1>Maintaining your site</h1>
+<p>I'll send you an email with your specific instructions. I am adding basic authentication to most sites (most everyone asked for it), so in that email will be a separate password for your site. Your login will be an "administrative" login -- other users may register, but they will be restricted on what they can do on your site. Once your site is up, you can maintain your site by connecting to the server like we did in class OR you can install ruby and ruby on rails on your own computer. Later, I'll include a brief overview of how to work on your own computer and then copy the files to the server. For now, you can use the server I have setup.</p>
+<h1>Editing your files</h1>
+<p>If you have Koder installed on your tablet, you can edit files just like you did in class. You will need to create a new remote SFTP project where the username is the name of your site and the username/password is what I wrote on the whiteboard. Your project will be in the same directory location it was for class (e.g. /webappcamp/&lt;your_app>).</p>
+<p>If you don't have Koder or want to use your computer, you can use <a href="http://www.barebones.com/products/bbedit/">bbedit</a> on the Mac or use <a href="http://www.thetechrepo.com/main-articles/542.html">WinSCP with Notepad++</a>. Really, with WinSCP, you can use whatever editor you may already use.</p>
+<h1>Accessing the console</h1>
+<p>If you have iSSH installed on your tablet, you can connect to the server using the same username/password I wrote on the whiteboard. On Windows, you can use <a href="http://www.putty.org">putty.exe</a> to access the server and on Mac you can use the terminal with this command:</p>
+<div class="highlight"><pre><span></span>ssh -l ec2-user &lt;your_app&gt;.techemstudios.com
+</pre></div>
+
+
+<p>There are essentially two things you will need the access to do:</p>
+<p>After you make changes, to reload your applicaiton and see the changes, you need to:</p>
+<div class="highlight"><pre><span></span>cd /webappcamp/&lt;your_app&gt;
+bundle exec rake assets:precompile
+touch tmp/restart.txt
+</pre></div>
+
+
+<p>If your site isn't working, you may want to review the application logfile (assume you are still in your app directory -- first command above):</p>
+<div class="highlight"><pre><span></span>tail -500 log/production.log
+</pre></div>
+
+
+<h1>An example of how to make changes</h1>
+<p>A student had the typical setup we created in camp: The main "articles" with the ability to "post" comments on an article. So, they have "articles" and "posts". He noted that when viewing a particular posted comment on an article that page has a link at the bottom of the page called "back". And when we generated the scaffold code, it assumed "back" from a post should take you back to the lists of posts. Well, in our case, we don't want that. We want "back" to go to the list of articles (really the home page in our case). So, we needed to go in and modify that link. Here is what we did:</p>
+<ul>
+<li>Use a remote editor to open up the file /webappcamp/<your_app>/app/views/posts/show.html.erb</li>
+<li>Change the line of code where it creates the back link to use "articles_path" instead of "posts_path".</li>
+<li>Save the change.</li>
+<li>Access the console as described above: enter the 3 unix commands.</li>
+<li>Refresh your browser viewing the page and voila! Your change is there.</li>
+</ul>
+<p>Please feel free to continue to comment and/or send me email if you have more questions. I'm very happy to help you all maintain your sites and work with you all to make it easier. In other words, now that you know what the actual unix commands are to reloaded your app on the EC2 user, I can provide you all with a simpler way to execute that in one command from your desktop or laptop. I do want you all to understand what is going on before we build out some of that automagic.</p>
+<p>Some sites/apps we visited/used by day:</p>
+<h1>Monday</h1>
+<ul>
+<li><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro">w3schools.com</a></li>
+<li><a href="http://www.koderapp.com">koder</a></li>
+</ul>
+<h1></h1>
+<h1>Tuesday</h1>
+<ul>
+<li><a href="http://www.zinger-soft.com/iSSH_features.html">iSSH</a></li>
+<li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+<li><a href="http://rubyonrails.org">Ruby on Rails</a></li>
+</ul>
+<h1></h1>
+<h1>Wednesday</h1>
+<ul>
+<li><a href="http://guides.rubyonrails.org/getting_started.html">Ruby on Rails tutorial (a blog)</a></li>
+</ul>
+<h1></h1>
+<h1>Thursday</h1>
+<ul>
+<li><a href="http://guides.rubyonrails.org/getting_started.html#adding-a-second-model">Ruby on Rails tutorial (creating a relation)</a></li>
+<li><a href="https://github.com/NoamB/sorcery">sorcery (authentication)</a></li>
+</ul>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://twitter.com/techemrva" target="_blank">@TechEmRVA</a></li>
+                            <li><a href="https://github.com/techemstudios" target="_blank">TechEm on GitHub</a></li>
+                            <li><a href="http://facebook.com/techemstudios" target="_blank">TechEm on FB</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title"></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://techemstudios.com" target="_blank">Tech Em Studios</a></li>
+                            <li><a href="http://register.techemstudios.com" target="_blank">Register!</a></li>
+                            <li><a href="https://secure.techemstudios.com" target="_blank">Enrollment</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://getpelican.com" target="_blank">Pelican</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>
